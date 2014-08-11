@@ -1,4 +1,10 @@
 @htmlFontSize: 16;
+@headerHeight: 66;
+@footerHeight: 39;
+
+.parentLineHeight(@height) {
+	line-height: @height / @htmlFontSize * 1rem;
+}
 
 .transition(@elem: all, @duration: .5s, @effect: ease) {
 	-webkit-transition: @elem @duration @effect;
@@ -27,3 +33,14 @@
 		border-color: transparent;
 	}
 }
+
+.reset-typical {
+	border-bottom: none;
+}
+
+//Colors
+
+@black: #000;
+@white: #fff;
+@gray: #cecece;
+@darkBlue: #194373;

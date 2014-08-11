@@ -14,7 +14,8 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/jquery.vegas.css">
+        <link rel="stylesheet" href="css/fonts.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
@@ -45,14 +46,16 @@
                 </ul>
             </nav>
             <div class="phone">
-                +34 56 005 22 22
+                <a href="tel:+34560052222">
+                    <span class="icon icon-phone"></span> +34 56 005 22 22
+                </a>
             </div>
             <div class="booking" id="bookBtn">
-                Бронировать
+                Бронировать <span class="icon icon-angle-right"></span>
             </div>
         </header>
 
-        <main role="main">
+        <main role="main" class="full-screen">
 
         </main>
 
@@ -61,7 +64,7 @@
                 © Sarykum hotel and spa 2014
             </div>
             <div class="dev">
-                Made in GRPHM
+                Made in <a href="http://grapheme.ru" target="_blank">GRPHM</a>
             </div>
         </footer>
 
@@ -69,7 +72,6 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-        <script src="js/vendor/jquery.vegas.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
