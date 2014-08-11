@@ -3,9 +3,7 @@ module.exports = function(grunt) {
     less: {
       development: {
         options: {
-          compress: true,
-          yuicompress: true,
-          optimization: 2
+          compress: false
         },
         files: {
           // target.css file: source.less file
