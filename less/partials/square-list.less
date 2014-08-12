@@ -1,0 +1,38 @@
+.square-ul {
+	.list-unstyled;
+	max-width: 1260rem / @htmlFontSize;
+
+	.square-li {
+		float: left;
+		width: 32%;
+		height: 250rem / @htmlFontSize;
+		margin: 0 0 2%;
+		padding: 8% 0 0;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		text-align: center;
+
+		&:nth-child(3n + 2) {
+			margin: 0 2%;
+		}
+
+		a {
+			.reset-typical;
+			display: inline-block;
+			min-width: 220rem / @htmlFontSize;
+			padding: 0 60rem / @htmlFontSize;
+			background: @olive;
+
+			font-size: 13em / @htmlFontSize;
+			text-transform: uppercase;
+			line-height: 44em / 13;
+			color: @white;
+
+			&:hover {
+				-webkit-transform: scale(1.2);
+				transform: scale(1.2);
+			}
+		}
+	}
+}

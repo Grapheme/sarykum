@@ -207,6 +207,41 @@ main.full-screen {
 .tabs-sect {
   padding: 0 8.125rem;
 }
+.square-list-sect {
+  padding-bottom: 7.5rem;
+}
+.mini-footer {
+  padding-bottom: 3.5rem;
+  text-align: center;
+}
+.mini-footer header {
+  margin: 0 0 3.75rem;
+  font-size: 1.5625em;
+  color: #b8b185;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.mini-footer .small-logo {
+  display: inline-block;
+  vertical-align: middle;
+  width: 9.3125rem;
+  height: 2.1875rem;
+  margin: 0 .5rem 0 0;
+  background: url(../img/small-logo.png) no-repeat 0 0 / 100% 100%;
+}
+.mini-footer .call {
+  font-size: 0.75em;
+  line-height: 1.83333333em;
+  text-transform: uppercase;
+}
+.mini-footer .call a {
+  border-bottom: none;
+  display: block;
+  margin: 0.5rem 0 0;
+  color: #1f1a14;
+  font-size: 1.21875em;
+  line-height: 1.79487179em;
+}
 .slideshow {
   position: relative;
   width: 100%;
@@ -304,7 +339,7 @@ main.full-screen {
 }
 .table {
   width: 100%;
-  max-width: 1180px;
+  max-width: 73.75rem;
   margin: 0;
 }
 .table tr:nth-child(even) {
@@ -375,6 +410,40 @@ main.full-screen {
 }
 .tab-content .tab-li.active {
   display: block;
+}
+.square-ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  max-width: 78.75rem;
+}
+.square-ul .square-li {
+  float: left;
+  width: 32%;
+  height: 15.625rem;
+  margin: 0 0 2%;
+  padding: 8% 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.square-ul .square-li:nth-child(3n + 2) {
+  margin: 0 2%;
+}
+.square-ul .square-li a {
+  border-bottom: none;
+  display: inline-block;
+  min-width: 13.75rem;
+  padding: 0 3.75rem;
+  background: #b8b185;
+  font-size: 0.8125em;
+  text-transform: uppercase;
+  line-height: 3.38461538em;
+  color: #ffffff;
+}
+.square-ul .square-li a:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
 .main-header {
   height: 4.125rem;
