@@ -1,0 +1,44 @@
+.tabs {
+	.list-unstyled;
+	max-width: 1180rem / @htmlFontSize;
+	margin: 0 0 90rem / @htmlFontSize;
+
+	li {
+		&.active {
+			
+			span {
+				background: @olive;
+				color: @white;
+			}
+		}
+
+		span {
+			.transition;
+			display: inline-block;
+			min-width: 192rem / @htmlFontSize;
+			padding: 0 13rem / @htmlFontSize;
+			
+			color: @black;
+
+			line-height: 38rem / @htmlFontSize;
+			cursor: pointer;
+			text-align: center;
+
+			&:hover {
+				background: @olive;
+				color: @white;
+			}
+		}
+	}
+}
+.tab-content {
+	.list-unstyled;
+
+	.tab-li {
+		display: none;
+
+		&.active {
+			display: block;
+		}
+	}
+}

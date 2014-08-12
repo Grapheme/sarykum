@@ -19,7 +19,6 @@ a {
 }
 
 main {
-
 	&.full-screen {
 		position: absolute;
 		top: @headerHeight / @htmlFontSize * 1rem;
@@ -29,4 +28,45 @@ main {
 	}
 
 	background: @darkBlue;
+}
+
+.sect-wrap {
+	position: relative;
+	padding: 75rem / @htmlFontSize 90rem / @htmlFontSize 150rem / @htmlFontSize;
+
+	background: #fff;
+	color: @txtColor;
+
+	&.restaurant:after {
+		content: '';
+		position: absolute;
+		top: 75rem / @htmlFontSize;
+		left: 50%;
+		width: 570rem / @htmlFontSize;
+		height: 570rem / @htmlFontSize;
+
+		background: url(../img/rest.jpg) no-repeat 0 0 e('/') 100% 100%;
+	}
+
+	h1 {
+		width: 55rem;
+		margin: 0 0 35rem / @htmlFontSize;
+
+		font-size: 50em / @htmlFontSize;
+		line-height: 60em / 50;
+		text-transform: uppercase;
+	}
+
+	.section-desc {
+		margin: 0 0 18rem / @htmlFontSize;
+		font: italic 1em e('/') 1.375em Georgia, 'Open Sans', sans-serif;
+	}
+
+	p {
+		font: .8125em e('/') 1.6923em Georgia, 'Open Sans', sans-serif;
+	}
+}
+
+.tabs-sect {
+	padding: 0 130rem / @htmlFontSize;
 }
