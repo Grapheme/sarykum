@@ -134,8 +134,12 @@ html {
   float: right;
 }
 html {
+  height: 100%;
   font-family: 'Open Sans', sans-serif;
   min-width: 90rem;
+}
+body {
+  height: 100%;
 }
 a {
   -webkit-transition: all 0.5s ease;
@@ -146,6 +150,11 @@ a {
 }
 a:hover {
   border-color: transparent;
+}
+.wrapper {
+  position: relative;
+  height: 100%;
+  min-height: 50rem;
 }
 main {
   background: #194373;
