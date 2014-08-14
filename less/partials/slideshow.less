@@ -4,6 +4,8 @@
 	height: 100%;
 
 	.slide {
+		.transition(all, 2s, ease);
+		opacity: 0;
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -33,6 +35,10 @@
 			height: 100%;
 
 			background: rgba(0, 0, 0, .54);			
+		}
+
+		&.active {
+			opacity: 1;
 		}
 	}
 	.slide-cont {

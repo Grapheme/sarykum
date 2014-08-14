@@ -28,6 +28,71 @@ var App = (function() {
 	};
 })();
 
+jQuery.fn.slideshow = function() {
+	var element = $(this),
+		arrows = $(this).find('.arrow'),
+		arrowLeft = $(this).find('.arrow-left'),
+		arrowRight = $(this).find('.arrow-right'),
+		slides = $(this).find('.slide'),
+		activeSlide = 0;
+
+	//Убираем стрелки, если количество слайдов <= 1
+	if( slides.length <= 1 ) {
+		arrows.hide();
+	}
+
+	arrowLeft.click( function(){
+		element.trigger('slideshow.prev');
+	});
+
+	arrowRight.click( function(){
+		element.trigger('slideshow.next');
+	});
+
+	//Slider events
+	//Previous slide
+	element.bind('slideshow.prev', function(e){
+		var prevIndex = 0;
+
+		slides.filter('.active').removeClass('active');
+
+		if( activeSlide > 0 ) {
+			prevIndex = --activeSlide;
+		} else {
+			prevIndex = activeSlide = slides.length - 1;
+		}
+
+		slides.eq(prevIndex).addClass('active');
+	});
+
+	//Next slider
+	element.bind('slideshow.next', function(e){
+		var nextIndex = 0;
+
+		slides.filter('.active').removeClass('active');
+
+		if( activeSlide < (slides.length - 1) ) {
+			nextIndex = ++activeSlide;
+		} else {
+			nextIndex = activeSlide = 0;
+		}
+
+		slides.eq(nextIndex).addClass('active');
+	});
+
+	//Method show
+	element.bind('slideshow.show', function(e, num){
+		slides.filter('.active').removeClass('active');
+		slides.eq(num).addClass('active');
+
+		console.log('show');
+	});
+
+	//Show first slide at the beginning
+	element.trigger('slideshow.show', activeSlide);
+
+};
+
 jQuery.fn.tabs = function(control) {
 	var element = $(this);
 	control = $(control);
@@ -66,5 +131,6 @@ jQuery.fn.tabs = function(control) {
 	return this;
 };
 
+$('.slideshow').slideshow();
 $("ul#tabs").tabs("#tabContent");
 App.init();

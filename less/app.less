@@ -26,12 +26,12 @@ main {
 		left: 0;
 		bottom: @footerHeight / @htmlFontSize * 1rem;
 	}
-
-	background: @darkBlue;
 }
 
 .sect-wrap {
 	position: relative;
+	max-width: 1600rem / @htmlFontSize;
+	margin: 0 auto;
 	padding: 75rem / @htmlFontSize 90rem / @htmlFontSize 150rem / @htmlFontSize;
 
 	background: #fff;
@@ -49,11 +49,26 @@ main {
 	}
 
 	h1 {
+		position: relative;
+		z-index: 1;
 		width: 55rem;
-		margin: 0 0 35rem / @htmlFontSize;
+		margin: 35rem / @htmlFontSize 0 35rem / @htmlFontSize;
 
 		font-size: 50em / @htmlFontSize;
 		line-height: 60em / 50;
+		text-transform: uppercase;
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+
+	h2 {
+		width: 28rem;
+		margin: 35rem / @htmlFontSize 0 35rem / @htmlFontSize;
+
+		font-size: 18em / @htmlFontSize;
+		line-height: 1.35;
 		text-transform: uppercase;
 	}
 
@@ -65,6 +80,16 @@ main {
 	p {
 		font: .8125em e('/') 1.6923em Georgia, 'Open Sans', sans-serif;
 	}
+
+	.txt-tip {
+		p {
+			margin: 6em / 30 0 0;
+			font-size: 30em / @htmlFontSize;
+			font-family: Georgia, 'Open Sans', sans-serif;
+			font-weight: 300;
+			text-transform: uppercase;
+		}
+	}
 }
 
 .tabs-sect {
@@ -73,6 +98,10 @@ main {
 
 .square-list-sect {
 	padding-bottom: 120rem / @htmlFontSize;
+}
+
+.services {
+	padding-bottom: 80rem / @htmlFontSize;
 }
 
 .mini-footer {
