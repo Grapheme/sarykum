@@ -565,6 +565,16 @@ main.full-screen {
 .btn .icon {
   margin-right: 0.25rem;
 }
+.btn.bordered {
+  padding: 0 1.25rem;
+  background: none;
+  border-radius: 0;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+.btn.bordered:hover {
+  background: #2b4c73;
+}
 .link-imgs-ul {
   padding: 0;
   margin: 0;
@@ -597,10 +607,24 @@ main.full-screen {
   right: 0;
   width: 46.25rem;
   height: 5.5rem;
+  line-height: 5.5rem;
   background: #3368a4;
+}
+.booking-form form {
+  padding: 0 0 0 2.625rem;
+  font-size: 1.2em;
+  text-transform: none;
 }
 .booking-form form section {
   display: inline-block;
+}
+.booking-form form select {
+  height: 1.6875rem;
+  margin: 0 1.375rem;
+}
+.booking-form form input {
+  width: 4.25rem;
+  margin: 0 1.375rem;
 }
 .rombs {
   max-width: 80rem;

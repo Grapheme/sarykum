@@ -25,4 +25,16 @@
 	.icon {
 		margin-right: 4rem / @htmlFontSize;
 	}
+
+	&.bordered {
+		padding: 0 20rem / @htmlFontSize;
+		background: none;
+		border-radius: 0;
+		border: 1px solid @white;
+		color: @white;
+
+		&:hover {
+			background: darken(@midBlue, 10%);
+		}
+	}
 }
