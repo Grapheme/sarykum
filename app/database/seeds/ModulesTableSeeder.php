@@ -22,8 +22,22 @@ class ModulesTableSeeder extends Seeder{
 			'order'=> 0
 		));
 
+        /*
 		Module::create(array(
 			'name' => 'tags',
+			'on' => 1,
+			'order'=> 0
+		));
+        */
+
+		Module::create(array(
+			'name' => 'seo',
+			'on' => 1,
+			'order'=> 0
+		));
+
+		Module::create(array(
+			'name' => 'dictionaries',
 			'on' => 1,
 			'order'=> 0
 		));
