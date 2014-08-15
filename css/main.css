@@ -233,6 +233,7 @@ main.full-screen {
 }
 .services {
   padding-bottom: 5rem;
+  background: url(../img/services-girl.jpg) no-repeat 85% bottom;
 }
 .mini-footer {
   padding-bottom: 3.5rem;
@@ -395,6 +396,15 @@ main.full-screen {
 .table td:first-child {
   font-weight: 400;
 }
+.table td:nth-child(1) {
+  width: 65%;
+}
+.table td:nth-child(2) {
+  width: 20%;
+}
+.table td:nth-child(3) {
+  width: 15%;
+}
 .table .name-td {
   width: 65%;
 }
@@ -510,6 +520,7 @@ main.full-screen {
   position: relative;
   height: 22.5rem;
   background: no-repeat center center / cover;
+  background-color: #ddeef8;
 }
 .link-imgs-ul .link-imgs-li a {
   border-bottom: none;
@@ -536,6 +547,36 @@ main.full-screen {
 }
 .booking-form form section {
   display: inline-block;
+}
+.rombs {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 4.6875rem 5.625rem;
+}
+.rombs .column:first-child {
+  padding-left: 1rem;
+}
+.rombs .column:last-child {
+  padding-right: 1rem;
+}
+.rombs .romb-cont {
+  padding: 10% 10%;
+  color: #194373;
+  font-size: 1em;
+  font-family: Georgia, 'Open Sans', sans-serif;
+  font-style: italic;
+  text-align: center;
+}
+.rombs .romb-cont:after {
+  content: '';
+  display: block;
+  width: 8rem;
+  margin: 1rem auto 0;
+  border-bottom: 1px solid #194373;
+}
+.romb-desc {
+  max-width: 60rem;
+  padding-top: 0;
 }
 .rooms-wrap {
   padding: 2rem;
@@ -603,6 +644,7 @@ main.full-screen {
 }
 .main-header {
   height: 4.125rem;
+  border-bottom: 1px solid #cecece;
   background: #ffffff;
 }
 .main-header .logo {
