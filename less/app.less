@@ -104,6 +104,38 @@ main {
 	padding-bottom: 80rem / @htmlFontSize;
 
 	background: url(../img/services-girl.jpg) no-repeat 85% bottom;
+
+	h2 {
+		position: relative;
+		z-index: 1;
+		width: 55rem;
+		margin: 35rem / @htmlFontSize 0 35rem / @htmlFontSize;
+
+		font-size: 50em / @htmlFontSize;
+		line-height: 60em / 50;
+		text-transform: uppercase;
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+
+	&.what2look {
+		background-image: url(../img/herb.jpg);
+		background-position: 85% center;
+	}
+
+	&.travel {
+		background-image: url(../img/travel.jpg);
+		background-position: 85% center;
+	}
+
+	&.kitchen {
+		padding-left: 30%;
+
+		background-image: url(../img/kitchen.jpg);
+		background-position: 0 center;
+	}
 }
 
 .mini-footer {
