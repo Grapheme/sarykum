@@ -601,7 +601,9 @@ main.full-screen {
   color: #ffffff;
 }
 .booking-form {
-  z-index: 100;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  opacity: 0;
   position: absolute;
   top: 100%;
   right: 0;
@@ -609,6 +611,11 @@ main.full-screen {
   height: 5.5rem;
   line-height: 5.5rem;
   background: #3368a4;
+  cursor: default;
+}
+.booking-form.active {
+  opacity: 1;
+  z-index: 100;
 }
 .booking-form form {
   padding: 0 0 0 2.625rem;
@@ -623,8 +630,8 @@ main.full-screen {
   margin: 0 1.375rem;
 }
 .booking-form form input {
-  width: 4.25rem;
-  margin: 0 1.375rem;
+  width: 5.625rem;
+  margin: 0 0.6875rem;
 }
 .rombs {
   max-width: 80rem;
@@ -721,6 +728,7 @@ main.full-screen {
   text-align: center;
 }
 .main-header {
+  position: relative;
   height: 4.125rem;
   border-bottom: 1px solid #cecece;
   background: #ffffff;
@@ -796,9 +804,10 @@ nav {
   position: relative;
   float: right;
   width: 8.9375rem;
-  height: 100%;
+  height: 100.9%;
   padding: 0 0.5rem 0 1.4375rem;
   background: #194373;
+  cursor: pointer;
   line-height: 4.125rem;
   font-size: 0.75em;
   text-transform: uppercase;

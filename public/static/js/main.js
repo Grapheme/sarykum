@@ -4,6 +4,16 @@ var App = (function() {
 	var $footer = $('.main-footer');
 	var $slideshow = $('#slideshow');
 	var $main = $('main');
+	var bookForm = $('.booking-form');
+
+	$('#bookBtn').click( function(e){
+		e.stopPropagation();
+		bookForm.toggleClass('active');
+	});
+
+	bookForm.click( function(e){
+		e.stopPropagation();
+	});
 
 	return {
 		//If slider is only child of main element

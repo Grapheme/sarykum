@@ -15,8 +15,7 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/fonts.css">
-        <link rel="stylesheet" href="css/jquery-ui.css">
-        <link rel="stylesheet" href="css/jquery-ui.theme.css">
+        <link rel="stylesheet" href="css/metallic.css">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
@@ -66,11 +65,11 @@
                             </section>
                             <section>
                                 с
-                                <input id="datepicker" type="text">
+                                <input id="datepickerFrom" class="datepicker" type="text">
                             </section>
                             <section>
                                 по
-                                <input type="text">
+                                <input id="datepickerTo" type="text">
                             </section>
                             <button class="btn bordered">
                                 Забронировать
@@ -157,15 +156,30 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script src="js/vendor/zebra_datepicker.js"></script>
         <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
+            $(document).ready(function() {
+                $('#datepickerFrom').Zebra_DatePicker({
+                  direction: true,
+                  pair: $('#datepicker-example7-end'),
+                  days: ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'],
+                  days_abbr: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+                  months: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+                  show_select_today: 'Сегодня',
+                  lang_clear_date: 'Очистить',
+                  format: 'd.m.y'
+                });
+
+                $('#datepickerTo').Zebra_DatePicker({
+                  direction: 1,
+                  days: ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'],
+                  days_abbr: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+                  months: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+                  show_select_today: 'Сегодня',
+                  lang_clear_date: 'Очистить',
+                  format: 'd.m.y'
+                });
+             });
         </script>
     </body>
 </html>

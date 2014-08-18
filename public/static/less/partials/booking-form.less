@@ -1,5 +1,6 @@
 .booking-form {
-	z-index: 100;
+	.transition;
+	opacity: 0;
 	position: absolute;
 	top: 100%;
 	right: 0;
@@ -8,6 +9,12 @@
 	line-height: 88rem / @htmlFontSize;
 
 	background: #3368a4;
+	cursor: default;
+
+	&.active {
+		opacity: 1;
+		z-index: 100;
+	}
 	
 	form {
 		padding: 0 0 0 42rem / @htmlFontSize;
@@ -24,8 +31,8 @@
 		}
 
 		input {
-			width: 68rem / @htmlFontSize;
-			margin: 0 22rem / @htmlFontSize;
+			width: 90rem / @htmlFontSize;
+			margin: 0 11rem / @htmlFontSize;
 		}
 	}
 }
