@@ -166,7 +166,7 @@ a:hover {
 .wrapper {
   position: relative;
   height: 100%;
-  min-height: 50rem;
+  min-height: 46rem;
 }
 main.full-screen {
   position: absolute;
@@ -296,6 +296,7 @@ main.full-screen {
   position: relative;
   width: 100%;
   height: 100%;
+  background: #194373;
 }
 .slideshow .slide {
   -webkit-transition: all 2s ease;
@@ -329,6 +330,93 @@ main.full-screen {
 }
 .slideshow .slide.active {
   opacity: 1;
+}
+.slideshow .slide .slide-terms {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  height: 16.3125rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.slideshow .slide .slide-terms .slide-term {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  position: relative;
+  float: left;
+  width: 33.333%;
+  height: 100%;
+  padding: 2.25rem 4.125rem 0;
+  background: #194373;
+  background: rgba(25, 56, 115, 0.4);
+  text-align: center;
+  font-weight: 300;
+  cursor: pointer;
+  color: #ffffff;
+}
+.slideshow .slide .slide-terms .slide-term:hover {
+  background: #102b49;
+  background: rgba(25, 56, 115, 0.8);
+}
+.slideshow .slide .slide-terms .slide-term a {
+  border-bottom: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.slideshow .slide .slide-terms .term-head {
+  padding: 0 0 3.875rem;
+  font-size: 0.9375em;
+  text-transform: uppercase;
+}
+.slideshow .slide .roomslide-data {
+  position: absolute;
+  z-index: 1;
+  bottom: 1.375rem;
+  left: 0;
+  width: 50%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.slideshow .slide .roomslide-data.data-left {
+  left: 0;
+}
+.slideshow .slide .roomslide-data.data-right {
+  left: 50%;
+}
+.slideshow .slide .roomslide-data .name {
+  display: inline-block;
+  font-size: 1.5em;
+}
+.slideshow .slide .roomslide-data .price {
+  display: inline-block;
+  font-size: 1.5em;
+}
+.slideshow .slide .roomslide-data .price:after {
+  content: "";
+  font-family: 'fontello';
+  font-size: 0.5em;
+  vertical-align: top;
+}
+.slideshow .slide .roomslide {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.slideshow .slide .roomslide.roomslide-left {
+  left: 0;
+}
+.slideshow .slide .roomslide.roomslide-right {
+  left: 50%;
 }
 .slideshow .slide-cont {
   position: relative;
@@ -607,7 +695,7 @@ main.full-screen {
   position: absolute;
   top: 100%;
   right: 0;
-  width: 46.25rem;
+  width: 47.5rem;
   height: 5.5rem;
   line-height: 5.5rem;
   background: #3368a4;
@@ -730,7 +818,7 @@ main.full-screen {
 .main-header {
   position: relative;
   height: 4.125rem;
-  border-bottom: 1px solid #cecece;
+  box-shadow: 0 1px 0 0 #cecece;
   background: #ffffff;
 }
 .main-header .logo {
@@ -771,13 +859,36 @@ nav {
   text-align: center;
   text-transform: uppercase;
 }
+.nav-ul .nav-li:hover {
+  color: #194373;
+  text-decoration: underline;
+}
 .nav-ul .nav-li.lang {
   min-width: 0;
   color: #194373;
 }
+.nav-ul .nav-li.lang .lang-ul {
+  -webkit-transition: all 0.4s cubic-bezier(0.87, -0.41, 0.19, 1.44);
+  transition: all 0.4s cubic-bezier(0.87, -0.41, 0.19, 1.44);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  z-index: 100;
+  height: 100%;
+  background: #ffffff;
+  overflow: hidden;
+}
+.nav-ul .nav-li.lang .lang-ul:hover {
+  height: 200%;
+}
+.nav-ul .nav-li.lang .lang-ul:hover .lang-li {
+  background: #cecece;
+}
 .nav-ul .nav-li.lang a {
   padding: 0 0.9375rem;
   text-decoration: underline;
+  outline: none;
 }
 .nav-ul .nav-li.lang a:hover {
   text-decoration: none;
@@ -848,6 +959,12 @@ nav {
   color: #e8e8e8;
   color: rgba(255, 255, 255, 0.75);
 }
+.main-footer address {
+  float: left;
+  margin-left: 1.5rem;
+  font-style: normal;
+  text-transform: none;
+}
 .main-footer.static-footer {
   position: relative;
   top: 0;
@@ -856,6 +973,9 @@ nav {
 @media screen and (max-width: 1400px) {
   html {
     font-size: 13px;
+  }
+  .slideshow .slide-cont {
+    margin-top: 6%;
   }
 }
 /* ==========================================================================

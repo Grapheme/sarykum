@@ -6,6 +6,8 @@ var App = (function() {
 	var $main = $('main');
 	var bookForm = $('.booking-form');
 
+	//Events for booking form
+
 	$('#bookBtn').click( function(e){
 		e.stopPropagation();
 		bookForm.toggleClass('active');
@@ -13,6 +15,13 @@ var App = (function() {
 
 	bookForm.click( function(e){
 		e.stopPropagation();
+	});
+
+	//Events for language
+
+	$('.lang-li').click( function(){
+		$('.lang-li').removeClass('active');
+		$(this).addClass('active');
 	});
 
 	return {
@@ -38,7 +47,7 @@ var App = (function() {
 	};
 })();
 
-jQuery.fn.slideshow = function() {
+jQuery.fn.slideshow = function(obj) {
 	var element = $(this),
 		arrows = $(this).find('.arrow'),
 		arrowLeft = $(this).find('.arrow-left'),
@@ -100,7 +109,13 @@ jQuery.fn.slideshow = function() {
 
 	//Show first slide at the beginning
 	element.trigger('slideshow.show', activeSlide);
-
+	if(obj.autoplay === true) {
+		console.log('loop');
+		var timer = setTimeout(function autoplay() {
+			element.trigger('slideshow.next');
+			timer = setTimeout(autoplay, 6000);
+		}, 6000);
+	}
 };
 
 jQuery.fn.tabs = function(control) {
@@ -141,6 +156,8 @@ jQuery.fn.tabs = function(control) {
 	return this;
 };
 
-$('.slideshow').slideshow();
+$('.slideshow').slideshow({
+	autoplay: false
+});
 $("ul#tabs").tabs("#tabContent");
 App.init();

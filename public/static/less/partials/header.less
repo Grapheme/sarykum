@@ -1,7 +1,7 @@
 .main-header {
 	position: relative;
 	height: @headerHeight / @htmlFontSize * 1rem;
-	border-bottom: 1px solid @gray;
+	box-shadow: 0 1px 0 0 @gray;
 
 	background: @white;
 
@@ -47,13 +47,38 @@ nav {
 		text-align: center;
 		text-transform: uppercase;
 
+		&:hover {
+			color: @darkBlue;
+			text-decoration: underline;
+		}
+
 		&.lang {
 			min-width: 0;
 			color: @darkBlue;
 
+			.lang-ul {
+				.transition(all, .4s, cubic-bezier(.87,-.41,.19,1.44));
+				.list-unstyled;
+				position: relative;
+				z-index: 100;
+				height: 100%;
+				background: @white;
+				
+				overflow: hidden;
+
+				&:hover {
+					height: 200%;
+
+					.lang-li {
+						background: @gray;
+					}
+				}
+			}
+
 			a {
 				padding: 0 15rem / @htmlFontSize;
 				text-decoration: underline;
+				outline: none;
 
 				&:hover {
 					text-decoration: none;
