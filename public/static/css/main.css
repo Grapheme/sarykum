@@ -1140,19 +1140,37 @@ main.full-screen {
   background: no-repeat center center / cover;
   background-color: #ddeef8;
 }
-.link-imgs-ul .link-imgs-li a {
+.link-imgs-ul .link-imgs-li a,
+.link-imgs-ul .link-imgs-li h2 {
   border-bottom: none;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  margin: 0;
   font-size: 2em;
   font-weight: 300;
   line-height: 22.5rem;
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
+  cursor: pointer;
+}
+.link-imgs-ul .link-imgs-dd {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  height: 0;
+  padding: 0 2rem;
+  overflow: auto;
+}
+.link-imgs-ul .link-imgs-dd h3 {
+  margin: 0;
+  font-size: 2em;
+}
+.link-imgs-ul .link-imgs-dd.active {
+  height: 22.5rem;
+  padding: 2rem;
 }
 .booking-form {
   -webkit-transition: all 0.5s ease;
@@ -1333,6 +1351,28 @@ main.full-screen {
   width: 38.25rem;
   margin: 0 auto 3.5rem;
   text-align: center;
+}
+.actions-wrap {
+  background: none;
+}
+.actions-ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.actions-ul .actions-li {
+  margin-bottom: 5rem;
+}
+.actions-ul .actions-li .action-img {
+  border-bottom: none;
+  display: block;
+  width: 90%;
+  height: 15.625rem;
+}
+.actions-ul h2 {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: .75rem;
 }
 .main-header {
   position: relative;

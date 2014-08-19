@@ -27,6 +27,15 @@ var App = (function() {
 		
 	});
 
+	$('dt.link-imgs-li').click( function(){
+		if( $(this).next().hasClass('active') ) {
+			$(this).next().removeClass('active');
+		} else {
+			$('.link-imgs-dd').removeClass('active');
+			$(this).next().addClass('active');
+		}
+	});
+
 	//Events for language
 
 	$('.lang-li').click( function(){
