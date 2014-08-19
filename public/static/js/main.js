@@ -157,7 +157,7 @@ jQuery.fn.tabs = function(control) {
 };
 
 $('.slideshow').slideshow({
-	autoplay: false
+	autoplay: true
 });
 $("ul#tabs").tabs("#tabContent");
 App.init();

@@ -225,6 +225,11 @@ main.full-screen {
   font-weight: 300;
   text-transform: uppercase;
 }
+.icons-ul .icon {
+  font-size: 1.2em;
+  color: #b8b185;
+  margin-right: 1em;
+}
 .tabs-sect {
   padding: 0 8.125rem;
 }
@@ -782,6 +787,7 @@ main.full-screen {
 .room-item .room-price {
   line-height: .75;
   font-size: 3em;
+  font-family: Georgia, 'Open Sans', sans-serif;
 }
 .room-item .room-price:after {
   content: '\e802';
@@ -976,6 +982,15 @@ nav {
   }
   .slideshow .slide-cont {
     margin-top: 6%;
+  }
+  .sect-wrap p {
+    font-size: 1.1em;
+  }
+  .sect-wrap .section-desc {
+    font-size: 1.2em;
+  }
+  .sect-wrap h2 {
+    font-size: 1.35em;
   }
 }
 /* ==========================================================================
