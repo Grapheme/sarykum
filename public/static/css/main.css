@@ -187,7 +187,7 @@ main.full-screen {
   content: '';
   position: absolute;
   top: 4.6875rem;
-  left: 50%;
+  right: 5%;
   width: 35.625rem;
   height: 35.625rem;
   background: url(../img/rest.jpg) no-repeat 0 0 / 100% 100%;
@@ -238,7 +238,7 @@ main.full-screen {
 }
 .services {
   padding-bottom: 5rem;
-  background: url(../img/services-girl.jpg) no-repeat 85% bottom;
+  background: url(../img/services-girl.jpg) no-repeat 90% bottom;
 }
 .services h2 {
   position: relative;
@@ -258,12 +258,14 @@ main.full-screen {
 }
 .services.travel {
   background-image: url(../img/travel.jpg);
-  background-position: 85% center;
+  background-position: 95% center;
+  background-size: 28% auto;
 }
 .services.kitchen {
   padding-left: 30%;
   background-image: url(../img/kitchen.jpg);
   background-position: 0 center;
+  background-size: 29% auto;
 }
 .mini-footer {
   padding-bottom: 3.5rem;
@@ -762,8 +764,8 @@ main.full-screen {
 .rooms-wrap:after {
   content: '';
   position: absolute;
-  top: 11.25rem;
-  left: 50%;
+  top: 13.5rem;
+  right: 5%;
   width: 35.625rem;
   height: 35.625rem;
   background: url(../img/rest.jpg) no-repeat 0 0 / 100% 100%;
@@ -833,7 +835,7 @@ main.full-screen {
   width: 20.75rem;
   height: 100%;
   margin: 0;
-  background: url(../img/logo.jpg) no-repeat 0 0 / 100% 100%;
+  background: url(../img/logo.svg) no-repeat 0 0 / 100% 100%;
   text-indent: -9999rem;
 }
 .main-header .logo a {
