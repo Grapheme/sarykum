@@ -15,11 +15,32 @@
 		opacity: 1;
 		z-index: 100;
 	}
+
+	.form-success {
+		.transition;
+		display: none;
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: #3368a4;
+
+		text-align: center;
+
+		&.active {
+			z-index: 1;
+			display: block;
+		}
+	}
 	
 	form {
 		padding: 0 0 0 42rem / @htmlFontSize;
 		font-size: 1.2em;
 		text-transform: none;
+		background: #3368a4;
+
 
 		section {
 			display: inline-block;

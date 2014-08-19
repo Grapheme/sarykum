@@ -17,6 +17,16 @@ var App = (function() {
 		e.stopPropagation();
 	});
 
+	$('.booking-form .btn').click( function(){
+		$('.form-success').addClass('active');
+
+		setTimeout( function(){
+			bookForm.removeClass('active');
+			$('.form-success').removeClass('active');
+		}, 2500);
+		
+	});
+
 	//Events for language
 
 	$('.lang-li').click( function(){
@@ -157,7 +167,7 @@ jQuery.fn.tabs = function(control) {
 };
 
 $('.slideshow').slideshow({
-	autoplay: true
+	autoplay: false
 });
 $("ul#tabs").tabs("#tabContent");
 App.init();
@@ -197,7 +207,8 @@ $(document).ready(function() {
     months: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
     show_select_today: 'Сегодня',
     lang_clear_date: 'Очистить',
-    format: 'd.m.y'
+    format: 'd.m.y',
+    header_navigation: ['','']
   });
 
   $('#datepickerTo').Zebra_DatePicker({
@@ -207,6 +218,7 @@ $(document).ready(function() {
     months: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
     show_select_today: 'Сегодня',
     lang_clear_date: 'Очистить',
-    format: 'd.m.y'
+    format: 'd.m.y',
+    header_navigation: ['','']
   });
 });

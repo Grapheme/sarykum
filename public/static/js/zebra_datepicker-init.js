@@ -7,7 +7,8 @@ $(document).ready(function() {
     months: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
     show_select_today: 'Сегодня',
     lang_clear_date: 'Очистить',
-    format: 'd.m.y'
+    format: 'd.m.y',
+    header_navigation: ['','']
   });
 
   $('#datepickerTo').Zebra_DatePicker({
@@ -17,6 +18,7 @@ $(document).ready(function() {
     months: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
     show_select_today: 'Сегодня',
     lang_clear_date: 'Очистить',
-    format: 'd.m.y'
+    format: 'd.m.y',
+    header_navigation: ['','']
   });
 });

@@ -701,8 +701,9 @@ main.full-screen {
   margin-top: 0;
 }
 .services.what2look {
-  background-image: url(../img/herb.jpg);
+  background-image: url(../img/herb.svg);
   background-position: 85% center;
+  background-size: 15% auto;
 }
 .services.travel {
   background-image: url(../img/travel.jpg);
@@ -786,6 +787,9 @@ main.full-screen {
 .slideshow .slide.active {
   opacity: 1;
 }
+.slideshow .slide.terms-slide .slide-cont {
+  margin-top: 3%;
+}
 .slideshow .slide .slide-terms {
   position: absolute;
   left: 0;
@@ -805,16 +809,10 @@ main.full-screen {
   width: 33.333%;
   height: 100%;
   padding: 2.25rem 4.125rem 0;
-  background: #194373;
-  background: rgba(25, 56, 115, 0.4);
   text-align: center;
   font-weight: 300;
   cursor: pointer;
   color: #ffffff;
-}
-.slideshow .slide .slide-terms .slide-term:hover {
-  background: #102b49;
-  background: rgba(25, 56, 115, 0.8);
 }
 .slideshow .slide .slide-terms .slide-term a {
   border-bottom: none;
@@ -825,9 +823,22 @@ main.full-screen {
   height: 100%;
 }
 .slideshow .slide .slide-terms .term-head {
+  position: relative;
   padding: 0 0 3.875rem;
   font-size: 0.9375em;
   text-transform: uppercase;
+}
+.slideshow .slide .slide-terms .term-head:hover:after {
+  content: '\e809';
+}
+.slideshow .slide .slide-terms .term-head:after {
+  content: '\e80a';
+  font-family: 'fontello';
+  position: absolute;
+  top: 2.5rem;
+  left: 0;
+  width: 100%;
+  text-align: center;
 }
 .slideshow .slide .roomslide-data {
   position: absolute;
@@ -1160,10 +1171,28 @@ main.full-screen {
   opacity: 1;
   z-index: 100;
 }
+.booking-form .form-success {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  display: none;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #3368a4;
+  text-align: center;
+}
+.booking-form .form-success.active {
+  z-index: 1;
+  display: block;
+}
 .booking-form form {
   padding: 0 0 0 2.625rem;
   font-size: 1.2em;
   text-transform: none;
+  background: #3368a4;
 }
 .booking-form form section {
   display: inline-block;
@@ -1222,22 +1251,56 @@ main.full-screen {
   margin: 1.25rem 0;
 }
 .room-item {
+  position: relative;
   height: 35rem;
-  padding: 0 0 0 10.5%;
   background: no-repeat center center / cover;
+  color: #ffffff;
+}
+.room-item:hover {
+  color: transparent;
+}
+.room-item:hover a {
+  background: none;
+}
+.room-item:hover .room-name {
+  color: rgba(255, 255, 255, 0.35);
+  text-shadow: none;
+}
+.room-item:hover .room-price {
+  color: rgba(255, 255, 255, 0.35);
+  text-shadow: none;
+}
+.room-item a {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0 0 0 10.5%;
+  background: rgba(0, 0, 0, 0.3);
 }
 .room-item .room-name {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   margin: 0 0 2rem;
   padding: 3.625rem 0 0;
   font-size: 3em;
   line-height: .75;
   font-weight: 600;
   text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.35);
 }
 .room-item .room-price {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   line-height: .75;
   font-size: 3em;
   font-family: Georgia, 'Open Sans', sans-serif;
+  color: #ffffff;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.35);
 }
 .room-item .room-price:after {
   content: '\e802';
@@ -1426,6 +1489,16 @@ nav {
   top: 0;
   bottom: auto;
 }
+@media screen and (max-height: 900px) {
+  .slideshow .terms-slide .slide-terms {
+    height: 12rem;
+  }
+}
+@media screen and (max-height: 825px) {
+  .slideshow .terms-slide .slide-desc {
+    display: none;
+  }
+}
 @media screen and (max-width: 1400px) {
   html {
     font-size: 13px;
@@ -1445,8 +1518,8 @@ nav {
 }
 @font-face {
   font-family: 'fontello';
-  src: url('../fonts/fontello.eot?27482106');
-  src: url('../fonts/fontello.eot?27482106#iefix') format('embedded-opentype'), url('../fonts/fontello.woff?27482106') format('woff'), url('../fonts/fontello.ttf?27482106') format('truetype'), url('../fonts/fontello.svg?27482106#fontello') format('svg');
+  src: url('../fonts/fontello.eot?27482107');
+  src: url('../fonts/fontello.eot?27482107#iefix') format('embedded-opentype'), url('../fonts/fontello.woff?27482107') format('woff'), url('../fonts/fontello.ttf?27482107') format('truetype'), url('../fonts/fontello.svg?27482107#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -1501,6 +1574,14 @@ nav {
   content: '\e808';
 }
 /* '' */
+.icon-rombic-fill:before {
+  content: '\e809';
+}
+/* '' */
+.icon-rombic:before {
+  content: '\e80a';
+}
+/* '' */
 /*
 
     Zebra_DatePicker: a lightweight jQuery date picker plugin
@@ -1520,10 +1601,10 @@ nav {
 }
 .Zebra_DatePicker {
   position: absolute;
-  background: #373737;
-  border: 3px solid #373737;
+  background: #7D7E7E;
+  border: 3px solid #7D7E7E;
   z-index: 100;
-  font-family: Geneva, 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 13px;
 }
 .Zebra_DatePicker * {
@@ -1563,13 +1644,6 @@ nav {
   background: #dedede url('metallic/default-date.png') repeat-x top;
   color: #666666;
 }
-.Zebra_DatePicker,
-.Zebra_DatePicker .dp_header .dp_hover,
-.Zebra_DatePicker .dp_footer .dp_hover {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-}
 /* = VISIBLE/HIDDEN STATES (USE TRANSITIONS FOR EFFECTS)
 ----------------------------------------------------------------------------------------------------------------------*/
 .Zebra_DatePicker.dp_visible {
@@ -1603,6 +1677,14 @@ nav {
 .Zebra_DatePicker .dp_header .dp_hover {
   background: #67AABB;
   color: #ffffff;
+}
+.Zebra_DatePicker .dp_header .dp_previous:after {
+  content: '\e801';
+  font-family: 'fontello';
+}
+.Zebra_DatePicker .dp_header .dp_next:after {
+  content: '\e800';
+  font-family: 'fontello';
 }
 /* = DATEPICKER
 ----------------------------------------------------------------------------------------------------------------------*/

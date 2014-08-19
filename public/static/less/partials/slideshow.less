@@ -42,6 +42,12 @@
 			opacity: 1;
 		}
 
+		&.terms-slide {
+			.slide-cont {
+			    margin-top: 3%;
+			}
+		}
+
 		.slide-terms {
 			position: absolute;
 			left: 0;
@@ -60,19 +66,11 @@
 				height: 100%;
 				padding: 36rem / @htmlFontSize 66rem / @htmlFontSize 0;
 				
-				background: @darkBlue;
-				background: rgba(25, 56, 115, .4);
-
 				text-align: center;
 				font-weight: 300;
 
 				cursor: pointer;
 				color: @white;
-
-				&:hover {
-					background: darken(@darkBlue, 10%);
-					background: rgba(25, 56, 115, .8); 
-				}
 
 				a {
 					.reset-typical;
@@ -85,9 +83,27 @@
 			}
 
 			.term-head {
+				position: relative;
 				padding: 0 0 62rem / @htmlFontSize;
 				font-size: 15em / @htmlFontSize;
 				text-transform: uppercase;
+
+				&:hover {
+					&:after {
+						content: '\e809';
+					}
+				}
+
+				&:after {
+					content: '\e80a';
+					font-family: 'fontello';
+					position: absolute;
+					top: 2.5rem;
+					left: 0;
+					width: 100%;
+
+					text-align: center;
+				}
 			}
 		}
 
