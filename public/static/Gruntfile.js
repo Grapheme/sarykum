@@ -1,5 +1,18 @@
 module.exports = function(grunt) {
   grunt.initConfig({
+    concat: {
+      dist: {
+        // the files to concatenate
+        src: [
+          'js/main.js',
+          'js/plugins.js',
+          'js/vendor/zebra_datepicker.js',
+          'js/zebra_datepicker-init.js'
+        ],
+        // the location of the resulting JS file
+        dest: 'js/index.js'
+      }
+    },
     less: {
       development: {
         options: {
@@ -13,8 +26,8 @@ module.exports = function(grunt) {
     },
     watch: {
       styles: {
-        files: ['less/**/*.less'], // which files to watch
-        tasks: ['less'],
+        files: ['less/**/*.less', 'js/**/*.js'], // which files to watch
+        tasks: ['less', 'concat'],
         options: {
           nospawn: true
         }
@@ -22,6 +35,7 @@ module.exports = function(grunt) {
     }
   });
 
+  grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
