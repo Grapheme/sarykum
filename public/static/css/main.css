@@ -1826,6 +1826,12 @@ button.Zebra_DatePicker_Icon {
 button.Zebra_DatePicker_Icon_Inside {
   margin: 0 3px 0 0;
 }
+.datepickerFrom .Zebra_DatePicker_Icon_Inside {
+  margin: 0 0.1875rem 0 5.625rem !important;
+}
+.datepickerTo .Zebra_DatePicker_Icon_Inside {
+  margin: 0 0.1875rem 0 6.25rem !important;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */

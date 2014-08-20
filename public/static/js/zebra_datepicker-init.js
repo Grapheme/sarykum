@@ -1,7 +1,7 @@
 $(document).ready(function() {
   $('#datepickerFrom').Zebra_DatePicker({
     direction: true,
-    pair: $('#datepicker-example7-end'),
+    pair: $('#datepickerTo'),
     days: ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'],
     days_abbr: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
     months: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
