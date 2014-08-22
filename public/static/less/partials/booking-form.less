@@ -4,9 +4,8 @@
 	position: absolute;
 	top: 100%;
 	right: 0;
-	width: 47.5rem;
-	height: 88rem / @htmlFontSize;
-	line-height: 88rem / @htmlFontSize;
+	width: 37rem;
+	height: 13rem;
 
 	background: #3368a4;
 	cursor: default;
@@ -42,18 +41,58 @@
 		background: #3368a4;
 
 
-		section {
+		.inline {
+			position: relative;
 			display: inline-block;
+		}
+
+		header {
+			height: 35rem / @htmlFontSize;
+			text-transform: uppercase;
+		}
+
+		.date-data {
+			height: 95rem / @htmlFontSize;
+		}
+
+		.error {
+			input {
+				border-color: lighten(#ff0000, 30%);
+			}
+		}
+
+		.text-data {
+			input {
+				width: 247rem / @htmlFontSize;
+				margin-left: 0;
+				margin-right: 22rem / @htmlFontSize;
+			}
 		}
 
 		select {
 			height: 27rem / @htmlFontSize;
-			margin: 0 22rem / @htmlFontSize;
+			margin: 0 11rem / @htmlFontSize 0 0;
 		}
 
 		input {
-			width: 90rem / @htmlFontSize;
+			.transition;
+			width: 7.5rem;
 			margin: 0 11rem / @htmlFontSize;
+			padding: .25rem;
+			border-style: solid;
+		}
+
+		.price {
+			font-size: 1.1em;
+
+			span {
+				font-weight: 600;
+			}
+		}
+
+		.btn {
+			float: right;
+			margin: 10rem / @htmlFontSize 28rem / @htmlFontSize 10rem / @htmlFontSize 10rem / @htmlFontSize;
 		}
 	}
 }

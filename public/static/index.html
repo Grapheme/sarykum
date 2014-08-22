@@ -64,24 +64,50 @@
                             Ваша бронь успешно отправлена администратору
                         </div>
                         <form>
-                            <section>
-                                Я хочу
-                                <select>
-                                    <option>Стандартный номер</option>
-                                    <option>Нестандартный номер</option>
-                                </select>
-                            </section>
-                            <section class="datepickerFrom">
-                                с
-                                <input id="datepickerFrom" class="datepicker" type="text">
-                            </section>
-                            <section class="datepickerTo">
-                                по
-                                <input id="datepickerTo" type="text">
-                            </section>
-                            <button type="button" class="btn bordered">
-                                Забронировать
-                            </button>                           
+                            <fieldset class="date-data">
+                                <section>
+                                    <header>
+                                        Выберите номер и дату
+                                    </header>
+                                    <div class="inline">
+                                        <select>
+                                            <option>Стандартный номер</option>
+                                            <option>Нестандартный номер</option>
+                                        </select>
+                                    </div>
+                                    <section class="datepickerFrom inline">
+                                        с
+                                        <input id="datepickerFrom" class="datepicker" type="text">
+                                    </section>
+                                    <section class="datepickerTo inline">
+                                        по
+                                        <input id="datepickerTo" type="text">
+                                    </section> 
+                                </section>
+                            </fieldset>
+                            <fieldset class="text-data">
+                                <section>
+                                    <header>
+                                        Представьтесь
+                                    </header>
+                                    <div class="inline">
+                                        <input type="text" placeholder="Представьтесь">
+                                    </div>
+                                    <div class="inline">
+                                        <input type="text" placeholder="Телефон или email">
+                                    </div>
+                                </section>
+                            </fieldset>
+                            <fieldset>
+                                <section>
+                                    <div class="price inline">
+                                        Стоимость услуги за сутки: <span>4500 руб.</span>
+                                    </div>                                                                        
+                                    <button type="button" class="btn bordered inline">
+                                        Забронировать
+                                    </button> 
+                                </section>
+                            </fieldset>                                                   
                         </form>
                     </div>
                 </div>
