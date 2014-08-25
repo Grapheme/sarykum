@@ -23,70 +23,112 @@
 
         <div class="wrapper">
             <header class="main-header">
-                <h1 class="logo">
-                    Sarykum hotel and spa
-                </h1>
+                <div class="logo">
+                    <a href="index.html"></a>
+                </div>
                 <nav>
                     <ul class="nav-ul">
                         <li class="nav-li">
-                            <a href="rooms.html">Номера</a>
+                            <a data-hover="Номера" href="rooms.html">
+                                <span>Номера
+                            </a>
                         <li class="nav-li">
-                            <a href="spa.html">SPA</a>
+                            <a data-hover="SPA" href="spa.html">
+                                <span>SPA
+                            </a>
                         <li class="nav-li">
-                            <a href="rest.html">Ресторан</a>
+                            <a data-hover="Ресторан" href="rest.html">
+                                <span>Ресторан
+                            </a>
                         <li class="nav-li">
-                            <a href="discover.html">Discover Dagestan</a>
+                            <a data-hover="Discover Dagestan" href="discover.html">
+                                <span>Discover Dagestan
+                            </a>
                         <li class="nav-li">
-                            <a href="services.html">Услуги</a>
+                            <a data-hover="Услуги" href="services.html">
+                                <span>Услуги</span>
+                            </a>
                         <li class="nav-li">
-                            <a href="#">Акции</a>
-                        <li class="nav-li lang">
-                            <ul class="lang-ul">
-                                <li class="lang-li">
-                                    <a href="#">EN</a>
-                                </li>
-                                <li class="lang-li">
-                                    <a href="#">RU</a>
-                                </li>
-                            </ul>
-                            
+                            <a data-hover="Акции" href="#">
+                                <span>Акции
+                            </a>
                     </ul>
                 </nav>
+                <div class="booking" id="bookBtn">
+                    Бронировать <span class="icon icon-angle-right"></span>
+                    <div class="booking-form">
+                        <div class="form-success">
+                            Ваша бронь успешно отправлена администратору
+                        </div>
+                        <form>
+                            <fieldset class="date-data">
+                                <section>
+                                    <header>
+                                        Выберите номер и дату
+                                    </header>
+                                    <div class="inline">
+                                        <select>
+                                            <option>Стандартный номер</option>
+                                            <option>Нестандартный номер</option>
+                                        </select>
+                                    </div>
+                                    <section class="datepickerFrom inline">
+                                        с
+                                        <input id="datepickerFrom" class="datepicker" type="text">
+                                    </section>
+                                    <section class="datepickerTo inline">
+                                        по
+                                        <input id="datepickerTo" type="text">
+                                    </section> 
+                                </section>
+                            </fieldset>
+                            <fieldset class="text-data">
+                                <section>
+                                    <header>
+                                        Представьтесь
+                                    </header>
+                                    <div class="inline">
+                                        <input type="text" placeholder="Представьтесь">
+                                    </div>
+                                    <div class="inline">
+                                        <input type="text" placeholder="Телефон или email">
+                                    </div>
+                                </section>
+                            </fieldset>
+                            <fieldset>
+                                <section>
+                                    <div class="price inline">
+                                        Стоимость услуги за сутки: <span>4500 руб.</span>
+                                    </div>                                                                        
+                                    <button type="button" class="btn bordered inline">
+                                        Забронировать
+                                    </button> 
+                                </section>
+                            </fieldset>                                                   
+                        </form>
+                    </div>
+                </div>
                 <div class="phone">
                     <a href="tel:+34560052222">
                         <span class="icon icon-phone"></span> +34 56 005 22 22
                     </a>
                 </div>
-                <div class="booking" id="bookBtn">
-                    Бронировать <span class="icon icon-angle-right"></span>
-                    <div class="booking-form">
-                        <form>
-                            <section>
-                                Я хочу
-                                <select>
-                                    <option>Стандартный номер</option>
-                                    <option>Нестандартный номер</option>
-                                </select>
-                            </section>
-                            <section>
-                                с
-                                <input id="datepickerFrom" class="datepicker" type="text">
-                            </section>
-                            <section>
-                                по
-                                <input id="datepickerTo" type="text">
-                            </section>
-                            <button class="btn bordered">
-                                Забронировать
-                            </button>                           
-                        </form>
-                    </div>
-                </div>
+                <div class="lang">
+                    <ul class="lang-ul">
+                        <li class="lang-li">
+                            <a href="#">EN</a>
+                        </li>
+                        <li class="lang-li">
+                            <a href="#">RU</a>
+                        </li>
+                    </ul>
+                </div>                
             </header>
 
             <main role="main">
                 <div class="slideshow" id="slideshow">
-                    <div class="slide" style="background-image: url(img/slides/01.jpg)">
+                    <div class="slide">
+                        <div class="slide-bg" style="background-image: url(img/slides/01.jpg);"></div>
                         <section class="slide-cont">
                             <header>
                                 <div class="slide-logo">
@@ -345,14 +387,20 @@
                 </section>
                 <section class="sect-wrap square-list-sect">
                     <ul class="square-ul clearfix">
-                        <li class="square-li" style="background-image: url(img/lists/01.jpg);">
-                            <a href="#">Свадьбы до 300 мест</a>
+                        <li class="square-li">
+                            <a href="#"></a>
+                            <div class="square-li-img" style="background-image: url(img/lists/01.jpg);"></div>
+                            <span>Свадьбы до 300 мест</span>
                         </li>
-                        <li class="square-li" style="background-image: url(img/lists/02.jpg);">
-                            <a href="#">Бизнес-ланчи</a>
+                        <li class="square-li">
+                            <a href="#"></a>
+                            <div class="square-li-img" style="background-image: url(img/lists/02.jpg);"></div>
+                            <span>Бизнес-ланчи</span>
                         </li>
-                        <li class="square-li" style="background-image: url(img/lists/03.jpg);">
-                            <a href="#">Банкеты</a>
+                        <li class="square-li">
+                            <a href="#"></a>
+                            <div class="square-li-img" style="background-image: url(img/lists/03.jpg);"></div>
+                            <span>Банкеты</span>
                         </li>
                     </ul>
                 </section>

@@ -7,7 +7,9 @@ module.exports = function(grunt) {
           'js/main.js',
           'js/plugins.js',
           'js/vendor/zebra_datepicker.js',
-          'js/zebra_datepicker-init.js'
+          'js/zebra_datepicker-init.js',
+          'js/vendor/jquery.customSelect.min.js',
+          'js/jquery.customSelect.init.js'
         ],
         // the location of the resulting JS file
         dest: 'js/index.js'

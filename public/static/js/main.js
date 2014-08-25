@@ -47,6 +47,15 @@ var App = (function() {
 		//If slider is only child of main element
 		//Calculate it's height as window 100% height - (header + footer) height
 		//Else we calculate 100% - header heigth, also adding the static-footer class to main footer
+		footerInit: function() {
+			var $window = $(window);
+			var $footer = $('.main-footer');
+			var $main = $('main');
+
+			if($main.height() < $window.height()){
+				$footer.removeClass('static-footer');
+			}
+		},
 		slideshowInit: function() {
 			$slideshow.height( $window.height() - $header.height() );
 			$footer.addClass('static-footer');
@@ -60,8 +69,15 @@ var App = (function() {
 				//Align slider on resize
 				$(window).resize( function() {
 					App.slideshowInit();
+					App.footerInit();
 				});
 			}
+
+			$(window).load(function() {
+				$('body').addClass('loaded');
+			});
+
+			this.footerInit();
 		}
 	};
 })();

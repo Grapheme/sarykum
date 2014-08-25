@@ -11,13 +11,18 @@
 		top: 13.5rem;
 		right: 5%;
 		width: 570rem / @htmlFontSize;
-		height: 570rem / @htmlFontSize;
+		height: 60%;
 
-		background: url(../img/rest.jpg) no-repeat 0 0 e('/') 100% 100%;
+		background: url(../img/rest.jpg) no-repeat 0 0 e('/') auto 100%;
 	}
 
 	.btn {
+		position: relative;
 		margin: 20rem / @htmlFontSize 0;
+
+		&:active {
+			top: 2px;
+		}
 	}
 }
 
@@ -32,15 +37,6 @@
 
 		a {
 			background: none;
-		}
-
-		.room-name {
-			color: rgba(255, 255, 255, .35);
-			text-shadow: none;
-		}
-		.room-price {
-			color: rgba(255, 255, 255, .35);
-			text-shadow: none;
 		}
 	}
 
