@@ -1,7 +1,7 @@
 html {
 	height: 100%;
 	font-family: 'Open Sans', sans-serif;
-	min-width: 1440rem / @htmlFontSize;
+	min-width: 1280rem / @htmlFontSize;
 }
 
 body {
@@ -15,7 +15,7 @@ a {
 .wrapper {
 	position: relative;
 	height: 100%;
-	min-height: 800rem / @htmlFontSize;
+	min-height: 46rem;
 }
 
 main {
@@ -41,7 +41,7 @@ main {
 		content: '';
 		position: absolute;
 		top: 75rem / @htmlFontSize;
-		left: 50%;
+		right: 5%;
 		width: 570rem / @htmlFontSize;
 		height: 570rem / @htmlFontSize;
 
@@ -78,6 +78,7 @@ main {
 	}
 
 	p {
+		max-width: 54rem;
 		font: .8125em e('/') 1.6923em Georgia, 'Open Sans', sans-serif;
 	}
 
@@ -92,18 +93,26 @@ main {
 	}
 }
 
+.icons-ul {
+	.icon {
+		font-size: 1.2em;
+		color: @olive;
+		margin-right: 1em;
+	}
+}
+
 .tabs-sect {
 	padding: 0 130rem / @htmlFontSize;
 }
 
 .square-list-sect {
-	padding-bottom: 120rem / @htmlFontSize;
+	padding-bottom: 1.5rem;
 }
 
 .services {
 	padding-bottom: 80rem / @htmlFontSize;
 
-	background: url(../img/services-girl.jpg) no-repeat 85% bottom;
+	background: url(../img/services-girl.jpg) no-repeat 90% bottom;
 
 	h2 {
 		position: relative;
@@ -121,13 +130,15 @@ main {
 	}
 
 	&.what2look {
-		background-image: url(../img/herb.jpg);
+		background-image: url(../img/herb.svg);
 		background-position: 85% center;
+		background-size: 15% auto;
 	}
 
 	&.travel {
 		background-image: url(../img/travel.jpg);
-		background-position: 85% center;
+		background-position: 95% center;
+		background-size: 28% auto;
 	}
 
 	&.kitchen {
@@ -135,6 +146,7 @@ main {
 
 		background-image: url(../img/kitchen.jpg);
 		background-position: 0 center;
+		background-size: 29% auto;
 	}
 }
 

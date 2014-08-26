@@ -12,9 +12,7 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/fonts.css">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
@@ -31,56 +29,106 @@
                 <nav>
                     <ul class="nav-ul">
                         <li class="nav-li">
-                            <a href="#">Номера</a>
+                            <a data-hover="Номера" href="rooms.html">
+                                <span>Номера
+                            </a>
                         <li class="nav-li">
-                            <a href="#">SPA</a>
+                            <a data-hover="SPA" href="spa.html">
+                                <span>SPA
+                            </a>
                         <li class="nav-li">
-                            <a href="#">Ресторан</a>
+                            <a data-hover="Ресторан" href="rest.html">
+                                <span>Ресторан
+                            </a>
                         <li class="nav-li">
-                            <a href="#">Discover Dagestan</a>
+                            <a data-hover="Discover Dagestan" href="discover.html">
+                                <span>Discover Dagestan
+                            </a>
                         <li class="nav-li">
-                            <a href="#">Услуги</a>
+                            <a data-hover="Услуги" href="services.html">
+                                <span>Услуги</span>
+                            </a>
                         <li class="nav-li">
-                            <a href="#">Акции</a>
-                        <li class="nav-li lang">
-                            <a href="#">EN</a>
+                            <a data-hover="Акции" href="#">
+                                <span>Акции
+                            </a>
                     </ul>
                 </nav>
+                <div class="booking" id="bookBtn">
+                    Бронировать <span class="icon icon-angle-right"></span>
+                    <div class="booking-form">
+                        <div class="form-success">
+                            Ваша бронь успешно отправлена администратору
+                        </div>
+                        <form>
+                            <fieldset class="date-data">
+                                <section>
+                                    <header>
+                                        Выберите номер и дату
+                                    </header>
+                                    <div class="inline">
+                                        <select>
+                                            <option>Стандартный номер</option>
+                                            <option>Нестандартный номер</option>
+                                        </select>
+                                    </div>
+                                    <section class="datepickerFrom inline">
+                                        с
+                                        <input id="datepickerFrom" class="datepicker" type="text">
+                                    </section>
+                                    <section class="datepickerTo inline">
+                                        по
+                                        <input id="datepickerTo" type="text">
+                                    </section> 
+                                </section>
+                            </fieldset>
+                            <fieldset class="text-data">
+                                <section>
+                                    <header>
+                                        Представьтесь
+                                    </header>
+                                    <div class="inline">
+                                        <input type="text" placeholder="Представьтесь">
+                                    </div>
+                                    <div class="inline">
+                                        <input type="text" placeholder="Телефон или email">
+                                    </div>
+                                </section>
+                            </fieldset>
+                            <fieldset>
+                                <section>
+                                    <div class="price inline">
+                                        Стоимость услуги за сутки: <span>4500 руб.</span>
+                                    </div>                                                                        
+                                    <button type="button" class="btn bordered inline">
+                                        Забронировать
+                                    </button> 
+                                </section>
+                            </fieldset>                                                   
+                        </form>
+                    </div>
+                </div>
                 <div class="phone">
                     <a href="tel:+34560052222">
                         <span class="icon icon-phone"></span> +34 56 005 22 22
                     </a>
                 </div>
-                <div class="booking" id="bookBtn">
-                    Бронировать <span class="icon icon-angle-right"></span>
-                    <div class="booking-form">
-                        <form>
-                            <section>
-                                Я хочу
-                                <select>
-                                    <option>Стандартный номер</option>
-                                    <option>Нестандартный номер</option>
-                                </select>
-                            </section>
-                            <section>
-                                с
-                                <input type="text">
-                            </section>
-                            <section>
-                                по
-                                <input type="text">
-                            </section>
-                            <button class="btn bordered">
-                                Забронировать
-                            </button>                           
-                        </form>
-                    </div>
-                </div>
+                <div class="lang">
+                    <ul class="lang-ul">
+                        <li class="lang-li">
+                            <a href="#">EN</a>
+                        </li>
+                        <li class="lang-li">
+                            <a href="#">RU</a>
+                        </li>
+                    </ul>
+                </div>                
             </header>
 
             <main role="main" class="full-screen">
                 <div class="slideshow">
-                    <div class="slide" style="background-image: url(img/slides/01.jpg)">
+                    <div class="slide">
+                        <div class="slide-bg" style="background-image: url(img/slides/01.jpg)"></div>
                         <section class="slide-cont">
                             <header>
                                 <div class="slide-logo">
@@ -98,25 +146,57 @@
                             </div>
                         </section>
                     </div>
-                    <div class="slide" style="background-image: url(img/slides/01.jpg)">
+                    <div class="slide">
+                        <div class="slide-bg" style="background-image: url(img/slides/02.jpg)"></div>
                         <section class="slide-cont">
                             <header>
                                 <div class="slide-logo">
                                     
                                 </div>
                                 <h2 class="slide-head">
-                                    1000 и 2 ночи
+                                    Sarykum - SPA
                                 </h2>
                                 <div class="desc">
-                                    Изысканная кухня Кавказа
+                                    Отель бизнес-класса среди песчаных барханов
                                 </div>
                             </header>
                             <div class="slide-desc">
-                                Ресторан нашего отеля порадует своих гостей разнообразием блюд традиционной и национальной кухни, экзотическими яствами местной культуры и профессиональным обслуживанием. Насладитеcь теплой атмосферой уюта и гостеприимства со своими партнерами, друзьями и близкими. 
+                                44 стандартных номера и 10 двухкомнатных апартаментов повышенной комфортности, ресторан с национальной и традиционной кухней, SPA-центр, несколько профессионально оборудованных конференц-залов и туристические программы, позволяющие насладиться природными достопримечательностями Дагестана – вот, чем отель SARYKUM готов радовать своих гостей.
                             </div>
                         </section>
                     </div>
-                    <div class="slide" style="background-image: url(img/slides/01.jpg)">
+                    <div class="slide">
+                        <div class="slide-bg" style="background-image: url(img/slides/03.jpg)"></div>
+                        <section class="slide-cont">
+                            <header>
+                                <div class="slide-logo">
+                                    
+                                </div>
+                                <h2 class="slide-head">
+                                    Sarykum - SPA
+                                </h2>
+                                <div class="desc">
+                                    Жаркая сауна и массаж
+                                </div>
+                            </header>
+                            <div class="slide-desc">
+                                SPA-центр нашего отеля – это место, где каждый гость сможет в полной мере ощутить нашу заботу и внимание. Восстановите силы и получите сильный заряд энергии с тем видом SPA-услуг, который лучше всего соответствует вашему настроению и характеру.
+                            </div>
+                        </section>
+                    </div>
+                    <div class="slide rooms-slide">
+                        <div class="roomslide roomslide-left" style="background-image: url(http://www.arrowwoodresort.com/up/gallery/exec_family_room.jpg);">                                                        
+                        </div>
+                        <div class="roomslide roomslide-right" style="background-image: url(http://www.arrowwoodresort.com/up/gallery/King_Executive.jpg);">                                                       
+                        </div>                        
+                        <div class="roomslide-data data-left">
+                            <div class="name">Стандартный номер</div>
+                            <div class="price">4500</div>
+                        </div>
+                        <div class="roomslide-data data-right">
+                            <div class="name">Номер бизнес-класса</div>
+                            <div class="price">9000</div>
+                        </div>
                         <section class="slide-cont">
                             <header>
                                 <div class="slide-logo">
@@ -134,6 +214,54 @@
                             </div>
                         </section>
                     </div>
+                    <div class="slide terms-slide">
+                        <div class="slide-bg" style="background-image: url(img/slides/01.jpg)"></div>
+                        <section class="slide-cont">
+                            <header>
+                                <div class="slide-logo">
+                                    
+                                </div>
+                                <h2 class="slide-head">
+                                    1000 и 4 ночи
+                                </h2>
+                                <div class="desc">
+                                    Изысканная кухня Кавказа
+                                </div>
+                            </header>
+                            <div class="slide-desc">
+                                Ресторан нашего отеля порадует своих гостей разнообразием блюд традиционной и национальной кухни, экзотическими яствами местной культуры и профессиональным обслуживанием. Насладитеcь теплой атмосферой уюта и гостеприимства со своими партнерами, друзьями и близкими. 
+                            </div>
+                        </section>
+                        <ul class="slide-terms clearfix">
+                            <li class="slide-term">
+                                <a href="#"></a>
+                                <div class="term-head">
+                                    Скидка 30% на номера бизнес-класса
+                                </div>
+                                <div class="term-body">
+                                    Проведите мероприятие в конгресс-отеле Саракум в первый раз и получите бизнес подарки!     
+                                </div>
+                            </li>
+                            <li class="slide-term">
+                                <a href="#"></a>
+                                <div class="term-head">
+                                    Свадебный сезон
+                                </div>
+                                <div class="term-body">
+                                    Проведите мероприятие в конгресс-отеле Саракум в первый раз и получите бизнес подарки!     
+                                </div>
+                            </li>
+                            <li class="slide-term">
+                                <a href="#"></a>
+                                <div class="term-head">
+                                    Банкеты до 1300 гостей
+                                </div>
+                                <div class="term-body">
+                                    Проведите мероприятие в конгресс-отеле Саракум в первый раз и получите бизнес подарки!     
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                     <div class="arrow arrow-left"><span class="icon icon-angle-left"></span></div>
                     <div class="arrow arrow-right"><span class="icon icon-angle-right"></span></div>
                 </div>
@@ -143,27 +271,17 @@
                 <div class="copy">
                     © Sarykum hotel and spa 2014
                 </div>
+                <address>
+                    Российская Федерация, Республика Дагестан, г. Махачкала, ул. Строителей 345
+                </address>
                 <div class="dev">
                     Сделано в <a href="http://grapheme.ru" target="_blank">Графема</a>
                 </div>
             </footer>
-        </div>
-
-        
+        </div>        
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
+        <script src="js/index.js"></script>
     </body>
 </html>

@@ -12,9 +12,7 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/fonts.css">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
@@ -31,48 +29,120 @@
                 <nav>
                     <ul class="nav-ul">
                         <li class="nav-li">
-                            <a href="#">Номера</a>
+                            <a data-hover="Номера" href="rooms.html">
+                                <span>Номера
+                            </a>
                         <li class="nav-li">
-                            <a href="#">SPA</a>
+                            <a data-hover="SPA" href="spa.html">
+                                <span>SPA
+                            </a>
                         <li class="nav-li">
-                            <a href="#">Ресторан</a>
+                            <a data-hover="Ресторан" href="rest.html">
+                                <span>Ресторан
+                            </a>
                         <li class="nav-li">
-                            <a href="#">Discover Dagestan</a>
+                            <a data-hover="Discover Dagestan" href="discover.html">
+                                <span>Discover Dagestan
+                            </a>
                         <li class="nav-li">
-                            <a href="#">Услуги</a>
+                            <a data-hover="Услуги" href="services.html">
+                                <span>Услуги</span>
+                            </a>
                         <li class="nav-li">
-                            <a href="#">Акции</a>
-                        <li class="nav-li lang">
-                            <a href="#">EN</a>
+                            <a data-hover="Акции" href="#">
+                                <span>Акции
+                            </a>
                     </ul>
                 </nav>
+                <div class="booking" id="bookBtn">
+                    Бронировать <span class="icon icon-angle-right"></span>
+                    <div class="booking-form">
+                        <div class="form-success">
+                            Ваша бронь успешно отправлена администратору
+                        </div>
+                        <form>
+                            <fieldset class="date-data">
+                                <section>
+                                    <header>
+                                        Выберите номер и дату
+                                    </header>
+                                    <div class="inline">
+                                        <select>
+                                            <option>Стандартный номер</option>
+                                            <option>Нестандартный номер</option>
+                                        </select>
+                                    </div>
+                                    <section class="datepickerFrom inline">
+                                        с
+                                        <input id="datepickerFrom" class="datepicker" type="text">
+                                    </section>
+                                    <section class="datepickerTo inline">
+                                        по
+                                        <input id="datepickerTo" type="text">
+                                    </section> 
+                                </section>
+                            </fieldset>
+                            <fieldset class="text-data">
+                                <section>
+                                    <header>
+                                        Представьтесь
+                                    </header>
+                                    <div class="inline">
+                                        <input type="text" placeholder="Представьтесь">
+                                    </div>
+                                    <div class="inline">
+                                        <input type="text" placeholder="Телефон или email">
+                                    </div>
+                                </section>
+                            </fieldset>
+                            <fieldset>
+                                <section>
+                                    <div class="price inline">
+                                        Стоимость услуги за сутки: <span>4500 руб.</span>
+                                    </div>                                                                        
+                                    <button type="button" class="btn bordered inline">
+                                        Забронировать
+                                    </button> 
+                                </section>
+                            </fieldset>                                                   
+                        </form>
+                    </div>
+                </div>
                 <div class="phone">
                     <a href="tel:+34560052222">
                         <span class="icon icon-phone"></span> +34 56 005 22 22
                     </a>
                 </div>
-                <div class="booking" id="bookBtn">
-                    Бронировать <span class="icon icon-angle-right"></span>
-                </div>
+                <div class="lang">
+                    <ul class="lang-ul">
+                        <li class="lang-li">
+                            <a href="#">EN</a>
+                        </li>
+                        <li class="lang-li">
+                            <a href="#">RU</a>
+                        </li>
+                    </ul>
+                </div>                
             </header>
 
             <main role="main">
                 <div class="slideshow" id="slideshow">
-                    <div class="slide" style="background-image: url(img/slides/01.jpg)">
+                    <div class="slide">
+                        <div class="slide-bg" style="background-image: url(img/slides/spa-01.jpg);"></div>
                         <section class="slide-cont">
                             <header>
                                 <div class="slide-logo">
                                     
                                 </div>
                                 <h2 class="slide-head">
-                                    1000 и 1 ночь
+                                    Sarykum - SPA
                                 </h2>
                                 <div class="desc">
-                                    Изысканная кухня Кавказа
+                                    Жаркая сауна и массаж
                                 </div>
                             </header>
                             <div class="slide-desc">
-                                Ресторан нашего отеля порадует своих гостей разнообразием блюд традиционной и национальной кухни, экзотическими яствами местной культуры и профессиональным обслуживанием. Насладитеcь теплой атмосферой уюта и гостеприимства со своими партнерами, друзьями и близкими. 
+                                SPA-центр нашего отеля – это место, где каждый гость сможет в полной мере ощутить нашу заботу и внимание. Восстановите силы и получите сильный заряд энергии с тем видом SPA-услуг, который лучше всего соответствует вашему настроению и характеру.
                             </div>
                         </section>
                     </div>
@@ -93,11 +163,11 @@
                         
                         </div>
                         <div class="column half">
-                             <ul>
-                                <li>Традиционный тайский массаж</li>
-                                <li>Тайский массаж с ароматическими маслами</li>
-                                <li>Королевский тайский массаж</li>
-                                <li>Массаж головы теплым кокосовым маслом</li> 
+                             <ul class="icons-ul">
+                                <li><span class="icon icon-1"></span>Традиционный тайский массаж</li>
+                                <li><span class="icon icon-2"></span>Тайский массаж с ароматическими маслами</li>
+                                <li><span class="icon icon-3"></span>Королевский тайский массаж</li>
+                                <li><span class="icon icon-4"></span>Массаж головы теплым кокосовым маслом</li> 
                              </ul>
                         </div>
                     </div>
@@ -310,14 +380,20 @@
                 </section>
                 <section class="sect-wrap square-list-sect">
                     <ul class="square-ul clearfix">
-                        <li class="square-li" style="background-image: url(img/lists/01.jpg);">
-                            <a href="#">Спец предложение для пар</a>
+                        <li class="square-li">
+                            <a href="#"></a>
+                            <div class="square-li-img" style="background-image: url(img/lists/04.jpg);"></div>
+                            <span>Спецпредложение для пар</span>
                         </li>
-                        <li class="square-li" style="background-image: url(img/lists/02.jpg);">
-                            <a href="#">Скидки до 50%</a>
+                        <li class="square-li">
+                            <a href="#"></a>
+                            <div class="square-li-img" style="background-image: url(img/lists/05.jpg);"></div>
+                            <span>Скидки до 50%</span>
                         </li>
-                        <li class="square-li" style="background-image: url(img/lists/03.jpg);">
-                            <a href="#">Шоколадный скраб для тела</a>
+                        <li class="square-li">
+                            <a href="#"></a>
+                            <div class="square-li-img" style="background-image: url(img/lists/06.jpg);"></div>
+                            <span>Шоколадный скраб для тела</span>
                         </li>
                     </ul>
                 </section>
@@ -349,17 +425,6 @@
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
+        <script src="js/index.js"></script>
     </body>
 </html>

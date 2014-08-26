@@ -4,11 +4,58 @@ var App = (function() {
 	var $footer = $('.main-footer');
 	var $slideshow = $('#slideshow');
 	var $main = $('main');
+	var bookForm = $('.booking-form');
+
+	//Events for booking form
+
+	$('#bookBtn').click( function(e){
+		e.stopPropagation();
+		bookForm.toggleClass('active');
+	});
+
+	bookForm.click( function(e){
+		e.stopPropagation();
+	});
+
+	$('.booking-form .btn').click( function(){
+		$('.form-success').addClass('active');
+
+		setTimeout( function(){
+			bookForm.removeClass('active');
+			$('.form-success').removeClass('active');
+		}, 2500);
+		
+	});
+
+	$('dt.link-imgs-li').click( function(){
+		if( $(this).next().hasClass('active') ) {
+			$(this).next().removeClass('active');
+		} else {
+			$('.link-imgs-dd').removeClass('active');
+			$(this).next().addClass('active');
+		}
+	});
+
+	//Events for language
+
+	$('.lang-li').click( function(){
+		$('.lang-li').removeClass('active');
+		$(this).addClass('active');
+	});
 
 	return {
 		//If slider is only child of main element
 		//Calculate it's height as window 100% height - (header + footer) height
 		//Else we calculate 100% - header heigth, also adding the static-footer class to main footer
+		footerInit: function() {
+			var $window = $(window);
+			var $footer = $('.main-footer');
+			var $main = $('main');
+
+			if($main.height() < $window.height()){
+				$footer.removeClass('static-footer');
+			}
+		},
 		slideshowInit: function() {
 			$slideshow.height( $window.height() - $header.height() );
 			$footer.addClass('static-footer');
@@ -22,13 +69,20 @@ var App = (function() {
 				//Align slider on resize
 				$(window).resize( function() {
 					App.slideshowInit();
+					App.footerInit();
 				});
 			}
+
+			$(window).load(function() {
+				$('body').addClass('loaded');
+			});
+
+			this.footerInit();
 		}
 	};
 })();
 
-jQuery.fn.slideshow = function() {
+jQuery.fn.slideshow = function(obj) {
 	var element = $(this),
 		arrows = $(this).find('.arrow'),
 		arrowLeft = $(this).find('.arrow-left'),
@@ -90,7 +144,13 @@ jQuery.fn.slideshow = function() {
 
 	//Show first slide at the beginning
 	element.trigger('slideshow.show', activeSlide);
-
+	if(obj.autoplay === true) {
+		console.log('loop');
+		var timer = setTimeout(function autoplay() {
+			element.trigger('slideshow.next');
+			timer = setTimeout(autoplay, 6000);
+		}, 6000);
+	}
 };
 
 jQuery.fn.tabs = function(control) {
@@ -131,6 +191,8 @@ jQuery.fn.tabs = function(control) {
 	return this;
 };
 
-$('.slideshow').slideshow();
+$('.slideshow').slideshow({
+	autoplay: false
+});
 $("ul#tabs").tabs("#tabContent");
 App.init();
