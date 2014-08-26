@@ -4,39 +4,84 @@
     <bookmark url="file://$PROJECT_DIR$/app/modules/galleries/admin_galleries.controller.php" line="81" mnemonic="2" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9eb288a-66f5-42e9-a6ae-4f6f60b8c9bd" name="Default" comment="views+">
-      <change type="DELETED" beforePath="C:\home\git\sarykum\app\views\templates\site\_faces_block.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\home\git\sarykum\app\views\templates\site\_faces_popup.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\home\git\sarykum\app\views\templates\site\_history.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\home\git\sarykum\app\views\templates\site\_map_block.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\home\git\sarykum\app\views\templates\site\_map_script.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\home\git\sarykum\app\views\templates\site\_media_block.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\home\git\sarykum\app\views\templates\site\_media_popup.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\home\git\sarykum\app\views\templates\site\events.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\home\git\sarykum\app\views\templates\site\faq.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\home\git\sarykum\app\views\templates\site\hostel.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\home\git\sarykum\app\views\templates\site\search_speciality.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\home\git\sarykum\app\views\templates\site\search_speciality_more.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\home\git\sarykum\app\views\templates\site\search_university.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\home\git\sarykum\app\views\templates\site\search_university_more.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\home\git\sarykum\app\views\templates\site\speciality.blade.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\home\git\sarykum\app\views\templates\site\university.blade.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/migrations/2014_07_03_161130_create_dics_tables.php" afterPath="$PROJECT_DIR$/app/database/migrations/2014_07_03_161130_create_dics_tables.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/dictionaries/models/DicVal.model.php" afterPath="$PROJECT_DIR$/app/modules/dictionaries/models/DicVal.model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/dictionaries/models/Dictionary.model.php" afterPath="$PROJECT_DIR$/app/modules/dictionaries/models/Dictionary.model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/pages/views/admin/_block_edit.blade.php" afterPath="$PROJECT_DIR$/app/modules/pages/views/admin/_block_edit.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/dictionaries/admin_dicvals.controller.php" afterPath="$PROJECT_DIR$/app/modules/dictionaries/admin_dicvals.controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/app.php" afterPath="$PROJECT_DIR$/app/config/app.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/az/app.php" afterPath="$PROJECT_DIR$/app/config/az/app.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/dic.php" afterPath="$PROJECT_DIR$/app/config/dic.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates/site/footer.blade.php" afterPath="$PROJECT_DIR$/app/views/templates/site/footer.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates/site/head.blade.php" afterPath="$PROJECT_DIR$/app/views/templates/site/head.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates/site/header.blade.php" afterPath="$PROJECT_DIR$/app/views/templates/site/header.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates/site/index.blade.php" afterPath="$PROJECT_DIR$/app/views/templates/site/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/main.css" afterPath="$PROJECT_DIR$/public/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/main.js" afterPath="$PROJECT_DIR$/public/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates/site/scripts.blade.php" afterPath="$PROJECT_DIR$/app/views/templates/site/scripts.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates/site.blade.php" afterPath="$PROJECT_DIR$/app/views/templates/site.blade.php" />
+    <list default="true" id="f9eb288a-66f5-42e9-a6ae-4f6f60b8c9bd" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/img-lists/01.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/lists/01.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/slides/01.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/img-lists/02.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/lists/02.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/slides/02.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/img-lists/03.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/lists/03.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/slides/03.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/img-lists/04.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/lists/04.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/img-lists/05.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/lists/05.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/img-lists/06.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/lists/06.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/img-lists/07.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/img-lists/08.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/galleries/1409061408_1943.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/galleries/thumbs/1409061408_1943.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/galleries/1409063127_1304.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/galleries/thumbs/1409063127_1304.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/big-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/calendar-disabled.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/calendar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/slides/dag-01.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/metallic/default-date.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/metallic/disabled-date.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/fontello.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/fontello.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/fontello.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/metallic/header.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/kitchen.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/logo.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/rest.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/metallic/selected-date.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/services-girl.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/small-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/slides/spa-01.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/spa.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/travel.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/less/actions/actions.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/less/animations.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/less/app.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/less/partials/booking-form.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/less/partials/buttons.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/templates/site/discover.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/fontello.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/less/static/fonts.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/less/partials/footer.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/less/grid.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/less/partials/header.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/herb.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/jquery.customSelect.init.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/jquery.customSelect.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/less/partials/link-imgs.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/logo.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/less/main.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/less/media.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/less/static/metallic.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/less/static/normalize.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/modules/sarykum/public_sarykum.controller.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/templates/site/restaurant.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/less/partials/romb-list.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/less/rooms/room-list.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/templates/site/rooms.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/less/partials/select.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/templates/site/services.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/less/partials/slideshow.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/templates/site/spa.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/less/spa/spa.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/less/partials/square-list.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/less/partials/table.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/less/partials/tabs.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/less/vars.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/zebra_datepicker-init.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/zebra_datepicker.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="archive.iws" />
@@ -73,7 +118,37 @@
         <entry file="file://$PROJECT_DIR$/app/modules/dictionaries/views/admin/dicvals/edit.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="23" column="142" selection-start="524" selection-end="662" vertical-scroll-proportion="-5.8846154" vertical-offset="238" max-vertical-offset="2822">
-              <folding />
+              <folding>
+                <marker date="1409056792665" expanded="true" signature="701:4934" placeholder="..." />
+                <marker date="1409056792665" expanded="true" signature="760:4702" placeholder="..." />
+                <marker date="1409056792665" expanded="true" signature="791:4686" placeholder="..." />
+                <marker date="1409056792665" expanded="true" signature="869:1461" placeholder="..." />
+                <marker date="1409056792665" expanded="true" signature="900:1161" placeholder="..." />
+                <marker date="1409056792665" expanded="true" signature="1029:1130" placeholder="..." />
+                <marker date="1409056792665" expanded="true" signature="1192:1432" placeholder="..." />
+                <marker date="1409056792665" expanded="true" signature="1300:1401" placeholder="..." />
+                <marker date="1409056792665" expanded="true" signature="1769:2229" placeholder="..." />
+                <marker date="1409056792665" expanded="true" signature="1859:2169" placeholder="..." />
+                <marker date="1409056792665" expanded="true" signature="2001:2138" placeholder="..." />
+                <marker date="1409056792665" expanded="true" signature="2339:3848" placeholder="..." />
+                <marker date="1409056792665" expanded="true" signature="2369:3820" placeholder="..." />
+                <marker date="1409056792665" expanded="true" signature="2590:3789" placeholder="..." />
+                <marker date="1409056792665" expanded="true" signature="2665:3176" placeholder="..." />
+                <marker date="1409056792665" expanded="true" signature="2868:3098" placeholder="..." />
+                <marker date="1409056792665" expanded="true" signature="2960:3060" placeholder="..." />
+                <marker date="1409056792665" expanded="true" signature="3260:3758" placeholder="..." />
+                <marker date="1409056792665" expanded="true" signature="3512:3679" placeholder="..." />
+                <marker date="1409056792665" expanded="true" signature="4124:4672" placeholder="..." />
+                <marker date="1409056792665" expanded="true" signature="4252:4377" placeholder="..." />
+                <marker date="1409056792665" expanded="true" signature="4507:4646" placeholder="..." />
+                <marker date="1409056792665" expanded="true" signature="4813:4885" placeholder="..." />
+                <marker date="1409056792665" expanded="true" signature="5134:5407" placeholder="..." />
+                <marker date="1409056792665" expanded="true" signature="5260:5305" placeholder="{...}" />
+                <marker date="1409056792665" expanded="true" signature="5334:5393" placeholder="{...}" />
+                <marker date="1409056792665" expanded="true" signature="5488:5767" placeholder="..." />
+                <marker date="1409056792665" expanded="true" signature="5588:5675" placeholder="{...}" />
+                <marker date="1409056792665" expanded="true" signature="5681:5749" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -441,7 +516,11 @@
       <created>1409057348854</created>
       <updated>1409057348854</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="views+">
+      <created>1409063877737</created>
+      <updated>1409063877737</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -506,7 +585,8 @@
     </option>
     <MESSAGE value="+" />
     <MESSAGE value="dicval i18n +++" />
-    <option name="LAST_COMMIT_MESSAGE" value="dicval i18n +++" />
+    <MESSAGE value="views+" />
+    <option name="LAST_COMMIT_MESSAGE" value="views+" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -823,7 +903,37 @@
     <entry file="file://$PROJECT_DIR$/app/modules/dictionaries/views/admin/dicvals/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="142" selection-start="524" selection-end="662" vertical-scroll-proportion="-5.8846154" vertical-offset="238" max-vertical-offset="2822">
-          <folding />
+          <folding>
+            <marker date="1409056792665" expanded="true" signature="701:4934" placeholder="..." />
+            <marker date="1409056792665" expanded="true" signature="760:4702" placeholder="..." />
+            <marker date="1409056792665" expanded="true" signature="791:4686" placeholder="..." />
+            <marker date="1409056792665" expanded="true" signature="869:1461" placeholder="..." />
+            <marker date="1409056792665" expanded="true" signature="900:1161" placeholder="..." />
+            <marker date="1409056792665" expanded="true" signature="1029:1130" placeholder="..." />
+            <marker date="1409056792665" expanded="true" signature="1192:1432" placeholder="..." />
+            <marker date="1409056792665" expanded="true" signature="1300:1401" placeholder="..." />
+            <marker date="1409056792665" expanded="true" signature="1769:2229" placeholder="..." />
+            <marker date="1409056792665" expanded="true" signature="1859:2169" placeholder="..." />
+            <marker date="1409056792665" expanded="true" signature="2001:2138" placeholder="..." />
+            <marker date="1409056792665" expanded="true" signature="2339:3848" placeholder="..." />
+            <marker date="1409056792665" expanded="true" signature="2369:3820" placeholder="..." />
+            <marker date="1409056792665" expanded="true" signature="2590:3789" placeholder="..." />
+            <marker date="1409056792665" expanded="true" signature="2665:3176" placeholder="..." />
+            <marker date="1409056792665" expanded="true" signature="2868:3098" placeholder="..." />
+            <marker date="1409056792665" expanded="true" signature="2960:3060" placeholder="..." />
+            <marker date="1409056792665" expanded="true" signature="3260:3758" placeholder="..." />
+            <marker date="1409056792665" expanded="true" signature="3512:3679" placeholder="..." />
+            <marker date="1409056792665" expanded="true" signature="4124:4672" placeholder="..." />
+            <marker date="1409056792665" expanded="true" signature="4252:4377" placeholder="..." />
+            <marker date="1409056792665" expanded="true" signature="4507:4646" placeholder="..." />
+            <marker date="1409056792665" expanded="true" signature="4813:4885" placeholder="..." />
+            <marker date="1409056792665" expanded="true" signature="5134:5407" placeholder="..." />
+            <marker date="1409056792665" expanded="true" signature="5260:5305" placeholder="{...}" />
+            <marker date="1409056792665" expanded="true" signature="5334:5393" placeholder="{...}" />
+            <marker date="1409056792665" expanded="true" signature="5488:5767" placeholder="..." />
+            <marker date="1409056792665" expanded="true" signature="5588:5675" placeholder="{...}" />
+            <marker date="1409056792665" expanded="true" signature="5681:5749" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
