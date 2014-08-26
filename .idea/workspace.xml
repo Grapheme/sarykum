@@ -5,12 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9eb288a-66f5-42e9-a6ae-4f6f60b8c9bd" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\home\git\sarykum\app\lang\de\admin.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\home\git\sarykum\app\lang\de\interface.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\home\git\sarykum\app\lang\de\modules.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\home\git\sarykum\app\lang\de\pagination.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\home\git\sarykum\app\lang\de\reminders.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\home\git\sarykum\app\lang\de\validation.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="archive.iws" />
@@ -116,7 +110,7 @@
       <file leaf-file-name="mail.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/config/mail.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="6" selection-start="365" selection-end="365" vertical-scroll-proportion="0.5037037" vertical-offset="0" max-vertical-offset="540">
+            <state line="24" column="2" selection-start="569" selection-end="569" vertical-scroll-proportion="0.75555557" vertical-offset="0" max-vertical-offset="540">
               <folding />
             </state>
           </provider>
@@ -479,7 +473,11 @@
       <created>1409069361307</created>
       <updated>1409069361307</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="room reserve+">
+      <created>1409069576474</created>
+      <updated>1409069576474</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -940,7 +938,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/mail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="6" selection-start="365" selection-end="365" vertical-scroll-proportion="0.5037037" vertical-offset="0" max-vertical-offset="540">
+        <state line="24" column="2" selection-start="569" selection-end="569" vertical-scroll-proportion="0.75555557" vertical-offset="0" max-vertical-offset="540">
           <folding />
         </state>
       </provider>
