@@ -9,7 +9,7 @@ class Photo extends Eloquent {
 
 	public function thumb() {
 		#return link::to(Config::get('app-default.galleries_thumb_dir')) . "/" . $this->name;
-		return Config::get('app-default.galleries_thumb_public_dir') . "/" . $this->name;
+		return URL::to(Config::get('app-default.galleries_thumb_public_dir') . "/" . $this->name);
 	}
 
 	public function full() {
@@ -18,6 +18,6 @@ class Photo extends Eloquent {
 
 	public function path() {
 		#return link::to(Config::get('app-default.galleries_photo_dir')) . "/" . $this->name;
-		return Config::get('app-default.galleries_photo_public_dir') . "/" . $this->name;
+		return URL::to(Config::get('app-default.galleries_photo_public_dir') . "/" . $this->name);
 	}
 }

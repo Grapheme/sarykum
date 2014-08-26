@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9eb288a-66f5-42e9-a6ae-4f6f60b8c9bd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/emails/reserve_success.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app.js" afterPath="$PROJECT_DIR$/public/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates/site/header.blade.php" afterPath="$PROJECT_DIR$/app/views/templates/site/header.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/index.js" afterPath="$PROJECT_DIR$/public/js/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/mail.php" afterPath="$PROJECT_DIR$/app/config/mail.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/main.js" afterPath="$PROJECT_DIR$/public/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/sarykum/public_sarykum.controller.php" afterPath="$PROJECT_DIR$/app/modules/sarykum/public_sarykum.controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates/site/scripts.blade.php" afterPath="$PROJECT_DIR$/app/views/templates/site/scripts.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/galleries/models/Photo.php" afterPath="$PROJECT_DIR$/app/modules/galleries/models/Photo.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="archive.iws" />
@@ -118,7 +111,7 @@
       <file leaf-file-name="mail.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/config/mail.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="20" selection-start="286" selection-end="286" vertical-scroll-proportion="0.40925926" vertical-offset="0" max-vertical-offset="540">
+            <state line="22" column="0" selection-start="546" selection-end="546" vertical-scroll-proportion="0.6925926" vertical-offset="0" max-vertical-offset="540">
               <folding />
             </state>
           </provider>
@@ -473,7 +466,11 @@
       <created>1409064238666</created>
       <updated>1409064238666</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="room reserve+">
+      <created>1409068931131</created>
+      <updated>1409068931131</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -539,7 +536,8 @@
     <MESSAGE value="+" />
     <MESSAGE value="dicval i18n +++" />
     <MESSAGE value="views+" />
-    <option name="LAST_COMMIT_MESSAGE" value="views+" />
+    <MESSAGE value="room reserve+" />
+    <option name="LAST_COMMIT_MESSAGE" value="room reserve+" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -933,7 +931,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/mail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="20" selection-start="286" selection-end="286" vertical-scroll-proportion="0.40925926" vertical-offset="0" max-vertical-offset="540">
+        <state line="22" column="0" selection-start="546" selection-end="546" vertical-scroll-proportion="0.6925926" vertical-offset="0" max-vertical-offset="540">
           <folding />
         </state>
       </provider>
