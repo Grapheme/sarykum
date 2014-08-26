@@ -9,6 +9,11 @@ class Dictionary extends BaseModel {
 
 	public static $order_by = "name ASC";
 
+    protected $fillable = array(
+        'slug',
+        'name',
+    );
+
 	public static $rules = array(
 		'name' => 'required',
 	);
@@ -32,6 +37,11 @@ class Dictionary extends BaseModel {
                 }))->first()->value;
     }
 
+    public static function valueBySlugs($dic_slug, $val_slug) {
+        return self::firstOrNew(array('slug' => $dic_slug))->with(array('value' => function($query) use ($val_slug){
+                $query->where('slug', $val_slug);
+            }))->first()->value;
+    }
 
 }
 

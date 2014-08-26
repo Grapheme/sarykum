@@ -50,6 +50,8 @@ class AdminDicvalsController extends BaseController {
     
 	public function __construct(){
 
+        $this->locales = Config::get('app.locales');
+
         $this->module = array(
             'name' => self::$name,
             'group' => self::$group,
@@ -91,8 +93,13 @@ class AdminDicvalsController extends BaseController {
         if (!is_object($dic))
             App::abort(404);
 
+        $locales = $this->locales;
+
+        $fields = Config::get('dic.fields.' . $dic->slug);
+
         $element = new Dictionary;
-		return View::make($this->module['tpl'].'edit', compact('element', 'dic'));
+
+		return View::make($this->module['tpl'].'edit', compact('element', 'dic', 'locales', 'fields'));
 	}
     
 
@@ -105,8 +112,13 @@ class AdminDicvalsController extends BaseController {
         if (!is_object($dic))
             App::abort(404);
 
-		$element = DicVal::find($id);
-		return View::make($this->module['tpl'].'edit', compact('element', 'dic'));
+        $locales = $this->locales;
+
+        $fields = Config::get('dic.fields.' . $dic->slug);
+
+        $element = DicVal::where('id', $id)->with('metas')->with('fields')->first();
+
+		return View::make($this->module['tpl'].'edit', compact('element', 'dic', 'locales', 'fields'));
 	}
 
 
@@ -138,14 +150,15 @@ class AdminDicvalsController extends BaseController {
         if (!is_object($dic))
             App::abort(404);
 
-        #$input = Input::all();
-        $input = array(
-            'slug' => trim(Input::get('slug')) != '' ? trim(Input::get('slug')) : NULL,
-            'name' => Input::get('name'),
-            'dic_id' => $dic_id,
-        );
+        $input = Input::all();
+        $locales = Input::get('locales');
+        $fields = Input::get('fields');
+        $fields_i18n = Input::get('fields_i18n');
 
-		$json_request = array('status'=>FALSE, 'responseText'=>'', 'responseErrorText'=>'', 'redirect'=>FALSE);
+        $json_request['responseText'] = "<pre>" . print_r($_POST, 1) . "</pre>";
+        #return Response::json($json_request,200);
+
+        $json_request = array('status'=>FALSE, 'responseText'=>'', 'responseErrorText'=>'', 'redirect'=>FALSE);
 		$validator = Validator::make($input, array('name' => 'required'));
 		if($validator->passes()) {
 
@@ -163,8 +176,44 @@ class AdminDicvalsController extends BaseController {
 
             } else {
 
-                DicVal::insert($input);
+                $element = DicVal::insert($input);
+                $id = $element->id;
                 $redirect = true;
+            }
+
+            if (@is_array($fields) && count($fields)) {
+                foreach ($fields as $key => $value) {
+
+                    $field = DicFieldVal::firstOrNew(array('dicval_id' => $id, 'key' => $key, 'language' => NULL));
+                    $field->value = $value;
+                    $field->save();
+                    unset($field);
+                }
+            }
+
+
+            if (@is_array($fields_i18n) && count($fields_i18n)) {
+                foreach ($fields_i18n as $locale_sign => $value) {
+
+                    foreach ($value as $key => $value)
+                        break;
+
+                    $field = DicFieldVal::firstOrNew(array('dicval_id' => $id, 'key' => $key, 'language' => $locale_sign));
+                    $field->value = $value;
+                    $field->save();
+                    unset($field);
+                }
+            }
+
+            if (@is_array($locales) && count($locales)) {
+                foreach ($locales as $locale_sign => $array) {
+
+                    $element_meta = DicValMeta::firstOrNew(array('dicval_id' => $id, 'language' => $locale_sign));
+                    #Helper::ta($element_meta);
+                    $element_meta->update($array);
+                    $element_meta->save();
+                    unset($element_meta);
+                }
             }
 
 			$json_request['responseText'] = 'Сохранено';

@@ -32,6 +32,10 @@
 
                 <header>{{ $form_title }}</header>
 
+                <?
+                $_types = Dictionary::whereSlugValues('page_type');
+                ?>
+
                 <fieldset>
 
                     <section>
@@ -42,7 +46,6 @@
                     </section>
 
                 </fieldset>
-
 
                 <div>
 
@@ -61,6 +64,19 @@
                     </section>
 
                 </div>
+
+                @if ($_types->count())
+                <div class="col col-sm-12 col-md-12 col-lg-12 clearfix">
+
+                    <section class="">
+                        <label class="label">Тип страницы</label>
+                        <label class="input select input-select2">
+                            {{ Form::select('type_id', array('Выберите...')+$_types->lists('name', 'id')) }}
+                        </label>
+                    </section>
+
+                </div>
+                @endif
 
                 <fieldset class="clearfix">
 
@@ -92,7 +108,7 @@
 
                 <fieldset class="clearfix">
 
-                    @if (count($locales) > 1 || 1)
+                    @if (count($locales) > 1)
 
                     <section>
                         <label class="label">Индивидуальные настройки для разных языков (необязательно)</label>
@@ -120,6 +136,12 @@
                             </div>
                         </div>
                     </section>
+
+                    @else
+
+                    @foreach ($locales as $locale_sign => $locale_name)
+                        @include($module['tpl'].'_page_meta', compact('locale_sign', 'locale_name', 'templates', 'element'))
+                    @endforeach
 
                     @endif
 
@@ -192,12 +214,12 @@
         var validation_rules = {
             name:              { required: true, maxlength: 100 },
             photo:             { required: true, minlength: 1 },
-            date:              { required: true, minlength: 10, maxlength: 10 },
+            date:              { required: true, minlength: 10, maxlength: 10 }
         };
         var validation_messages = {
             name:              { required: "Укажите название", maxlength: "Слишком длинное название" },
             photo:             { required: "Загрузите фотографию", minlength: "Загрузите фотографию" },
-            date:              { required: "Выберите дату", minlength: "Выберите дату", maxlength: "Выберите дату" },
+            date:              { required: "Выберите дату", minlength: "Выберите дату", maxlength: "Выберите дату" }
         };
         var onsuccess_function = 'update_blocks()';
     </script>
@@ -286,7 +308,7 @@
                 }).done(function(data){
                     //console.log(data);
                     $('#blockEditModal').html(data).modal('show');
-                    $('#blockEditModal .redactor').redactor();
+                    $('#blockEditModal .redactor').redactor(ImperaviRedactor.config || {});
                     return false;
                 }).fail(function(data){
                     console.log(data);Z

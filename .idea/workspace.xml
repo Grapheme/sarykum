@@ -5,7 +5,221 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9eb288a-66f5-42e9-a6ae-4f6f60b8c9bd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/modules/dictionaries/models/DicFieldVal.model.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/modules/dictionaries/models/DicValMeta.model.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/modules/dictionaries/views/admin/dicvals/_dicval_meta.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/modules/pages/views/by-slug.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/config/dic.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/modules/news/views/mainpage.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/modules/news/views/news-list-page.blade.php" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\app\database\migrations\2014_07_03_161130_create_dics_tables_2.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\app\modules\feedback\feedback.controller.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\app\modules\feedback\views\feedback.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\app\modules\feedback\views\form.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1404476034_1612.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1404476136_1479.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1404476312_1034.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1404476960_1357.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1404477036_1601.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1404477056_1748.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1404477073_1169.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1404477088_1493.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1404477138_1728.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1404477186_1197.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1404477294_1278.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1404477296_1383.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1404479182_1706.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1404479612_1396.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1404479642_1067.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1404739141_1228.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1404923671_1588.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1405067370_1961.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1405082069_1711.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1405082071_1122.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1405082394_1750.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1405413825_1784.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1405413992_1224.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1405415266_1207.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1406029516_1626.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1406301016_1731.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1406550214_1839.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1406797810_1176.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1406797998_1190.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1406799775_1906.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1406800233_1827.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1406800565_1614.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1406800684_1175.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1406804381_1029.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1406805366_1423.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1406809248_1394.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1406809599_1936.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1406809763_1841.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1406809794_1790.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1406813275_1291.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1406813831_1235.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1406813970_1487.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1406814129_1263.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1406814900_1036.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1406896047_1794.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1406898371_1590.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1406898447_1069.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1407141485_1591.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1408089607_1227.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1408089607_1387.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1408090253_1895.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1408090298_1664.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1408090302_1294.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1408090302_1400.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1408090472_1521.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1408091070_1091.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1408091179_1397.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\1408091212_1164.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1404476034_1612.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1404476136_1479.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1404476312_1034.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1404476960_1357.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1404477036_1601.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1404477056_1748.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1404477073_1169.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1404477088_1493.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1404477138_1728.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1404477186_1197.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1404477294_1278.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1404477296_1383.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1404479182_1706.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1404479612_1396.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1404479642_1067.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1404739141_1228.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1404923671_1588.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1405067370_1961.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1405082069_1711.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1405082071_1122.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1405082394_1750.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1405413825_1784.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1405413992_1224.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1405415266_1207.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1406029516_1626.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1406301016_1731.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1406550214_1839.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1406797810_1176.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1406797998_1190.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1406799775_1906.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1406800233_1827.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1406800565_1614.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1406800684_1175.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1406804381_1029.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1406805366_1423.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1406809248_1394.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1406809599_1936.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1406809763_1841.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1406809794_1790.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1406813275_1291.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1406813831_1235.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1406813970_1487.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1406814129_1263.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1406814900_1036.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1406896047_1794.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1406898371_1590.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1406898447_1069.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1407141485_1591.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1408089607_1227.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1408089607_1387.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1408090253_1895.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1408090298_1664.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1408090302_1294.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1408090302_1400.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1408090472_1521.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1408091070_1091.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1408091179_1397.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\public\uploads\galleries\thumbs\1408091212_1164.png" afterPath="" />
+      <change type="MOVED" beforePath="C:\home\git\sarykum\.idea\archive.iml" afterPath="$PROJECT_DIR$/.idea/sarykum.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/migrations/2014_01_01_100060_create_pages_tables.php" afterPath="$PROJECT_DIR$/app/database/migrations/2014_01_01_100060_create_pages_tables.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/migrations/2014_07_03_161130_create_dics_tables.php" afterPath="$PROJECT_DIR$/app/database/migrations/2014_07_03_161130_create_dics_tables.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/system/models/Action.php" afterPath="$PROJECT_DIR$/app/modules/system/models/Action.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/dictionaries/models/DicVal.model.php" afterPath="$PROJECT_DIR$/app/modules/dictionaries/models/DicVal.model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/dictionaries/models/Dictionary.model.php" afterPath="$PROJECT_DIR$/app/modules/dictionaries/models/Dictionary.model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/galleries/models/Gallery.php" afterPath="$PROJECT_DIR$/app/modules/galleries/models/Gallery.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/system/models/Group.php" afterPath="$PROJECT_DIR$/app/modules/system/models/Group.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/Helper.php" afterPath="$PROJECT_DIR$/app/lib/Helper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/system/models/Module.php" afterPath="$PROJECT_DIR$/app/modules/system/models/Module.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/news/models/News.model.php" afterPath="$PROJECT_DIR$/app/modules/news/models/News.model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/news/models/NewsMeta.model.php" afterPath="$PROJECT_DIR$/app/modules/news/models/NewsMeta.model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/pages/models/Page.php" afterPath="$PROJECT_DIR$/app/modules/pages/models/Page.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/pages/models/PageBlock.php" afterPath="$PROJECT_DIR$/app/modules/pages/models/PageBlock.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/pages/models/PageBlockMeta.php" afterPath="$PROJECT_DIR$/app/modules/pages/models/PageBlockMeta.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/pages/models/PageMeta.php" afterPath="$PROJECT_DIR$/app/modules/pages/models/PageMeta.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/galleries/models/Photo.php" afterPath="$PROJECT_DIR$/app/modules/galleries/models/Photo.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/galleries/models/Rel_mod_gallery.php" afterPath="$PROJECT_DIR$/app/modules/galleries/models/Rel_mod_gallery.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/seo/models/Seo.model.php" afterPath="$PROJECT_DIR$/app/modules/seo/models/Seo.model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/system/models/Setting.php" afterPath="$PROJECT_DIR$/app/modules/system/models/Setting.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/system/models/User.php" afterPath="$PROJECT_DIR$/app/modules/system/models/User.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/pages/views/admin/_block_edit.blade.php" afterPath="$PROJECT_DIR$/app/modules/pages/views/admin/_block_edit.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/pages/views/admin/_block_meta.blade.php" afterPath="$PROJECT_DIR$/app/modules/pages/views/admin/_block_meta.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_ide_helper.php" afterPath="$PROJECT_DIR$/_ide_helper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/pages/views/admin/_page_meta.blade.php" afterPath="$PROJECT_DIR$/app/modules/pages/views/admin/_page_meta.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/galleries/views/abstract.blade.php" afterPath="$PROJECT_DIR$/app/modules/galleries/views/abstract.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/dictionaries/admin_dics.controller.php" afterPath="$PROJECT_DIR$/app/modules/dictionaries/admin_dics.controller.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/dictionaries/admin_dics.menu.controller.php" afterPath="$PROJECT_DIR$/app/modules/dictionaries/admin_dics.menu.controller.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/dictionaries/admin_dicvals.controller.php" afterPath="$PROJECT_DIR$/app/modules/dictionaries/admin_dicvals.controller.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/galleries/admin_galleries.controller.php" afterPath="$PROJECT_DIR$/app/modules/galleries/admin_galleries.controller.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/system/admin_groups.controller.php" afterPath="$PROJECT_DIR$/app/modules/system/admin_groups.controller.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/news/admin_news.controller.php" afterPath="$PROJECT_DIR$/app/modules/news/admin_news.controller.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/pages/admin_pages.menu.controller.php" afterPath="$PROJECT_DIR$/app/modules/pages/admin_pages.menu.controller.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/pages/admin_pages.page.controller.php" afterPath="$PROJECT_DIR$/app/modules/pages/admin_pages.page.controller.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/seo/admin_seo.controller.php" afterPath="$PROJECT_DIR$/app/modules/seo/admin_seo.controller.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/system/admin_settings.controller.php" afterPath="$PROJECT_DIR$/app/modules/system/admin_settings.controller.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/system/admin_system.controller.php" afterPath="$PROJECT_DIR$/app/modules/system/admin_system.controller.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/system/admin_users.controller.php" afterPath="$PROJECT_DIR$/app/modules/system/admin_users.controller.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/system/views/admin/groups/create.blade.php" afterPath="$PROJECT_DIR$/app/modules/system/views/admin/groups/create.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/system/views/admin/users/create.blade.php" afterPath="$PROJECT_DIR$/app/modules/system/views/admin/users/create.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/maximebf/php-debugbar/debugbar.js" afterPath="$PROJECT_DIR$/public/packages/maximebf/php-debugbar/debugbar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/news/views/default.blade.php" afterPath="$PROJECT_DIR$/app/modules/news/views/default.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/pages/views/tpl_block/default.blade.php" afterPath="$PROJECT_DIR$/app/modules/pages/views/tpl_block/default.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/news/views/demo.blade.php" afterPath="$PROJECT_DIR$/app/modules/news/views/demo.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/pages/views/demo.blade.php" afterPath="$PROJECT_DIR$/app/modules/pages/views/demo.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/dictionaries/views/admin/dics/edit.blade.php" afterPath="$PROJECT_DIR$/app/modules/dictionaries/views/admin/dics/edit.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/dictionaries/views/admin/dicvals/edit.blade.php" afterPath="$PROJECT_DIR$/app/modules/dictionaries/views/admin/dicvals/edit.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/galleries/views/admin/edit.blade.php" afterPath="$PROJECT_DIR$/app/modules/galleries/views/admin/edit.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/news/views/admin/edit.blade.php" afterPath="$PROJECT_DIR$/app/modules/news/views/admin/edit.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/pages/views/admin/edit.blade.php" afterPath="$PROJECT_DIR$/app/modules/pages/views/admin/edit.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/system/views/admin/groups/edit.blade.php" afterPath="$PROJECT_DIR$/app/modules/system/views/admin/groups/edit.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/system/views/admin/users/edit.blade.php" afterPath="$PROJECT_DIR$/app/modules/system/views/admin/users/edit.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/galleries/views/extform_gallery-OLD.blade.php" afterPath="$PROJECT_DIR$/app/modules/galleries/views/extform_gallery-OLD.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/galleries/views/extform_gallery.blade.php" afterPath="$PROJECT_DIR$/app/modules/galleries/views/extform_gallery.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/galleries/views/extform_image.blade - копия.php" afterPath="$PROJECT_DIR$/app/modules/galleries/views/extform_image.blade - копия.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/galleries/views/extform_image.blade.php" afterPath="$PROJECT_DIR$/app/modules/galleries/views/extform_image.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/galleries/views/extform_image_extrem.blade.php" afterPath="$PROJECT_DIR$/app/modules/galleries/views/extform_image_extrem.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/galleries/galleries.controller.php" afterPath="$PROJECT_DIR$/app/modules/galleries/galleries.controller.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/galleries/views/gallery-default.blade.php" afterPath="$PROJECT_DIR$/app/modules/galleries/views/gallery-default.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/pages/views/index-page.blade.php" afterPath="$PROJECT_DIR$/app/modules/pages/views/index-page.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/dictionaries/views/admin/dics/index.blade.php" afterPath="$PROJECT_DIR$/app/modules/dictionaries/views/admin/dics/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/dictionaries/views/admin/dicvals/index.blade.php" afterPath="$PROJECT_DIR$/app/modules/dictionaries/views/admin/dicvals/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/galleries/views/admin/index.blade.php" afterPath="$PROJECT_DIR$/app/modules/galleries/views/admin/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/news/views/admin/index.blade.php" afterPath="$PROJECT_DIR$/app/modules/news/views/admin/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/pages/views/admin/index.blade.php" afterPath="$PROJECT_DIR$/app/modules/pages/views/admin/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/system/views/admin/groups/index.blade.php" afterPath="$PROJECT_DIR$/app/modules/system/views/admin/groups/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/system/views/admin/settings/index.blade.php" afterPath="$PROJECT_DIR$/app/modules/system/views/admin/settings/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/system/views/admin/users/index.blade.php" afterPath="$PROJECT_DIR$/app/modules/system/views/admin/users/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/maximebf/php-debugbar/vendor/jquery/dist/jquery.min.js" afterPath="$PROJECT_DIR$/public/packages/maximebf/php-debugbar/vendor/jquery/dist/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/barryvdh/laravel-debugbar/laravel-debugbar.css" afterPath="$PROJECT_DIR$/public/packages/barryvdh/laravel-debugbar/laravel-debugbar.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/dictionaries/views/admin/dics/menu.blade.php" afterPath="$PROJECT_DIR$/app/modules/dictionaries/views/admin/dics/menu.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/dictionaries/views/admin/dicvals/menu.blade.php" afterPath="$PROJECT_DIR$/app/modules/dictionaries/views/admin/dicvals/menu.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/news/views/admin/menu.blade.php" afterPath="$PROJECT_DIR$/app/modules/news/views/admin/menu.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/system/views/admin/groups/menu.blade.php" afterPath="$PROJECT_DIR$/app/modules/system/views/admin/groups/menu.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/system/views/admin/users/menu.blade.php" afterPath="$PROJECT_DIR$/app/modules/system/views/admin/users/menu.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/news/views/news-full.blade.php" afterPath="$PROJECT_DIR$/app/modules/news/views/news-full.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/news/views/news-list.blade.php" afterPath="$PROJECT_DIR$/app/modules/news/views/news-list.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/news/public_news.controller.php" afterPath="$PROJECT_DIR$/app/modules/news/public_news.controller.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/pages/public_pages.controller.php" afterPath="$PROJECT_DIR$/app/modules/pages/public_pages.controller.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/skins.css" afterPath="$PROJECT_DIR$/public/css/skins.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/galleries/views/uploaded.blade.php" afterPath="$PROJECT_DIR$/app/modules/galleries/views/uploaded.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/packages/maximebf/php-debugbar/widgets/sqlqueries/widget.js" afterPath="$PROJECT_DIR$/public/packages/maximebf/php-debugbar/widgets/sqlqueries/widget.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="archive.iws" />
@@ -16,7 +230,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="ChangesViewManager" flattened_view="false" show_ignored="true" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -29,10 +243,66 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="global.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/start/global.php">
+      <file leaf-file-name="admin_dicvals.controller.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/modules/dictionaries/admin_dicvals.controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="125" column="47" selection-start="4159" selection-end="4159" vertical-scroll-proportion="0.7534626" vertical-offset="1700" max-vertical-offset="2363">
+            <state line="188" column="0" selection-start="5574" selection-end="5574" vertical-scroll-proportion="-8.5" vertical-offset="2975" max-vertical-offset="4675">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DicVal.model.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/modules/dictionaries/models/DicVal.model.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="46" selection-start="613" selection-end="613" vertical-scroll-proportion="-14.307693" vertical-offset="155" max-vertical-offset="765">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/modules/dictionaries/views/admin/dicvals/edit.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="121" column="48" selection-start="4850" selection-end="4863" vertical-scroll-proportion="-15.038462" vertical-offset="1666" max-vertical-offset="2822">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menu.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/modules/dictionaries/views/admin/dicvals/menu.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="46" selection-start="239" selection-end="239" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="629">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_dicval_meta.blade.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/modules/dictionaries/views/admin/dicvals/_dicval_meta.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="0" selection-start="378" selection-end="378" vertical-scroll-proportion="0.42424244" vertical-offset="0" max-vertical-offset="1139">
+              <folding>
+                <marker date="1409057069334" expanded="true" signature="1414:1458" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dic.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/dic.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="44" selection-start="642" selection-end="642" vertical-scroll-proportion="-13.076923" vertical-offset="68" max-vertical-offset="986">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/app.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="8" selection-start="512" selection-end="512" vertical-scroll-proportion="-15.692307" vertical-offset="17" max-vertical-offset="1870">
               <folding />
             </state>
           </provider>
@@ -47,8 +317,6 @@
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
-      <command text="php artisan migrate" />
-      <command text="composer dump-autoload" />
       <command text="artisan db:seed" />
       <command text="artisan migrate:rollback" />
       <command text="php artisan migrate --seeds" />
@@ -70,29 +338,21 @@
       <command text="composer dump-autoload" />
       <command text="artisan migrate" />
       <command text="composer dump-autoload" />
+      <command text="composer update " />
+      <command text="composer dump-autoload" />
+      <command text="composer self-update " />
+      <command text="composer dump-autoload" />
     </commandsHistory>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///dummy.txt" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/modules/dictionaries/models/Dictionary.model.php" />
-        <option value="$PROJECT_DIR$/app/modules/archive/models/UserRequestStatus.model.php" />
-        <option value="$PROJECT_DIR$/app/modules/archive/views/admin/request/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/modules/archive/views/admin/request/edit.blade.php" />
-        <option value="$PROJECT_DIR$/app/modules/archive/admin_archive.request.controller.php" />
-        <option value="$PROJECT_DIR$/app/database/migrations/2014_08_12_100070_create_archivefunds_tables.php" />
-        <option value="$PROJECT_DIR$/app/modules/archive/models/ArchiveFund.model.php" />
-        <option value="$PROJECT_DIR$/app/modules/archive/views/admin/funds/edit.blade.php" />
-        <option value="$PROJECT_DIR$/app/modules/archive/views/admin/funds/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/modules/archive/admin_archive.menu.controller.php" />
-        <option value="$PROJECT_DIR$/public/funds_parse.php" />
-        <option value="$PROJECT_DIR$/app/modules/archive/admin_archive.funds.controller.php" />
-        <option value="$PROJECT_DIR$/app/modules/pages/admin_pages.menu.controller.php" />
-        <option value="$PROJECT_DIR$/public/routes.php" />
-        <option value="$PROJECT_DIR$/app/modules/archive/views/admin/request/menu.blade.php" />
-        <option value="$PROJECT_DIR$/app/modules/archive/views/admin/funds/menu.blade.php" />
-        <option value="$PROJECT_DIR$/app/modules/system/views/admin/groups/menu.blade.php" />
-        <option value="$PROJECT_DIR$/app/modules/system/models/Group.php" />
         <option value="$PROJECT_DIR$/app/modules/system/admin_groups.controller.php" />
         <option value="$PROJECT_DIR$/app/modules/system/admin_users.controller.php" />
         <option value="$PROJECT_DIR$/app/modules/seo/models/Seo.model.php" />
@@ -118,14 +378,32 @@
         <option value="$PROJECT_DIR$/app/modules/pages/models/PageMeta.php" />
         <option value="$PROJECT_DIR$/app/modules/news/public_news.controller.php" />
         <option value="$PROJECT_DIR$/app/modules/pages/views/default.blade.php" />
-        <option value="$PROJECT_DIR$/app/lib/Helper.php" />
         <option value="$PROJECT_DIR$/app/modules/pages/views/demo.blade.php" />
-        <option value="$PROJECT_DIR$/app/modules/pages/views/admin/edit.blade.php" />
         <option value="$PROJECT_DIR$/app/modules/pages/admin_pages.page.controller.php" />
         <option value="$PROJECT_DIR$/app/modules/pages/views/admin/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/config/app.php" />
         <option value="$PROJECT_DIR$/app/start/global.php" />
         <option value="$PROJECT_DIR$/app/modules/pages/public_pages.controller.php" />
+        <option value="$PROJECT_DIR$/../../pro/morefirm/admin/app/modules/morefirm/models/Company.model.php" />
+        <option value="$PROJECT_DIR$/../../pro/morefirm/admin/app/modules/morefirm/admin_morefirm.firms.controller.php" />
+        <option value="$PROJECT_DIR$/../../pro/morefirm/admin/app/modules/morefirm/views/admin/company/menu.blade.php" />
+        <option value="$PROJECT_DIR$/../../pro/morefirm/admin/app/modules/morefirm/views/admin/company/index.blade.php" />
+        <option value="$PROJECT_DIR$/../../pro/morefirm/admin/app/modules/morefirm/views/admin/company/edit.blade.php" />
+        <option value="$PROJECT_DIR$/../../pro/morefirm/admin/app/modules/morefirm/admin_morefirm.categories.controller.php" />
+        <option value="$PROJECT_DIR$/../../pro/morefirm/admin/app/modules/morefirm/admin_morefirm.menu.controller.php" />
+        <option value="$PROJECT_DIR$/../archive/app/views/templates/site/index.blade.php" />
+        <option value="$PROJECT_DIR$/../archive/app/modules/pages/views/admin/edit.blade.php" />
+        <option value="$PROJECT_DIR$/../archive/app/modules/news/public_news.controller.php" />
+        <option value="$PROJECT_DIR$/app/modules/pages/views/admin/edit.blade.php" />
+        <option value="$PROJECT_DIR$/app/lib/Helper.php" />
+        <option value="$PROJECT_DIR$/app/modules/dictionaries/models/DicValMeta.model.php" />
+        <option value="$PROJECT_DIR$/app/modules/dictionaries/models/DicFieldVal.model.php" />
+        <option value="$PROJECT_DIR$/app/modules/dictionaries/models/DicVal.model.php" />
+        <option value="$PROJECT_DIR$/app/modules/dictionaries/admin_dicvals.controller.php" />
+        <option value="$PROJECT_DIR$/app/modules/dictionaries/views/admin/dicvals/edit.blade.php" />
+        <option value="$PROJECT_DIR$/app/config/app.php" />
+        <option value="$PROJECT_DIR$/app/config/dic.php" />
+        <option value="$PROJECT_DIR$/app/modules/dictionaries/views/admin/dicvals/_dicval_meta.blade.php" />
+        <option value="$PROJECT_DIR$/app/modules/dictionaries/views/admin/dicvals/menu.blade.php" />
       </list>
     </option>
   </component>
@@ -150,7 +428,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1" splitterProportion="0.5">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -161,7 +439,109 @@
       <autoscrollFromSource />
       <sortByType />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sarykum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sarykum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sarykum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sarykum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sarykum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sarykum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sarykum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sarykum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sarykum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sarykum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sarykum" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.lastSelected" value="settings.github" />
@@ -171,7 +551,13 @@
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/artisan" />
     <property name="FullScreen" value="false" />
-    <property name="SearchEverywhereHistory" value="" />
+    <property name="SearchEverywhereHistory" value="config" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -185,6 +571,12 @@
       <method />
     </configuration>
     <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
+      <option name="VM_PARAMETERS" value="" />
+      <option name="USER_CFG_CLASS" />
+      <option name="CONTEXT_PROVIDER" />
       <method />
     </configuration>
     <list size="0" />
@@ -213,33 +605,59 @@
       <created>1407760569597</created>
       <updated>1407760569597</updated>
     </task>
+    <task id="LOCAL-00001" summary="+">
+      <created>1408362272483</created>
+      <updated>1408362272483</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3284553" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.299187" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3588907" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2985318" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32250756" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32175228" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21463415" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35447153" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" x="336" y="122" width="331" height="615" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="517" y="56" width="331" height="615" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -254,6 +672,8 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="+" />
+    <option name="LAST_COMMIT_MESSAGE" value="+" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -261,120 +681,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/start/global.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="34" selection-start="3313" selection-end="3313" vertical-scroll-proportion="0.0" vertical-offset="1870" max-vertical-offset="2346">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/modules/pages/views/admin/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="32" selection-start="3094" selection-end="3094" vertical-scroll-proportion="0.0" vertical-offset="1479" max-vertical-offset="7514" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/modules/pages/views/demo.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="41" selection-start="1059" selection-end="1059" vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="969" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/modules/system/models/Group.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="8" selection-start="400" selection-end="400" vertical-scroll-proportion="0.6273063" vertical-offset="0" max-vertical-offset="542" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/modules/system/views/admin/groups/menu.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="25" selection-start="355" selection-end="355" vertical-scroll-proportion="0.21136767" vertical-offset="119" max-vertical-offset="1173" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/modules/system/admin_settings.controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="21" selection-start="873" selection-end="873" vertical-scroll-proportion="0.3321492" vertical-offset="306" max-vertical-offset="1598" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/modules/system/admin_system.controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="48" selection-start="697" selection-end="697" vertical-scroll-proportion="0.27175844" vertical-offset="204" max-vertical-offset="867" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/modules/system/admin_users.controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="5" selection-start="2822" selection-end="2822" vertical-scroll-proportion="0.9396092" vertical-offset="1001" max-vertical-offset="4522" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/modules/system/admin_groups.controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="0" selection-start="1391" selection-end="1514" vertical-scroll-proportion="0.3623446" vertical-offset="612" max-vertical-offset="3774" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/site.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="19" selection-start="27" selection-end="41" vertical-scroll-proportion="0.120781526" vertical-offset="0" max-vertical-offset="563" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1480" column="20" selection-start="35289" selection-end="35289" vertical-scroll-proportion="0.348135" vertical-offset="24896" max-vertical-offset="33966" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/modules/seo/models/Seo.model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="58" selection-start="156" selection-end="156" vertical-scroll-proportion="0.24156305" vertical-offset="0" max-vertical-offset="563" />
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/json.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="9" selection-start="2588" selection-end="2588" vertical-scroll-proportion="0.89165187" vertical-offset="875" max-vertical-offset="3791" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_01_01_100070_create_news_tables.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="935" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/modules/news/models/News.model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="51" selection-start="788" selection-end="793" vertical-scroll-proportion="0.65867156" vertical-offset="204" max-vertical-offset="1020" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/modules/news/views/admin/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="146" selection-start="828" selection-end="828" vertical-scroll-proportion="-9.038462" vertical-offset="190" max-vertical-offset="1445" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/modules/galleries/views/extform_image.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="5" selection-start="234" selection-end="234" vertical-scroll-proportion="0.18819188" vertical-offset="0" max-vertical-offset="748" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/modules/galleries/views/extform_gallery.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="33" selection-start="678" selection-end="678" vertical-scroll-proportion="0.4077491" vertical-offset="0" max-vertical-offset="544" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/templates/admin/sidebar.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="41" selection-start="77" selection-end="77" vertical-scroll-proportion="0.12546125" vertical-offset="0" max-vertical-offset="1003" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/lib/SystemModules.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="51" selection-start="2470" selection-end="2470" vertical-scroll-proportion="0.31365314" vertical-offset="1071" max-vertical-offset="2176" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/modules/seo/admin_seo.controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="0" selection-start="2601" selection-end="2601" vertical-scroll-proportion="-16.346153" vertical-offset="901" max-vertical-offset="2227" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/modules/galleries/admin_galleries.controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="462" column="30" selection-start="15424" selection-end="15424" vertical-scroll-proportion="-4.6538463" vertical-offset="7733" max-vertical-offset="9367">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_ide_helper.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="474" column="52" selection-start="13438" selection-end="13438" vertical-scroll-proportion="0.41143912" vertical-offset="7750" max-vertical-offset="218093">
@@ -417,29 +723,9 @@
         <state line="16" column="5" selection-start="456" selection-end="456" vertical-scroll-proportion="0.4831261" vertical-offset="0" max-vertical-offset="1139" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/modules/news/models/NewsMeta.model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="46" selection-start="578" selection-end="578" vertical-scroll-proportion="0.45293072" vertical-offset="204" max-vertical-offset="816" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/modules/news/views/admin/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="60" selection-start="1211" selection-end="1213" vertical-scroll-proportion="0.060390763" vertical-offset="612" max-vertical-offset="3162" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/modules/seo/views/extform_seo.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="56" column="8" selection-start="1419" selection-end="1419" vertical-scroll-proportion="1.7564576" vertical-offset="0" max-vertical-offset="1054" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/modules/news/views/admin/_news_meta.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="11" selection-start="1599" selection-end="1812" vertical-scroll-proportion="0.8188277" vertical-offset="559" max-vertical-offset="1122" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/modules/pages/models/PageMeta.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="46" selection-start="396" selection-end="396" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="459" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/modules/pages/views/admin/_page_meta.blade.php">
@@ -449,17 +735,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/lib/Allow.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="119" column="27" selection-start="4167" selection-end="4167" vertical-scroll-proportion="0.5328597" vertical-offset="1740" max-vertical-offset="2329" />
+        <state line="119" column="27" selection-start="4167" selection-end="4167" vertical-scroll-proportion="0.5328597" vertical-offset="1740" max-vertical-offset="2329">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/modules/pages/views/default.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="32" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="563" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/lib/Helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="0" selection-start="1282" selection-end="1282" vertical-scroll-proportion="0.81705153" vertical-offset="475" max-vertical-offset="5797" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/filters.php">
@@ -474,7 +757,9 @@
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_1.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="715" column="20" selection-start="21191" selection-end="21202" vertical-scroll-proportion="0.80106574" vertical-offset="11704" max-vertical-offset="19142" />
+        <state line="715" column="20" selection-start="21191" selection-end="21202" vertical-scroll-proportion="0.80106574" vertical-offset="11704" max-vertical-offset="19142">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/modules/pages/views/demo.blade.php">
@@ -487,26 +772,6 @@
         <state line="13" column="46" selection-start="320" selection-end="320" vertical-scroll-proportion="0.4077491" vertical-offset="0" max-vertical-offset="1428" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/modules/pages/views/admin/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="32" selection-start="3094" selection-end="3094" vertical-scroll-proportion="0.0" vertical-offset="1479" max-vertical-offset="7514" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/modules/news/admin_news.controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="239" column="0" selection-start="8105" selection-end="8744" vertical-scroll-proportion="0.0" vertical-offset="4063" max-vertical-offset="5168" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="23" selection-start="476" selection-end="476" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="1870" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/modules/pages/admin_pages.page.controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="20" selection-start="2971" selection-end="2971" vertical-scroll-proportion="0.0" vertical-offset="1462" max-vertical-offset="7650" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/modules/pages/public_pages.controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="116" column="10" selection-start="5220" selection-end="5220" vertical-scroll-proportion="-0.0" vertical-offset="1972" max-vertical-offset="6171" />
@@ -517,10 +782,217 @@
         <state line="231" column="0" selection-start="8974" selection-end="8974" vertical-scroll-proportion="-11.192307" vertical-offset="3636" max-vertical-offset="4199" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../../pro/morefirm/admin/app/modules/morefirm/models/Company.model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="24" selection-start="192" selection-end="198" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="816" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../pro/morefirm/admin/app/modules/morefirm/admin_morefirm.firms.controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="38" selection-start="2609" selection-end="2609" vertical-scroll-proportion="-13.730769" vertical-offset="1020" max-vertical-offset="4165" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../pro/morefirm/admin/app/modules/morefirm/views/admin/company/menu.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="17" selection-start="1869" selection-end="1869" vertical-scroll-proportion="-9.807693" vertical-offset="510" max-vertical-offset="1377" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../pro/morefirm/admin/app/modules/morefirm/views/admin/company/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="48" selection-start="719" selection-end="719" vertical-scroll-proportion="-3.2692308" vertical-offset="340" max-vertical-offset="2244" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../pro/morefirm/admin/app/modules/morefirm/views/admin/company/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="107" column="22" selection-start="3788" selection-end="3788" vertical-scroll-proportion="0.8181818" vertical-offset="1360" max-vertical-offset="3893" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../pro/morefirm/admin/app/modules/morefirm/admin_morefirm.categories.controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="25" selection-start="2686" selection-end="2686" vertical-scroll-proportion="-16.346153" vertical-offset="969" max-vertical-offset="3638" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../pro/morefirm/admin/app/modules/morefirm/admin_morefirm.menu.controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="34" selection-start="1713" selection-end="1713" vertical-scroll-proportion="-15.692307" vertical-offset="663" max-vertical-offset="1513" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/start/global.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="47" selection-start="4159" selection-end="4159" vertical-scroll-proportion="0.7534626" vertical-offset="1700" max-vertical-offset="2363">
+        <state line="124" column="36" selection-start="4015" selection-end="4015" vertical-scroll-proportion="0.45454547" vertical-offset="1700" max-vertical-offset="2363" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../archive/app/views/templates/site/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="867">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../archive/app/modules/pages/admin_pages.page.controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7650" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../archive/app/modules/pages/views/admin/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="288" column="27" selection-start="10776" selection-end="10782" vertical-scroll-proportion="0.0" vertical-offset="4896" max-vertical-offset="7616">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../archive/app/modules/pages/public_pages.controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="228" column="0" selection-start="9033" selection-end="9228" vertical-scroll-proportion="0.030195381" vertical-offset="3876" max-vertical-offset="5933">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../archive/app/modules/news/public_news.controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="88" column="17" selection-start="4329" selection-end="4329" vertical-scroll-proportion="0.0" vertical-offset="1496" max-vertical-offset="4947">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../archive/app/lib/Helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="101" column="27" selection-start="2594" selection-end="2594" vertical-scroll-proportion="0.1811723" vertical-offset="1615" max-vertical-offset="6290">
+          <folding>
+            <marker date="1409038436528" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1409038436528" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/news/admin_news.controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="121" column="14" selection-start="3640" selection-end="3640" vertical-scroll-proportion="1.9615384" vertical-offset="2108" max-vertical-offset="5168">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/pages/models/PageMeta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="30" selection-start="260" selection-end="260" vertical-scroll-proportion="0.42273533" vertical-offset="0" max-vertical-offset="563">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/news/models/NewsMeta.model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="168" selection-end="343" vertical-scroll-proportion="0.27175844" vertical-offset="0" max-vertical-offset="816">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lib/Helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="358" column="83" selection-start="10914" selection-end="10914" vertical-scroll-proportion="-14.461538" vertical-offset="5710" max-vertical-offset="6596">
+          <folding>
+            <marker date="1409051978522" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1409051978522" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/pages/admin_pages.page.controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="52" selection-start="2266" selection-end="2310" vertical-scroll-proportion="0.6900369" vertical-offset="680" max-vertical-offset="7718">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/dictionaries/models/DicFieldVal.model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="18" selection-start="248" selection-end="248" vertical-scroll-proportion="0.37638375" vertical-offset="0" max-vertical-offset="542">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/dictionaries/models/DicValMeta.model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="19" selection-start="266" selection-end="266" vertical-scroll-proportion="0.4077491" vertical-offset="0" max-vertical-offset="595">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/pages/views/admin/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="108" column="16" selection-start="3784" selection-end="5607" vertical-scroll-proportion="0.36589697" vertical-offset="1647" max-vertical-offset="7905">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/news/views/admin/_news_meta.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="0" selection-start="1673" selection-end="1673" vertical-scroll-proportion="0.7433155" vertical-offset="535" max-vertical-offset="1122">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/dictionaries/models/DicVal.model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="46" selection-start="613" selection-end="613" vertical-scroll-proportion="-14.307693" vertical-offset="155" max-vertical-offset="765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/news/views/admin/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="32" selection-start="674" selection-end="674" vertical-scroll-proportion="0.6363636" vertical-offset="0" max-vertical-offset="3162">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/dictionaries/admin_dicvals.controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="188" column="0" selection-start="5574" selection-end="5574" vertical-scroll-proportion="-8.5" vertical-offset="2975" max-vertical-offset="4675">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="8" selection-start="512" selection-end="512" vertical-scroll-proportion="-15.692307" vertical-offset="17" max-vertical-offset="1870">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/dictionaries/views/admin/dicvals/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2142">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/dictionaries/views/admin/dicvals/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="121" column="48" selection-start="4850" selection-end="4863" vertical-scroll-proportion="-15.038462" vertical-offset="1666" max-vertical-offset="2822">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/dictionaries/views/admin/dicvals/menu.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="46" selection-start="239" selection-end="239" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="629">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/dic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="44" selection-start="642" selection-end="642" vertical-scroll-proportion="-13.076923" vertical-offset="68" max-vertical-offset="986">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/dictionaries/views/admin/dicvals/_dicval_meta.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="378" selection-end="378" vertical-scroll-proportion="0.42424244" vertical-offset="0" max-vertical-offset="1139">
+          <folding>
+            <marker date="1409057069334" expanded="true" signature="1414:1458" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

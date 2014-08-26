@@ -18,6 +18,7 @@ class CreatePagesTables extends Migration {
                 $table->string('name', 128)->nullable();
                 $table->string('slug', 128)->nullable()->index();
                 $table->string('template', 128)->nullable();
+                $table->integer('type_id')->unsigned()->nullable()->index();
 
                 $table->boolean('publication')->default(1)->unsigned()->nullable()->index();
     			$table->boolean('start_page')->unsigned()->nullable()->index();

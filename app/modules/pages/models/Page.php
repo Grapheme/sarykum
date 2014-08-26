@@ -13,6 +13,18 @@ class Page extends BaseModel {
 		#'seo_url' => 'alpha_dash'
 	);
 
+    protected $fillable = array(
+        'name',
+        'slug',
+        'template',
+        'type_id',
+        'publication',
+        'start_page',
+        'in_menu',
+        'order',
+    );
+
+
     public function blocks() {
         return $this->hasMany('PageBlock', 'page_id', 'id')->orderBy('order');
     }
@@ -35,6 +47,15 @@ class Page extends BaseModel {
             }
         }
         return $this;
+    }
+
+    public function block($slug = false) {
+
+        if (!$slug || !@count($this->blocks) || !@is_object($this->blocks[$slug]) || !@is_object($this->blocks[$slug]->meta))
+            return false;
+
+        return $this->blocks[$slug]->meta->content;
+
     }
 
 }

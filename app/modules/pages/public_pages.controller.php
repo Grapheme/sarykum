@@ -184,8 +184,7 @@ class PublicPagesController extends BaseController {
                 ## Search slug in SLUG
                 $page = $this->page
                     ->where('slug', $url)
-                    ->with('meta.seo')
-                    ->with('blocks.meta')
+                    ->with('meta.seo', 'blocks.meta')
                     ->first();
                 #Helper::tad($page);
 
@@ -209,13 +208,29 @@ class PublicPagesController extends BaseController {
             }
 
         } else {
-            $page = $page->where('start_page', 1)->first();
+
+            $page = $page->where('start_page', 1)
+                ->with('meta.seo', 'blocks.meta')
+                ->first();
+
         }
 
         #Helper::tad($page);
 
-        if (!@is_object($page))
+        ## Page not found... Hmmm... Check template dir...
+        if (!@is_object($page)) {
+
+            if (
+                $url != ''
+                && preg_match("~^[A-Za-z0-9\-\_]+?$~is", $url)
+                && View::exists(Helper::layout($url))
+            ) {
+                $page = new Page;
+                return View::make(Helper::layout($url), compact('url', 'page'));
+            }
+
             App::abort(404);
+        }
 
         if ($page->start_page && $url != '') {
             $redirect = URL::route('mainpage');
@@ -229,7 +244,7 @@ class PublicPagesController extends BaseController {
         if(empty($page->template) || !View::exists($this->module['gtpl'].$page->template))
             throw new Exception('Template [' . $this->module['gtpl'].$page->template . '] not found.');
 
-        #Helper::dd($page);
+        #Helper::tad($page);
         #Helper::dd($page->blocks['pervyy_blok']->meta->content);
 
         ## Рендерим контент всех блоков - обрабатываем шорткоды
@@ -252,33 +267,6 @@ class PublicPagesController extends BaseController {
 
         return View::make($this->module['gtpl'].$page->template, compact('page'));
 
-
-
-
-
-
-        /*
-        ## Если текущая страница - главная, и по какой-то необъяснимой причине у нее задан SLUG - обязательно редиректом юзера на главную страницу для его локали, чтобы не было дублей контента
-        if (isset($page->slug) && $page->slug != '' && $page->slug == $url && $page->start_page == 1) {
-        	## А чтобы ссылка на главную страницу была правильной - делаем вот такую штуку
-        	## Вся соль в том, что если в данный момент текущая локаль - дефолтная, то в slink::createLink() нужно передавать пустую строку. Дефолтная локаль устанавливается равной той же, что и 'app.locale', в файле filters.php
-        	$str = Config::get('app.default_locale') == Config::get('app.locale') ? "" : Config::get('app.locale');
-	    	Redirect(link::to($str));
-        }
-		$content = self::content_render($page_meta->content);
-		return View::make(
-		    $this->tpl.$page->template,
-		    array(
-		        'page_title' => $page_meta->seo_title,
-		        'page_description' => $page_meta->seo_description,
-				'page_keywords' => $page_meta->seo_keywords,
-				'page_author' => '',
-				'page_h1' => $page_meta->seo_h1,
-				'menu' => I18nPage::getMenu($page->template),
-				'content' => $content
-			)
-        );
-        */
 	}
     
 

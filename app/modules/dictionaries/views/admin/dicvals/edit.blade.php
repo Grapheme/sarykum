@@ -48,6 +48,63 @@
 
                 </fieldset>
 
+                @if (@count($fields['general']))
+                <?
+                $element_fields = @is_object($element->fields) ? $element->fields->lists('value', 'key') : array();
+                #Helper::d($element_fields);
+                ?>
+                <fieldset class="padding-top-10 clearfix">
+                    @foreach ($fields['general'] as $field)
+                    <section>
+                        <label class="label">{{ $field['title'] }}</label>
+                        <label class="input {{ $field['type'] }}">
+                            {{ Helper::formField($field, 'fields', @$element_fields[$field['name']]) }}
+                        </label>
+                    </section>
+                    @endforeach
+                </fieldset>
+                @endif
+
+                @if (count($locales) > 1)
+                <fieldset class="clearfix">
+                    <section>
+                        {{--
+                        <label class="label">Индивидуальные настройки для разных языков (необязательно)</label>
+                        --}}
+
+                        <div class="widget-body">
+                            <ul id="myTab1" class="nav nav-tabs bordered">
+                                <? $i = 0; ?>
+                                @foreach ($locales as $locale_sign => $locale_name)
+                                <li class="{{ !$i++ ? 'active' : '' }}">
+                                    <a href="#locale_{{ $locale_sign }}" data-toggle="tab">
+                                        {{ $locale_name }}
+                                    </a>
+                                </li>
+                                @endforeach
+                            </ul>
+                            <div id="myTabContent1" class="tab-content padding-10">
+                                <? $i = 0; ?>
+                                @foreach ($locales as $locale_sign => $locale_name)
+                                <div class="tab-pane fade {{ !$i++ ? 'active in' : '' }}" id="locale_{{ $locale_sign }}">
+
+                                    @include($module['tpl'].'_dicval_meta', compact('locale_sign', 'locale_name', 'element'))
+
+                                </div>
+                                @endforeach
+                            </div>
+                        </div>
+                    </section>
+                </fieldset>
+
+                @else
+
+                @foreach ($locales as $locale_sign => $locale_name)
+                @include($module['tpl'].'_dicval_meta', compact('locale_sign', 'locale_name', 'element'))
+                @endforeach
+
+                @endif
+
                 <footer>
                 	<a class="btn btn-default no-margin regular-10 uppercase pull-left btn-spinner" href="{{ link::previous() }}">
                 		<i class="fa fa-arrow-left hidden"></i> <span class="btn-response-text">Назад</span>
@@ -59,6 +116,12 @@
 
 		    </div>
     	</section>
+
+        @if (count($locales) < 2 && Config::get('dic.seo.' . $dic->slug))
+        <section class="col col-6">
+            {{ ExtForm::seo('seo', $element->seo) }}
+        </section>
+        @endif
         <!-- /Form -->
    	</div>
 

@@ -33,6 +33,19 @@ class CreateDicsTables extends Migration {
             echo('...' . $this->table . PHP_EOL);
         }
 
+        $this->table = "dictionary_fields_values";
+        if (!Schema::hasTable($this->table)) {
+            Schema::create($this->table, function(Blueprint $table) {
+                $table->increments('id');
+                $table->integer('value_id')->unsigned()->nullable()->index();
+                $table->string('key')->nullable()->index();
+                $table->string('value')->nullable();
+            });
+            echo(' + ' . $this->table . PHP_EOL);
+        } else {
+            echo('...' . $this->table . PHP_EOL);
+        }
+
     }
 
 
@@ -43,6 +56,10 @@ class CreateDicsTables extends Migration {
 
             Schema::dropIfExists('dictionary_values');
             echo(' - ' . 'dictionary_values' . PHP_EOL);
+
+            Schema::dropIfExists('dictionary_fields_values');
+            echo(' - ' . 'dictionary_fields_values' . PHP_EOL);
 	}
 
 }
+

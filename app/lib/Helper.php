@@ -330,5 +330,52 @@ HTML;
 
     }
 
+
+    public static function formField($array, $name_group = false, $value = false) {
+
+        if (!@$array || !is_array($array) || !@$array['name'])
+            return false;
+
+        $return = '';
+        $name = $array['name'];
+        if ($name_group != '')
+            $name = $name_group . '[' . $name . ']';
+
+        $value = $value ? $value : @$array['default'];
+
+        $others = array();
+        if (@count($array['others'])) {
+            foreach ($array['others'] as $o => $other) {
+                $others[] = $o . '="' . $other . '"';
+            }
+        }
+        $others = ' ' . implode(' ', $others);
+        switch ($array['type']) {
+            case 'text':
+                $return = '<input type="text" name="' . $name . '" value="' . $value . '"' . $others . ' />';
+                #$return = Form::text($array['name']);
+                break;
+            case 'textarea':
+                $return = '<textarea name="' . $name . '"' . $others . '>' . $value . '</textarea>';
+                break;
+        }
+        return $return;
+    }
+
+
+    public static function arrayFieldToKey(&$array, $field = 'slug') {
+        #$return = $this;
+        #Helper::tad($array);
+        if (@count($array)) {
+            $temp = array();
+            foreach ($array as $key => $val) {
+                #Helper::dd($val);
+                $array[$val->$field] = $val;
+                unset($array[$key]);
+            }
+        }
+        return $array;
+    }
+
 }
 

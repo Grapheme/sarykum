@@ -9,6 +9,13 @@ class DicVal extends BaseModel {
 
 	public static $order_by = "name ASC";
 
+    protected $fillable = array(
+        'dic_id',
+        'slug',
+        'name',
+        'order',
+    );
+
 	public static $rules = array(
 		'name' => 'required',
 	);
@@ -19,6 +26,14 @@ class DicVal extends BaseModel {
 
     public function dic() {
         return $this->belongsTo('Dictionary', 'dic_id')->orderBy('name');
+    }
+
+    public function metas() {
+        return $this->hasMany('DicValMeta', 'dicval_id', 'id');
+    }
+
+    public function fields() {
+        return $this->hasMany('DicFieldVal', 'dicval_id', 'id');
     }
 
 

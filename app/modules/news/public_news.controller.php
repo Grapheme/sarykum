@@ -23,14 +23,16 @@ class PublicNewsController extends BaseController {
             	## Также указываем before-фильтр i18n_url, для выставления текущей локали.
                 Route::group(array('before' => 'i18n_url', 'prefix' => $locale_sign), function() use ($class) {
                     Route::get('/news/{url}', array('as' => 'news_full', 'uses' => $class.'@showFullNews'));
+                    Route::get('/news/',      array('as' => 'news',      'uses' => $class.'@showNews'));
                 });
             }
         }
 
         ## Генерим роуты без префикса, и назначаем before-фильтр i18n_url.
         ## Это позволяет нам делать редирект на урл с префиксом только для этих роутов, не затрагивая, например, /admin и /login
-        Route::group(array('before' => 'i18n_url'), function(){
+        Route::group(array('before' => 'i18n_url'), function() {
             Route::get('/news/{url}', array('as' => 'news_full', 'uses' => __CLASS__.'@showFullNews'));
+            Route::get('/news/',      array('as' => 'news',      'uses' => __CLASS__.'@showNews'));
         });
     }
     
@@ -42,63 +44,71 @@ class PublicNewsController extends BaseController {
     	shortcode::add("news",
         
             function($params = null) use ($tpl) {
+
                 #print_r($params); die;
-        		## Gfhfvtnhs по-умолчанию
+
+                if(!Allow::module('news'))
+                    return false;
+
+                ## Параметры по-умолчанию
                 $default = array(
-                    'tpl' => Config::get('app-default.news_template'),
-                    'limit' => Config::get('app-default.news_count_on_page'),
+                    'tpl' => Config::get('app-default.news_template', 'default'),
+                    'limit' => Config::get('app-default.news_count_on_page', 3),
                     'order' => Helper::stringToArray(News::$order_by),
                     'pagination' => 1,
                 );
         		## Применяем переданные настройки
-                $params = array_merge($default, $params);
+                $params = $params+$default;
                 #dd($params);
 
-        		#if(Allow::enabled_module('news')):
-        		    ## Получаем новости, делаем LEFT JOIN с news_meta, с проверкой языка и тайтла
-        			$selected_news = News::where('news.publication', 1)
-        			                        ->leftJoin('news_meta', 'news_meta.news_id', '=', 'news.id')
-        			                        ->where('news_meta.language', Config::get('app.locale'))
-        			                        ->where('news_meta.title', '!=', '')
-        			                        ->select('*', 'news.id AS original_id', 'news.published_at AS created_at')
-                                            ->orderBy('news.published_at', 'desc');
-                                            
-                    #$selected_news = $selected_news->where('news_meta.wtitle', '!=', '');
+                #echo $tpl.$params['tpl'];
 
-                    ## Получаем новости с учетом пагинации
-                    #echo $selected_news->toSql(); die;
-                    #var_dump($params['limit']);
-        			$news = $selected_news->paginate($params['limit']); ## news list with pagination
-        			#$news = $selected_news->get(); ## all news, without pagination
+                if(empty($params['tpl']) || !View::exists($tpl.$params['tpl']))
+                    throw new Exception('Template [' . $tpl.$params['tpl'] . '] not found.');
 
-        			foreach ($news as $n => $new) {
-        				#print_r($new); die;
-        				$gall = Rel_mod_gallery::where('module', 'news')->where('unit_id', $new->original_id)->first();
-        				#foreach ($gall->photos as $photo) {
-        				#	print_r($photo->path());
-        				#}
-        				#print_r($gall->photos); die;
-        				$new->gall = @$gall;
-        				$new->image = is_object(@$gall->photos[0]) ? @$gall->photos[0]->path() : "";
-        				$news[$n]->$new;
-        			}
-        			
-                    #echo $news->count(); die;
-                    
-        			if($news->count()) {
+                $news = News::orderBy('news.published_at', 'desc')->with('meta.photo', 'meta.gallery.photos', 'meta.seo');
 
-                        #if(empty($params['tpl']) || !View::exists($this->tpl.$params['tpl'])) {
-                        if(empty($params['tpl']) || !View::exists($tpl.$params['tpl'])) {
-                			#return App::abort(404, 'Отсутствует шаблон: ' . $this->tpl . $news->template);
-        					#return "Отсутствует шаблон: templates.".$params['tpl'];
-                            throw new Exception('Template not found: ' . $tpl.$params['tpl']);
-                        }
+                /*
+                ## Получаем новости, делаем LEFT JOIN с news_meta, с проверкой языка и тайтла
+                $selected_news = News::where('news.publication', 1)
+                                        ->leftJoin('news_meta', 'news_meta.news_id', '=', 'news.id')
+                                        ->where('news_meta.language', Config::get('app.locale'))
+                                        ->where('news_meta.title', '!=', '')
+                                        ->select('*', 'news.id AS original_id', 'news.published_at AS created_at')
+                                        ->orderBy('news.published_at', 'desc');
 
-    					return View::make($tpl.$params['tpl'], compact('news'));
-        			}
-        		#else:
-        		#	return '';
-        		#endif;
+                #$selected_news = $selected_news->where('news_meta.wtitle', '!=', '');
+
+                ## Получаем новости с учетом пагинации
+                #echo $selected_news->toSql(); die;
+                #var_dump($params['limit']);
+                $news = $selected_news->paginate($params['limit']); ## news list with pagination
+                #$news = $selected_news->get(); ## all news, without pagination
+                */
+
+                $news = $news->paginate($params['limit']);
+
+                #Helper::tad($news);
+
+                /*
+                foreach ($news as $n => $new) {
+                    #print_r($new); die;
+                    $gall = Rel_mod_gallery::where('module', 'news')->where('unit_id', $new->original_id)->first();
+                    #foreach ($gall->photos as $photo) {
+                    #	print_r($photo->path());
+                    #}
+                    #print_r($gall->photos); die;
+                    $new->gall = @$gall;
+                    $new->image = is_object(@$gall->photos[0]) ? @$gall->photos[0]->path() : "";
+                    $news[$n]->$new;
+                }
+                */
+                #echo $news->count(); die;
+
+                if(!$news->count())
+                    return false;
+
+                return View::make($tpl.$params['tpl'], compact('news'));
     	    }
         );
         
@@ -140,7 +150,42 @@ class PublicNewsController extends BaseController {
         );
         View::share('module', $this->module);
 	}
-    
+
+    ## Функция для просмотра полной мультиязычной новости
+    public function showNews() {
+
+        if(!Allow::module($this->module['group']))
+            App::abort(404);
+
+        $limit = Config::get('site.news_page_limit', 10);
+        $tpl = Config::get('site.news_page_template', 'news-list-page');
+
+        $news = $this->news
+            ->where('publication', 1)
+            ->orderBy('published_at', 'DESC')
+            ->with('meta.seo', 'meta.photo', 'meta.gallery.photos')
+            ->take($limit)
+            ->paginate($limit);
+
+        #Helper::tad($news);
+
+        if (!@count($news))
+            App::abort(404);
+
+        if (!$tpl)
+            $tpl = 'news-list-page';
+
+        #Helper::tad($news);
+
+        #Helper::dd( $this->module['gtpl'].$tpl );
+
+        if(empty($tpl) || !View::exists($this->module['gtpl'].$tpl))
+            throw new Exception('Template [' . $this->module['gtpl'].$tpl . '] not found.');
+
+        return View::make($this->module['gtpl'].$tpl, compact('news'));
+    }
+
+
     ## Функция для просмотра полной мультиязычной новости
     public function showFullNews($url = false) {
 
@@ -236,6 +281,6 @@ class PublicNewsController extends BaseController {
             throw new Exception('Template [' . $this->module['gtpl'].$news->template . '] not found.');
 
         return View::make($this->module['gtpl'].$news->template, compact('news'));
-	}
+    }
 
 }
