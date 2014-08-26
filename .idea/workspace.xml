@@ -5,83 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9eb288a-66f5-42e9-a6ae-4f6f60b8c9bd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/img-lists/01.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/lists/01.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/slides/01.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/img-lists/02.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/lists/02.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/slides/02.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/img-lists/03.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/lists/03.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/slides/03.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/img-lists/04.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/lists/04.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/img-lists/05.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/lists/05.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/img-lists/06.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/lists/06.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/img-lists/07.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/img-lists/08.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/galleries/1409061408_1943.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/galleries/thumbs/1409061408_1943.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/galleries/1409063127_1304.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/galleries/thumbs/1409063127_1304.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/big-logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/calendar-disabled.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/calendar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/slides/dag-01.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/metallic/default-date.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/metallic/disabled-date.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/fontello.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/fontello.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/fontello.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/metallic/header.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/kitchen.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/logo.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/rest.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/metallic/selected-date.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/services-girl.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/small-logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/slides/spa-01.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/spa.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/travel.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/less/actions/actions.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/less/animations.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/less/app.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/less/partials/booking-form.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/less/partials/buttons.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/templates/site/discover.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/fonts/fontello.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/less/static/fonts.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/less/partials/footer.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/less/grid.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/less/partials/header.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/herb.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/jquery.customSelect.init.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/jquery.customSelect.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/less/partials/link-imgs.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/logo.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/less/main.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/less/media.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/less/static/metallic.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/less/static/normalize.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/modules/sarykum/public_sarykum.controller.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/templates/site/restaurant.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/less/partials/romb-list.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/less/rooms/room-list.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/templates/site/rooms.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/less/partials/select.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/templates/site/services.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/less/partials/slideshow.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/templates/site/spa.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/less/spa/spa.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/less/partials/square-list.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/less/partials/table.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/less/partials/tabs.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/less/vars.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/zebra_datepicker-init.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/zebra_datepicker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/emails/reserve_success.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app.js" afterPath="$PROJECT_DIR$/public/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates/site/header.blade.php" afterPath="$PROJECT_DIR$/app/views/templates/site/header.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/index.js" afterPath="$PROJECT_DIR$/public/js/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/mail.php" afterPath="$PROJECT_DIR$/app/config/mail.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/main.js" afterPath="$PROJECT_DIR$/public/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/sarykum/public_sarykum.controller.php" afterPath="$PROJECT_DIR$/app/modules/sarykum/public_sarykum.controller.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates/site/scripts.blade.php" afterPath="$PROJECT_DIR$/app/views/templates/site/scripts.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="archive.iws" />
@@ -178,16 +109,34 @@
       <file leaf-file-name="public_sarykum.controller.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/modules/sarykum/public_sarykum.controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="60" selection-start="810" selection-end="810" vertical-scroll-proportion="-18.307692" vertical-offset="0" max-vertical-offset="1037">
+            <state line="76" column="92" selection-start="2189" selection-end="2189" vertical-scroll-proportion="-15.538462" vertical-offset="888" max-vertical-offset="1547">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.blade.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="mail.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/config/mail.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="20" selection-start="286" selection-end="286" vertical-scroll-proportion="0.40925926" vertical-offset="0" max-vertical-offset="540">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/templates/site/header.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="39" selection-start="3952" selection-end="3952" vertical-scroll-proportion="0.5982405" vertical-offset="1088" max-vertical-offset="1921">
+            <state line="44" column="24" selection-start="2022" selection-end="2174" vertical-scroll-proportion="-8.346154" vertical-offset="531" max-vertical-offset="1921">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scripts.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/templates/site/scripts.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="0" selection-start="527" selection-end="527" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="323">
               <folding />
             </state>
           </provider>
@@ -256,9 +205,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/modules/news/models/News.model.php" />
-        <option value="$PROJECT_DIR$/app/modules/galleries/views/extform_image.blade.php" />
-        <option value="$PROJECT_DIR$/app/modules/galleries/views/extform_gallery.blade.php" />
         <option value="$PROJECT_DIR$/app/modules/galleries/admin_galleries.controller.php" />
         <option value="$PROJECT_DIR$/app/lib/Allow.php" />
         <option value="$PROJECT_DIR$/app/lib/SystemModules.php" />
@@ -306,7 +252,10 @@
         <option value="$PROJECT_DIR$/app/views/templates/site/spa.blade.php" />
         <option value="$PROJECT_DIR$/app/views/templates/site/restaurant.blade.php" />
         <option value="$PROJECT_DIR$/app/modules/dictionaries/models/Dictionary.model.php" />
+        <option value="$PROJECT_DIR$/app/views/templates/site/scripts.blade.php" />
         <option value="$PROJECT_DIR$/app/views/templates/site/header.blade.php" />
+        <option value="$PROJECT_DIR$/app/modules/sarykum/public_sarykum.controller.php" />
+        <option value="$PROJECT_DIR$/app/config/mail.php" />
       </list>
     </option>
   </component>
@@ -520,7 +469,11 @@
       <created>1409063877737</created>
       <updated>1409063877737</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="views+">
+      <created>1409064238666</created>
+      <updated>1409064238666</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -545,9 +498,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3588907" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3588907" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2985318" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32250756" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32175228" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -594,18 +547,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/lib/Allow.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="119" column="27" selection-start="4167" selection-end="4167" vertical-scroll-proportion="0.5328597" vertical-offset="1740" max-vertical-offset="2329">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/modules/pages/views/default.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="32" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="563" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/filters.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="41" column="52" selection-start="883" selection-end="883" vertical-scroll-proportion="-2.2344582" vertical-offset="1955" max-vertical-offset="2856" />
@@ -852,13 +793,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/templates/site/head.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="1019" selection-end="1019" vertical-scroll-proportion="0.6363636" vertical-offset="0" max-vertical-offset="561">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/static/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="29" selection-start="1143" selection-end="1164" vertical-scroll-proportion="0.600713" vertical-offset="71" max-vertical-offset="5151">
@@ -969,16 +903,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/modules/sarykum/public_sarykum.controller.php">
+    <entry file="file://$PROJECT_DIR$/app/views/templates/site/head.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="60" selection-start="810" selection-end="810" vertical-scroll-proportion="-18.307692" vertical-offset="0" max-vertical-offset="1037">
+        <state line="21" column="0" selection-start="1019" selection-end="1019" vertical-scroll-proportion="0.6611111" vertical-offset="0" max-vertical-offset="540">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/templates/site/scripts.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="527" selection-end="527" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="323">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/templates/site/header.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="39" selection-start="3952" selection-end="3952" vertical-scroll-proportion="0.5982405" vertical-offset="1088" max-vertical-offset="1921">
+        <state line="44" column="24" selection-start="2022" selection-end="2174" vertical-scroll-proportion="-8.346154" vertical-offset="531" max-vertical-offset="1921">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/sarykum/public_sarykum.controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="92" selection-start="2189" selection-end="2189" vertical-scroll-proportion="-15.538462" vertical-offset="888" max-vertical-offset="1547">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/mail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="20" selection-start="286" selection-end="286" vertical-scroll-proportion="0.40925926" vertical-offset="0" max-vertical-offset="540">
           <folding />
         </state>
       </provider>

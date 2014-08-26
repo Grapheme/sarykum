@@ -7,6 +7,7 @@
     @endif
 
     {{ HTML::scriptmod("js/index.js") }}
+    {{ HTML::scriptmod("js/app.js") }}
 
     {{ HTML::script("js/vendor/jquery.validate.min.js") }}
     {{ HTML::script("js/vendor/jquery-form.min.js") }}

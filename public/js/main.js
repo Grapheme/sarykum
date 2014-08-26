@@ -17,7 +17,7 @@ var App = (function() {
 		e.stopPropagation();
 	});
 
-	$('.booking-form .btn').click( function(){
+	$('.booking-form .btn1').click( function(){
 		$('.form-success').addClass('active');
 
 		setTimeout( function(){

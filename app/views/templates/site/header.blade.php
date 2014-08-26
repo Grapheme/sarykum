@@ -42,7 +42,7 @@ $route = Route::currentRouteName();
                             Ваша бронь успешно отправлена администратору
                         </div>
 
-                        {{ Form::model(array('url' => URL::route('ajax-reserve-room'), 'class' => 'smart-form', 'id' => 'reserve-form', 'role' => 'form', 'method' => 'POST')) }}
+                        {{ Form::open(array('url' => URL::route('ajax-reserve-room'), 'class' => 'smart-form', 'id' => 'reserve-form', 'role' => 'form', 'method' => 'POST')) }}
                             <fieldset class="date-data">
                                 <section>
                                     <header>
@@ -53,12 +53,12 @@ $route = Route::currentRouteName();
                                     </div>
                                     <section class="datepickerFrom inline">
                                         с
-                                        <input id="datepickerFrom" class="datepicker" type="text">
+                                        {{ Form::text('date_start', null, array('id' => 'datepickerFrom', 'class' => 'datepicker')) }}
                                     </section>
                                     <section class="datepickerTo inline">
                                         по
-                                        <input id="datepickerTo" type="text">
-                                    </section> 
+                                        {{ Form::text('date_stop', null, array('id' => 'datepickerTo', 'class' => 'datepicker_')) }}
+                                    </section>
                                 </section>
                             </fieldset>
                             <fieldset class="text-data">
@@ -67,10 +67,10 @@ $route = Route::currentRouteName();
                                         Представьтесь
                                     </header>
                                     <div class="inline">
-                                        <input type="text" placeholder="Представьтесь">
+                                        {{ Form::text('name', null, array('placeholder' => 'Представьтесь')) }}
                                     </div>
                                     <div class="inline">
-                                        <input type="text" placeholder="Телефон или email">
+                                        {{ Form::text('contact', null, array('placeholder' => 'Телефон или email')) }}
                                     </div>
                                 </section>
                             </fieldset>
@@ -79,7 +79,7 @@ $route = Route::currentRouteName();
                                     <div class="price inline">
                                         Стоимость услуги за сутки: <span>4500 руб.</span>
                                     </div>                                                                        
-                                    <button type="button" class="btn bordered inline">
+                                    <button type="submit" class="btn bordered inline">
                                         Забронировать
                                     </button> 
                                 </section>
