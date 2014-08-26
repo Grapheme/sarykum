@@ -4,7 +4,7 @@ return array(
 
     'fields' => array(
 
-        'number_type' => array(
+        'room_type' => array(
 
             'general' => array(
                 /*

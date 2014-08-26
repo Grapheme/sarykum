@@ -116,7 +116,13 @@ class AdminDicvalsController extends BaseController {
 
         $fields = Config::get('dic.fields.' . $dic->slug);
 
-        $element = DicVal::where('id', $id)->with('metas')->with('fields')->first();
+        $element = DicVal::where('id', $id)
+            ->with('metas')
+            ->with('meta')
+            ->with('fields')
+            ->first();
+
+        #Helper::tad($element);
 
 		return View::make($this->module['tpl'].'edit', compact('element', 'dic', 'locales', 'fields'));
 	}
@@ -155,7 +161,7 @@ class AdminDicvalsController extends BaseController {
         $fields = Input::get('fields');
         $fields_i18n = Input::get('fields_i18n');
 
-        $json_request['responseText'] = "<pre>" . print_r($_POST, 1) . "</pre>";
+        #$json_request['responseText'] = "<pre>" . print_r($_POST, 1) . "</pre>";
         #return Response::json($json_request,200);
 
         $json_request = array('status'=>FALSE, 'responseText'=>'', 'responseErrorText'=>'', 'redirect'=>FALSE);
@@ -164,23 +170,20 @@ class AdminDicvalsController extends BaseController {
 
             $redirect = false;
 
-            if ($id > 0) {
+            if ($id > 0 && NULL !== DicVal::find($id)) {
 
-                if (NULL !== DicVal::find($id)) {
-    
-        		    #$json_request['responseText'] = "<pre>" . print_r($_POST, 1) . "</pre>";
-        		    #return Response::json($json_request,200);
-
-                    DicVal::find($id)->update($input);
-                }
+                ## UPDATE DICVAL
+                DicVal::find($id)->update($input);
 
             } else {
 
+                ## CREATE DICVAL
                 $element = DicVal::insert($input);
                 $id = $element->id;
                 $redirect = true;
             }
 
+            ## FIELDS
             if (@is_array($fields) && count($fields)) {
                 foreach ($fields as $key => $value) {
 
@@ -191,7 +194,7 @@ class AdminDicvalsController extends BaseController {
                 }
             }
 
-
+            ## FIELDS I18N
             if (@is_array($fields_i18n) && count($fields_i18n)) {
                 foreach ($fields_i18n as $locale_sign => $value) {
 
@@ -205,11 +208,11 @@ class AdminDicvalsController extends BaseController {
                 }
             }
 
+            ## LOCALES
             if (@is_array($locales) && count($locales)) {
                 foreach ($locales as $locale_sign => $array) {
 
                     $element_meta = DicValMeta::firstOrNew(array('dicval_id' => $id, 'language' => $locale_sign));
-                    #Helper::ta($element_meta);
                     $element_meta->update($array);
                     $element_meta->save();
                     unset($element_meta);

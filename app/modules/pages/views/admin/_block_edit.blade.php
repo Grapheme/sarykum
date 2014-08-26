@@ -67,7 +67,7 @@ $method     = 'POST';
 
             @if (count($locales) > 1)
 
-            <div class="widget-body">
+            <div class="widget-body" style="padding-top:15px">
                 <ul id="myTab2" class="nav nav-tabs bordered" role="tablist">
                     <? $i = 0; ?>
                     @foreach ($locales as $locale_sign => $locale_name)
