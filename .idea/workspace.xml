@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9eb288a-66f5-42e9-a6ae-4f6f60b8c9bd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/galleries/models/Photo.php" afterPath="$PROJECT_DIR$/app/modules/galleries/models/Photo.php" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\app\lang\de\admin.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\app\lang\de\interface.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\app\lang\de\modules.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\app\lang\de\pagination.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\app\lang\de\reminders.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\app\lang\de\validation.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="archive.iws" />
@@ -111,7 +116,7 @@
       <file leaf-file-name="mail.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/config/mail.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="0" selection-start="546" selection-end="546" vertical-scroll-proportion="0.6925926" vertical-offset="0" max-vertical-offset="540">
+            <state line="16" column="6" selection-start="365" selection-end="365" vertical-scroll-proportion="0.5037037" vertical-offset="0" max-vertical-offset="540">
               <folding />
             </state>
           </provider>
@@ -470,7 +475,11 @@
       <created>1409068931131</created>
       <updated>1409068931131</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="room reserve+">
+      <created>1409069361307</created>
+      <updated>1409069361307</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -931,7 +940,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/mail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="546" selection-end="546" vertical-scroll-proportion="0.6925926" vertical-offset="0" max-vertical-offset="540">
+        <state line="16" column="6" selection-start="365" selection-end="365" vertical-scroll-proportion="0.5037037" vertical-offset="0" max-vertical-offset="540">
           <folding />
         </state>
       </provider>
