@@ -11,6 +11,7 @@ class DicFieldVal extends BaseModel {
 
     protected $fillable = array(
         'dicval_id',
+        'language',
         'key',
         'value',
     );

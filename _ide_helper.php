@@ -1,7 +1,7 @@
 <?php
 /**
  * An helper file for Laravel 4, to provide autocomplete information to your IDE
- * Generated for Laravel 4.2.8 on 2014-08-26.
+ * Generated for Laravel 4.2.8 on 2014-08-27.
  *
  * @author Barry vd. Heuvel <barryvdh@gmail.com>
  * @see https://github.com/barryvdh/laravel-ide-helper
@@ -11,6 +11,17 @@ namespace {
     exit("This file should not be included, only analyzed by your IDE");
 
     class App extends \Illuminate\Support\Facades\App{
+        
+        /**
+         * Create a new Illuminate application instance.
+         *
+         * @param \Illuminate\Http\Request $request
+         * @return void 
+         * @static 
+         */
+        public static function __construct($request = null){
+            \Illuminate\Foundation\Application::__construct($request);
+        }
         
         /**
          * Bind the installation paths to the application.
@@ -628,6 +639,29 @@ namespace {
         }
         
         /**
+         * Dynamically access application services.
+         *
+         * @param string $key
+         * @return mixed 
+         * @static 
+         */
+        public static function __get($key){
+            return \Illuminate\Foundation\Application::__get($key);
+        }
+        
+        /**
+         * Dynamically set application services.
+         *
+         * @param string $key
+         * @param mixed $value
+         * @return void 
+         * @static 
+         */
+        public static function __set($key, $value){
+            \Illuminate\Foundation\Application::__set($key, $value);
+        }
+        
+        /**
          * Determine if the given abstract type has been resolved.
          *
          * @param string $abstract
@@ -1033,6 +1067,19 @@ namespace {
         }
         
         /**
+         * Constructor.
+         *
+         * @param string $name The name of the application
+         * @param string $version The version of the application
+         * @api 
+         * @static 
+         */
+        public static function __construct($name = 'UNKNOWN', $version = 'UNKNOWN'){
+            //Method inherited from \Symfony\Component\Console\Application            
+            \Illuminate\Console\Application::__construct($name, $version);
+        }
+        
+        /**
          * 
          *
          * @static 
@@ -1402,6 +1449,18 @@ namespace {
             return \Illuminate\Console\Application::setDefaultCommand($commandName);
         }
         
+        /**
+         * Dynamically pass all missing methods to console Artisan.
+         *
+         * @param string $method
+         * @param array $parameters
+         * @return mixed 
+         * @static 
+         */
+        public static function __call($method, $parameters){
+            return \Illuminate\Foundation\Artisan::__call($method, $parameters);
+        }
+        
     }
 
 
@@ -1449,6 +1508,18 @@ namespace {
         }
         
         /**
+         * Create a new manager instance.
+         *
+         * @param \Illuminate\Foundation\Application $app
+         * @return void 
+         * @static 
+         */
+        public static function __construct($app){
+            //Method inherited from \Illuminate\Support\Manager            
+            \Illuminate\Auth\AuthManager::__construct($app);
+        }
+        
+        /**
          * Get a driver instance.
          *
          * @param string $driver
@@ -1482,6 +1553,19 @@ namespace {
         public static function getDrivers(){
             //Method inherited from \Illuminate\Support\Manager            
             return \Illuminate\Auth\AuthManager::getDrivers();
+        }
+        
+        /**
+         * Dynamically call the default driver instance.
+         *
+         * @param string $method
+         * @param array $parameters
+         * @return mixed 
+         * @static 
+         */
+        public static function __call($method, $parameters){
+            //Method inherited from \Illuminate\Support\Manager            
+            return \Illuminate\Auth\AuthManager::__call($method, $parameters);
         }
         
         /**
@@ -1943,6 +2027,19 @@ namespace {
         }
         
         /**
+         * Create a new compiler instance.
+         *
+         * @param \Illuminate\Filesystem\Filesystem $files
+         * @param string $cachePath
+         * @return void 
+         * @static 
+         */
+        public static function __construct($files, $cachePath){
+            //Method inherited from \Illuminate\View\Compilers\Compiler            
+            \Illuminate\View\Compilers\BladeCompiler::__construct($files, $cachePath);
+        }
+        
+        /**
          * Get the path to the compiled version of a view.
          *
          * @param string $path
@@ -2014,6 +2111,18 @@ namespace {
         }
         
         /**
+         * Create a new manager instance.
+         *
+         * @param \Illuminate\Foundation\Application $app
+         * @return void 
+         * @static 
+         */
+        public static function __construct($app){
+            //Method inherited from \Illuminate\Support\Manager            
+            \Illuminate\Cache\CacheManager::__construct($app);
+        }
+        
+        /**
          * Get a driver instance.
          *
          * @param string $driver
@@ -2047,6 +2156,19 @@ namespace {
         public static function getDrivers(){
             //Method inherited from \Illuminate\Support\Manager            
             return \Illuminate\Cache\CacheManager::getDrivers();
+        }
+        
+        /**
+         * Dynamically call the default driver instance.
+         *
+         * @param string $method
+         * @param array $parameters
+         * @return mixed 
+         * @static 
+         */
+        public static function __call($method, $parameters){
+            //Method inherited from \Illuminate\Support\Manager            
+            return \Illuminate\Cache\CacheManager::__call($method, $parameters);
         }
         
         /**
@@ -2255,6 +2377,19 @@ namespace {
          * @throws \BadMethodCallException
          * @static 
          */
+        public static function __callStatic($method, $parameters){
+            return \Illuminate\Cache\Repository::__callStatic($method, $parameters);
+        }
+        
+        /**
+         * Dynamically handle calls to the class.
+         *
+         * @param string $method
+         * @param array $parameters
+         * @return mixed 
+         * @throws \BadMethodCallException
+         * @static 
+         */
         public static function macroCall($method, $parameters){
             return \Illuminate\Cache\Repository::macroCall($method, $parameters);
         }
@@ -2345,6 +2480,18 @@ namespace {
 
 
     class Config extends \Illuminate\Support\Facades\Config{
+        
+        /**
+         * Create a new configuration repository.
+         *
+         * @param \Illuminate\Config\LoaderInterface $loader
+         * @param string $environment
+         * @return void 
+         * @static 
+         */
+        public static function __construct($loader, $environment){
+            \Illuminate\Config\Repository::__construct($loader, $environment);
+        }
         
         /**
          * Determine if the given configuration value exists.
@@ -2689,6 +2836,17 @@ namespace {
     class Crypt extends \Illuminate\Support\Facades\Crypt{
         
         /**
+         * Create a new encrypter instance.
+         *
+         * @param string $key
+         * @return void 
+         * @static 
+         */
+        public static function __construct($key){
+            \Illuminate\Encryption\Encrypter::__construct($key);
+        }
+        
+        /**
          * Encrypt the given value.
          *
          * @param string $value
@@ -2747,6 +2905,18 @@ namespace {
 
 
     class DB extends \Illuminate\Support\Facades\DB{
+        
+        /**
+         * Create a new database manager instance.
+         *
+         * @param \Illuminate\Foundation\Application $app
+         * @param \Illuminate\Database\Connectors\ConnectionFactory $factory
+         * @return void 
+         * @static 
+         */
+        public static function __construct($app, $factory){
+            \Illuminate\Database\DatabaseManager::__construct($app, $factory);
+        }
         
         /**
          * Get a database connection instance.
@@ -2833,6 +3003,18 @@ namespace {
          */
         public static function getConnections(){
             return \Illuminate\Database\DatabaseManager::getConnections();
+        }
+        
+        /**
+         * Dynamically pass methods to the default connection.
+         *
+         * @param string $method
+         * @param array $parameters
+         * @return mixed 
+         * @static 
+         */
+        public static function __call($method, $parameters){
+            return \Illuminate\Database\DatabaseManager::__call($method, $parameters);
         }
         
         /**
@@ -3634,6 +3816,32 @@ namespace {
          */
         public static function simplePaginate($perPage = null, $columns = array()){
             return \Illuminate\Database\Eloquent\Builder::simplePaginate($perPage, $columns);
+        }
+        
+        /**
+         * Increment a column's value by a given amount.
+         *
+         * @param string $column
+         * @param int $amount
+         * @param array $extra
+         * @return int 
+         * @static 
+         */
+        public static function increment($column, $amount = 1, $extra = array()){
+            return \Illuminate\Database\Eloquent\Builder::increment($column, $amount, $extra);
+        }
+        
+        /**
+         * Decrement a column's value by a given amount.
+         *
+         * @param string $column
+         * @param int $amount
+         * @param array $extra
+         * @return int 
+         * @static 
+         */
+        public static function decrement($column, $amount = 1, $extra = array()){
+            return \Illuminate\Database\Eloquent\Builder::decrement($column, $amount, $extra);
         }
         
         /**
@@ -4855,6 +5063,17 @@ namespace {
     class Event extends \Illuminate\Support\Facades\Event{
         
         /**
+         * Create a new event dispatcher instance.
+         *
+         * @param \Illuminate\Container\Container $container
+         * @return void 
+         * @static 
+         */
+        public static function __construct($container = null){
+            \Illuminate\Events\Dispatcher::__construct($container);
+        }
+        
+        /**
          * Register an event listener with the dispatcher.
          *
          * @param string|array $events
@@ -5293,6 +5512,19 @@ namespace {
     class Form extends \Illuminate\Support\Facades\Form{
         
         /**
+         * Create a new form builder instance.
+         *
+         * @param \Illuminate\Routing\UrlGenerator $url
+         * @param \Illuminate\Html\HtmlBuilder $html
+         * @param string $csrfToken
+         * @return void 
+         * @static 
+         */
+        public static function __construct($html, $url, $csrfToken){
+            \Illuminate\Html\FormBuilder::__construct($html, $url, $csrfToken);
+        }
+        
+        /**
          * Open up a new HTML form.
          *
          * @param array $options
@@ -5699,6 +5931,32 @@ namespace {
             return \Illuminate\Html\FormBuilder::hasMacro($name);
         }
         
+        /**
+         * Dynamically handle calls to the class.
+         *
+         * @param string $method
+         * @param array $parameters
+         * @return mixed 
+         * @throws \BadMethodCallException
+         * @static 
+         */
+        public static function __callStatic($method, $parameters){
+            return \Illuminate\Html\FormBuilder::__callStatic($method, $parameters);
+        }
+        
+        /**
+         * Dynamically handle calls to the class.
+         *
+         * @param string $method
+         * @param array $parameters
+         * @return mixed 
+         * @throws \BadMethodCallException
+         * @static 
+         */
+        public static function __call($method, $parameters){
+            return \Illuminate\Html\FormBuilder::__call($method, $parameters);
+        }
+        
     }
 
 
@@ -5746,6 +6004,17 @@ namespace {
 
 
     class HTML extends \Egg\Facades\HTML{
+        
+        /**
+         * Create a new HTML builder instance.
+         *
+         * @param \Illuminate\Routing\UrlGenerator $url
+         * @return void 
+         * @static 
+         */
+        public static function __construct($url = null){
+            \Illuminate\Html\HtmlBuilder::__construct($url);
+        }
         
         /**
          * Convert an HTML string to entities.
@@ -5982,6 +6251,32 @@ namespace {
          */
         public static function hasMacro($name){
             return \Illuminate\Html\HtmlBuilder::hasMacro($name);
+        }
+        
+        /**
+         * Dynamically handle calls to the class.
+         *
+         * @param string $method
+         * @param array $parameters
+         * @return mixed 
+         * @throws \BadMethodCallException
+         * @static 
+         */
+        public static function __callStatic($method, $parameters){
+            return \Illuminate\Html\HtmlBuilder::__callStatic($method, $parameters);
+        }
+        
+        /**
+         * Dynamically handle calls to the class.
+         *
+         * @param string $method
+         * @param array $parameters
+         * @return mixed 
+         * @throws \BadMethodCallException
+         * @static 
+         */
+        public static function __call($method, $parameters){
+            return \Illuminate\Html\HtmlBuilder::__call($method, $parameters);
         }
         
     }
@@ -6404,6 +6699,24 @@ namespace {
         }
         
         /**
+         * Constructor.
+         *
+         * @param array $query The GET parameters
+         * @param array $request The POST parameters
+         * @param array $attributes The request attributes (parameters parsed from the PATH_INFO, ...)
+         * @param array $cookies The COOKIE parameters
+         * @param array $files The FILES parameters
+         * @param array $server The SERVER parameters
+         * @param string $content The raw body data
+         * @api 
+         * @static 
+         */
+        public static function __construct($query = array(), $request = array(), $attributes = array(), $cookies = array(), $files = array(), $server = array(), $content = null){
+            //Method inherited from \Symfony\Component\HttpFoundation\Request            
+            \Illuminate\Http\Request::__construct($query, $request, $attributes, $cookies, $files, $server, $content);
+        }
+        
+        /**
          * Sets the parameters for this request.
          * 
          * This method also re-initializes all properties.
@@ -6488,6 +6801,17 @@ namespace {
         public static function duplicate($query = null, $request = null, $attributes = null, $cookies = null, $files = null, $server = null){
             //Method inherited from \Symfony\Component\HttpFoundation\Request            
             return \Illuminate\Http\Request::duplicate($query, $request, $attributes, $cookies, $files, $server);
+        }
+        
+        /**
+         * Returns the request as a string.
+         *
+         * @return string The request
+         * @static 
+         */
+        public static function __toString(){
+            //Method inherited from \Symfony\Component\HttpFoundation\Request            
+            return \Illuminate\Http\Request::__toString();
         }
         
         /**
@@ -7310,6 +7634,18 @@ namespace {
     class Lang extends \Illuminate\Support\Facades\Lang{
         
         /**
+         * Create a new translator instance.
+         *
+         * @param \Illuminate\Translation\LoaderInterface $loader
+         * @param string $locale
+         * @return void 
+         * @static 
+         */
+        public static function __construct($loader, $locale){
+            \Illuminate\Translation\Translator::__construct($loader, $locale);
+        }
+        
+        /**
          * Determine if a translation exists.
          *
          * @param string $key
@@ -7611,6 +7947,18 @@ namespace {
         }
         
         /**
+         * Create a new log writer instance.
+         *
+         * @param \Monolog\Logger $monolog
+         * @param \Illuminate\Events\Dispatcher $dispatcher
+         * @return void 
+         * @static 
+         */
+        public static function __construct($monolog, $dispatcher = null){
+            \Illuminate\Log\Writer::__construct($monolog, $dispatcher);
+        }
+        
+        /**
          * Register a file log handler.
          *
          * @param string $path
@@ -7702,10 +8050,36 @@ namespace {
             return \Illuminate\Log\Writer::write();
         }
         
+        /**
+         * Dynamically handle error additions.
+         *
+         * @param string $method
+         * @param mixed $parameters
+         * @return mixed 
+         * @throws \BadMethodCallException
+         * @static 
+         */
+        public static function __call($method, $parameters){
+            return \Illuminate\Log\Writer::__call($method, $parameters);
+        }
+        
     }
 
 
     class Mail extends \Illuminate\Support\Facades\Mail{
+        
+        /**
+         * Create a new Mailer instance.
+         *
+         * @param \Illuminate\View\Factory $views
+         * @param \Swift_Mailer $swift
+         * @param \Illuminate\Events\Dispatcher $events
+         * @return void 
+         * @static 
+         */
+        public static function __construct($views, $swift, $events = null){
+            \Illuminate\Mail\Mailer::__construct($views, $swift, $events);
+        }
         
         /**
          * Set the global from address and name.
@@ -7916,6 +8290,20 @@ namespace {
     class Paginator extends \Illuminate\Support\Facades\Paginator{
         
         /**
+         * Create a new pagination factory.
+         *
+         * @param \Symfony\Component\HttpFoundation\Request $request
+         * @param \Illuminate\View\Factory $view
+         * @param \Symfony\Component\Translation\TranslatorInterface $trans
+         * @param string $pageName
+         * @return void 
+         * @static 
+         */
+        public static function __construct($request, $view, $trans, $pageName = 'page'){
+            \Illuminate\Pagination\Factory::__construct($request, $view, $trans, $pageName);
+        }
+        
+        /**
          * Get a new paginator instance.
          *
          * @param array $items
@@ -8104,6 +8492,20 @@ namespace {
     class Password extends \Illuminate\Support\Facades\Password{
         
         /**
+         * Create a new password broker instance.
+         *
+         * @param \Illuminate\Auth\Reminders\ReminderRepositoryInterface $reminders
+         * @param \Illuminate\Auth\UserProviderInterface $users
+         * @param \Illuminate\Mail\Mailer $mailer
+         * @param string $reminderView
+         * @return void 
+         * @static 
+         */
+        public static function __construct($reminders, $users, $mailer, $reminderView){
+            \Illuminate\Auth\Reminders\PasswordBroker::__construct($reminders, $users, $mailer, $reminderView);
+        }
+        
+        /**
          * Send a password reminder to a user.
          *
          * @param array $credentials
@@ -8167,6 +8569,17 @@ namespace {
 
 
     class Queue extends \Illuminate\Support\Facades\Queue{
+        
+        /**
+         * Create a new queue manager instance.
+         *
+         * @param \Illuminate\Foundation\Application $app
+         * @return void 
+         * @static 
+         */
+        public static function __construct($app){
+            \Illuminate\Queue\QueueManager::__construct($app);
+        }
         
         /**
          * Register an event listener for the daemon queue loop.
@@ -8277,6 +8690,18 @@ namespace {
          */
         public static function getName($connection = null){
             return \Illuminate\Queue\QueueManager::getName($connection);
+        }
+        
+        /**
+         * Dynamically pass calls to the default connection.
+         *
+         * @param string $method
+         * @param array $parameters
+         * @return mixed 
+         * @static 
+         */
+        public static function __call($method, $parameters){
+            return \Illuminate\Queue\QueueManager::__call($method, $parameters);
         }
         
         /**
@@ -8394,6 +8819,17 @@ namespace {
 
 
     class Redirect extends \Illuminate\Support\Facades\Redirect{
+        
+        /**
+         * Create a new Redirector instance.
+         *
+         * @param \Illuminate\Routing\UrlGenerator $generator
+         * @return void 
+         * @static 
+         */
+        public static function __construct($generator){
+            \Illuminate\Routing\Redirector::__construct($generator);
+        }
         
         /**
          * Create a new redirect response to the "home" route.
@@ -8553,6 +8989,17 @@ namespace {
     class Redis extends \Illuminate\Support\Facades\Redis{
         
         /**
+         * Create a new Redis connection instance.
+         *
+         * @param array $servers
+         * @return void 
+         * @static 
+         */
+        public static function __construct($servers = array()){
+            \Illuminate\Redis\Database::__construct($servers);
+        }
+        
+        /**
          * Get a specific Redis connection instance.
          *
          * @param string $name
@@ -8573,6 +9020,18 @@ namespace {
          */
         public static function command($method, $parameters = array()){
             return \Illuminate\Redis\Database::command($method, $parameters);
+        }
+        
+        /**
+         * Dynamically make a Redis command.
+         *
+         * @param string $method
+         * @param array $parameters
+         * @return mixed 
+         * @static 
+         */
+        public static function __call($method, $parameters){
+            return \Illuminate\Redis\Database::__call($method, $parameters);
         }
         
     }
@@ -8995,6 +9454,24 @@ namespace {
         }
         
         /**
+         * Constructor.
+         *
+         * @param array $query The GET parameters
+         * @param array $request The POST parameters
+         * @param array $attributes The request attributes (parameters parsed from the PATH_INFO, ...)
+         * @param array $cookies The COOKIE parameters
+         * @param array $files The FILES parameters
+         * @param array $server The SERVER parameters
+         * @param string $content The raw body data
+         * @api 
+         * @static 
+         */
+        public static function __construct($query = array(), $request = array(), $attributes = array(), $cookies = array(), $files = array(), $server = array(), $content = null){
+            //Method inherited from \Symfony\Component\HttpFoundation\Request            
+            \Illuminate\Http\Request::__construct($query, $request, $attributes, $cookies, $files, $server, $content);
+        }
+        
+        /**
          * Sets the parameters for this request.
          * 
          * This method also re-initializes all properties.
@@ -9079,6 +9556,17 @@ namespace {
         public static function duplicate($query = null, $request = null, $attributes = null, $cookies = null, $files = null, $server = null){
             //Method inherited from \Symfony\Component\HttpFoundation\Request            
             return \Illuminate\Http\Request::duplicate($query, $request, $attributes, $cookies, $files, $server);
+        }
+        
+        /**
+         * Returns the request as a string.
+         *
+         * @return string The request
+         * @static 
+         */
+        public static function __toString(){
+            //Method inherited from \Symfony\Component\HttpFoundation\Request            
+            return \Illuminate\Http\Request::__toString();
         }
         
         /**
@@ -9906,6 +10394,18 @@ namespace {
     class Route extends \Illuminate\Support\Facades\Route{
         
         /**
+         * Create a new Router instance.
+         *
+         * @param \Illuminate\Events\Dispatcher $events
+         * @param \Illuminate\Container\Container $container
+         * @return void 
+         * @static 
+         */
+        public static function __construct($events, $container = null){
+            \Illuminate\Routing\Router::__construct($events, $container);
+        }
+        
+        /**
          * Register a new GET route with the router.
          *
          * @param string $uri
@@ -10540,6 +11040,18 @@ namespace {
         }
         
         /**
+         * Create a new database Schema manager.
+         *
+         * @param \Illuminate\Database\Connection $connection
+         * @return void 
+         * @static 
+         */
+        public static function __construct($connection){
+            //Method inherited from \Illuminate\Database\Schema\Builder            
+            \Illuminate\Database\Schema\MySqlBuilder::__construct($connection);
+        }
+        
+        /**
          * Determine if the given table has a given column.
          *
          * @param string $table
@@ -10692,6 +11204,18 @@ namespace {
         }
         
         /**
+         * Create a new manager instance.
+         *
+         * @param \Illuminate\Foundation\Application $app
+         * @return void 
+         * @static 
+         */
+        public static function __construct($app){
+            //Method inherited from \Illuminate\Support\Manager            
+            \Illuminate\Session\SessionManager::__construct($app);
+        }
+        
+        /**
          * Get a driver instance.
          *
          * @param string $driver
@@ -10725,6 +11249,19 @@ namespace {
         public static function getDrivers(){
             //Method inherited from \Illuminate\Support\Manager            
             return \Illuminate\Session\SessionManager::getDrivers();
+        }
+        
+        /**
+         * Dynamically call the default driver instance.
+         *
+         * @param string $method
+         * @param array $parameters
+         * @return mixed 
+         * @static 
+         */
+        public static function __call($method, $parameters){
+            //Method inherited from \Illuminate\Support\Manager            
+            return \Illuminate\Session\SessionManager::__call($method, $parameters);
         }
         
         /**
@@ -11186,6 +11723,17 @@ namespace {
     class SSH extends \Illuminate\Support\Facades\SSH{
         
         /**
+         * Create a new remote manager instance.
+         *
+         * @param \Illuminate\Foundation\Application $app
+         * @return void 
+         * @static 
+         */
+        public static function __construct($app){
+            \Illuminate\Remote\RemoteManager::__construct($app);
+        }
+        
+        /**
          * Get a remote connection instance.
          *
          * @param string|array|mixed $name
@@ -11259,6 +11807,18 @@ namespace {
          */
         public static function setDefaultConnection($name){
             \Illuminate\Remote\RemoteManager::setDefaultConnection($name);
+        }
+        
+        /**
+         * Dynamically pass methods to the default connection.
+         *
+         * @param string $method
+         * @param array $parameters
+         * @return mixed 
+         * @static 
+         */
+        public static function __call($method, $parameters){
+            return \Illuminate\Remote\RemoteManager::__call($method, $parameters);
         }
         
         /**
@@ -11406,6 +11966,18 @@ namespace {
 
 
     class URL extends \Illuminate\Support\Facades\URL{
+        
+        /**
+         * Create a new URL Generator instance.
+         *
+         * @param \Illuminate\Routing\RouteCollection $routes
+         * @param \Symfony\Component\HttpFoundation\Request $request
+         * @return void 
+         * @static 
+         */
+        public static function __construct($routes, $request){
+            \Illuminate\Routing\UrlGenerator::__construct($routes, $request);
+        }
         
         /**
          * Get the full URL for the current request.
@@ -11573,6 +12145,18 @@ namespace {
     class Validator extends \Illuminate\Support\Facades\Validator{
         
         /**
+         * Create a new Validator factory instance.
+         *
+         * @param \Symfony\Component\Translation\TranslatorInterface $translator
+         * @param \Illuminate\Container\Container $container
+         * @return void 
+         * @static 
+         */
+        public static function __construct($translator, $container = null){
+            \Illuminate\Validation\Factory::__construct($translator, $container);
+        }
+        
+        /**
          * Create a new Validator instance.
          *
          * @param array $data
@@ -11670,6 +12254,19 @@ namespace {
 
 
     class View extends \Illuminate\Support\Facades\View{
+        
+        /**
+         * Create a new view factory instance.
+         *
+         * @param \Illuminate\View\Engines\EngineResolver $engines
+         * @param \Illuminate\View\ViewFinderInterface $finder
+         * @param \Illuminate\Events\Dispatcher $events
+         * @return void 
+         * @static 
+         */
+        public static function __construct($engines, $finder, $events){
+            \Illuminate\View\Factory::__construct($engines, $finder, $events);
+        }
         
         /**
          * Get the evaluated view contents for the given view.
@@ -12123,6 +12720,16 @@ namespace {
     class ImageManipulation extends \Intervention\Image\Facades\Image{
         
         /**
+         * Creates new instance of Image Manager
+         *
+         * @param array $config
+         * @static 
+         */
+        public static function __construct($config = array()){
+            \Intervention\Image\ImageManager::__construct($config);
+        }
+        
+        /**
          * Overrides configuration settings
          *
          * @param array $config
@@ -12168,6 +12775,173 @@ namespace {
          */
         public static function cache($callback, $lifetime = null, $returnObj = false){
             return \Intervention\Image\ImageManager::cache($callback, $lifetime, $returnObj);
+        }
+        
+    }
+
+
+    class SphinxSearch extends \Scalia\SphinxSearch\SphinxSearchFacade{
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function __construct(){
+            \Scalia\SphinxSearch\SphinxSearch::__construct();
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function search($string, $index_name = null){
+            return \Scalia\SphinxSearch\SphinxSearch::search($string, $index_name);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function setFieldWeights($weights){
+            return \Scalia\SphinxSearch\SphinxSearch::setFieldWeights($weights);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function setMatchMode($mode){
+            return \Scalia\SphinxSearch\SphinxSearch::setMatchMode($mode);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function setRankingMode($mode){
+            return \Scalia\SphinxSearch\SphinxSearch::setRankingMode($mode);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function setSortMode($mode, $sortby = null){
+            return \Scalia\SphinxSearch\SphinxSearch::setSortMode($mode, $sortby);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function setFilterFloatRange($attribute, $min, $max, $exclude = false){
+            return \Scalia\SphinxSearch\SphinxSearch::setFilterFloatRange($attribute, $min, $max, $exclude);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function setGeoAnchor($attrlat, $attrlong, $lat = null, $long = null){
+            return \Scalia\SphinxSearch\SphinxSearch::setGeoAnchor($attrlat, $attrlong, $lat, $long);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function setSelect($select){
+            return \Scalia\SphinxSearch\SphinxSearch::setSelect($select);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function limit($limit, $offset = 0, $max_matches = 1000, $cutoff = 1000){
+            return \Scalia\SphinxSearch\SphinxSearch::limit($limit, $offset, $max_matches, $cutoff);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function filter($attribute, $values, $exclude = false){
+            return \Scalia\SphinxSearch\SphinxSearch::filter($attribute, $values, $exclude);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function range($attribute, $min, $max, $exclude = false){
+            return \Scalia\SphinxSearch\SphinxSearch::range($attribute, $min, $max, $exclude);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function query(){
+            return \Scalia\SphinxSearch\SphinxSearch::query();
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function get($respect_sort_order = false){
+            return \Scalia\SphinxSearch\SphinxSearch::get($respect_sort_order);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function with(){
+            return \Scalia\SphinxSearch\SphinxSearch::with();
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function getTotalCount(){
+            return \Scalia\SphinxSearch\SphinxSearch::getTotalCount();
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function getTime(){
+            return \Scalia\SphinxSearch\SphinxSearch::getTime();
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function getErrorMessage(){
+            return \Scalia\SphinxSearch\SphinxSearch::getErrorMessage();
         }
         
     }

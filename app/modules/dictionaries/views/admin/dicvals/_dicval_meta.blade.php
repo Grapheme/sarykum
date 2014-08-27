@@ -27,8 +27,8 @@ if (@is_object($element->metas) && $element->metas->count())
     @if (@count($fields['i18n']))
     <?
     $element_fields = array();
-    if (@is_object($element->fields)) {
-        $element_fields = $element->fields;
+    if (@is_object($element->allfields)) {
+        $element_fields = $element->allfields;
         foreach ($element_fields as $f => $field) {
             if (!$field->language)
                 unset($element_fields[$f]);

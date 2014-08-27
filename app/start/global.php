@@ -117,10 +117,19 @@ require app_path().'/filters.php';
     if (count($locales) > 1) {
         ## Запомним язык по-умолчанию
         Config::set('app.default_locale', Config::get('app.locale'));
+
         ## Если в данный момент первый сегмент урла соответствует какому-то из наших языков - делаем его активным
         if ( @$locales[Request::segment(1)] ) {
+
+            /*
+             * Задумка №1: вырезать первый языковой сегмент урла, если он совпадает дефолтным языком.
+             * Это позволить открывать страницы сайта на дефолтном языке по адресу /{url}, а прочие языковые версии по адресу /en/{url}.
+             * Однако это несет в себе проблему генерации ссылок на страницу прочих языковых версий, поэтому было принято решение
+             * и страницы на дефолтном языке вынести в сегмент /ru/{url}, за исключением главной страницы - она всегда будет по адресу /.
+             */
+            /*
             ## Если первым сегментом идет дефолтный язык
-            if (Request::segment(1) === Config::get('app.default_locale')) {
+            if (Request::segment(1) === Config::get('app.default_locale') && FALSE) {
                 ## Вырезаем первый сегмент с дефолтным языком
                 $path_without_first_segment = preg_replace("~^" . Config::get('app.default_locale') . "~s", '', Request::path(), 1);
                 #$path_without_first_segment = preg_replace("~^/~s", '', $path_without_first_segment, 1);
@@ -128,14 +137,40 @@ require app_path().'/filters.php';
                 ## Здесь не сработает return Redirect::to(...), так что делаем переадресацию через кастомную функцию
                 Redirect(URL::to($path_without_first_segment));
             }
+            */
+
+            #Helper::dd(Request::segment(1));
+
+            ## Если запрос состоит всего лишь из одного урл-сегмента, и он совпадает с дефолтным языком
+            if (Request::path() === Config::get('app.default_locale')) {
+                Redirect(URL::to('/'));
+            }
+
+            ## Установим дефолтную локаль
             Config::set('app.locale', Request::segment(1));
+            App::setLocale(Request::segment(1));
+
+        } else {
+
+            #Helper::dd(Request::path());
+
+            ##
+            ## Данный кусок кода перенесен в filters.php, в фильтр i18n_url, чтобы редирект происходил только для использующих before-фильтр роутов.
+            ##
+            /*
+            ## Если не главная страница - будем подставлять первым сегментом дефолтную локаль
+            if (Request::path() != '/') {
+                ## А если нет - подставим дефолтную локаль и сделаем редирект
+                #Helper::dd(Config::get('app.locale') . '/' . Request::path());
+                Redirect(URL::to(Config::get('app.locale') . '/' . Request::path()));
+            }
+            */
         }
+
         ## Сохраняем в сессию текущий язык
         Session::put('locale', Config::get('app.locale'));
     }
     #Helper::d( '/' . Request::segment(1) . '/ - (' . Config::get('app.default_locale') . ') => (' . Config::get('app.locale') . ") - " . Session::get('locale') );
 #*/
 
-
 #Event::listen('illuminate.query', function($query){ echo $query . "<br/>\n"; });
-

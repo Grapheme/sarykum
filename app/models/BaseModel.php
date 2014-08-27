@@ -33,12 +33,14 @@ class BaseModel extends Eloquent {
         return self::firstOrNew(array('slug' => $slug));
     }
 
-    public static function whereSlugValues($slug) {
-        return self::firstOrNew(array('slug' => $slug))->values;
-    }
-
     public static function whereId($id) {
         return self::firstOrNew(array('id' => $id));
     }
+
+    /*
+    public function lists2($value, $key = false) {
+        Helper::dd($this);
+    }
+    */
 
 }

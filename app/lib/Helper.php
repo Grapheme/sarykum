@@ -377,5 +377,63 @@ HTML;
         return $array;
     }
 
+    /*
+     * Make menu for changing language
+     * @param string $view_locale Show locale signature (RU, EN) or locale name (Русский, English)
+     * @param array $tpl Template of the menu, array with keys 'block', 'link', 'current' (see this method source for help)
+     * @author Alexander Zelensky
+     * @return string HTML-markup menu
+     */
+    public static function changeLocaleMenu($view_locale = 'sign', $tpl = false) {
+        $locale = Config::get('app.locale');
+        $default_locale = Config::get('app.default_locale');
+        $locales = Config::get('app.locales');
+        #Helper::d($locales);
+
+        $tpl_default = array(
+            'block' => '<ul class="lang-ul">%links%</ul>',
+            'link' => '<li class="lang-li"><a href="%link%">%locale_sign%</a></li>',
+            'current' => '<li class="lang-li"><span class="lang-li-current">%locale_sign%</span></li>',
+        );
+        $tpl = (array)$tpl + $tpl_default;
+        if (!@$tpl['current'])
+            $tpl['current'] = $tpl['link'];
+
+        $url = Request::path();
+        #if ($url != '/') {
+            preg_match("~^/?([^/]+)(.*?)$~is", $url, $matches);
+            #Helper::d($matches);
+            if (@$locales[$matches[1]])
+                $url = $matches[2];
+        #}
+        $url = preg_replace("~^/~is", '', $url);
+        #Helper::dd($url);
+
+        $links = array();
+
+        $links[] = strtr($tpl['current'], array(
+            '%link%' => URL::to( ( $url || $locale != $default_locale ? $locale.'/' : '') . $url),
+            '%locale_sign%' => ($view_locale == 'sign' ? $locale : @$locales[$locale]),
+        ));
+
+        foreach($locales as $locale_sign => $locale_name) {
+
+            if ($locale_sign == $locale)
+                continue;
+
+            $locale_link = URL::to( ( $url || $locale_sign != $default_locale ? $locale_sign.'/' : '') . $url);
+
+            $links[] = strtr($tpl['link'], array(
+                    '%link%' => $locale_link,
+                    '%locale_sign%' => ($view_locale == 'sign' ? $locale_sign : $locale_name),
+                )
+            );
+        }
+
+        $return = strtr($tpl['block'], array('%links%' => implode('', $links)));
+
+        return $return;
+    }
+
 }
 

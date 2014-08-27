@@ -5,6 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9eb288a-66f5-42e9-a6ae-4f6f60b8c9bd" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/lib/CustomURL.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/lib/CustomUrlGenerator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/lib/CustomUrlServiceProvider.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/lib/Request.php" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\app\lang\en\admin.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\app\lang\en\modules.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\app\lang\en\pagination.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\app\lang\en\reminders.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\app\lang\en\validation.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\app\lang\ru\admin.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\app\lang\ru\modules.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\app\lang\ru\pagination.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\app\lang\ru\reminders.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\home\git\sarykum\app\lang\ru\validation.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/BaseModel.php" afterPath="$PROJECT_DIR$/app/models/BaseModel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/dictionaries/models/DicFieldVal.model.php" afterPath="$PROJECT_DIR$/app/modules/dictionaries/models/DicFieldVal.model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/dictionaries/models/DicVal.model.php" afterPath="$PROJECT_DIR$/app/modules/dictionaries/models/DicVal.model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/dictionaries/models/Dictionary.model.php" afterPath="$PROJECT_DIR$/app/modules/dictionaries/models/Dictionary.model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/Helper.php" afterPath="$PROJECT_DIR$/app/lib/Helper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/SystemModules.php" afterPath="$PROJECT_DIR$/app/lib/SystemModules.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/dictionaries/views/admin/dicvals/_dicval_meta.blade.php" afterPath="$PROJECT_DIR$/app/modules/dictionaries/views/admin/dicvals/_dicval_meta.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_ide_helper.php" afterPath="$PROJECT_DIR$/_ide_helper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/dictionaries/admin_dicvals.controller.php" afterPath="$PROJECT_DIR$/app/modules/dictionaries/admin_dicvals.controller.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/app.php" afterPath="$PROJECT_DIR$/app/config/app.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/filters.php" afterPath="$PROJECT_DIR$/app/filters.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/start/global.php" afterPath="$PROJECT_DIR$/app/start/global.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates/site/header.blade.php" afterPath="$PROJECT_DIR$/app/views/templates/site/header.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lang/en/interface.php" afterPath="$PROJECT_DIR$/app/lang/en/interface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lang/ru/interface.php" afterPath="$PROJECT_DIR$/app/lang/ru/interface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/mail.php" afterPath="$PROJECT_DIR$/app/config/mail.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/pages/public_pages.controller.php" afterPath="$PROJECT_DIR$/app/modules/pages/public_pages.controller.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/site.php" afterPath="$PROJECT_DIR$/app/config/site.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/start.php" afterPath="$PROJECT_DIR$/bootstrap/start.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="archive.iws" />
@@ -28,89 +61,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="admin_dicvals.controller.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/modules/dictionaries/admin_dicvals.controller.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="124" column="9" selection-start="3710" selection-end="3710" vertical-scroll-proportion="-0.65384614" vertical-offset="2091" max-vertical-offset="4726">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/modules/dictionaries/views/admin/dicvals/edit.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="142" selection-start="524" selection-end="662" vertical-scroll-proportion="-5.8846154" vertical-offset="238" max-vertical-offset="2822">
-              <folding>
-                <marker date="1409056792665" expanded="true" signature="701:4934" placeholder="..." />
-                <marker date="1409056792665" expanded="true" signature="760:4702" placeholder="..." />
-                <marker date="1409056792665" expanded="true" signature="791:4686" placeholder="..." />
-                <marker date="1409056792665" expanded="true" signature="869:1461" placeholder="..." />
-                <marker date="1409056792665" expanded="true" signature="900:1161" placeholder="..." />
-                <marker date="1409056792665" expanded="true" signature="1029:1130" placeholder="..." />
-                <marker date="1409056792665" expanded="true" signature="1192:1432" placeholder="..." />
-                <marker date="1409056792665" expanded="true" signature="1300:1401" placeholder="..." />
-                <marker date="1409056792665" expanded="true" signature="1769:2229" placeholder="..." />
-                <marker date="1409056792665" expanded="true" signature="1859:2169" placeholder="..." />
-                <marker date="1409056792665" expanded="true" signature="2001:2138" placeholder="..." />
-                <marker date="1409056792665" expanded="true" signature="2339:3848" placeholder="..." />
-                <marker date="1409056792665" expanded="true" signature="2369:3820" placeholder="..." />
-                <marker date="1409056792665" expanded="true" signature="2590:3789" placeholder="..." />
-                <marker date="1409056792665" expanded="true" signature="2665:3176" placeholder="..." />
-                <marker date="1409056792665" expanded="true" signature="2868:3098" placeholder="..." />
-                <marker date="1409056792665" expanded="true" signature="2960:3060" placeholder="..." />
-                <marker date="1409056792665" expanded="true" signature="3260:3758" placeholder="..." />
-                <marker date="1409056792665" expanded="true" signature="3512:3679" placeholder="..." />
-                <marker date="1409056792665" expanded="true" signature="4124:4672" placeholder="..." />
-                <marker date="1409056792665" expanded="true" signature="4252:4377" placeholder="..." />
-                <marker date="1409056792665" expanded="true" signature="4507:4646" placeholder="..." />
-                <marker date="1409056792665" expanded="true" signature="4813:4885" placeholder="..." />
-                <marker date="1409056792665" expanded="true" signature="5134:5407" placeholder="..." />
-                <marker date="1409056792665" expanded="true" signature="5260:5305" placeholder="{...}" />
-                <marker date="1409056792665" expanded="true" signature="5334:5393" placeholder="{...}" />
-                <marker date="1409056792665" expanded="true" signature="5488:5767" placeholder="..." />
-                <marker date="1409056792665" expanded="true" signature="5588:5675" placeholder="{...}" />
-                <marker date="1409056792665" expanded="true" signature="5681:5749" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="_dicval_meta.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/modules/dictionaries/views/admin/dicvals/_dicval_meta.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="16" selection-start="630" selection-end="630" vertical-scroll-proportion="-13.076923" vertical-offset="0" max-vertical-offset="1139">
+            <state line="30" column="39" selection-start="835" selection-end="835" vertical-scroll-proportion="-6.230769" vertical-offset="348" max-vertical-offset="1139">
               <folding>
-                <marker date="1409057069334" expanded="true" signature="1414:1458" placeholder="..." />
+                <marker date="1409130045208" expanded="true" signature="417:644" placeholder="..." />
+                <marker date="1409130045208" expanded="true" signature="514:629" placeholder="..." />
+                <marker date="1409130045208" expanded="true" signature="1420:1684" placeholder="..." />
+                <marker date="1409130045208" expanded="true" signature="1420:1464" placeholder="..." />
+                <marker date="1409130045208" expanded="true" signature="1538:1665" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="restaurant.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/templates/site/restaurant.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="40" selection-start="798" selection-end="798" vertical-scroll-proportion="-7.1923075" vertical-offset="340" max-vertical-offset="1717">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#section#2;n#main#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="public_sarykum.controller.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="public_sarykum.controller.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/modules/sarykum/public_sarykum.controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="92" selection-start="2189" selection-end="2189" vertical-scroll-proportion="-15.538462" vertical-offset="888" max-vertical-offset="1547">
+            <state line="71" column="52" selection-start="1900" selection-end="1900" vertical-scroll-proportion="0.9354839" vertical-offset="888" max-vertical-offset="1547">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mail.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/config/mail.php">
+      <file leaf-file-name="public_pages.controller.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/modules/pages/public_pages.controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="2" selection-start="569" selection-end="569" vertical-scroll-proportion="0.75555557" vertical-offset="0" max-vertical-offset="540">
+            <state line="49" column="36" selection-start="2344" selection-end="2344" vertical-scroll-proportion="-14.384615" vertical-offset="459" max-vertical-offset="8075">
               <folding />
             </state>
           </provider>
@@ -119,34 +97,7 @@
       <file leaf-file-name="header.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/templates/site/header.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="24" selection-start="2022" selection-end="2174" vertical-scroll-proportion="-8.346154" vertical-offset="531" max-vertical-offset="1921">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scripts.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/templates/site/scripts.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="527" selection-end="527" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="323">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/app.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="23" selection-start="243" selection-end="243" vertical-scroll-proportion="-7.1923075" vertical-offset="17" max-vertical-offset="1870">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dic.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/dic.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="18" selection-start="127" selection-end="127" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="986">
+            <state line="98" column="99" selection-start="5416" selection-end="5416" vertical-scroll-proportion="-59.5" vertical-offset="119" max-vertical-offset="2159">
               <folding />
             </state>
           </provider>
@@ -161,9 +112,6 @@
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
-      <command text="artisan db:seed" />
-      <command text="artisan migrate:rollback" />
-      <command text="php artisan migrate --seeds" />
       <command text="php artisan migrate --seed" />
       <command text="composer dump-autoload" />
       <command text="php artisan migrate" />
@@ -186,6 +134,9 @@
       <command text="composer dump-autoload" />
       <command text="composer self-update " />
       <command text="composer dump-autoload" />
+      <command text="artisan ide-helper:generate" />
+      <command text="composer dump-autoload" />
+      <command text="artisan ide-helper:generate" />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
@@ -197,11 +148,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/modules/galleries/admin_galleries.controller.php" />
-        <option value="$PROJECT_DIR$/app/lib/Allow.php" />
-        <option value="$PROJECT_DIR$/app/lib/SystemModules.php" />
-        <option value="$PROJECT_DIR$/app/modules/news/views/admin/edit.blade.php" />
-        <option value="$PROJECT_DIR$/app/modules/news/admin_news.controller.php" />
         <option value="$PROJECT_DIR$/app/modules/news/models/NewsMeta.model.php" />
         <option value="$PROJECT_DIR$/app/modules/news/views/default.blade.php" />
         <option value="$PROJECT_DIR$/app/modules/news/views/news-full.blade.php" />
@@ -216,8 +162,6 @@
         <option value="$PROJECT_DIR$/app/modules/pages/views/demo.blade.php" />
         <option value="$PROJECT_DIR$/app/modules/pages/admin_pages.page.controller.php" />
         <option value="$PROJECT_DIR$/app/modules/pages/views/admin/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/start/global.php" />
-        <option value="$PROJECT_DIR$/app/modules/pages/public_pages.controller.php" />
         <option value="$PROJECT_DIR$/../../pro/morefirm/admin/app/modules/morefirm/models/Company.model.php" />
         <option value="$PROJECT_DIR$/../../pro/morefirm/admin/app/modules/morefirm/admin_morefirm.firms.controller.php" />
         <option value="$PROJECT_DIR$/../../pro/morefirm/admin/app/modules/morefirm/views/admin/company/menu.blade.php" />
@@ -229,25 +173,32 @@
         <option value="$PROJECT_DIR$/../archive/app/modules/pages/views/admin/edit.blade.php" />
         <option value="$PROJECT_DIR$/../archive/app/modules/news/public_news.controller.php" />
         <option value="$PROJECT_DIR$/app/modules/pages/views/admin/edit.blade.php" />
-        <option value="$PROJECT_DIR$/app/lib/Helper.php" />
         <option value="$PROJECT_DIR$/app/modules/dictionaries/models/DicValMeta.model.php" />
-        <option value="$PROJECT_DIR$/app/modules/dictionaries/models/DicFieldVal.model.php" />
         <option value="$PROJECT_DIR$/app/modules/dictionaries/views/admin/dicvals/edit.blade.php" />
-        <option value="$PROJECT_DIR$/app/modules/dictionaries/views/admin/dicvals/_dicval_meta.blade.php" />
         <option value="$PROJECT_DIR$/app/modules/dictionaries/views/admin/dicvals/menu.blade.php" />
-        <option value="$PROJECT_DIR$/app/modules/dictionaries/models/DicVal.model.php" />
-        <option value="$PROJECT_DIR$/app/modules/dictionaries/admin_dicvals.controller.php" />
-        <option value="$PROJECT_DIR$/app/config/app.php" />
         <option value="$PROJECT_DIR$/app/views/templates/site/head.blade.php" />
         <option value="$PROJECT_DIR$/app/config/az/app.php" />
         <option value="$PROJECT_DIR$/app/config/dic.php" />
         <option value="$PROJECT_DIR$/app/views/templates/site/spa.blade.php" />
         <option value="$PROJECT_DIR$/app/views/templates/site/restaurant.blade.php" />
-        <option value="$PROJECT_DIR$/app/modules/dictionaries/models/Dictionary.model.php" />
         <option value="$PROJECT_DIR$/app/views/templates/site/scripts.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/templates/site/header.blade.php" />
         <option value="$PROJECT_DIR$/app/modules/sarykum/public_sarykum.controller.php" />
+        <option value="$PROJECT_DIR$/app/modules/dictionaries/models/Dictionary.model.php" />
+        <option value="$PROJECT_DIR$/app/models/BaseModel.php" />
+        <option value="$PROJECT_DIR$/app/modules/dictionaries/models/DicVal.model.php" />
+        <option value="$PROJECT_DIR$/app/modules/dictionaries/views/admin/dicvals/_dicval_meta.blade.php" />
+        <option value="$PROJECT_DIR$/app/modules/dictionaries/models/DicFieldVal.model.php" />
+        <option value="$PROJECT_DIR$/app/modules/dictionaries/admin_dicvals.controller.php" />
         <option value="$PROJECT_DIR$/app/config/mail.php" />
+        <option value="$PROJECT_DIR$/app/lib/Request.php" />
+        <option value="$PROJECT_DIR$/app/config/site.php" />
+        <option value="$PROJECT_DIR$/app/modules/pages/public_pages.controller.php" />
+        <option value="$PROJECT_DIR$/app/lib/Helper.php" />
+        <option value="$PROJECT_DIR$/bootstrap/start.php" />
+        <option value="$PROJECT_DIR$/app/views/templates/site/header.blade.php" />
+        <option value="$PROJECT_DIR$/app/filters.php" />
+        <option value="$PROJECT_DIR$/app/start/global.php" />
+        <option value="$PROJECT_DIR$/app/config/app.php" />
       </list>
     </option>
   </component>
@@ -477,7 +428,11 @@
       <created>1409069576474</created>
       <updated>1409069576474</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="room reserve+">
+      <created>1409069580000</created>
+      <updated>1409069580000</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -502,9 +457,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3588907" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3588907" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2985318" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32250756" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32175228" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -552,57 +507,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/filters.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="52" selection-start="883" selection-end="883" vertical-scroll-proportion="-2.2344582" vertical-offset="1955" max-vertical-offset="2856" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/modules/news/views/default.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="18" selection-start="0" selection-end="32" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="102" />
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="715" column="20" selection-start="21191" selection-end="21202" vertical-scroll-proportion="0.80106574" vertical-offset="11704" max-vertical-offset="19142">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/modules/pages/views/demo.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="41" selection-start="1059" selection-end="1059" vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="969" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/modules/pages/views/admin/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="46" selection-start="320" selection-end="320" vertical-scroll-proportion="0.4077491" vertical-offset="0" max-vertical-offset="1428" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/modules/pages/public_pages.controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="10" selection-start="5220" selection-end="5220" vertical-scroll-proportion="-0.0" vertical-offset="1972" max-vertical-offset="6171">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/modules/news/public_news.controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="231" column="0" selection-start="8974" selection-end="8974" vertical-scroll-proportion="-11.192307" vertical-offset="3636" max-vertical-offset="4199">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../pro/morefirm/admin/app/modules/morefirm/models/Company.model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="24" selection-start="192" selection-end="198" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="816" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../pro/morefirm/admin/app/modules/morefirm/admin_morefirm.firms.controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="38" selection-start="2609" selection-end="2609" vertical-scroll-proportion="-13.730769" vertical-offset="1020" max-vertical-offset="4165" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../pro/morefirm/admin/app/modules/morefirm/views/admin/company/menu.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="45" column="17" selection-start="1869" selection-end="1869" vertical-scroll-proportion="-9.807693" vertical-offset="510" max-vertical-offset="1377" />
@@ -626,11 +530,6 @@
     <entry file="file://$PROJECT_DIR$/../../pro/morefirm/admin/app/modules/morefirm/admin_morefirm.menu.controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="63" column="34" selection-start="1713" selection-end="1713" vertical-scroll-proportion="-15.692307" vertical-offset="663" max-vertical-offset="1513" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/start/global.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="36" selection-start="4015" selection-end="4015" vertical-scroll-proportion="0.45454547" vertical-offset="1700" max-vertical-offset="2363" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../archive/app/views/templates/site/index.blade.php">
@@ -697,26 +596,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/lib/Helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="358" column="83" selection-start="10914" selection-end="10914" vertical-scroll-proportion="-14.461538" vertical-offset="5710" max-vertical-offset="6596">
-          <folding>
-            <marker date="1409051978522" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1409051978522" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/modules/pages/admin_pages.page.controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="62" column="52" selection-start="2266" selection-end="2310" vertical-scroll-proportion="0.6900369" vertical-offset="680" max-vertical-offset="7718">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/modules/dictionaries/models/DicFieldVal.model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="18" selection-start="248" selection-end="248" vertical-scroll-proportion="0.37638375" vertical-offset="0" max-vertical-offset="542">
           <folding />
         </state>
       </provider>
@@ -763,13 +645,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/modules/dictionaries/models/DicVal.model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="108" selection-start="775" selection-end="775" vertical-scroll-proportion="-13.0" vertical-offset="257" max-vertical-offset="833">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/templates/site/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="3.2692308" vertical-offset="85" max-vertical-offset="357">
@@ -784,13 +659,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="23" selection-start="243" selection-end="243" vertical-scroll-proportion="-7.1923075" vertical-offset="17" max-vertical-offset="1870">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/dic.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="18" selection-start="127" selection-end="127" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="986">
@@ -801,13 +669,6 @@
     <entry file="file://$PROJECT_DIR$/public/static/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="29" selection-start="1143" selection-end="1164" vertical-scroll-proportion="0.600713" vertical-offset="71" max-vertical-offset="5151">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/modules/dictionaries/admin_dicvals.controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="9" selection-start="3710" selection-end="3710" vertical-scroll-proportion="-0.65384614" vertical-offset="2091" max-vertical-offset="4726">
           <folding />
         </state>
       </provider>
@@ -839,72 +700,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/modules/dictionaries/views/admin/dicvals/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="142" selection-start="524" selection-end="662" vertical-scroll-proportion="-5.8846154" vertical-offset="238" max-vertical-offset="2822">
-          <folding>
-            <marker date="1409056792665" expanded="true" signature="701:4934" placeholder="..." />
-            <marker date="1409056792665" expanded="true" signature="760:4702" placeholder="..." />
-            <marker date="1409056792665" expanded="true" signature="791:4686" placeholder="..." />
-            <marker date="1409056792665" expanded="true" signature="869:1461" placeholder="..." />
-            <marker date="1409056792665" expanded="true" signature="900:1161" placeholder="..." />
-            <marker date="1409056792665" expanded="true" signature="1029:1130" placeholder="..." />
-            <marker date="1409056792665" expanded="true" signature="1192:1432" placeholder="..." />
-            <marker date="1409056792665" expanded="true" signature="1300:1401" placeholder="..." />
-            <marker date="1409056792665" expanded="true" signature="1769:2229" placeholder="..." />
-            <marker date="1409056792665" expanded="true" signature="1859:2169" placeholder="..." />
-            <marker date="1409056792665" expanded="true" signature="2001:2138" placeholder="..." />
-            <marker date="1409056792665" expanded="true" signature="2339:3848" placeholder="..." />
-            <marker date="1409056792665" expanded="true" signature="2369:3820" placeholder="..." />
-            <marker date="1409056792665" expanded="true" signature="2590:3789" placeholder="..." />
-            <marker date="1409056792665" expanded="true" signature="2665:3176" placeholder="..." />
-            <marker date="1409056792665" expanded="true" signature="2868:3098" placeholder="..." />
-            <marker date="1409056792665" expanded="true" signature="2960:3060" placeholder="..." />
-            <marker date="1409056792665" expanded="true" signature="3260:3758" placeholder="..." />
-            <marker date="1409056792665" expanded="true" signature="3512:3679" placeholder="..." />
-            <marker date="1409056792665" expanded="true" signature="4124:4672" placeholder="..." />
-            <marker date="1409056792665" expanded="true" signature="4252:4377" placeholder="..." />
-            <marker date="1409056792665" expanded="true" signature="4507:4646" placeholder="..." />
-            <marker date="1409056792665" expanded="true" signature="4813:4885" placeholder="..." />
-            <marker date="1409056792665" expanded="true" signature="5134:5407" placeholder="..." />
-            <marker date="1409056792665" expanded="true" signature="5260:5305" placeholder="{...}" />
-            <marker date="1409056792665" expanded="true" signature="5334:5393" placeholder="{...}" />
-            <marker date="1409056792665" expanded="true" signature="5488:5767" placeholder="..." />
-            <marker date="1409056792665" expanded="true" signature="5588:5675" placeholder="{...}" />
-            <marker date="1409056792665" expanded="true" signature="5681:5749" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/templates/site/restaurant.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="40" selection-start="798" selection-end="798" vertical-scroll-proportion="-7.1923075" vertical-offset="340" max-vertical-offset="1717">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#section#2;n#main#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/BaseModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="42" selection-start="807" selection-end="807" vertical-scroll-proportion="0.55925924" vertical-offset="293" max-vertical-offset="833">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/modules/dictionaries/models/Dictionary.model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="31" selection-start="38" selection-end="38" vertical-scroll-proportion="0.062962964" vertical-offset="0" max-vertical-offset="1139">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/modules/dictionaries/views/admin/dicvals/_dicval_meta.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="16" selection-start="630" selection-end="630" vertical-scroll-proportion="-13.076923" vertical-offset="0" max-vertical-offset="1139">
-          <folding>
-            <marker date="1409057069334" expanded="true" signature="1414:1458" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -922,23 +721,195 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/templates/site/header.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/modules/dictionaries/views/admin/dicvals/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="24" selection-start="2022" selection-end="2174" vertical-scroll-proportion="-8.346154" vertical-offset="531" max-vertical-offset="1921">
+        <state line="23" column="142" selection-start="524" selection-end="662" vertical-scroll-proportion="1.9615384" vertical-offset="442" max-vertical-offset="2822">
+          <folding>
+            <marker date="1409056792665" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1409056792665" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1409056792665" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1409056792665" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1409056792665" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1409056792665" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1409056792665" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1409056792665" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1409056792665" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1409056792665" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1409056792665" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1409056792665" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1409056792665" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1409056792665" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1409056792665" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1409056792665" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1409056792665" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1409056792665" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1409056792665" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1409056792665" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1409056792665" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1409056792665" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1409056792665" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1409056792665" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1409056792665" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1409056792665" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1409056792665" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1409056792665" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1409056792665" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/dictionaries/models/DicFieldVal.model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="17" selection-start="268" selection-end="268" vertical-scroll-proportion="0.40925926" vertical-offset="0" max-vertical-offset="544">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/modules/sarykum/public_sarykum.controller.php">
+    <entry file="file://$PROJECT_DIR$/app/modules/dictionaries/admin_dicvals.controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="92" selection-start="2189" selection-end="2189" vertical-scroll-proportion="-15.538462" vertical-offset="888" max-vertical-offset="1547">
+        <state line="120" column="13" selection-start="3634" selection-end="3634" vertical-scroll-proportion="-1.9615384" vertical-offset="1989" max-vertical-offset="4777">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/dictionaries/models/Dictionary.model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="10" selection-start="1512" selection-end="1512" vertical-scroll-proportion="1.0314815" vertical-offset="446" max-vertical-offset="1292">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/dictionaries/models/DicVal.model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="63" selection-start="880" selection-end="880" vertical-scroll-proportion="0.7201426" vertical-offset="259" max-vertical-offset="884">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/BaseModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="6" selection-start="873" selection-end="873" vertical-scroll-proportion="0.78074867" vertical-offset="225" max-vertical-offset="867">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/mail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="2" selection-start="569" selection-end="569" vertical-scroll-proportion="0.75555557" vertical-offset="0" max-vertical-offset="540">
+        <state line="23" column="18" selection-start="565" selection-end="565" vertical-scroll-proportion="0.6969697" vertical-offset="0" max-vertical-offset="561">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="296" column="0" selection-start="12126" selection-end="12126" vertical-scroll-proportion="0.8181818" vertical-offset="4743" max-vertical-offset="5304">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/dictionaries/views/admin/dicvals/_dicval_meta.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="39" selection-start="835" selection-end="835" vertical-scroll-proportion="-6.230769" vertical-offset="348" max-vertical-offset="1139">
+          <folding>
+            <marker date="1409130045208" expanded="true" signature="417:644" placeholder="..." />
+            <marker date="1409130045208" expanded="true" signature="514:629" placeholder="..." />
+            <marker date="1409130045208" expanded="true" signature="1420:1684" placeholder="..." />
+            <marker date="1409130045208" expanded="true" signature="1420:1464" placeholder="..." />
+            <marker date="1409130045208" expanded="true" signature="1538:1665" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lib/Request.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="166" selection-end="166" vertical-scroll-proportion="0.21212122" vertical-offset="0" max-vertical-offset="561">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_ide_helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11967" column="10" selection-start="381353" selection-end="381353" vertical-scroll-proportion="0.34759358" vertical-offset="203244" max-vertical-offset="220269">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/news/public_news.controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="22" selection-start="753" selection-end="753" vertical-scroll-proportion="0.56666666" vertical-offset="0" max-vertical-offset="4964">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lib/Allow.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="102" column="27" selection-start="3617" selection-end="3617" vertical-scroll-proportion="0.34759358" vertical-offset="1556" max-vertical-offset="2329">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lib/Helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="425" column="0" selection-start="13266" selection-end="13266" vertical-scroll-proportion="0.5703704" vertical-offset="6934" max-vertical-offset="7582">
+          <folding>
+            <marker date="1409148818019" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1409148818019" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap/start.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="2" selection-start="154" selection-end="154" vertical-scroll-proportion="0.121212125" vertical-offset="0" max-vertical-offset="561">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/filters.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="101" column="0" selection-start="2246" selection-end="2246" vertical-scroll-proportion="1.2424242" vertical-offset="1020" max-vertical-offset="2244">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/start/global.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="140" column="0" selection-start="5100" selection-end="5100" vertical-scroll-proportion="0.6969697" vertical-offset="1836" max-vertical-offset="2958">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="448" selection-end="448" vertical-scroll-proportion="0.6363636" vertical-offset="0" max-vertical-offset="1904">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="111" selection-start="235" selection-end="235" vertical-scroll-proportion="0.21212122" vertical-offset="0" max-vertical-offset="561">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/pages/public_pages.controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="36" selection-start="2344" selection-end="2344" vertical-scroll-proportion="-14.384615" vertical-offset="459" max-vertical-offset="8075">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/templates/site/header.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="99" selection-start="5416" selection-end="5416" vertical-scroll-proportion="-59.5" vertical-offset="119" max-vertical-offset="2159">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/sarykum/public_sarykum.controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="52" selection-start="1900" selection-end="1900" vertical-scroll-proportion="0.9354839" vertical-offset="888" max-vertical-offset="1547">
           <folding />
         </state>
       </provider>

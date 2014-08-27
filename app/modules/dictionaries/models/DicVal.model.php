@@ -36,9 +36,12 @@ class DicVal extends BaseModel {
         return $this->hasOne('DicValMeta', 'dicval_id', 'id')->where('language', Config::get('app.locale'));
     }
 
-    public function fields() {
+    public function allfields() {
         return $this->hasMany('DicFieldVal', 'dicval_id', 'id');
     }
 
+    public function fields() {
+        return $this->hasMany('DicFieldVal', 'dicval_id', 'id')->where('language', Config::get('app.locale'));
+    }
 
 }

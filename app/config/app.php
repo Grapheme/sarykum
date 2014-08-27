@@ -20,7 +20,6 @@ return array(
 	'url' => 'http://test.grapheme.ru/sarykum/public',
 	'timezone' => 'UTC',
 
-
     'locales' => array(
         'ru' => 'Русский',
         'en' => 'English',
@@ -59,8 +58,9 @@ return array(
 		'Way\Generators\GeneratorsServiceProvider',
 		'Intervention\Image\ImageServiceProvider',
         'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
-        'Barryvdh\Debugbar\ServiceProvider'
-	),
+        'Barryvdh\Debugbar\ServiceProvider',
+        'Illuminate\Custom\CustomUrlServiceProvider'
+    ),
 	'aliases' => array(
 		'App'             => 'Illuminate\Support\Facades\App',
 		'Artisan'         => 'Illuminate\Support\Facades\Artisan',
@@ -97,7 +97,9 @@ return array(
 		'Session'         => 'Illuminate\Support\Facades\Session',
 		'SSH'             => 'Illuminate\Support\Facades\SSH',
 		'Str'             => 'Illuminate\Support\Str',
-		'URL'             => 'Illuminate\Support\Facades\URL',
+        #'URL'             => 'Illuminate\Support\Facades\URL',
+        ## Custom UrlGenerator class, for checking & changing URL::route() links on-the-fly
+        'URL'             => 'Illuminate\Support\Facades\CustomURL',
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
 		'ImageManipulation' => 'Intervention\Image\Facades\Image'

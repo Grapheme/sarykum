@@ -23,11 +23,20 @@ class Dictionary extends BaseModel {
     #}
 
     public function values() {
-        return $this->hasMany('DicVal', 'dic_id', 'id')->orderBy('order', 'ASC')->orderBy('slug', 'ASC')->orderBy('name', 'ASC')->orderBy('id', 'ASC');
+        return $this->hasMany('DicVal', 'dic_id', 'id')
+            ->with('meta', 'fields')
+            ->orderBy('order', 'ASC')
+            ->orderBy('slug', 'ASC')
+            ->orderBy('name', 'ASC')
+            ->orderBy('id', 'ASC');
     }
 
     public function value() {
         return $this->hasOne('DicVal', 'dic_id', 'id');
+    }
+
+    public static function whereSlugValues($slug) {
+        return self::firstOrNew(array('slug' => $slug))->values;
     }
 
     public function valueBySlug($slug) {

@@ -14,6 +14,8 @@ class PublicPagesController extends BaseController {
         
         #Helper::dd(I18nPage::count());
 
+        $class = __CLASS__;
+
         /**
          * Laravel не дает возможности переписывать пути (роуты), если они были зарегистрированы ранее.
          * А это значит, что если данный модуль активен и в нем создана хоть одна страница, то будет переписан корневой путь: /
@@ -35,26 +37,82 @@ class PublicPagesController extends BaseController {
         if (!Allow::module(self::$group) || !Page::count())
             return false;
 
-        ## УРЛЫ С ЯЗЫКОВЫМИ ПРЕФИКСАМИ ДОЛЖНЫ ИДТИ ПЕРЕД ОБЫЧНЫМИ!
-        ## Если в конфиге прописано несколько языковых версий...
-        if (is_array(Config::get('app.locales')) && count(Config::get('app.locales')) > 1) {
-            ## Для каждого из языков...
-            foreach(Config::get('app.locales') as $locale_sign => $locale_name) {
-            	## ...генерим роуты с префиксом (первый сегмент), который будет указывать на текущую локаль.
-            	## Также указываем before-фильтр i18n_url, для выставления текущей локали.
-                Route::group(array('before' => 'i18n_url', 'prefix' => $locale_sign), function(){
-                    Route::any('/{url}', array('as' => 'page',     'uses' => __CLASS__.'@showPage')); ## Show Page
-                    Route::any('/',      array('as' => 'mainpage', 'uses' => __CLASS__.'@showPage')); ## Show Main Page
-                });
+        URL::add_url_modifier('page', function(&$parameters) use ($class) {
+            #var_dump($class); die;
+            #Helper::dd('Page url modifier!');
+            #Helper::dd($parameters);
+            if (
+                is_string($parameters)
+                && Allow::module('seo')
+                && count(Config::get('app.locales')) > 1
+                && !Config::get('site.disable_url_modification')
+            ) {
+                $pages = new $class;
+                $right_url = $pages->getRightPageUrl($parameters);
+                #Helper::dd("Change page URL: " . $parameters . " -> " . $right_url);
+                if (@$right_url)
+                    $parameters = $right_url;
+                #$parameters = '111';
             }
+        });
+
+        ## Если в конфиге прописано несколько языковых версий - генерим роуты с языковым префиксом
+        if (is_array(Config::get('app.locales')) && count(Config::get('app.locales')) > 1) {
+
+            $default_locale_mainpage = ( Config::get('app.default_locale') == Config::get('app.locale') );
+
+            ## Генерим роуты только для текущего языка
+            $locale_sign = Config::get('app.locale');
+            ## ...генерим роуты с префиксом (первый сегмент), который будет указывать на текущую локаль
+            Route::group(array('before' => 'i18n_url', 'prefix' => $locale_sign), function() use ($default_locale_mainpage) {
+
+                ## Regular page
+                Route::any('/{url}', array(
+                    'as' => 'page',
+                    'uses' => __CLASS__.'@showPage',
+                    #function($url) {
+                    #    Helper::dd($url);
+                    #}
+                ));
+
+                ## Main page for non-default locale
+                if (!$default_locale_mainpage)
+                    Route::any('/', array(
+                        'as' => 'mainpage',
+                        'before' => 'i18n_url',
+                        'uses' => __CLASS__.'@showPage'
+                    ));
+
+            });
+
+            ## Main page for default locale
+            if ($default_locale_mainpage)
+                Route::any('/', array(
+                    'as' => 'mainpage',
+                    'before' => '',
+                    'uses' => __CLASS__.'@showPage'
+                ));
+
+        } else {
+
+            ## Генерим роуты без языкового префикса
+            Route::group(array('before' => 'pages_right_url'), function(){
+
+                ## Regular page
+                Route::any('/{url}', array(
+                    'as' => 'page',
+                    'uses' => __CLASS__.'@showPage'
+                ));
+
+                ## Main page
+                Route::any('/', array(
+                    'as' => 'mainpage',
+                    'uses' => __CLASS__.'@showPage'
+                ));
+            });
+
         }
 
-        ## Генерим роуты без префикса, и назначаем before-фильтр i18n_url.
-        ## Это позволяет нам делать редирект на урл с префиксом только для этих роутов, не затрагивая, например, /admin и /login
-        Route::group(array('before' => 'i18n_url'), function(){
-            Route::any('/{url}', array('as' => 'page', 'uses' => __CLASS__.'@showPage')); ## Show Page
-            Route::any('/', array('as' => 'mainpage', 'uses' => __CLASS__.'@showPage')); ## Show Main Page
-        });
     }
     
     ## Shortcodes of module
@@ -79,12 +137,12 @@ class PublicPagesController extends BaseController {
 
     /****************************************************************************/
 
-	public function __construct(Page $page, PageMeta $page_meta, PageBlock $page_block, PageBlockMeta $page_block_meta){
+	public function __construct(){
 
-        $this->page = $page;
-        $this->page_meta = $page_meta;
-        $this->page_block = $page_block;
-        $this->page_block_meta = $page_block_meta;
+        $this->page = new Page;
+        $this->page_meta = new PageMeta;
+        $this->page_block = new PageBlock;
+        $this->page_block_meta = new PageBlockMeta;
         $this->locales = Config::get('app.locales');
 
         $this->module = array(
@@ -339,5 +397,73 @@ class PublicPagesController extends BaseController {
 
 		return shortcode::run($type, $options);
 	}
+
+    ## Get right page url
+    private function getRightPageUrl($url = false) {
+
+        if (!$url)
+            return false;
+
+        $return = $url;
+
+        $locales = Config::get('locales');
+        $locale = Config::get('locale');
+        $default_locale = Config::get('default_locale');
+
+        $page = $this->page->where('publication', 1);
+
+        ## Search slug in SEO URL
+        $page_meta_seo = Seo::where('module', 'page_meta')->where('url', $url)->first();
+        #Helper::tad($page_meta_seo);
+
+        ## If page not found by slug in SEO URL...
+        if (is_object($page_meta_seo) && is_numeric($page_meta_seo->unit_id)) {
+
+            $page = $this->page_meta
+                ->where('id', $page_meta_seo->unit_id)
+                #->with('page.meta.seo');
+                ->with(array('page' => function($query) use ($locales, $default_locale) {
+                        $query->with(array('meta' => function($query) use ($locales, $default_locale) {
+                                if (@is_array($locales) && count($locales) > 1) {
+                                    $query->where('language', $default_locale);
+                                }
+                                $query->with('seo');
+                            }));
+                    }));
+
+            $page = $page->first()->page;
+
+            #Helper::ta($page);
+
+        } else {
+
+            ## Search slug in PAGE SLUG
+            $page = $this->page
+                ->with(array('meta' => function($query) use ($locales, $default_locale) {
+                        if (@is_array($locales) && count($locales) > 1) {
+                            $query->where('language', $default_locale);
+                        }
+                        $query->with('seo');
+                    }))
+                ->where('slug', $url)
+                ->first();
+
+            #Helper::ta($page);
+        }
+
+        ## Compare SEO url & gettin' $url
+        if (@is_object($page->meta) && @is_object($page->meta->seo) && $page->meta->seo->url != '' && $page->meta->seo->url != $url) {
+
+            $return = $page->meta->seo->url;
+
+            #$redirect = URL::route('page', array('url' => $page->meta->seo->url));
+            #Helper::dd($redirect);
+            #return Redirect::to($redirect, 301);
+        }
+
+        #Helper::dd($url . ' -> ' . $return);
+
+        return $return;
+    }
 
 }
