@@ -1,13 +1,15 @@
 
             <footer class="main-footer">
                 <div class="copy">
-                    © Sarykum hotel and spa 2014
+                    ©
+                    {{ trans('interface.footer.copyright') }}
+                    2014{{ date('Y')>2014 ? '-'.date('Y') : '' }}
                 </div>
                 <address>
-                    Российская Федерация, Республика Дагестан, г. Махачкала, ул. Строителей 345
+                    {{ trans('interface.footer.address') }}
                 </address>
                 <div class="dev">
-                    Сделано в <a href="http://grapheme.ru" target="_blank">Графема</a>
+                    {{ trans('interface.footer.made_by_grapheme') }}
                 </div>
             </footer>
         </div>

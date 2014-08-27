@@ -1,7 +1,5 @@
 <?php 
 
-
-
 return array(
 
 	'menu.rooms' => 'Rooms',
@@ -20,5 +18,9 @@ return array(
 	'reserve.daily_price' => 'Cost per night:',
 	'reserve.reserve' => 'Reserve',
 	'reserve.success' => 'Your reservation is successfully sent to administrator',
+
+    'footer.copyright' => 'Sarykum hotel and spa',
+    'footer.address' => 'Russian Federation, Republic of Dagestan, Makhachkala, ul. Stroitelei, 345',
+    'footer.made_by_grapheme' => 'Made by <a href="http://grapheme.ru" target="_blank">Grapheme</a>',
 
 );

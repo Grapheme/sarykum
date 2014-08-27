@@ -1,7 +1,5 @@
 <?php 
 
-
-
 return array(
 
 	'menu.rooms' => 'Номера',
@@ -21,5 +19,8 @@ return array(
 	'reserve.reserve' => 'Забронировать',
 	'reserve.success' => 'Ваш заказ успешно отправлен администратору',
 
+    'footer.copyright' => 'Sarykum hotel and spa',
+    'footer.address' => 'Российская Федерация, Республика Дагестан, г. Махачкала, ул. Строителей 345',
+    'footer.made_by_grapheme' => 'Сделано в <a href="http://grapheme.ru" target="_blank">Графема</a>',
 
 );
