@@ -37,6 +37,9 @@ class PublicPagesController extends BaseController {
         if (!Allow::module(self::$group) || !Page::count())
             return false;
 
+        ##
+        ## Add URL modifier for check SEO url of the page (custom UrlGenerator functionality)
+        ##
         URL::add_url_modifier('page', function(&$parameters) use ($class) {
             #var_dump($class); die;
             #Helper::dd('Page url modifier!');

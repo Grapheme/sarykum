@@ -11,6 +11,10 @@ class PublicSarykumController extends BaseController {
     public static function returnRoutes($prefix = null) {
 
         Route::post('/ajax/reserve-room', array('as' => 'ajax-reserve-room', 'uses' => __CLASS__.'@postAjaxReserveRoom'));
+
+        Route::group(array('before' => 'i18n_url', 'prefix' => Config::get('app.locale')), function() {
+            Route::get('/room/{slug}', array('as' => 'room', 'uses' => __CLASS__.'@getShowRoom'));
+        });
     }
 
     ## Shortcodes of module
@@ -80,6 +84,21 @@ class PublicSarykumController extends BaseController {
         });
         return Response::json($json_request, 200);
     }
+
+    public function getShowRoom($slug) {
+
+        $room = Dic::valueBySlugs('room_type', $slug, true);
+
+        #Helper::tad($room);
+
+        if (!is_object($room)) {
+            App::abort(404);
+        }
+
+        return View::make(Helper::layout('room'), compact('room'));
+    }
+
+
 }
 
 

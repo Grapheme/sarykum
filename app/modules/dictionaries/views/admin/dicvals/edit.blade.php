@@ -2,6 +2,7 @@
 
 
 @section('style')
+    {{ HTML::style('css/redactor.css') }}
 @stop
 
 
@@ -157,5 +158,10 @@
 			loadScript("{{ asset('js/vendor/jquery-form.min.js'); }}");
 		}        
 	</script>
+
+    {{ HTML::script('js/vendor/redactor.min.js') }}
+    {{ HTML::script('js/system/redactor-config.js') }}
+
+    {{ HTML::script('js/modules/gallery.js') }}
 
 @stop

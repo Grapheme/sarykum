@@ -77,7 +77,7 @@ class AdminGalleriesController extends BaseController {
                 $gallery_id      = isset($gallery['gallery_id']) ? $gallery['gallery_id'] : 0;
                 $uploaded_images = isset($gallery['uploaded_images']) ? $gallery['uploaded_images'] : array();
                 $module = (string)trim($module);
-                $unit_id = (int)trim($unit_id);
+                $unit_id = (string)trim($unit_id);
 
                 if (@$params['single']) {
 

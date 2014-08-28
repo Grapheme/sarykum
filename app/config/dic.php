@@ -8,10 +8,9 @@ return array(
 
             'general' => array(
                 /*
-                array(
+                'price' => array(
                     'title' => 'Цена',
                     'type' => 'text',
-                    'name' => 'price',
                     'default' => '',
                     'others' => array(
                         #'placeholder' => 'Укажите цену'
@@ -19,10 +18,9 @@ return array(
                 ),
                 #*/
                 /*
-                array(
+                'description' => array(
                     'title' => 'Описание номера',
                     'type' => 'textarea',
-                    'name' => 'description',
                     'default' => '',
                     'others' => array(
                         'placeholder' => 'Введите описание'
@@ -32,14 +30,39 @@ return array(
             ),
 
             'i18n' => array(
-                array(
+                'price' => array(
                     'title' => 'Цена',
                     'type' => 'text',
-                    'name' => 'price',
                     'default' => '',
                     'others' => array(
                         #'placeholder' => 'Укажите цену'
                     ),
+                ),
+                'description' => array(
+                    'title' => 'Описание',
+                    'type' => 'textarea_redactor',
+                    'default' => '',
+                    'others' => array(
+                        #'placeholder' => 'Укажите описание'
+                    ),
+                ),
+                'image' => array(
+                    'title' => 'Основное изображение',
+                    'type' => 'image',
+                ),
+                'gallery' => array(
+                    'title' => 'Галерея',
+                    'type' => 'gallery',
+                    'handler' => function($array) {
+                            #Helper::d('Gallery handler!');
+                            #Helper::dd($array);
+                            return ExtForm::process('gallery', array(
+                                'module'  => 'dicval_meta',
+                                'unit_id' => '[unknown] - single',
+                                'gallery' => $array,
+                                'single'  => true,
+                            ));
+                        }
                 ),
             ),
 

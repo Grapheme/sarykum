@@ -25,36 +25,39 @@ if (@is_object($element->metas) && $element->metas->count())
 @if (count($locales) > 1)
 
     @if (@count($fields['i18n']))
-    <?
-    $element_fields = array();
-    if (@is_object($element->allfields)) {
-        $element_fields = $element->allfields;
-        foreach ($element_fields as $f => $field) {
-            if (!$field->language)
-                unset($element_fields[$f]);
-        }
-        #$element_fields = $element_fields->lists('value', 'key');
-        #Helper::ta($element_fields);
-    }
-    ?>
-        @foreach ($fields['i18n'] as $field)
 <?
-$field_meta = new DicFieldVal();
-foreach ($element_fields as $tmp) {
-    #Helper::ta($tmp);
-    if ($tmp->key == @$field['name'] && $tmp->language == $locale_sign) {
-        $field_meta = $tmp;
-        #Helper::ta($field_meta);
-        break;
-    }
-}
+        $element_fields = array();
+        if (@is_object($element->allfields)) {
+            $element_fields = $element->allfields;
+            foreach ($element_fields as $f => $field) {
+                if (!$field->language)
+                    unset($element_fields[$f]);
+            }
+            #$element_fields = $element_fields->lists('value', 'key');
+            #Helper::ta($element_fields);
+        }
 ?>
-        <section>
-            <label class="label">{{ $field['title'] }}</label>
-            <label class="input {{ $field['type'] }}">
-                {{ Helper::formField($field, 'fields_i18n[' . $locale_sign . ']', @$field_meta->value) }}
-            </label>
-        </section>
+        @foreach ($fields['i18n'] as $field_name => $field)
+<?
+            $field_meta = new DicFieldVal();
+            foreach ($element_fields as $tmp) {
+                #Helper::ta($tmp);
+                if ($tmp->key == @$field_name && $tmp->language == $locale_sign) {
+                    $field_meta = $tmp;
+                    #Helper::ta($field_meta);
+                    break;
+                }
+            }
+            $form_field = Helper::formField('fields_i18n[' . $locale_sign . '][' . $field_name . ']', $field, @$field_meta->value);
+            if (!$form_field)
+                continue;
+?>
+            <section>
+                <label class="label">{{ $field['title'] }}</label>
+                <label class="input {{ $field['type'] }}">
+                    {{ $form_field }}
+                </label>
+            </section>
         @endforeach
     @endif
 

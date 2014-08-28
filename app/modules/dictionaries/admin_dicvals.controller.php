@@ -115,6 +115,7 @@ class AdminDicvalsController extends BaseController {
         $locales = $this->locales;
 
         $fields = Config::get('dic.fields.' . $dic->slug);
+        #Helper::dd($fields);
 
         $element = DicVal::where('id', $id)
             ->with('metas')
@@ -156,6 +157,8 @@ class AdminDicvalsController extends BaseController {
         if (!is_object($dic))
             App::abort(404);
 
+        #Helper::tad($dic);
+
         $input = Input::all();
         $locales = Input::get('locales');
         $fields = Input::get('fields');
@@ -185,7 +188,14 @@ class AdminDicvalsController extends BaseController {
 
             ## FIELDS
             if (@is_array($fields) && count($fields)) {
+                #Helper::d($fields);
                 foreach ($fields as $key => $value) {
+
+                    ## If handler of field is defined
+                    if (is_callable($handler = Config::get('dic.fields.' . $dic->slug . '.general.' . $key . '.handler'))) {
+                        #Helper::dd($handler);
+                        $value = $handler($value);
+                    }
 
                     $field = DicFieldVal::firstOrNew(array('dicval_id' => $id, 'key' => $key, 'language' => NULL));
                     $field->value = $value;
@@ -196,17 +206,27 @@ class AdminDicvalsController extends BaseController {
 
             ## FIELDS I18N
             if (@is_array($fields_i18n) && count($fields_i18n)) {
-                #Helper::dd($fields_i18n);
-                foreach ($fields_i18n as $locale_sign => $value) {
+                #Helper::d($fields_i18n);
+                foreach ($fields_i18n as $locale_sign => $locale_values) {
+                    #Helper::d($locale_values);
+                    foreach ($locale_values as $key => $value) {
 
-                    foreach ($value as $key => $value)
-                        break;
+                        #Helper::d($value);
 
-                    $field = DicFieldVal::firstOrNew(array('dicval_id' => $id, 'key' => $key, 'language' => $locale_sign));
-                    $field->value = $value;
-                    $field->save();
-                    #Helper::ta($field);
-                    unset($field);
+                        ## If handler of field is defined
+                        if (is_callable($handler = Config::get('dic.fields.' . $dic->slug . '.i18n.' . $key . '.handler'))) {
+                            #Helper::dd($handler);
+                            $value = $handler($value);
+                        }
+
+                        #Helper::d($value);
+
+                        $field = DicFieldVal::firstOrNew(array('dicval_id' => $id, 'key' => $key, 'language' => $locale_sign));
+                        $field->value = $value;
+                        $field->save();
+                        #Helper::ta($field);
+                        unset($field);
+                    }
                 }
             }
 

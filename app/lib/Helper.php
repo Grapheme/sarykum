@@ -330,23 +330,29 @@ HTML;
 
     }
 
+    ##
+    ## Uses in Dictionaries module (DicVal additional fields)
+    ##
+    public static function formField($name, $array, $value = false) {
 
-    public static function formField($array, $name_group = false, $value = false) {
-
-        if (!@$array || !is_array($array) || !@$array['name'])
+        if (!@$array || !is_array($array) || !@$name)
             return false;
 
         $return = '';
-        $name = $array['name'];
-        if ($name_group != '')
-            $name = $name_group . '[' . $name . ']';
+        #$name = $array['name'];
+        #if ($name_group != '')
+        #    $name = $name_group . '[' . $name . ']';
 
         $value = $value ? $value : @$array['default'];
 
+        #Helper::d($value);
+
         $others = array();
+        $others_array = array();
         if (@count($array['others'])) {
             foreach ($array['others'] as $o => $other) {
                 $others[] = $o . '="' . $other . '"';
+                $others_array[$o] = $other;
             }
         }
         $others = ' ' . implode(' ', $others);
@@ -358,10 +364,34 @@ HTML;
             case 'textarea':
                 $return = '<textarea name="' . $name . '"' . $others . '>' . $value . '</textarea>';
                 break;
+            case 'textarea_redactor':
+                $others_array['class'] = trim(@$others_array['class'] . ' redactor redactor_450');
+                $others_array = self::arrayToAttributes($others_array);
+                #Helper::d($others_array);
+                $return = '<textarea name="' . $name . '"' . @$others_array . '>' . $value . '</textarea>';
+                break;
+            case 'image':
+                $return = ExtForm::image($name, $value);
+                break;
+            case 'gallery':
+                $return = ExtForm::gallery($name, $value);
+                break;
         }
         return $return;
     }
 
+    public static function arrayToAttributes($array) {
+        if (!@is_array($array) || !@count($array))
+            return false;
+
+        $line = '';
+        foreach ($array as $key => $value) {
+            if (is_string($key) && (is_string($value) || is_int($value)))
+                $line = $key . '="' . $value . '" ';
+        }
+        $line = trim($line);
+        return $line;
+    }
 
     public static function arrayFieldToKey(&$array, $field = 'slug') {
         #$return = $this;
