@@ -6,10 +6,15 @@ $route = Route::currentRouteName();
 
 $room_type = Dic::whereSlugValues('room_type');
 if (@count($room_type))
-    foreach ($room_type as $a => $arr)
+    foreach ($room_type as $a => $arr) {
         if (is_object($arr->meta))
             $room_type[$a]->name = $arr->meta->name;
-#Helper::ta($room_type);
+        if (is_object($arr->fields))
+            foreach ($arr->fields as $field)
+                $room_type[$a]->{$field->key} = $field->value;
+    }
+$prices = json_encode($room_type->lists('price', 'id'));
+#Helper::tad($room_type);
 #Helper::dd($room_type->lists('name', 'id'));
 ?>
 @if (0)
@@ -118,3 +123,7 @@ page:rooms = {{ URL::route('page', 'rooms') }}
                 </div>                
             </header>
 
+<script>
+    var prices = {{ $prices }};
+    var currency = '{{ trans("interface.currency_short") }}';
+</script>

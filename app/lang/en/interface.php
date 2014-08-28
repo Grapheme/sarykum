@@ -23,4 +23,8 @@ return array(
     'footer.address' => 'Russian Federation, Republic of Dagestan, Makhachkala, ul. Stroitelei, 345',
     'footer.made_by_grapheme' => 'Made by <a href="http://grapheme.ru" target="_blank">Grapheme</a>',
 
+    'currency_short' => 'RUB.',
+
+    'title.actions' => 'Actions',
+
 );

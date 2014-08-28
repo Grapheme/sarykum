@@ -4,10 +4,19 @@
     <bookmark url="file://$PROJECT_DIR$/app/modules/galleries/admin_galleries.controller.php" line="81" mnemonic="2" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9eb288a-66f5-42e9-a6ae-4f6f60b8c9bd" name="Default" comment="page module grand upgrade + custom UrlGenerator">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates/site/footer.blade.php" afterPath="$PROJECT_DIR$/app/views/templates/site/footer.blade.php" />
+    <list default="true" id="f9eb288a-66f5-42e9-a6ae-4f6f60b8c9bd" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/galleries/1409210638_1982.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/galleries/thumbs/1409210638_1982.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/galleries/1409210671_1072.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/galleries/thumbs/1409210671_1072.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/galleries/1409210780_1158.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/uploads/galleries/thumbs/1409210780_1158.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/templates/site/actions.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/modules/news/views/sarykum-news-list.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates/site/header.blade.php" afterPath="$PROJECT_DIR$/app/views/templates/site/header.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lang/en/interface.php" afterPath="$PROJECT_DIR$/app/lang/en/interface.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lang/ru/interface.php" afterPath="$PROJECT_DIR$/app/lang/ru/interface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/news/views/news-list.blade.php" afterPath="$PROJECT_DIR$/app/modules/news/views/news-list.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="archive.iws" />
@@ -52,16 +61,36 @@
       <file leaf-file-name="header.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/templates/site/header.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="99" selection-start="5416" selection-end="5416" vertical-scroll-proportion="-59.5" vertical-offset="119" max-vertical-offset="2159">
+            <state line="127" column="54" selection-start="6652" selection-end="6652" vertical-scroll-proportion="-17.0" vertical-offset="1717" max-vertical-offset="2295">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer.blade.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="sarykum-news-list.blade.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/modules/news/views/sarykum-news-list.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="19" selection-start="1273" selection-end="1273" vertical-scroll-proportion="0.5151515" vertical-offset="272" max-vertical-offset="850">
+              <folding>
+                <element signature="n#style#0;n#a#0;n#div#0;n#li#0;n#ul#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="actions.blade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/templates/site/actions.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="49" selection-start="175" selection-end="198" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="493">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/templates/site/footer.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="526" selection-end="526" vertical-scroll-proportion="0.45454547" vertical-offset="0" max-vertical-offset="561">
+            <state line="15" column="0" selection-start="526" selection-end="526" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="357">
               <folding />
             </state>
           </provider>
@@ -70,7 +99,7 @@
       <file leaf-file-name="interface.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/lang/en/interface.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="95" selection-start="843" selection-end="843" vertical-scroll-proportion="-15.038462" vertical-offset="0" max-vertical-offset="527">
+            <state line="27" column="5" selection-start="889" selection-end="889" vertical-scroll-proportion="-17.653847" vertical-offset="0" max-vertical-offset="595">
               <folding />
             </state>
           </provider>
@@ -79,7 +108,7 @@
       <file leaf-file-name="interface.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/lang/ru/interface.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="40" selection-start="671" selection-end="671" vertical-scroll-proportion="-14.384615" vertical-offset="0" max-vertical-offset="527">
+            <state line="27" column="5" selection-start="876" selection-end="876" vertical-scroll-proportion="-17.653847" vertical-offset="0" max-vertical-offset="595">
               <folding />
             </state>
           </provider>
@@ -130,9 +159,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/modules/news/views/demo.blade.php" />
-        <option value="$PROJECT_DIR$/app/modules/seo/views/extform_seo.blade.php" />
-        <option value="$PROJECT_DIR$/app/modules/news/views/admin/_news_meta.blade.php" />
         <option value="$PROJECT_DIR$/app/modules/pages/views/admin/_page_meta.blade.php" />
         <option value="$PROJECT_DIR$/app/modules/pages/models/PageMeta.php" />
         <option value="$PROJECT_DIR$/app/modules/news/public_news.controller.php" />
@@ -173,14 +199,17 @@
         <option value="$PROJECT_DIR$/app/modules/pages/public_pages.controller.php" />
         <option value="$PROJECT_DIR$/app/lib/Helper.php" />
         <option value="$PROJECT_DIR$/bootstrap/start.php" />
-        <option value="$PROJECT_DIR$/app/views/templates/site/header.blade.php" />
         <option value="$PROJECT_DIR$/app/filters.php" />
         <option value="$PROJECT_DIR$/app/start/global.php" />
         <option value="$PROJECT_DIR$/app/config/app.php" />
         <option value="$PROJECT_DIR$/../archive/app/views/templates/site/search.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/templates/site/footer.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/templates/site/header.blade.php" />
+        <option value="$PROJECT_DIR$/app/modules/news/views/news-list.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/templates/site/actions.blade.php" />
         <option value="$PROJECT_DIR$/app/lang/ru/interface.php" />
         <option value="$PROJECT_DIR$/app/lang/en/interface.php" />
-        <option value="$PROJECT_DIR$/app/views/templates/site/footer.blade.php" />
+        <option value="$PROJECT_DIR$/app/modules/news/views/sarykum-news-list.blade.php" />
       </list>
     </option>
   </component>
@@ -418,7 +447,11 @@
       <created>1409149876036</created>
       <updated>1409149876036</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="i18n+">
+      <created>1409151495953</created>
+      <updated>1409151495953</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -486,7 +519,8 @@
     <MESSAGE value="views+" />
     <MESSAGE value="room reserve+" />
     <MESSAGE value="page module grand upgrade + custom UrlGenerator" />
-    <option name="LAST_COMMIT_MESSAGE" value="page module grand upgrade + custom UrlGenerator" />
+    <MESSAGE value="i18n+" />
+    <option name="LAST_COMMIT_MESSAGE" value="i18n+" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -494,25 +528,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../archive/app/views/templates/site/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="867">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../archive/app/modules/pages/admin_pages.page.controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7650" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../archive/app/modules/pages/views/admin/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="288" column="27" selection-start="10776" selection-end="10782" vertical-scroll-proportion="0.0" vertical-offset="4896" max-vertical-offset="7616">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../archive/app/modules/pages/public_pages.controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="228" column="0" selection-start="9033" selection-end="9228" vertical-scroll-proportion="0.030195381" vertical-offset="3876" max-vertical-offset="5933">
@@ -879,31 +894,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/news/views/news-list.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="0" selection-start="0" selection-end="1931" vertical-scroll-proportion="0.93939394" vertical-offset="0" max-vertical-offset="1003">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/templates/site/header.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="99" selection-start="5416" selection-end="5416" vertical-scroll-proportion="-59.5" vertical-offset="119" max-vertical-offset="2159">
+        <state line="127" column="54" selection-start="6652" selection-end="6652" vertical-scroll-proportion="-17.0" vertical-offset="1717" max-vertical-offset="2295">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/lang/ru/interface.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="40" selection-start="671" selection-end="671" vertical-scroll-proportion="-14.384615" vertical-offset="0" max-vertical-offset="527">
+        <state line="27" column="5" selection-start="876" selection-end="876" vertical-scroll-proportion="-17.653847" vertical-offset="0" max-vertical-offset="595">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/lang/en/interface.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="95" selection-start="843" selection-end="843" vertical-scroll-proportion="-15.038462" vertical-offset="0" max-vertical-offset="527">
+        <state line="27" column="5" selection-start="889" selection-end="889" vertical-scroll-proportion="-17.653847" vertical-offset="0" max-vertical-offset="595">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/templates/site/footer.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="526" selection-end="526" vertical-scroll-proportion="0.45454547" vertical-offset="0" max-vertical-offset="561">
+        <state line="15" column="0" selection-start="526" selection-end="526" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="357">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/templates/site/actions.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="49" selection-start="175" selection-end="198" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="493">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/news/views/sarykum-news-list.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="19" selection-start="1273" selection-end="1273" vertical-scroll-proportion="0.5151515" vertical-offset="272" max-vertical-offset="850">
+          <folding>
+            <element signature="n#style#0;n#a#0;n#div#0;n#li#0;n#ul#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

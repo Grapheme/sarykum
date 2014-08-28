@@ -23,4 +23,8 @@ return array(
     'footer.address' => 'Российская Федерация, Республика Дагестан, г. Махачкала, ул. Строителей 345',
     'footer.made_by_grapheme' => 'Сделано в <a href="http://grapheme.ru" target="_blank">Графема</a>',
 
+    'currency_short' => 'руб.',
+
+    'title.actions' => 'Акции',
+
 );
