@@ -65,7 +65,7 @@ if (@count($rooms))
 
     {{ $page->block('content') }}
 
-    <section class="sect-wrap rooms-wrap">
+    <section class="sect-wrap">
         <p>
         <button class="btn btn-primary reserve_room">
             <span class="icon icon-booking"></span> Забронировать номер

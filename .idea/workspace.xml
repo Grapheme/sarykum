@@ -104,7 +104,7 @@
       <file leaf-file-name="rooms.blade.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/templates/site/rooms.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="18" selection-start="1850" selection-end="1850" vertical-scroll-proportion="0.72407407" vertical-offset="612" max-vertical-offset="1462">
+            <state line="75" column="7" selection-start="2176" selection-end="2176" vertical-scroll-proportion="0.75555557" vertical-offset="867" max-vertical-offset="1462">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#section#0;n#main#0;n#!!top" expanded="true" />
               </folding>
@@ -515,7 +515,11 @@
       <created>1409223370342</created>
       <updated>1409223370342</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="+">
+      <created>1409223411352</created>
+      <updated>1409223411352</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -578,7 +582,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="+" />
     <MESSAGE value="dicval i18n +++" />
     <MESSAGE value="views+" />
     <MESSAGE value="room reserve+" />
@@ -589,7 +592,8 @@
     <MESSAGE value="fix" />
     <MESSAGE value="fix+" />
     <MESSAGE value="room reserve button click" />
-    <option name="LAST_COMMIT_MESSAGE" value="room reserve button click" />
+    <MESSAGE value="+" />
+    <option name="LAST_COMMIT_MESSAGE" value="+" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1010,7 +1014,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/templates/site/rooms.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="18" selection-start="1850" selection-end="1850" vertical-scroll-proportion="0.72407407" vertical-offset="612" max-vertical-offset="1462">
+        <state line="75" column="7" selection-start="2176" selection-end="2176" vertical-scroll-proportion="0.75555557" vertical-offset="867" max-vertical-offset="1462">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#section#0;n#main#0;n#!!top" expanded="true" />
           </folding>
