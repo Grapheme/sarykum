@@ -77,7 +77,7 @@ if (@is_object($gallery) && @count($gallery->photos)) {
                     </div>
                 </div>
             </div>
-            <button class="btn btn-primary">
+            <button class="btn btn-primary reserve_room" data-room_id="{{ $room->id }}">
                 <span class="icon icon-booking"></span> Забронировать номер
             </button>
         </section>

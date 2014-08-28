@@ -196,3 +196,12 @@ $('.slideshow').slideshow({
 });
 $("ul#tabs").tabs("#tabContent");
 App.init();
+
+    $(document).on('click', '.reserve_room', function() {
+        var room_id = $(this).data('room_id');
+        $('select[name=room_type] option[value=' + room_id + ']').attr('selected', 'yes').val(room_id).change();
+        $('.booking-form').addClass('active');
+        $('html, body').animate({
+            scrollTop: $('html').offset().top
+        }, 300);
+    });
