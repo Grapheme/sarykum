@@ -44,14 +44,14 @@ class SystemModules {
         if (Allow::action('system', 'permissions', false)) {
 
             $menu_child = array();
-            if (Allow::action('users', 'view')) {
+            if (Allow::action('users', 'view', false, true)) {
                 $menu_child[] = array(
                 	'title' => 'Пользователи', #trans('menu.pages.menu_title'), 
                     'link' => 'users',
                     'class' => 'fa-user', 
                 );
             }
-            if (Allow::action('groups', 'view')) {
+            if (Allow::action('groups', 'view', false, true)) {
                 $menu_child[] = array(
                 	'title' => 'Группы', #trans('menu.pages.menu_title'), 
                     'link' => 'groups',
@@ -71,7 +71,7 @@ class SystemModules {
         ## System settings
         if (Allow::action('system', 'settings_view', false)) {
             $menu[] = array(
-                'title' => 'Настройки',
+                'title' => trans('admin.settings'),
                 'link' => 'settings',
                 'class' => 'fa-cog',
                 'system' => 1,
