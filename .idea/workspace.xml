@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9eb288a-66f5-42e9-a6ae-4f6f60b8c9bd" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates/site/rooms.blade.php" afterPath="$PROJECT_DIR$/app/views/templates/site/rooms.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="archive.iws" />
@@ -41,7 +42,37 @@
         <entry file="file://$PROJECT_DIR$/app/modules/dictionaries/views/admin/dicvals/edit.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="164" column="4" selection-start="5924" selection-end="5924" vertical-scroll-proportion="-17.653847" vertical-offset="2329" max-vertical-offset="2924">
-              <folding />
+              <folding>
+                <marker date="1409213168710" expanded="true" signature="743:4976" placeholder="..." />
+                <marker date="1409213168710" expanded="true" signature="802:4744" placeholder="..." />
+                <marker date="1409213168710" expanded="true" signature="833:4728" placeholder="..." />
+                <marker date="1409213168710" expanded="true" signature="911:1503" placeholder="..." />
+                <marker date="1409213168710" expanded="true" signature="942:1203" placeholder="..." />
+                <marker date="1409213168710" expanded="true" signature="1071:1172" placeholder="..." />
+                <marker date="1409213168710" expanded="true" signature="1234:1474" placeholder="..." />
+                <marker date="1409213168710" expanded="true" signature="1342:1443" placeholder="..." />
+                <marker date="1409213168710" expanded="true" signature="1811:2271" placeholder="..." />
+                <marker date="1409213168710" expanded="true" signature="1901:2211" placeholder="..." />
+                <marker date="1409213168710" expanded="true" signature="2043:2180" placeholder="..." />
+                <marker date="1409213168710" expanded="true" signature="2381:3890" placeholder="..." />
+                <marker date="1409213168710" expanded="true" signature="2411:3862" placeholder="..." />
+                <marker date="1409213168710" expanded="true" signature="2632:3831" placeholder="..." />
+                <marker date="1409213168710" expanded="true" signature="2707:3218" placeholder="..." />
+                <marker date="1409213168710" expanded="true" signature="2910:3140" placeholder="..." />
+                <marker date="1409213168710" expanded="true" signature="3002:3102" placeholder="..." />
+                <marker date="1409213168710" expanded="true" signature="3302:3800" placeholder="..." />
+                <marker date="1409213168710" expanded="true" signature="3554:3721" placeholder="..." />
+                <marker date="1409213168710" expanded="true" signature="4166:4714" placeholder="..." />
+                <marker date="1409213168710" expanded="true" signature="4294:4419" placeholder="..." />
+                <marker date="1409213168710" expanded="true" signature="4549:4688" placeholder="..." />
+                <marker date="1409213168710" expanded="true" signature="4855:4927" placeholder="..." />
+                <marker date="1409213168710" expanded="true" signature="5176:5449" placeholder="..." />
+                <marker date="1409213168710" expanded="true" signature="5302:5347" placeholder="{...}" />
+                <marker date="1409213168710" expanded="true" signature="5376:5435" placeholder="{...}" />
+                <marker date="1409213168710" expanded="true" signature="5530:5809" placeholder="..." />
+                <marker date="1409213168710" expanded="true" signature="5630:5717" placeholder="{...}" />
+                <marker date="1409213168710" expanded="true" signature="5723:5791" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -51,7 +82,11 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="46" column="21" selection-start="1469" selection-end="1469" vertical-scroll-proportion="-9.807693" vertical-offset="527" max-vertical-offset="1190">
               <folding>
+                <marker date="1409215643037" expanded="true" signature="417:644" placeholder="..." />
+                <marker date="1409215643037" expanded="true" signature="514:629" placeholder="..." />
+                <marker date="1409215643037" expanded="true" signature="1764:1976" placeholder="..." />
                 <marker date="1409215643037" expanded="true" signature="1764:1812" placeholder="..." />
+                <marker date="1409215643037" expanded="true" signature="1890:1953" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -66,19 +101,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/templates/site/header.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="127" column="54" selection-start="6652" selection-end="6652" vertical-scroll-proportion="-17.0" vertical-offset="1717" max-vertical-offset="2295">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rooms.blade.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="rooms.blade.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/templates/site/rooms.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="0" selection-start="839" selection-end="1137" vertical-scroll-proportion="-7.1923075" vertical-offset="391" max-vertical-offset="1326">
+            <state line="59" column="18" selection-start="1850" selection-end="1850" vertical-scroll-proportion="0.72407407" vertical-offset="612" max-vertical-offset="1462">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#section#0;n#main#0;n#!!top" expanded="true" />
               </folding>
@@ -86,10 +112,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="public_sarykum.controller.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="public_sarykum.controller.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/modules/sarykum/public_sarykum.controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="5" selection-start="664" selection-end="664" vertical-scroll-proportion="0.53518516" vertical-offset="0" max-vertical-offset="1870">
+            <state line="12" column="46" selection-start="366" selection-end="366" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="1870">
               <folding />
             </state>
           </provider>
@@ -107,7 +133,7 @@
       <file leaf-file-name="room.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/templates/site/room.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="0" selection-start="672" selection-end="672" vertical-scroll-proportion="-3.9230769" vertical-offset="544" max-vertical-offset="1615">
+            <state line="89" column="0" selection-start="2430" selection-end="2430" vertical-scroll-proportion="-16.846153" vertical-offset="1075" max-vertical-offset="1615">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
               </folding>
@@ -216,10 +242,10 @@
         <option value="$PROJECT_DIR$/app/modules/dictionaries/admin_dicvals.controller.php" />
         <option value="$PROJECT_DIR$/app/config/dic.php" />
         <option value="$PROJECT_DIR$/app/modules/dictionaries/models/DicVal.model.php" />
-        <option value="$PROJECT_DIR$/app/views/templates/site/rooms.blade.php" />
         <option value="$PROJECT_DIR$/app/modules/dictionaries/models/Dictionary.model.php" />
-        <option value="$PROJECT_DIR$/app/views/templates/site/room.blade.php" />
         <option value="$PROJECT_DIR$/app/modules/sarykum/public_sarykum.controller.php" />
+        <option value="$PROJECT_DIR$/app/views/templates/site/room.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/templates/site/rooms.blade.php" />
       </list>
     </option>
   </component>
@@ -481,7 +507,15 @@
       <created>1409221206807</created>
       <updated>1409221206807</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="fix+">
+      <created>1409221429430</created>
+      <updated>1409221429430</updated>
+    </task>
+    <task id="LOCAL-00017" summary="room reserve button click">
+      <created>1409223370342</created>
+      <updated>1409223370342</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -554,7 +588,8 @@
     <MESSAGE value="rooms+" />
     <MESSAGE value="fix" />
     <MESSAGE value="fix+" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix+" />
+    <MESSAGE value="room reserve button click" />
+    <option name="LAST_COMMIT_MESSAGE" value="room reserve button click" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -872,24 +907,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/dic.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="0" selection-start="1693" selection-end="1693" vertical-scroll-proportion="-14.384615" vertical-offset="561" max-vertical-offset="1377">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/templates/site/header.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="127" column="54" selection-start="6652" selection-end="6652" vertical-scroll-proportion="-17.0" vertical-offset="1717" max-vertical-offset="2295">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/modules/dictionaries/views/admin/dicvals/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="164" column="4" selection-start="5924" selection-end="5924" vertical-scroll-proportion="-17.653847" vertical-offset="2329" max-vertical-offset="2924">
-          <folding />
+          <folding>
+            <marker date="1409213168710" expanded="true" signature="743:4976" placeholder="..." />
+            <marker date="1409213168710" expanded="true" signature="802:4744" placeholder="..." />
+            <marker date="1409213168710" expanded="true" signature="833:4728" placeholder="..." />
+            <marker date="1409213168710" expanded="true" signature="911:1503" placeholder="..." />
+            <marker date="1409213168710" expanded="true" signature="942:1203" placeholder="..." />
+            <marker date="1409213168710" expanded="true" signature="1071:1172" placeholder="..." />
+            <marker date="1409213168710" expanded="true" signature="1234:1474" placeholder="..." />
+            <marker date="1409213168710" expanded="true" signature="1342:1443" placeholder="..." />
+            <marker date="1409213168710" expanded="true" signature="1811:2271" placeholder="..." />
+            <marker date="1409213168710" expanded="true" signature="1901:2211" placeholder="..." />
+            <marker date="1409213168710" expanded="true" signature="2043:2180" placeholder="..." />
+            <marker date="1409213168710" expanded="true" signature="2381:3890" placeholder="..." />
+            <marker date="1409213168710" expanded="true" signature="2411:3862" placeholder="..." />
+            <marker date="1409213168710" expanded="true" signature="2632:3831" placeholder="..." />
+            <marker date="1409213168710" expanded="true" signature="2707:3218" placeholder="..." />
+            <marker date="1409213168710" expanded="true" signature="2910:3140" placeholder="..." />
+            <marker date="1409213168710" expanded="true" signature="3002:3102" placeholder="..." />
+            <marker date="1409213168710" expanded="true" signature="3302:3800" placeholder="..." />
+            <marker date="1409213168710" expanded="true" signature="3554:3721" placeholder="..." />
+            <marker date="1409213168710" expanded="true" signature="4166:4714" placeholder="..." />
+            <marker date="1409213168710" expanded="true" signature="4294:4419" placeholder="..." />
+            <marker date="1409213168710" expanded="true" signature="4549:4688" placeholder="..." />
+            <marker date="1409213168710" expanded="true" signature="4855:4927" placeholder="..." />
+            <marker date="1409213168710" expanded="true" signature="5176:5449" placeholder="..." />
+            <marker date="1409213168710" expanded="true" signature="5302:5347" placeholder="{...}" />
+            <marker date="1409213168710" expanded="true" signature="5376:5435" placeholder="{...}" />
+            <marker date="1409213168710" expanded="true" signature="5530:5809" placeholder="..." />
+            <marker date="1409213168710" expanded="true" signature="5630:5717" placeholder="{...}" />
+            <marker date="1409213168710" expanded="true" signature="5723:5791" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -904,7 +955,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="46" column="21" selection-start="1469" selection-end="1469" vertical-scroll-proportion="-9.807693" vertical-offset="527" max-vertical-offset="1190">
           <folding>
+            <marker date="1409215643037" expanded="true" signature="417:644" placeholder="..." />
+            <marker date="1409215643037" expanded="true" signature="514:629" placeholder="..." />
+            <marker date="1409215643037" expanded="true" signature="1764:1976" placeholder="..." />
             <marker date="1409215643037" expanded="true" signature="1764:1812" placeholder="..." />
+            <marker date="1409215643037" expanded="true" signature="1890:1953" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -913,24 +968,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="55" column="0" selection-start="1458" selection-end="1458" vertical-scroll-proportion="-4.423077" vertical-offset="820" max-vertical-offset="1581">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/templates/site/rooms.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="839" selection-end="1137" vertical-scroll-proportion="-7.1923075" vertical-offset="391" max-vertical-offset="1326">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#section#0;n#main#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/templates/site/room.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="0" selection-start="672" selection-end="672" vertical-scroll-proportion="-3.9230769" vertical-offset="544" max-vertical-offset="1615">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -943,8 +980,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/modules/sarykum/public_sarykum.controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="5" selection-start="664" selection-end="664" vertical-scroll-proportion="0.53518516" vertical-offset="0" max-vertical-offset="1870">
+        <state line="12" column="46" selection-start="366" selection-end="366" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="1870">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/templates/site/header.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="127" column="54" selection-start="6652" selection-end="6652" vertical-scroll-proportion="2.0777779" vertical-offset="1054" max-vertical-offset="2295">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/dic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="0" selection-start="1693" selection-end="1693" vertical-scroll-proportion="-14.384615" vertical-offset="561" max-vertical-offset="1377">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/templates/site/room.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="89" column="0" selection-start="2430" selection-end="2430" vertical-scroll-proportion="-16.846153" vertical-offset="1075" max-vertical-offset="1615">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/templates/site/rooms.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="18" selection-start="1850" selection-end="1850" vertical-scroll-proportion="0.72407407" vertical-offset="612" max-vertical-offset="1462">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#section#0;n#main#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

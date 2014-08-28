@@ -47,7 +47,7 @@ if (@count($rooms))
                     <a href="{{ URL::route('room', $room->slug) }}">
                         @if ($room->name)
                         <div class="room-name">
-                            {{ $room->name }}
+                            {{ $room->meta->name }}
                         </div>
                         @endif
                         @if ($room->price)
