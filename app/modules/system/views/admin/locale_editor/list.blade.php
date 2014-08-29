@@ -1,0 +1,297 @@
+<?
+$buttons = '<span class="buttons">
+    <a class="btn btn-default edit_parameter"><i class="fa fa-pencil fa-fw"></i></a>
+    <a class="btn btn-default delete_parameter"><i class="fa fa-trash-o fa-fw"></i></a>
+</span>';
+$buttons = preg_replace("~[\r\n]~is", '', $buttons);
+?>
+@extends(Helper::acclayout())
+
+
+
+@section('style')
+<style>
+    .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th,
+    .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+        vertical-align: middle;
+    }
+    th span.buttons {
+        display: none;
+    }
+    th:hover span.buttons {
+        display: block;
+    }
+
+    button.loading:before {
+        display: inline-block;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-animation: spin 2s infinite linear;
+        -moz-animation: spin 2s infinite linear;
+        -o-animation: spin 2s infinite linear;
+        animation: spin 2s infinite linear;
+        position: relative;
+        content: "\f110";
+        left: -0.9375rem;
+        margin-right: 0.3125rem;
+    }
+</style>
+@stop
+
+@section('content')
+
+    <main class="content">
+
+    <h1>Редактор языковых файлов</h1>
+
+<?
+#Helper::d($dirs);
+#Helper::d("FILES");
+#Helper::d($files);
+#Helper::d("ALL_FILES");
+#Helper::d($all_files);
+?>
+
+    <div class="row margin-top-10">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+            {{ Form::open(array('url' => URL::action($module['class'].'@postSaveLocales'), 'class' => 'smart-form', 'id' => 'locale-form', 'role' => 'form', 'method' => 'POST')) }}
+            <table class="table table-striped table-bordered table-hover" style="margin-bottom: 0;">
+                <thead>
+                <tr>
+                    <th class="text-center" style="width:250px; border-bottom: 0;">#</th>
+                    @foreach ($dirs as $dir)
+                    <th class="text-center" style="border-bottom: 0;">
+                        {{
+                            is_writable($dir)
+                            ? '<i class="fa fa-check" title="Dir is writable"></i>'
+                            : '<i class="fa fa-times" title="Dir is non-writable"></i>'
+                        }}
+                        {{ mb_strtoupper(basename($dir)) }}
+                    </th>
+                    @endforeach
+                </tr>
+                </thead>
+                <tbody>
+                @if (count($all_files))
+                    @foreach($all_files as $file => $null)
+                        <?
+                        $classes = array();
+                        ?>
+                        <tr class="info">
+                            <th>
+                                {{ mb_strtoupper($file) }}
+                            </th>
+                            @foreach ($dirs as $dir)
+                            <?
+                            $exists = isset($files[$dir][$dir.'/'.$file]);
+                            $writable_dir = is_writable($dir);
+                            $writable_file = is_writable($dir.'/'.$file);
+                            $classes[basename($dir)] = $exists ? 'success' : 'danger';
+                            ?>
+                            <th class="text-center">
+                                {{-- $dir.'/'.$file --}}
+                                @if ($exists)
+                                    @if ($writable_file)
+                                        <span style="color:green">
+                                            <i class="fa fa-check"></i> file exists, writable
+                                        </span>
+                                    @else
+                                        <span style="color:red">
+                                            <i class="fa fa-times"></i> file exists, non writable
+                                        </span>
+                                    @endif
+                                @else
+                                    @if ($writable_dir)
+                                        <span style="color:green">
+                                            <i class="fa fa-times"></i> file not found, can create
+                                        </span>
+                                    @else
+                                        <span style="color:red">
+                                            <i class="fa fa-times"></i> file exists, can't create
+                                        </span>
+                                    @endif
+                                @endif
+                            </th>
+                            @endforeach
+                        </tr>
+                        <?
+                        $file_short = mb_substr($file, 0, mb_strpos($file, '.'));
+                        $vars = array();
+                        $all_vars = array();
+                        foreach ($dirs as $dir) {
+                            $file_vars = file_exists($dir.'/'.$file) ? include($dir.'/'.$file) : array();
+                            $vars[basename($dir)] = $file_vars;
+                            $all_vars = $all_vars + ($file_vars);
+                            #Helper::d(array_keys($file_vars));
+                        }
+                        #Helper::d($vars);
+                        #Helper::d($all_vars);
+                        ksort($all_vars);
+                        ?>
+                        @foreach ($all_vars as $var => $null)
+                        <tr data-file="{{ $file }}" data-name="{{ $var }}">
+                            <th>
+                                {{--<i class="fa fa-copy" data-code="trans('{{ $file_short }}.{{ $var }}')"></i>--}}
+                                <span>
+                                    {{ $var }}
+                                </span>
+                                {{ $buttons }}
+                            </th>
+                            @foreach ($dirs as $dir)
+                            <?
+                            $class = $classes[basename($dir)];
+                            if (!isset($vars[basename($dir)][$var]))
+                                $class = 'danger';
+                            elseif ($vars[basename($dir)][$var] == '')
+                                $class = 'warning';
+                            ?>
+                            <td class="text-center {{ $class }}">
+                                {{ Form::textarea('lang[' . basename($dir) . '][' . $file . '][' . $var . ']', @htmlspecialchars($vars[basename($dir)][$var]), array('rows' => 3, 'style' => 'width:100%')) }}
+                            </td>
+                            @endforeach
+                        </tr>
+                        @endforeach
+                        <tr>
+                            <td class="text-left">
+                                <a href="#" class="btn btn-default btn-warning add_parameter" style="display: block" data-locale="{{ basename($dir) }}" data-file="{{ basename($file) }}">
+                                    <i class="fa fa-plus"></i>
+                                    Добавить
+                                </a>
+                            </td>
+                            <td colspan="99"></td>
+                        </tr>
+                    @endforeach
+                @endif
+                </tbody>
+            </table>
+
+            <fieldset>
+                <button class="btn btn-primary btn-lg submit">
+                    <i class="fa fa-save"></i>
+                    Сохранить
+                </button>
+            </fieldset>
+
+            {{ Form::close() }}
+
+        </div>
+    </div>
+
+    </main>
+
+@stop
+
+
+@section('scripts')
+{{ HTML::script("js/vendor/jquery-form.min.js") }}
+<script>
+
+    $('.add_parameter').click(function(){
+        //alert('123');
+        var name = prompt('Введите имя переменной', 'default.name');
+        var file = $(this).data('file');
+        if ( $('[data-file="' + file + '"] [data-name="' + name + '"]').data('name') ) {
+            $(this).trigger('click');
+            return false;
+        }
+        //alert(name + ' | ' + typeof name);
+        if (name) {
+            var line = "<tr data-file='" + file + "' data-name='" + name + "'><th class='warning'><span>" + name + '</span>{{ $buttons }}' + "</td>@foreach($dirs as $dir)<td class='danger'><textarea name='lang[{{ basename($dir) }}][" + file + "][" + name + "]' rows='3' style='width:100%'></textarea></td>@endforeach</tr>";
+            $(this).parents('tr').before(line);
+        }
+        return false;
+    });
+
+    $(document).on('click', '.delete_parameter', function(){
+        var $this = this;
+        $.SmartMessageBox({
+            title : "Удалить параметр из всех языковых версий?",
+            content : "",
+            buttons : '[Нет][Да]'
+        },function(ButtonPressed) {
+            if(ButtonPressed == "Да") {
+                $($this).parents('tr').slideUp().remove();
+            }
+        });
+    });
+
+    $(document).on('click', '.edit_parameter', function(){
+        var name = $(this).parents('tr').attr('data-name');
+        var new_name = prompt('Введите имя переменной', name);
+        if (typeof(new_name) == 'string' && new_name != '' && new_name != name) {
+            $(this).parents('tr').attr('data-name', new_name);
+            $(this).parents('th').find('span:first').text(new_name);
+            $(this).parents('tr').find('td').each(function(){
+                var ta = $(this).find('textarea[name*="' + name + '"]');
+                if (ta) {
+                    var new_ta_name = $(ta).attr('name').split(name).join(new_name);;
+                    $(ta).attr('name', new_ta_name);
+                }
+            });
+        }
+        return false;
+    });
+
+
+    $(document).on('submit', '#locale-form', function(e, selector, data) {
+
+        //return true;
+
+        e.preventDefault();
+
+        var form = $(this);
+
+        var options = { target: null, type: $(form).attr('method'), dataType: 'json' };
+
+        options.beforeSubmit = function(formData, jqForm, options){
+            $(form).find('button.submit').addClass('loading');
+            //$('.error').text('').hide();
+        }
+
+        options.success = function(response, status, xhr, jqForm){
+            //console.log(response);
+            //$('.success').hide().removeClass('hidden').slideDown();
+            //$(form).slideUp();
+
+            if (response.status) {
+                showMessage.constructor('Сохранение', 'Успешно сохранено');
+                showMessage.smallSuccess();
+
+                $.ajax({
+                    url: "{{ URL::action($module['class'].'@getList') }}",
+                    type: 'GET',
+                    success: function(response, textStatus, xhr){
+                        $('main.content').parent().html(response);
+                    },
+                    error: function(xhr,textStatus,errorThrown){
+                    }
+                });
+
+            } else {
+                showMessage.constructor('Ошибка при сохранении', response.responseText);
+                showMessage.smallError();
+            }
+
+        }
+
+        options.error = function(xhr, textStatus, errorThrown){
+            console.log(xhr);
+        }
+
+        options.complete = function(data, textStatus, jqXHR){
+            $(form).find('button.submit').removeClass('loading');
+        }
+
+        $(form).ajaxSubmit(options);
+
+        return false;
+    });
+
+</script>
+@stop
+

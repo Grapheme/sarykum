@@ -22,7 +22,9 @@ class AdminSystemController extends BaseController {
     ## return array(); # no rules will be loaded
     public static function returnActions() {
         return array(
-        	'permissions'  => 'Права доступа',
+            'modules' => 'Работа с модулями',
+            'groups'  => 'Работа с группами пользователей',
+            'users'   => 'Работа с пользователями',
         );
     }
 

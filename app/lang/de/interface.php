@@ -11,7 +11,7 @@ return array(
     'menu.restaurant' => 'Restaurant',
     'menu.rooms' => 'Rooms',
     'menu.services' => 'Services',
-    'menu.spa' => 'SPA',
+    'menu.spa' => '',
     'reserve.contact' => 'Phone number or e-mail address',
     'reserve.daily_price' => 'Cost per night:',
     'reserve.from' => '&nbsp;',

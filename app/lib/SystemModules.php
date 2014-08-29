@@ -44,29 +44,37 @@ class SystemModules {
         if (Allow::action('system', 'permissions', false)) {
 
             $menu_child = array();
-            $menu_child[] = array(
-                'title' => 'Модули',
-                'link' => 'system/modules',
-                'class' => 'fa-gears',
-                'system' => 1,
-            );
-            if (Allow::action('groups', 'view', false, true)) {
+
+            if (Allow::action('system', 'modules', false, true))
                 $menu_child[] = array(
-                    'title' => 'Группы', #trans('menu.pages.menu_title'),
+                    'title' => 'Модули',
+                    'link' => 'system/modules',
+                    'class' => 'fa-gears',
+                );
+
+            if (Allow::action('system', 'groups', false, true))
+                $menu_child[] = array(
+                    'title' => 'Группы',
                     'link' => 'system/groups',
                     'class' => 'fa-group',
                 );
-            }
-            if (Allow::action('users', 'view', false, true)) {
+
+            if (Allow::action('system', 'users', false, true))
                 $menu_child[] = array(
-                	'title' => 'Пользователи', #trans('menu.pages.menu_title'), 
+                    'title' => 'Пользователи',
                     'link' => 'system/users',
-                    'class' => 'fa-user', 
+                    'class' => 'fa-user',
                 );
-            }
+
+            if (Allow::action('system', 'locale_editor', false, true))
+                $menu_child[] = array(
+                    'title' => 'Редактор языков',
+                    'link' => 'system/locale_editor',
+                    'class' => 'fa-language',
+                );
 
             $menu[] = array(
-                'title' => 'Настройки', #trans('admin.users'),
+                'title' => 'Настройки',
                 'link' => '#',
                 'class' => 'fa-gear',
                 'system' => 1,
@@ -84,7 +92,6 @@ class SystemModules {
 	| Если Модуль не существует - возвращается TRUE, это нужно для возможности дальнейшей проверки на уровне ролей групп пользователей
 	| Allow::valid_access()
 	*/
-
 	public static function getModules($name = NULL, $index = NULL){
 
         ## mod_info - информация о модулях, загружается в routes.php

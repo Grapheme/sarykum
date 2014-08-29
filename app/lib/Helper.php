@@ -63,6 +63,8 @@ class Helper {
         #Helper::dd(Config::get('app'));
         if (!$layout)
             $layout = 'default';
+        if (Request::ajax() && View::exists("templates." . $layout . ".ajax"))
+            $file = 'ajax';
         #Helper::dd("templates." . $layout . ($file ? '.'.$file : ''));
         return "templates." . $layout . ($file ? '.'.$file : '');
     }
@@ -71,6 +73,9 @@ class Helper {
         $layout = AuthAccount::getStartPage();
         if (!$layout)
             $layout = 'default';
+        if (Request::ajax() && View::exists("templates." . $layout . ".ajax"))
+            $file = 'ajax';
+        #Helper::dd( (("templates." . $layout . ".ajax")) );
         return "templates." . $layout . ($file ? '.'.$file : '');
     }
 
