@@ -25,7 +25,7 @@
                     <a href="#">{{ $new->meta->title }}</a>
                 </h2>
                 <div class="section-desc">
-                    @if (Config::get('locale') == 'ru')
+                    @if (Config::get('app.locale') == 'ru')
                         {{ Helper::rdate("d M Y", strtotime($new->published_at)) }}
                     @else
                         {{ date("d M Y", strtotime($new->published_at)) }}

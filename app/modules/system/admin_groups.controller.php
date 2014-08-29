@@ -14,8 +14,9 @@ class AdminGroupsController extends BaseController {
 
         $class = __CLASS__;
         $name = self::$name;
-        Route::group(array('before'=>'auth', 'prefix'=>'admin'), function() use ($class, $name) {
-        	Route::controller($name, $class);
+        $group = self::$group;
+        Route::group(array('before'=>'auth', 'prefix'=>'admin'), function() use ($class, $name, $group) {
+        	Route::controller($group . '/' . $name, $class);
         });
     }
 

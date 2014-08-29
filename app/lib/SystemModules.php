@@ -44,37 +44,33 @@ class SystemModules {
         if (Allow::action('system', 'permissions', false)) {
 
             $menu_child = array();
+            $menu_child[] = array(
+                'title' => 'Модули',
+                'link' => 'system/modules',
+                'class' => 'fa-gears',
+                'system' => 1,
+            );
+            if (Allow::action('groups', 'view', false, true)) {
+                $menu_child[] = array(
+                    'title' => 'Группы', #trans('menu.pages.menu_title'),
+                    'link' => 'system/groups',
+                    'class' => 'fa-group',
+                );
+            }
             if (Allow::action('users', 'view', false, true)) {
                 $menu_child[] = array(
                 	'title' => 'Пользователи', #trans('menu.pages.menu_title'), 
-                    'link' => 'users',
+                    'link' => 'system/users',
                     'class' => 'fa-user', 
-                );
-            }
-            if (Allow::action('groups', 'view', false, true)) {
-                $menu_child[] = array(
-                	'title' => 'Группы', #trans('menu.pages.menu_title'), 
-                    'link' => 'groups',
-                    'class' => 'fa-group', 
                 );
             }
 
             $menu[] = array(
-                'title' => 'Права доступа', #trans('admin.users'),
+                'title' => 'Настройки', #trans('admin.users'),
                 'link' => '#',
-                'class' => 'fa-lock',
+                'class' => 'fa-gear',
                 'system' => 1,
                 'menu_child' => $menu_child,
-            );
-        }
-        
-        ## System settings
-        if (Allow::action('system', 'settings_view', false)) {
-            $menu[] = array(
-                'title' => 'Настройки',
-                'link' => 'settings',
-                'class' => 'fa-cog',
-                'system' => 1,
             );
         }
         
