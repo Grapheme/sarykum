@@ -5,12 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9eb288a-66f5-42e9-a6ae-4f6f60b8c9bd" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\home\git\sarykum\app\modules\system\admin_settings.controller.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\home\git\sarykum\app\modules\system\views\admin\settings\index.blade.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/SystemModules.php" afterPath="$PROJECT_DIR$/app/lib/SystemModules.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/system/admin_groups.controller.php" afterPath="$PROJECT_DIR$/app/modules/system/admin_groups.controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/system/admin_users.controller.php" afterPath="$PROJECT_DIR$/app/modules/system/admin_users.controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/news/views/sarykum-news-list.blade.php" afterPath="$PROJECT_DIR$/app/modules/news/views/sarykum-news-list.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="archive.iws" />
@@ -67,7 +61,7 @@
       <file leaf-file-name="admin_modules.controller.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/modules/system/admin_modules.controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="60" selection-start="566" selection-end="566" vertical-scroll-proportion="0.4848485" vertical-offset="0" max-vertical-offset="1615">
+            <state line="38" column="63" selection-start="1139" selection-end="1139" vertical-scroll-proportion="0.5151515" vertical-offset="357" max-vertical-offset="1615">
               <folding />
             </state>
           </provider>
@@ -388,7 +382,11 @@
       <created>1409299808813</created>
       <updated>1409299808813</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="restruct system module &amp; menu">
+      <created>1409300642548</created>
+      <updated>1409300642548</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -464,7 +462,8 @@
     <MESSAGE value="+" />
     <MESSAGE value="news on main page" />
     <MESSAGE value="CustomUrlGenerator fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="CustomUrlGenerator fix" />
+    <MESSAGE value="restruct system module &amp; menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="restruct system module &amp; menu" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -821,7 +820,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/modules/system/admin_modules.controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="60" selection-start="566" selection-end="566" vertical-scroll-proportion="0.4848485" vertical-offset="0" max-vertical-offset="1615">
+        <state line="38" column="63" selection-start="1139" selection-end="1139" vertical-scroll-proportion="0.5151515" vertical-offset="357" max-vertical-offset="1615">
           <folding />
         </state>
       </provider>
