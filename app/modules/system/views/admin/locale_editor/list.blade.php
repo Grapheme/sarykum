@@ -82,23 +82,36 @@ foreach ($files as $dir => $dir_files) {
         <div class="row margin-top-10">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
-                {{ Form::open(array('url' => URL::action($module['class'].'@postSaveLocales'), 'class' => 'smart-form', 'id' => 'locale-form', 'role' => 'form', 'method' => 'POST')) }}
-                <table class="table table-striped table-bordered table-hover" style="margin-bottom: 0;">
+                {{ Form::open(array('url' => URL::action($module['class'].'@postSaveLocales'), 'class' => 'smart-form2', 'id' => 'locale-form', 'role' => 'form', 'method' => 'POST')) }}
+                <table class="table tbl_header" style="margin-bottom: 0;">
                     <thead>
-                    <tr>
-                        <th class="text-center" style="width:250px; border-bottom: 0;">#</th>
+                    <tr class="" style="width:100%;">
+                        <th class="text-center" style="width:250px;" rowspan="1">#</th>
                         @foreach ($dirs as $dir)
-                        <th class="text-center" style="border-bottom: 0;">
-                            {{
-                                is_writable($dir)
-                                ? '<i class="fa fa-check" title="Dir is writable"></i>'
-                                : '<i class="fa fa-times" title="Dir is non-writable"></i>'
-                            }}
-                            {{ mb_strtoupper(basename($dir)) }}
+                        <th class="text-center locale_row" style="width:*">
+                            {{--
+                            is_writable($dir)
+                            ? '<i class="fa fa-check" title="Dir is writable"></i>'
+                            : '<i class="fa fa-times" title="Dir is non-writable"></i>'
+                            --}}
+                            {{-- mb_strtoupper(basename($dir)) --}}
+                            {{ @$locales[basename($dir)] ?: mb_strtoupper(basename($dir)) }}
                         </th>
                         @endforeach
                     </tr>
+                    {{--
+                    <tr>
+                        <td></td>
+                        @foreach ($dirs as $dir)
+                        <th class="text-center" style="border-bottom: 0;">
+                            <div class="alert alert-warning fade in" style="margin:0;">{{ Form::checkbox('del') }} удалить</div>
+                        </th>
+                        @endforeach
+                    </tr>
+                    --}}
                     </thead>
+                </table>
+                <table class="table table-striped table-bordered table-hover" style="margin-bottom: 0;">
                     <tbody>
                     @if (count($all_files))
                         @foreach($all_files as $file => $null)
@@ -106,7 +119,7 @@ foreach ($files as $dir => $dir_files) {
                             $classes = array();
                             ?>
                             <tr class="info">
-                                <th>
+                                <th style="width:250px;" colspan="99">
                                     {{ mb_strtoupper($file) }}
                                 </th>
                                 @foreach ($dirs as $dir)
@@ -116,6 +129,7 @@ foreach ($files as $dir => $dir_files) {
                                 $writable_file = is_writable($dir.'/'.$file);
                                 $classes[basename($dir)] = $exists ? 'success' : 'danger';
                                 ?>
+                                @if (0)
                                 <th class="text-center">
                                     {{-- $dir.'/'.$file --}}
                                     @if ($exists)
@@ -140,6 +154,7 @@ foreach ($files as $dir => $dir_files) {
                                         @endif
                                     @endif
                                 </th>
+                                @endif
                                 @endforeach
                             </tr>
                             <?
@@ -193,7 +208,7 @@ foreach ($files as $dir => $dir_files) {
                     </tbody>
                 </table>
 
-                <fieldset>
+                <fieldset class="padding-top-10">
                     <button class="btn btn-primary btn-lg submit">
                         <i class="fa fa-save"></i>
                         Сохранить
@@ -315,6 +330,26 @@ foreach ($files as $dir => $dir_files) {
 
         return false;
     });
+
+    var header = $(".tbl_header");
+    var header_top = $(header).offset().top;
+    var header_height = parseInt($(header).css('height'), 10);
+    var header_next_margin_top = parseInt($(header).next().css('margin-top'), 10);
+    var width = $(header).css('width');
+    $(window).scroll(function() {
+        //alert($(header).position().top);
+        if ( header_top < $(window).scrollTop() ) {
+            $(header).css('max-width', width).css('position', 'fixed').css('top', '0');
+            $(header).next().css('margin-top', header_next_margin_top + header_height + 'px');
+        } else {
+            $(header).css('position', 'static');
+            $(header).next().css('margin-top', header_next_margin_top + 'px');
+        }
+        //alert( $(header).offset().top-$(window).scrollTop() + ' < ' + header_top );
+    });
+
+    var locale_row_width = (parseInt($('.tbl_header').css('width'), 10) - parseInt($('.tbl_header th:first').css('width'), 10)) / {{ count($dirs) }};
+    $('.locale_row').css('width', locale_row_width);
 
 </script>
 @stop
