@@ -83,6 +83,7 @@ foreach ($files as $dir => $dir_files) {
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
                 {{ Form::open(array('url' => URL::action($module['class'].'@postSaveLocales'), 'class' => 'smart-form2', 'id' => 'locale-form', 'role' => 'form', 'method' => 'POST')) }}
+
                 <table class="table tbl_header" style="margin-bottom: 0;">
                     <thead>
                     <tr class="" style="width:100%;">
@@ -111,6 +112,7 @@ foreach ($files as $dir => $dir_files) {
                     --}}
                     </thead>
                 </table>
+
                 <table class="table table-striped table-bordered table-hover" style="margin-bottom: 0;">
                     <tbody>
                     @if (count($all_files))
@@ -350,6 +352,8 @@ foreach ($files as $dir => $dir_files) {
 
     var locale_row_width = (parseInt($('.tbl_header').css('width'), 10) - parseInt($('.tbl_header th:first').css('width'), 10)) / {{ count($dirs) }};
     $('.locale_row').css('width', locale_row_width);
+
+    $('[data-file][data-name] th').css('width', 250);
 
 </script>
 @stop
