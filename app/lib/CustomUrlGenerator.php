@@ -9,23 +9,11 @@ use Illuminate\Routing\UrlGenerator;
 class CustomUrlGenerator extends UrlGenerator {
 
 
-	/**
-	 * Get the URL to a named route.
-	 *
-	 * @param  string  $name
-	 * @param  mixed   $parameters
-	 * @param  bool  $absolute
-	 * @param  \Illuminate\Routing\Route  $route
-	 * @return string
-	 *
-	 * @throws \InvalidArgumentException
-	 */
+	##
+    ## Custom URL::route() method
+    ##
 	public function route($name, $parameters = array(), $absolute = true, $route = null)
 	{
-		$route = $route ?: $this->routes->getByName($name);
-
-        #echo $name; die;
-
         ##
         ## Call url link modifier closure
         ##
@@ -34,16 +22,10 @@ class CustomUrlGenerator extends UrlGenerator {
             $this->url_modifiers[$name]($parameters);
         }
 
-		$parameters = (array) $parameters;
-
-		if ( ! is_null($route))
-		{
-			return $this->toRoute($route, $parameters, $absolute);
-		}
-		else
-		{
-			throw new InvalidArgumentException("Route [{$name}] not defined.");
-		}
+        ##
+        ## Call original URL::route() with 100% right $parameters
+        ##
+        return parent::route($name, $parameters, $absolute, $route);
 	}
 
     ##
@@ -60,11 +42,6 @@ class CustomUrlGenerator extends UrlGenerator {
             $this->url_modifiers = array();
 
         $this->url_modifiers[$route_name] = $closure;
-
     }
 
 }
-
-
-
-

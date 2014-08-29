@@ -39,12 +39,14 @@ class Dictionary extends BaseModel {
         return self::firstOrNew(array('slug' => $slug))->values;
     }
 
+    ## Need to check
     public function valueBySlug($slug) {
         return $this->with(array('value' => function($query) use ($slug) {
                     $query->whereSlug($slug);
                 }))->first()->value;
     }
 
+    ## Work cool
     public static function valueBySlugs($dic_slug, $val_slug, $extract = false) {
 
         #Helper::d("$dic_slug, $val_slug");
@@ -73,12 +75,6 @@ class Dictionary extends BaseModel {
         #Helper::tad($data);
 
         return is_object($data) ? $data : self::firstOrNew(array('id' => 0));
-
-        /*
-        return self::firstOrNew(array('slug' => $dic_slug))->with(array('value' => function($query) use ($val_slug){
-                $query->where('slug', $val_slug);
-            }))->first()->value;
-        */
     }
 
 }

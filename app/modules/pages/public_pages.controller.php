@@ -44,6 +44,7 @@ class PublicPagesController extends BaseController {
             #var_dump($class); die;
             #Helper::dd('Page url modifier!');
             #Helper::dd($parameters);
+            #return;
             if (
                 is_string($parameters)
                 && Allow::module('seo')
