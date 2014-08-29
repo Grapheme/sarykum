@@ -5,25 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9eb288a-66f5-42e9-a6ae-4f6f60b8c9bd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/lang - копия/de/action.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/lang/de/action.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/lang/en/action.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/lang/ru/action.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/modules/system/admin_localeEditor.controller.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/templates/admin/ajax.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/modules/system/views/admin/locale_editor/index.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/lang - копия/de/interface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/lang - копия/en/interface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/lang - копия/ru/interface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/lang/de/interface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/modules/system/views/admin/locale_editor/list.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/Helper.php" afterPath="$PROJECT_DIR$/app/lib/Helper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/SystemModules.php" afterPath="$PROJECT_DIR$/app/lib/SystemModules.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/system/admin_modules.controller.php" afterPath="$PROJECT_DIR$/app/modules/system/admin_modules.controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/system/admin_system.controller.php" afterPath="$PROJECT_DIR$/app/modules/system/admin_system.controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/system/admin_users.controller.php" afterPath="$PROJECT_DIR$/app/modules/system/admin_users.controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lang/en/interface.php" afterPath="$PROJECT_DIR$/app/lang/en/interface.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lang/ru/interface.php" afterPath="$PROJECT_DIR$/app/lang/ru/interface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/system/views/admin/locale_editor/list.blade.php" afterPath="$PROJECT_DIR$/app/modules/system/views/admin/locale_editor/list.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="archive.iws" />
@@ -60,7 +42,7 @@
       <file leaf-file-name="admin_localeEditor.controller.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/modules/system/admin_localeEditor.controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="26" selection-start="2730" selection-end="2730" vertical-scroll-proportion="-10.307693" vertical-offset="1296" max-vertical-offset="2499">
+            <state line="108" column="64" selection-start="3382" selection-end="3422" vertical-scroll-proportion="-5.076923" vertical-offset="1704" max-vertical-offset="2499">
               <folding />
             </state>
           </provider>
@@ -69,33 +51,18 @@
       <file leaf-file-name="list.blade.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/modules/system/views/admin/locale_editor/list.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="272" column="19" selection-start="11034" selection-end="11034" vertical-scroll-proportion="0.7943925" vertical-offset="4454" max-vertical-offset="5236">
+            <state line="65" column="13" selection-start="1833" selection-end="1833" vertical-scroll-proportion="0.6166667" vertical-offset="772" max-vertical-offset="5644">
               <folding>
-                <element signature="e#1330#1348#0" expanded="true" />
-                <element signature="n#style#0;n#table#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#1;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#th#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#1;n#th#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#2;n#th#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#3;n#th#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#td#0;n#tr#2;n#tbody#0;n#table#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-                <marker date="1409317253442" expanded="true" signature="36:217" placeholder="..." />
-                <marker date="1409317253442" expanded="true" signature="1477:1573" placeholder="..." />
-                <marker date="1409317253442" expanded="true" signature="1539:1573" placeholder="..." />
-                <marker date="1409317253442" expanded="true" signature="1822:2177" placeholder="..." />
-                <marker date="1409317253442" expanded="true" signature="1846:2177" placeholder="..." />
-                <marker date="1409317253442" expanded="true" signature="1867:1888" placeholder="..." />
-                <marker date="1409317253442" expanded="true" signature="1920:1950" placeholder="..." />
-                <marker date="1409317253442" expanded="true" signature="2073:2177" placeholder="..." />
-                <marker date="1409317253442" expanded="true" signature="2534:3046" placeholder="..." />
-                <marker date="1409317253442" expanded="true" signature="2773:2802" placeholder="..." />
-                <marker date="1409317253442" expanded="true" signature="2806:2899" placeholder="..." />
-                <marker date="1409317253442" expanded="true" signature="3366:3409" placeholder="..." />
-                <marker date="1409317253442" expanded="true" signature="3593:3735" placeholder="..." />
-                <marker date="1409317253442" expanded="true" signature="3842:3988" placeholder="..." />
-                <marker date="1409317253442" expanded="true" signature="4192:4339" placeholder="..." />
-                <marker date="1409317253442" expanded="true" signature="4446:4535" placeholder="..." />
+                <element signature="e#1291#1309#0" expanded="true" />
+                <element signature="n#style#0;n#table#0;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#th#1;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#th#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#th#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#2;n#th#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#3;n#th#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#td#0;n#tr#2;n#tbody#0;n#table#0;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
+                <marker date="1409317921557" expanded="true" signature="36:217" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -455,7 +422,11 @@
       <created>1409301016530</created>
       <updated>1409301016530</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="lang editor">
+      <created>1409317320376</created>
+      <updated>1409317320376</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -482,7 +453,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3572594" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3572594" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2985318" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32250756" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32175228" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -532,7 +503,8 @@
     <MESSAGE value="news on main page" />
     <MESSAGE value="CustomUrlGenerator fix" />
     <MESSAGE value="restruct system module &amp; menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="restruct system module &amp; menu" />
+    <MESSAGE value="lang editor" />
+    <option name="LAST_COMMIT_MESSAGE" value="lang editor" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -913,40 +885,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/modules/system/admin_localeEditor.controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="26" selection-start="2730" selection-end="2730" vertical-scroll-proportion="-10.307693" vertical-offset="1296" max-vertical-offset="2499">
+        <state line="108" column="64" selection-start="3382" selection-end="3422" vertical-scroll-proportion="-5.076923" vertical-offset="1704" max-vertical-offset="2499">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/modules/system/views/admin/locale_editor/list.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="272" column="19" selection-start="11034" selection-end="11034" vertical-scroll-proportion="0.7943925" vertical-offset="4454" max-vertical-offset="5236">
+        <state line="65" column="13" selection-start="1833" selection-end="1833" vertical-scroll-proportion="0.6166667" vertical-offset="772" max-vertical-offset="5644">
           <folding>
-            <element signature="e#1330#1348#0" expanded="true" />
-            <element signature="n#style#0;n#table#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#1;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#th#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#th#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#2;n#th#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#3;n#th#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#td#0;n#tr#2;n#tbody#0;n#table#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
-            <marker date="1409317253442" expanded="true" signature="36:217" placeholder="..." />
-            <marker date="1409317253442" expanded="true" signature="1477:1573" placeholder="..." />
-            <marker date="1409317253442" expanded="true" signature="1539:1573" placeholder="..." />
-            <marker date="1409317253442" expanded="true" signature="1822:2177" placeholder="..." />
-            <marker date="1409317253442" expanded="true" signature="1846:2177" placeholder="..." />
-            <marker date="1409317253442" expanded="true" signature="1867:1888" placeholder="..." />
-            <marker date="1409317253442" expanded="true" signature="1920:1950" placeholder="..." />
-            <marker date="1409317253442" expanded="true" signature="2073:2177" placeholder="..." />
-            <marker date="1409317253442" expanded="true" signature="2534:3046" placeholder="..." />
-            <marker date="1409317253442" expanded="true" signature="2773:2802" placeholder="..." />
-            <marker date="1409317253442" expanded="true" signature="2806:2899" placeholder="..." />
-            <marker date="1409317253442" expanded="true" signature="3366:3409" placeholder="..." />
-            <marker date="1409317253442" expanded="true" signature="3593:3735" placeholder="..." />
-            <marker date="1409317253442" expanded="true" signature="3842:3988" placeholder="..." />
-            <marker date="1409317253442" expanded="true" signature="4192:4339" placeholder="..." />
-            <marker date="1409317253442" expanded="true" signature="4446:4535" placeholder="..." />
+            <element signature="e#1291#1309#0" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#th#1;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#th#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#th#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#2;n#th#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#3;n#th#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#td#0;n#tr#2;n#tbody#0;n#table#0;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
+            <marker date="1409317921557" expanded="true" signature="36:217" placeholder="..." />
           </folding>
         </state>
       </provider>

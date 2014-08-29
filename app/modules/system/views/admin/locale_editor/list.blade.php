@@ -46,141 +46,165 @@ $buttons = preg_replace("~[\r\n]~is", '', $buttons);
 
     <main class="content">
 
-    <h1>Редактор языковых файлов</h1>
-
 <?
 #Helper::d($dirs);
 #Helper::d("FILES");
 #Helper::d($files);
 #Helper::d("ALL_FILES");
 #Helper::d($all_files);
+$need_set_rights = false;
+foreach ($files as $dir => $dir_files) {
+    if (!is_dir($dir) || !is_writable($dir)) {
+        $need_set_rights = true;
+        break;
+    } else {
+        foreach ($all_files as $file => $null) {
+            $full_filename = $dir . '/' . $file;
+            if (!file_exists($full_filename) || !is_writable($full_filename)) {
+                $need_set_rights = true;
+                break(2);
+            }
+        }
+    }
+}
 ?>
 
-    <div class="row margin-top-10">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h1>Редактор языковых файлов</h1>
 
-            {{ Form::open(array('url' => URL::action($module['class'].'@postSaveLocales'), 'class' => 'smart-form', 'id' => 'locale-form', 'role' => 'form', 'method' => 'POST')) }}
-            <table class="table table-striped table-bordered table-hover" style="margin-bottom: 0;">
-                <thead>
-                <tr>
-                    <th class="text-center" style="width:250px; border-bottom: 0;">#</th>
-                    @foreach ($dirs as $dir)
-                    <th class="text-center" style="border-bottom: 0;">
-                        {{
-                            is_writable($dir)
-                            ? '<i class="fa fa-check" title="Dir is writable"></i>'
-                            : '<i class="fa fa-times" title="Dir is non-writable"></i>'
-                        }}
-                        {{ mb_strtoupper(basename($dir)) }}
-                    </th>
-                    @endforeach
-                </tr>
-                </thead>
-                <tbody>
-                @if (count($all_files))
-                    @foreach($all_files as $file => $null)
-                        <?
-                        $classes = array();
-                        ?>
-                        <tr class="info">
-                            <th>
-                                {{ mb_strtoupper($file) }}
-                            </th>
-                            @foreach ($dirs as $dir)
-                            <?
-                            $exists = isset($files[$dir][$dir.'/'.$file]);
-                            $writable_dir = is_writable($dir);
-                            $writable_file = is_writable($dir.'/'.$file);
-                            $classes[basename($dir)] = $exists ? 'success' : 'danger';
-                            ?>
-                            <th class="text-center">
-                                {{-- $dir.'/'.$file --}}
-                                @if ($exists)
-                                    @if ($writable_file)
-                                        <span style="color:green">
-                                            <i class="fa fa-check"></i> file exists, writable
-                                        </span>
-                                    @else
-                                        <span style="color:red">
-                                            <i class="fa fa-times"></i> file exists, non writable
-                                        </span>
-                                    @endif
-                                @else
-                                    @if ($writable_dir)
-                                        <span style="color:green">
-                                            <i class="fa fa-times"></i> file not found, can create
-                                        </span>
-                                    @else
-                                        <span style="color:red">
-                                            <i class="fa fa-times"></i> file exists, can't create
-                                        </span>
-                                    @endif
-                                @endif
-                            </th>
-                            @endforeach
-                        </tr>
-                        <?
-                        $file_short = mb_substr($file, 0, mb_strpos($file, '.'));
-                        $vars = array();
-                        $all_vars = array();
-                        foreach ($dirs as $dir) {
-                            $file_vars = file_exists($dir.'/'.$file) ? include($dir.'/'.$file) : array();
-                            $vars[basename($dir)] = $file_vars;
-                            $all_vars = $all_vars + ($file_vars);
-                            #Helper::d(array_keys($file_vars));
-                        }
-                        #Helper::d($vars);
-                        #Helper::d($all_vars);
-                        ksort($all_vars);
-                        ?>
-                        @foreach ($all_vars as $var => $null)
-                        <tr data-file="{{ $file }}" data-name="{{ $var }}">
-                            <th>
-                                {{--<i class="fa fa-copy" data-code="trans('{{ $file_short }}.{{ $var }}')"></i>--}}
-                                <span>
-                                    {{ $var }}
-                                </span>
-                                {{ $buttons }}
-                            </th>
-                            @foreach ($dirs as $dir)
-                            <?
-                            $class = $classes[basename($dir)];
-                            if (!isset($vars[basename($dir)][$var]))
-                                $class = 'danger';
-                            elseif ($vars[basename($dir)][$var] == '')
-                                $class = 'warning';
-                            ?>
-                            <td class="text-center {{ $class }}">
-                                {{ Form::textarea('lang[' . basename($dir) . '][' . $file . '][' . $var . ']', @htmlspecialchars($vars[basename($dir)][$var]), array('rows' => 3, 'style' => 'width:100%')) }}
-                            </td>
-                            @endforeach
-                        </tr>
-                        @endforeach
-                        <tr>
-                            <td class="text-left">
-                                <a href="#" class="btn btn-default btn-warning add_parameter" style="display: block" data-locale="{{ basename($dir) }}" data-file="{{ basename($file) }}">
-                                    <i class="fa fa-plus"></i>
-                                    Добавить
-                                </a>
-                            </td>
-                            <td colspan="99"></td>
-                        </tr>
-                    @endforeach
-                @endif
-                </tbody>
-            </table>
-
-            <fieldset>
-                <button class="btn btn-primary btn-lg submit">
-                    <i class="fa fa-save"></i>
-                    Сохранить
-                </button>
-            </fieldset>
-
-            {{ Form::close() }}
-
+        @if ($need_set_rights)
+        <div class="alert alert-warning fade in">
+            <i class="fa-fw fa fa-warning"></i>
+            <strong>Внимание!</strong> Необходимо выставить права на запись всем файлам и директориям внутри папки /lang.<br/>
+            Для этого подключитесь к серверу по SSH и из корня приложения выполните команду: chmod -R 777 app/lang/
         </div>
-    </div>
+        @else
+
+        <div class="row margin-top-10">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+                {{ Form::open(array('url' => URL::action($module['class'].'@postSaveLocales'), 'class' => 'smart-form', 'id' => 'locale-form', 'role' => 'form', 'method' => 'POST')) }}
+                <table class="table table-striped table-bordered table-hover" style="margin-bottom: 0;">
+                    <thead>
+                    <tr>
+                        <th class="text-center" style="width:250px; border-bottom: 0;">#</th>
+                        @foreach ($dirs as $dir)
+                        <th class="text-center" style="border-bottom: 0;">
+                            {{
+                                is_writable($dir)
+                                ? '<i class="fa fa-check" title="Dir is writable"></i>'
+                                : '<i class="fa fa-times" title="Dir is non-writable"></i>'
+                            }}
+                            {{ mb_strtoupper(basename($dir)) }}
+                        </th>
+                        @endforeach
+                    </tr>
+                    </thead>
+                    <tbody>
+                    @if (count($all_files))
+                        @foreach($all_files as $file => $null)
+                            <?
+                            $classes = array();
+                            ?>
+                            <tr class="info">
+                                <th>
+                                    {{ mb_strtoupper($file) }}
+                                </th>
+                                @foreach ($dirs as $dir)
+                                <?
+                                $exists = isset($files[$dir][$dir.'/'.$file]);
+                                $writable_dir = is_writable($dir);
+                                $writable_file = is_writable($dir.'/'.$file);
+                                $classes[basename($dir)] = $exists ? 'success' : 'danger';
+                                ?>
+                                <th class="text-center">
+                                    {{-- $dir.'/'.$file --}}
+                                    @if ($exists)
+                                        @if ($writable_file)
+                                            <span style="color:green">
+                                                <i class="fa fa-check"></i> file exists, writable
+                                            </span>
+                                        @else
+                                            <span style="color:red">
+                                                <i class="fa fa-times"></i> file exists, non writable
+                                            </span>
+                                        @endif
+                                    @else
+                                        @if ($writable_dir)
+                                            <span style="color:green">
+                                                <i class="fa fa-times"></i> file not found, can create
+                                            </span>
+                                        @else
+                                            <span style="color:red">
+                                                <i class="fa fa-times"></i> file exists, can't create
+                                            </span>
+                                        @endif
+                                    @endif
+                                </th>
+                                @endforeach
+                            </tr>
+                            <?
+                            $file_short = mb_substr($file, 0, mb_strpos($file, '.'));
+                            $vars = array();
+                            $all_vars = array();
+                            foreach ($dirs as $dir) {
+                                $file_vars = file_exists($dir.'/'.$file) ? include($dir.'/'.$file) : array();
+                                $vars[basename($dir)] = $file_vars;
+                                $all_vars = $all_vars + ($file_vars);
+                                #Helper::d(array_keys($file_vars));
+                            }
+                            #Helper::d($vars);
+                            #Helper::d($all_vars);
+                            ksort($all_vars);
+                            ?>
+                            @foreach ($all_vars as $var => $null)
+                            <tr data-file="{{ $file }}" data-name="{{ $var }}">
+                                <th>
+                                    {{--<i class="fa fa-copy" data-code="trans('{{ $file_short }}.{{ $var }}')"></i>--}}
+                                    <span>
+                                        {{ $var }}
+                                    </span>
+                                    {{ $buttons }}
+                                </th>
+                                @foreach ($dirs as $dir)
+                                <?
+                                $class = $classes[basename($dir)];
+                                if (!isset($vars[basename($dir)][$var]))
+                                    $class = 'danger';
+                                elseif ($vars[basename($dir)][$var] == '')
+                                    $class = 'warning';
+                                ?>
+                                <td class="text-center {{ $class }}">
+                                    {{ Form::textarea('lang[' . basename($dir) . '][' . $file . '][' . $var . ']', @htmlspecialchars($vars[basename($dir)][$var]), array('rows' => 3, 'style' => 'width:100%')) }}
+                                </td>
+                                @endforeach
+                            </tr>
+                            @endforeach
+                            <tr>
+                                <td class="text-left">
+                                    <a href="#" class="btn btn-default btn-warning add_parameter" style="display: block" data-locale="{{ basename($dir) }}" data-file="{{ basename($file) }}">
+                                        <i class="fa fa-plus"></i>
+                                        Добавить
+                                    </a>
+                                </td>
+                                <td colspan="99"></td>
+                            </tr>
+                        @endforeach
+                    @endif
+                    </tbody>
+                </table>
+
+                <fieldset>
+                    <button class="btn btn-primary btn-lg submit">
+                        <i class="fa fa-save"></i>
+                        Сохранить
+                    </button>
+                </fieldset>
+
+                {{ Form::close() }}
+
+            </div>
+        </div>
+        @endif
 
     </main>
 
