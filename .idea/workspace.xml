@@ -2,9 +2,10 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/app/modules/galleries/admin_galleries.controller.php" line="81" mnemonic="2" />
+    <bookmark url="file://$PROJECT_DIR$/app/modules/system/views/admin/locale_editor/list.blade.php" line="368" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9eb288a-66f5-42e9-a6ae-4f6f60b8c9bd" name="Default" comment="lang editor+">
+    <list default="true" id="f9eb288a-66f5-42e9-a6ae-4f6f60b8c9bd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/system/views/admin/locale_editor/list.blade.php" afterPath="$PROJECT_DIR$/app/modules/system/views/admin/locale_editor/list.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -51,7 +52,7 @@
       <file leaf-file-name="list.blade.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/modules/system/views/admin/locale_editor/list.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="132" column="34" selection-start="5020" selection-end="5020" vertical-scroll-proportion="0.6537037" vertical-offset="1908" max-vertical-offset="6307">
+            <state line="345" column="25" selection-start="13240" selection-end="13240" vertical-scroll-proportion="0.6611111" vertical-offset="5593" max-vertical-offset="6698">
               <folding>
                 <element signature="e#1291#1309#0" expanded="true" />
                 <element signature="n#style#0;n#table#0;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
@@ -60,14 +61,10 @@
                 <element signature="n#style#0;n#th#1;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#th#0;n#tr#1;n#thead#0;n#table#0;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#th#0;n#tr#1;n#thead#0;n#table#0;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#table#1;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#0;n#tr#0;n#tbody#0;n#table#1;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#th#1;n#tr#0;n#tbody#0;n#table#1;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#1;n#th#1;n#tr#0;n#tbody#0;n#table#1;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#2;n#th#1;n#tr#0;n#tbody#0;n#table#1;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#3;n#th#1;n#tr#0;n#tbody#0;n#table#1;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#td#0;n#tr#2;n#tbody#0;n#table#1;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
-                <marker date="1409325427478" expanded="true" signature="36:217" placeholder="..." />
+                <element signature="n#style#0;n#a#0;n#td#0;n#tr#1;n#tbody#0;n#table#1;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
+                <marker date="1409328246323" expanded="true" signature="36:217" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -439,7 +436,11 @@
       <created>1409324292047</created>
       <updated>1409324292047</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="lang editor+">
+      <created>1409325464063</created>
+      <updated>1409325464063</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -906,7 +907,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/modules/system/views/admin/locale_editor/list.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="132" column="34" selection-start="5020" selection-end="5020" vertical-scroll-proportion="0.6537037" vertical-offset="1908" max-vertical-offset="6307">
+        <state line="345" column="25" selection-start="13240" selection-end="13240" vertical-scroll-proportion="0.6611111" vertical-offset="5593" max-vertical-offset="6698">
           <folding>
             <element signature="e#1291#1309#0" expanded="true" />
             <element signature="n#style#0;n#table#0;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
@@ -915,14 +916,10 @@
             <element signature="n#style#0;n#th#1;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#th#0;n#tr#1;n#thead#0;n#table#0;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#th#0;n#tr#1;n#thead#0;n#table#0;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#table#1;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#0;n#tr#0;n#tbody#0;n#table#1;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#th#1;n#tr#0;n#tbody#0;n#table#1;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#th#1;n#tr#0;n#tbody#0;n#table#1;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#2;n#th#1;n#tr#0;n#tbody#0;n#table#1;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#3;n#th#1;n#tr#0;n#tbody#0;n#table#1;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#td#0;n#tr#2;n#tbody#0;n#table#1;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
-            <marker date="1409325427478" expanded="true" signature="36:217" placeholder="..." />
+            <element signature="n#style#0;n#a#0;n#td#0;n#tr#1;n#tbody#0;n#table#1;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
+            <marker date="1409328246323" expanded="true" signature="36:217" placeholder="..." />
           </folding>
         </state>
       </provider>

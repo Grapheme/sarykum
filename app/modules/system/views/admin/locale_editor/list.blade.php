@@ -113,52 +113,26 @@ foreach ($files as $dir => $dir_files) {
                     </thead>
                 </table>
 
+                @if (count($all_files))
+                @foreach($all_files as $file => $null)
+
+                <?
+                $classes = array();
+                foreach ($dirs as $dir) {
+                    $exists = isset($files[$dir][$dir.'/'.$file]);
+                    $writable_dir = is_writable($dir);
+                    $writable_file = is_writable($dir.'/'.$file);
+                    $classes[basename($dir)] = $exists ? 'success' : 'danger';
+                }
+                ?>
+
+                <div class="alert alert-info fade in file_name" style="margin-bottom: 0;">
+                    {{ mb_strtoupper($file) }}
+                </div>
+
                 <table class="table table-striped table-bordered table-hover" style="margin-bottom: 0;">
                     <tbody>
-                    @if (count($all_files))
-                        @foreach($all_files as $file => $null)
-                            <?
-                            $classes = array();
-                            ?>
-                            <tr class="info">
-                                <th style="width:250px;" colspan="99">
-                                    {{ mb_strtoupper($file) }}
-                                </th>
-                                @foreach ($dirs as $dir)
-                                <?
-                                $exists = isset($files[$dir][$dir.'/'.$file]);
-                                $writable_dir = is_writable($dir);
-                                $writable_file = is_writable($dir.'/'.$file);
-                                $classes[basename($dir)] = $exists ? 'success' : 'danger';
-                                ?>
-                                @if (0)
-                                <th class="text-center">
-                                    {{-- $dir.'/'.$file --}}
-                                    @if ($exists)
-                                        @if ($writable_file)
-                                            <span style="color:green">
-                                                <i class="fa fa-check"></i> file exists, writable
-                                            </span>
-                                        @else
-                                            <span style="color:red">
-                                                <i class="fa fa-times"></i> file exists, non writable
-                                            </span>
-                                        @endif
-                                    @else
-                                        @if ($writable_dir)
-                                            <span style="color:green">
-                                                <i class="fa fa-times"></i> file not found, can create
-                                            </span>
-                                        @else
-                                            <span style="color:red">
-                                                <i class="fa fa-times"></i> file exists, can't create
-                                            </span>
-                                        @endif
-                                    @endif
-                                </th>
-                                @endif
-                                @endforeach
-                            </tr>
+
                             <?
                             $file_short = mb_substr($file, 0, mb_strpos($file, '.'));
                             $vars = array();
@@ -205,10 +179,10 @@ foreach ($files as $dir => $dir_files) {
                                 </td>
                                 <td colspan="99"></td>
                             </tr>
-                        @endforeach
-                    @endif
                     </tbody>
                 </table>
+                @endforeach
+                @endif
 
                 <fieldset class="padding-top-10">
                     <button class="btn btn-primary btn-lg submit">
@@ -333,13 +307,14 @@ foreach ($files as $dir => $dir_files) {
         return false;
     });
 
+    // Global header with locales name/sign position
     var header = $(".tbl_header");
     var header_top = $(header).offset().top;
     var header_height = parseInt($(header).css('height'), 10);
     var header_next_margin_top = parseInt($(header).next().css('margin-top'), 10);
     var width = $(header).css('width');
     $(window).scroll(function() {
-        //alert($(header).position().top);
+
         if ( header_top < $(window).scrollTop() ) {
             $(header).css('max-width', width).css('position', 'fixed').css('top', '0');
             $(header).next().css('margin-top', header_next_margin_top + header_height + 'px');
@@ -347,12 +322,60 @@ foreach ($files as $dir => $dir_files) {
             $(header).css('position', 'static');
             $(header).next().css('margin-top', header_next_margin_top + 'px');
         }
-        //alert( $(header).offset().top-$(window).scrollTop() + ' < ' + header_top );
+
+        /********************************************************************************/
+
+        /*
+         * NEED TO WORK
+         */
+        if (0) {
+
+            var prev_file_name = $('.file_name:first');
+            var global_break = false;
+            $('.file_name').each(function(){
+
+                if (global_break)
+                    return;
+
+                var prev_file_block_top = prev_file_name ? $(prev_file_name).offset().top : false;
+                var file_block_top = $(this).offset().top;
+
+                console.log(
+                    (
+                        parseInt(prev_file_block_top)-parseInt($(window).scrollTop())
+                        )
+                        + " | " +
+                        (
+                            parseInt(file_block_top)-parseInt($(window).scrollTop())
+                            )
+                );
+
+                if (
+                    parseInt(prev_file_block_top)-parseInt($(window).scrollTop()) < 0
+                    && parseInt(file_block_top)-parseInt($(window).scrollTop()) > 0
+                ) {
+                    console.log($(prev_file_name).text());
+                } else {
+                    console.log($(this).text());
+                }
+
+                //if ( file_block_top < $(window).scrollTop() ) {
+                prev_file_name = $(this);
+                //}
+
+                //global_break = true;
+
+            });
+            //console.log($(prev_file_name).text());
+        }
+
     });
 
+    // Width of the TH with locale name/sign
     var locale_row_width = (parseInt($('.tbl_header').css('width'), 10) - parseInt($('.tbl_header th:first').css('width'), 10)) / {{ count($dirs) }};
     $('.locale_row').css('width', locale_row_width);
 
+    // Width of first TH of the table with parameters
     $('[data-file][data-name] th').css('width', 250);
 
 </script>
