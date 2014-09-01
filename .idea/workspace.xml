@@ -5,8 +5,15 @@
     <bookmark url="file://$PROJECT_DIR$/app/modules/system/views/admin/locale_editor/list.blade.php" line="440" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9eb288a-66f5-42e9-a6ae-4f6f60b8c9bd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/system/views/admin/locale_editor/list.blade.php" afterPath="$PROJECT_DIR$/app/modules/system/views/admin/locale_editor/list.blade.php" />
+    <list default="true" id="f9eb288a-66f5-42e9-a6ae-4f6f60b8c9bd" name="Default" comment="lang editor clipboard">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugin/zeroclipboard/ZeroClipboard.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugin/zeroclipboard/.jshintrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugin/zeroclipboard/ZeroClipboard.Core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugin/zeroclipboard/ZeroClipboard.Core.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugin/zeroclipboard/ZeroClipboard.Core.min.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugin/zeroclipboard/ZeroClipboard.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugin/zeroclipboard/ZeroClipboard.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugin/zeroclipboard/ZeroClipboard.min.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="archive.iws" />
@@ -52,7 +59,7 @@
       <file leaf-file-name="list.blade.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/modules/system/views/admin/locale_editor/list.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="19" selection-start="1299" selection-end="1299" vertical-scroll-proportion="0.6611111" vertical-offset="459" max-vertical-offset="7973">
+            <state line="46" column="25" selection-start="1246" selection-end="1246" vertical-scroll-proportion="0.59814817" vertical-offset="459" max-vertical-offset="7973">
               <folding>
                 <element signature="e#1724#1742#0" expanded="true" />
                 <element signature="n#style#0;n#table#0;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
@@ -448,7 +455,11 @@
       <created>1409328422022</created>
       <updated>1409328422022</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="lang editor clipboard">
+      <created>1409563317732</created>
+      <updated>1409563317732</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -480,7 +491,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32250756" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32175228" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3572594" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -527,7 +538,8 @@
     <MESSAGE value="restruct system module &amp; menu" />
     <MESSAGE value="lang editor" />
     <MESSAGE value="lang editor+" />
-    <option name="LAST_COMMIT_MESSAGE" value="lang editor+" />
+    <MESSAGE value="lang editor clipboard" />
+    <option name="LAST_COMMIT_MESSAGE" value="lang editor clipboard" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -915,7 +927,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/modules/system/views/admin/locale_editor/list.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="19" selection-start="1299" selection-end="1299" vertical-scroll-proportion="0.6611111" vertical-offset="459" max-vertical-offset="7973">
+        <state line="46" column="25" selection-start="1246" selection-end="1246" vertical-scroll-proportion="0.59814817" vertical-offset="459" max-vertical-offset="7973">
           <folding>
             <element signature="e#1724#1742#0" expanded="true" />
             <element signature="n#style#0;n#table#0;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
