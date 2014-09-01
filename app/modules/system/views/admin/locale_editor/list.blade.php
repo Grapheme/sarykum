@@ -13,8 +13,21 @@ $buttons = preg_replace("~[\r\n]~is", '', $buttons);
 <style>
     .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th,
     .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
-        vertical-align: middle;
+        vertical-align: top;
     }
+    span.copy-button {
+        display: block;
+        padding: 3px 3px 6px 3px;
+    }
+    span.copy-button.zeroclipboard-is-hover {
+        display: block;
+        cursor: hand;
+    }
+    /*
+    span.copy-button.zeroclipboard-is-hover ~ .buttons {
+        display: block;
+    }
+    */
     th span.buttons {
         display: none;
     }
@@ -22,7 +35,7 @@ $buttons = preg_replace("~[\r\n]~is", '', $buttons);
         display: block;
     }
 
-    button.loading:before {
+    .copy-button:before {
         display: inline-block;
         font-family: FontAwesome;
         font-style: normal;
@@ -30,13 +43,21 @@ $buttons = preg_replace("~[\r\n]~is", '', $buttons);
         line-height: 1;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        -webkit-animation: spin 2s infinite linear;
-        -moz-animation: spin 2s infinite linear;
-        -o-animation: spin 2s infinite linear;
-        animation: spin 2s infinite linear;
         position: relative;
-        content: "\f110";
-        left: -0.9375rem;
+        content: "\f0c5";
+        margin-right: 0.3125rem;
+        color: #555;
+    }
+    .copied:before {
+        display: inline-block;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        position: relative;
+        content: "\f00c";
         margin-right: 0.3125rem;
     }
 </style>
@@ -130,11 +151,14 @@ foreach ($files as $dir => $dir_files) {
                     {{ mb_strtoupper($file) }}
                 </div>
 
-                <table class="table table-striped table-bordered table-hover" style="margin-bottom: 0;">
+                <?
+                $file_short = mb_substr($file, 0, mb_strpos($file, '.'));
+                ?>
+
+                <table class="table table-striped table-bordered table-hover" style="margin-bottom: 0;" data-section="{{ $file_short }}">
                     <tbody>
 
                             <?
-                            $file_short = mb_substr($file, 0, mb_strpos($file, '.'));
                             $vars = array();
                             $all_vars = array();
                             foreach ($dirs as $dir) {
@@ -151,9 +175,7 @@ foreach ($files as $dir => $dir_files) {
                             <tr data-file="{{ $file }}" data-name="{{ $var }}">
                                 <th>
                                     {{--<i class="fa fa-copy" data-code="trans('{{ $file_short }}.{{ $var }}')"></i>--}}
-                                    <span>
-                                        {{ $var }}
-                                    </span>
+                                    <span class="copy-button" data-new="1">{{ $var }}</span>
                                     {{ $buttons }}
                                 </th>
                                 @foreach ($dirs as $dir)
@@ -172,7 +194,7 @@ foreach ($files as $dir => $dir_files) {
                             @endforeach
                             <tr>
                                 <td class="text-left">
-                                    <a href="#" class="btn btn-default btn-warning add_parameter" style="display: block" data-locale="{{ basename($dir) }}" data-file="{{ basename($file) }}">
+                                    <a href="#" class="btn btn-default btn-warning add_parameter" style="display: block" data-locale="{{ basename($dir) }}" data-file="{{ basename($file) }}" data-section="{{ $file_short }}">
                                         <i class="fa fa-plus"></i>
                                         Добавить
                                     </a>
@@ -204,19 +226,69 @@ foreach ($files as $dir => $dir_files) {
 
 @section('scripts')
 {{ HTML::script("js/vendor/jquery-form.min.js") }}
+{{ HTML::script("js/plugin/zeroclipboard/ZeroClipboard.min.js") }}
 <script>
+
+    /***************************************************************************/
+
+    function activate_clipboard() {
+
+        var i = 0;
+        //var client = [];
+        ZeroClipboard.config({
+            forceHandCursor: true
+        });
+        $('.copy-button').each(function() {
+
+            ++i;
+            var $this = $(this);
+
+            var text = '{' + '{ trans("' + $($this).parents('table').attr('data-section') + '.' + $($this).text() + ') }' + '}';
+            $(this).attr('data-clipboard-text', text);
+
+            var client = new ZeroClipboard($this);
+
+            client.on( "ready", function(readyEvent) {
+
+                //alert( "ZeroClipboard SWF is ready!" );
+                //alert($($this).text());
+                //client.setData("text/plain", '{' + '{ trans("' + $($this).parents('table').attr('data-section') + '.' + $($this).text() + ') }' + '}');
+
+                //alert(client.getData("text/plain"));
+
+                client.on("aftercopy", function(event) {
+                    // `this` === `client`
+                    // `event.target` === the element that was clicked
+                    //event.target.style.display = "none";
+                    //alert("Copied text to clipboard: " + event.data["text/plain"] );
+                    $(event.target).addClass('copied')
+                    setTimeout(function () {
+                        $(event.target).removeClass('copied')
+                    }, 1500);
+                });
+
+            });
+
+            //$($this).attr('data-new', 0);
+        });
+        //console.log(client);
+    }
+    activate_clipboard();
+
+    /***************************************************************************/
 
     $('.add_parameter').click(function(){
         //alert('123');
         var name = prompt('Введите имя переменной', 'default.name');
         var file = $(this).data('file');
+        var section = $(this).data('section');
         if ( $('[data-file="' + file + '"] [data-name="' + name + '"]').data('name') ) {
             $(this).trigger('click');
             return false;
         }
         //alert(name + ' | ' + typeof name);
         if (name) {
-            var line = "<tr data-file='" + file + "' data-name='" + name + "'><th class='warning'><span>" + name + '</span>{{ $buttons }}' + "</td>@foreach($dirs as $dir)<td class='danger'><textarea name='lang[{{ basename($dir) }}][" + file + "][" + name + "]' rows='3' style='width:100%'></textarea></td>@endforeach</tr>";
+            var line = "<tr data-file='" + file + "' data-name='" + name + "'><th class='warning'><span class='copy-button' data-new='1'>" + name + '</span>{{ $buttons }}' + "</td>@foreach($dirs as $dir)<td class='danger'><textarea name='lang[{{ basename($dir) }}][" + file + "][" + name + "]' rows='3' style='width:100%'></textarea></td>@endforeach</tr>";
             $(this).parents('tr').before(line);
         }
         return false;
@@ -377,6 +449,8 @@ foreach ($files as $dir => $dir_files) {
 
     // Width of first TH of the table with parameters
     $('[data-file][data-name] th').css('width', 250);
+
+
 
 </script>
 @stop
