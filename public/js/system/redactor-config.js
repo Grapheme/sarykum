@@ -59,8 +59,8 @@ RedactorPlugins.fontsize = {
 RedactorPlugins.fullscreen = {
 	init: function(){
 		this.fullscreen = false;
-		this.buttonAdd('fullscreen','На весь экран',$.proxy(this.toggleFullscreen, this));
-		this.buttonSetRight('fullscreen');
+		this.buttonAddAfter('html', 'fullscreen','На весь экран',$.proxy(this.toggleFullscreen, this));
+		//this.buttonSetRight('fullscreen');
 		if(this.opts.fullscreen) this.toggleFullscreen();
 	},
 	toggleFullscreen: function(){

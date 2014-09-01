@@ -47,6 +47,7 @@ $buttons = preg_replace("~[\r\n]~is", '', $buttons);
         content: "\f0c5";
         margin-right: 0.3125rem;
         color: #555;
+        z-index: 1;
     }
     .copied:before {
         display: inline-block;
@@ -59,6 +60,7 @@ $buttons = preg_replace("~[\r\n]~is", '', $buttons);
         position: relative;
         content: "\f00c";
         margin-right: 0.3125rem;
+        z-index: 1;
     }
 </style>
 @stop
@@ -105,7 +107,7 @@ foreach ($files as $dir => $dir_files) {
 
                 {{ Form::open(array('url' => URL::action($module['class'].'@postSaveLocales'), 'class' => 'smart-form2', 'id' => 'locale-form', 'role' => 'form', 'method' => 'POST')) }}
 
-                <table class="table tbl_header" style="margin-bottom: 0;">
+                <table class="table tbl_header" style="margin-bottom: 0; z-index:999">
                     <thead>
                     <tr class="" style="width:100%;">
                         <th class="text-center" style="width:250px;" rowspan="1">#</th>
