@@ -20,7 +20,7 @@ $news = News::where('type_id', Dic::valueBySlugs('news_type', 'spa')->id)
     <main role="main">
         <div class="slideshow" id="slideshow">
             <div class="slide">
-                <div class="slide-bg" style="background-image: url({{ asset('img/slides/dag-01.jpg') }} );"></div>
+                <div class="slide-bg" style="background-image: url({{ asset('img/slides/spa-01.jpg') }} );"></div>
                 <section class="slide-cont">
 
                     {{ $page->block('slide-cont') }}
