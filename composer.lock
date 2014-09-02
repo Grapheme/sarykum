@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3b33a51af208a7193abc26e7cab5387a",
+    "hash": "ef7bba77564a7b5ae358be3323dc083d",
     "packages": [
         {
             "name": "barryvdh/laravel-debugbar",
@@ -258,6 +258,50 @@
                 "zf2"
             ],
             "time": "2014-07-11 05:56:54"
+        },
+        {
+            "name": "flynsarmy/db-blade-compiler",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Flynsarmy/laravel-db-blade-compiler.git",
+                "reference": "d8d2f0da1e9fc0ee317d4e64807a61127ffbcc97"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Flynsarmy/laravel-db-blade-compiler/zipball/d8d2f0da1e9fc0ee317d4e64807a61127ffbcc97",
+                "reference": "d8d2f0da1e9fc0ee317d4e64807a61127ffbcc97",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Flynsarmy\\DbBladeCompiler\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Flyn San",
+                    "email": "flynsarmy@gmail.com",
+                    "homepage": "http://www.flynsarmy.com/"
+                }
+            ],
+            "description": "Render Blade templates from Eloquent Model Fields",
+            "keywords": [
+                "blade",
+                "compiler",
+                "eloquent",
+                "laravel",
+                "model"
+            ],
+            "time": "2014-07-16 06:28:13"
         },
         {
             "name": "gigablah/sphinxphp",
@@ -2114,6 +2158,7 @@
         "intervention/image": 20,
         "barryvdh/laravel-debugbar": 20
     },
+    "prefer-stable": false,
     "platform": [],
     "platform-dev": []
 }

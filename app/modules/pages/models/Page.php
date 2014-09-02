@@ -54,8 +54,9 @@ class Page extends BaseModel {
         if (!$slug || !@count($this->blocks) || !@is_object($this->blocks[$slug]) || !@is_object($this->blocks[$slug]->meta))
             return false;
 
-        return $this->blocks[$slug]->meta->content;
+        #return $this->blocks[$slug]->meta->content;
 
+        return DbView::make($this->blocks[$slug]->meta)->field('content')->with(array())->render();
     }
 
 }
