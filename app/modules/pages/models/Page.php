@@ -56,7 +56,7 @@ class Page extends BaseModel {
 
         #return $this->blocks[$slug]->meta->content;
 
-        return DbView::make($this->blocks[$slug]->meta)->field('content')->render();
+        return DbView::make($this->blocks[$slug]->meta)->field('content')->with(array())->render();
     }
 
 }

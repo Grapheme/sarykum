@@ -6,15 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9eb288a-66f5-42e9-a6ae-4f6f60b8c9bd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/config/packages/flynsarmy/db-blade-compiler/.gitkeep" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/config/packages/flynsarmy/db-blade-compiler/config.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/pages/models/Page.php" afterPath="$PROJECT_DIR$/app/modules/pages/models/Page.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_ide_helper.php" afterPath="$PROJECT_DIR$/_ide_helper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/system/admin_system.controller.php" afterPath="$PROJECT_DIR$/app/modules/system/admin_system.controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/app.php" afterPath="$PROJECT_DIR$/app/config/app.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates/site/discover.blade.php" afterPath="$PROJECT_DIR$/app/views/templates/site/discover.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="archive.iws" />
@@ -63,7 +55,7 @@
       <file leaf-file-name="Page.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/modules/pages/models/Page.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="73" selection-start="1466" selection-end="1466" vertical-scroll-proportion="0.72824156" vertical-offset="576" max-vertical-offset="1156">
+            <state line="57" column="0" selection-start="1392" selection-end="1392" vertical-scroll-proportion="0.73083776" vertical-offset="559" max-vertical-offset="1156">
               <folding />
             </state>
           </provider>
@@ -396,7 +388,11 @@
       <created>1409572982845</created>
       <updated>1409572982845</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="laravel-db-compiler">
+      <created>1409662727571</created>
+      <updated>1409662727571</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -431,6 +427,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3572594" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35447153" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" x="336" y="122" width="331" height="615" />
@@ -441,7 +438,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -477,7 +473,8 @@
     <MESSAGE value="lang editor+" />
     <MESSAGE value="lang editor clipboard" />
     <MESSAGE value="imperavi+" />
-    <option name="LAST_COMMIT_MESSAGE" value="imperavi+" />
+    <MESSAGE value="laravel-db-compiler" />
+    <option name="LAST_COMMIT_MESSAGE" value="laravel-db-compiler" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -485,16 +482,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../archive/app/views/templates/site/search.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="1" selection-start="300" selection-end="300" vertical-scroll-proportion="0.3939394" vertical-offset="51" max-vertical-offset="1581" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../archive/app/modules/archive/public_archive.controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="184" column="10" selection-start="6354" selection-end="6354" vertical-scroll-proportion="0.24242425" vertical-offset="2992" max-vertical-offset="5899" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/modules/news/views/news-list.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="0" selection-start="0" selection-end="1931" vertical-scroll-proportion="0.93939394" vertical-offset="0" max-vertical-offset="1003" />
@@ -750,9 +737,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/View/Factory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="123" column="43" selection-start="2390" selection-end="2390" vertical-scroll-proportion="0.4688057" vertical-offset="1760" max-vertical-offset="14382">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_ide_helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11699" column="47" selection-start="372031" selection-end="372031" vertical-scroll-proportion="0.3778966" vertical-offset="198637" max-vertical-offset="207349">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/modules/pages/models/Page.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="73" selection-start="1466" selection-end="1466" vertical-scroll-proportion="0.72824156" vertical-offset="576" max-vertical-offset="1156">
+        <state line="57" column="0" selection-start="1392" selection-end="1392" vertical-scroll-proportion="0.73083776" vertical-offset="559" max-vertical-offset="1156">
           <folding />
         </state>
       </provider>
