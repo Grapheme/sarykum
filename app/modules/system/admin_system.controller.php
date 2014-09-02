@@ -25,6 +25,7 @@ class AdminSystemController extends BaseController {
             'modules' => 'Работа с модулями',
             'groups'  => 'Работа с группами пользователей',
             'users'   => 'Работа с пользователями',
+            'locales' => 'Работа с редактором языков',
         );
     }
 
