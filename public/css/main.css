@@ -775,6 +775,9 @@ main.full-screen {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
 }
 .slideshow .slide .slide-bg {
   position: absolute;
@@ -933,7 +936,8 @@ main.full-screen {
   background: url(../img/big-logo.png) no-repeat 0 0 / 100% 100%;
 }
 .slideshow .slide-head {
-  margin: 2.6875rem 0 2.1875rem;
+  width: 52.438rem;
+  margin: 2.6875rem 0 2.1875rem -10rem;
   font-size: 2.75em;
   font-weight: 300;
   line-height: .75;
@@ -1314,6 +1318,10 @@ main.full-screen {
   padding: .25rem;
   border-style: solid;
   border-color: transparent;
+}
+.booking-form form input.inp-error {
+  border: 1px solid red;
+  border: 1px solid rgba(255, 0, 0, 0.5);
 }
 .booking-form form .price {
   font-size: 1.1em;
