@@ -10,7 +10,7 @@
     <main>
         <div class="slideshow">
             <div class="slide">
-                <div class="slide-bg" style="background-image: {{asset('theme/img/404bg.jpg')}};"></div>
+                <div class="slide-bg" style="background-image: url({{asset('theme/img/404bg.jpg')}});"></div>
                 <section class="slide-cont" style="margin-top: 15.1%;">
                     <header>
                         <div class="slide-logo" style="background: url({{asset('theme/img/404.png')}}); width: 215px; height: 96px;">
