@@ -2063,16 +2063,15 @@ button.Zebra_DatePicker_Icon_Inside {
 }
 @media screen and (max-width: 1324px) {
   html {
-    font-size: 13px;
+    font-size: 13.5px;
+  }
+  .nav-ul .nav-li a span {
+    padding: 0 1.213rem;
   }
 }
 @media screen and (max-width: 1200px) {
   html {
     min-width: 1200px;
-    font-size: 13.5px;
-  }
-  .nav-ul .nav-li a span {
-    padding: 0 1.213rem;
   }
 }
 /* ==========================================================================
