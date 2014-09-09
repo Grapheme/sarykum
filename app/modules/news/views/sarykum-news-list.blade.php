@@ -22,7 +22,7 @@
             </div>
             <div class="column two-thirds">
                 <h2>
-                    <a href="#">{{ $new->meta->title }}</a>
+                    {{ $new->meta->title }}
                 </h2>
                 <div class="section-desc">
                     @if (Config::get('app.locale') == 'ru')
