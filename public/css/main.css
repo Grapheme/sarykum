@@ -762,6 +762,9 @@ main.full-screen {
 .room-slideshow {
   max-height: 400px;
 }
+.room-slideshow .slide-desc {
+  border-bottom: none;
+}
 .slideshow {
   position: relative;
   width: 100%;
