@@ -765,6 +765,10 @@ main.full-screen {
 .room-slideshow .slide-desc {
   border-bottom: none;
 }
+.room-slideshow .room-item {
+  z-index: 1;
+  padding: 0 0 0 5.1%;
+}
 .slideshow {
   position: relative;
   width: 100%;

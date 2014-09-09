@@ -40,7 +40,7 @@ if (@is_object($gallery) && @count($gallery->photos)) {
             @if (@count($photos))
             @foreach ($photos as $photo)
             <div class="slide" style="background-image: url({{ $photo->full() }})">
-                <section class="slide-cont room-item">
+                <section class="room-item">
                         <div class="room-name">
                             {{ $room->name }}
                         </div>
