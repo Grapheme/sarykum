@@ -29,6 +29,7 @@ $news = News::where('type_id', Dic::valueBySlugs('news_type', 'spa')->id)
             </div>
             <div class="arrow arrow-left"><span class="icon icon-angle-left"></span></div>
             <div class="arrow arrow-right"><span class="icon icon-angle-right"></span></div>
+            <div class="arrow-bottom"><span class="icon icon-angle-down"></span></div>
         </div>
         <section class="sect-wrap spa">
 
