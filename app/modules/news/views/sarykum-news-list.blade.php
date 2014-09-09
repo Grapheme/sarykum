@@ -18,7 +18,7 @@
         ?>
         <li class="actions-li row clearfix">
             <div class="column third">
-                <a href="#" class="action-img" style="background-image:url({{ $photo }});"></a>
+                <span class="action-img" style="background-image:url({{ $photo }});"></span>
             </div>
             <div class="column two-thirds">
                 <h2>
