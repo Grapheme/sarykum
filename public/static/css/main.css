@@ -2070,6 +2070,9 @@ button.Zebra_DatePicker_Icon_Inside {
   html {
     font-size: 12px;
   }
+  .nav-ul .nav-li a span {
+    padding: 0 1.213rem;
+  }
 }
 /* ==========================================================================
    Helper classes
