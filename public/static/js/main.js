@@ -95,6 +95,14 @@ jQuery.fn.slideshow = function(obj) {
 		arrows.hide();
 	}
 
+
+	$('.arrow-bottom').click( function(){
+		$('html, body').animate({
+			scrollTop: $(this).parent().next().offset().top
+		}, 1000);
+		console.log($(this).parent().next().offset().top);
+	});
+
 	arrowLeft.click( function(){
 		element.trigger('slideshow.prev');
 	});

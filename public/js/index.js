@@ -17,7 +17,7 @@ var App = (function() {
 		e.stopPropagation();
 	});
 
-	$('.booking-form .btn1').click( function(){
+	$('.booking-form .btn').click( function(){
 		$('.form-success').addClass('active');
 
 		setTimeout( function(){
@@ -94,6 +94,14 @@ jQuery.fn.slideshow = function(obj) {
 	if( slides.length <= 1 ) {
 		arrows.hide();
 	}
+
+
+	$('.arrow-bottom').click( function(){
+		$('html, body').animate({
+			scrollTop: $(this).parent().next().offset().top
+		}, 1000);
+		console.log($(this).parent().next().offset().top);
+	});
 
 	arrowLeft.click( function(){
 		element.trigger('slideshow.prev');
@@ -262,12 +270,3 @@ $('select').customSelect();
 window.matchMedia('only screen and (max-width: 1480px)').addListener(function(list){
     $('select').trigger('render');
 });
-
-    $(document).on('click', '.reserve_room', function() {
-        var room_id = $(this).data('room_id');
-        $('select[name=room_type] option[value=' + room_id + ']').attr('selected', 'yes').val(room_id).change();
-        $('.booking-form').addClass('active');
-        $('html, body').animate({
-            scrollTop: $('html').offset().top
-        }, 300);
-    });
