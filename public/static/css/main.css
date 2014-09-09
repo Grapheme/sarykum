@@ -671,16 +671,16 @@ main.full-screen {
 }
 .sect-wrap .section-desc {
   margin: 0 0 1.125rem;
-  font: italic 1em / 1.375em Georgia, 'Open Sans', sans-serif;
+  font: italic 1em / 1.375em 'Open Sans', sans-serif;
 }
 .sect-wrap p {
   max-width: 54rem;
-  font: 0.8125em / 1.6923em Georgia, 'Open Sans', sans-serif;
+  font: 0.8125em / 1.6923em 'Open Sans', sans-serif;
 }
 .sect-wrap .txt-tip p {
   margin: 0.2em 0 0;
   font-size: 1.875em;
-  font-family: Georgia, 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   text-transform: uppercase;
 }
@@ -1016,7 +1016,7 @@ main.full-screen {
 }
 .table td {
   padding: 0 0 0 2.125rem;
-  font: 600 1em Georgia, 'Open Sans', sans-serif;
+  font: 600 1em 'Open Sans', sans-serif;
 }
 .table td:first-child {
   font-weight: 400;
@@ -1360,7 +1360,7 @@ main.full-screen {
   padding: 10% 10%;
   color: #194373;
   font-size: 1em;
-  font-family: Georgia, 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-style: italic;
   text-align: center;
 }
@@ -1434,7 +1434,7 @@ main.full-screen {
   transition: all 0.5s ease;
   line-height: .75;
   font-size: 3em;
-  font-family: Georgia, 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #ffffff;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.35);
 }
@@ -1459,7 +1459,7 @@ main.full-screen {
   padding: 0;
   margin: 0;
   list-style: none;
-  font: 0.8125em/1.6923em Georgia, 'Open Sans', sans-serif;
+  font: 0.8125em/1.6923em 'Open Sans', sans-serif;
   text-transform: uppercase;
 }
 .spa ul li {
@@ -2068,7 +2068,8 @@ button.Zebra_DatePicker_Icon_Inside {
 }
 @media screen and (max-width: 1200px) {
   html {
-    font-size: 12px;
+    min-width: 1200px;
+    font-size: 13.5px;
   }
   .nav-ul .nav-li a span {
     padding: 0 1.213rem;
