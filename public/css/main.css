@@ -1005,7 +1005,7 @@ main.full-screen {
 }
 .table {
   width: 100%;
-  max-width: 73.75rem;
+  max-width: 80rem;
   margin: 0 auto;
 }
 .table tr:nth-child(even) {
