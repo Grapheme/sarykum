@@ -866,10 +866,13 @@ main.full-screen {
   position: absolute;
   z-index: 1;
   bottom: 1.375rem;
+  top: 0;
   left: 0;
+  bottom: 0;
   width: 50%;
   text-align: center;
   text-transform: uppercase;
+  border: none;
   color: #ffffff;
 }
 .slideshow .slide .roomslide-data.data-left {
@@ -877,6 +880,12 @@ main.full-screen {
 }
 .slideshow .slide .roomslide-data.data-right {
   left: 50%;
+}
+.slideshow .slide .roomslide-data > span {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 1rem;
 }
 .slideshow .slide .roomslide-data .name {
   display: inline-block;

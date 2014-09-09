@@ -123,10 +123,13 @@
 			position: absolute;
 			z-index: 1;
 			bottom: 22rem / @htmlFontSize;
+			top: 0;
 			left: 0;
+			bottom: 0;
 			width: 50%;
 			text-align: center;
 			text-transform: uppercase;
+			border: none;
 
 			color: @white;
 
@@ -135,7 +138,14 @@
 			}
 			&.data-right {
 				left: 50%;
-			}			
+			}
+			&>span {
+				position: absolute;
+				width: 100%;
+				left: 0;
+				bottom: 1rem;
+			}
+
 			.name {
 				display: inline-block;
 				font-size: 24em / @htmlFontSize;
