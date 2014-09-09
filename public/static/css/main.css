@@ -759,6 +759,9 @@ main.full-screen {
   font-size: 1.21875em;
   line-height: 1.79487179em;
 }
+.room-slideshow {
+  max-height: 400px;
+}
 .slideshow {
   position: relative;
   width: 100%;

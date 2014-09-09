@@ -35,7 +35,7 @@ if (@is_object($gallery) && @count($gallery->photos)) {
 ?>
 
     <main role="main">
-        <div class="slideshow" id="slideshow">
+        <div class="slideshow room-slideshow" id="slideshow">
 
             @if (@count($photos))
             @foreach ($photos as $photo)
