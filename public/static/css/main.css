@@ -2040,7 +2040,7 @@ button.Zebra_DatePicker_Icon_Inside {
 }
 @media screen and (max-width: 1480px) {
   html {
-    font-size: 12px;
+    font-size: 14.5px;
   }
   .datepickerFrom .Zebra_DatePicker_Icon_Inside {
     margin-top: -2.075rem !important;
@@ -2059,6 +2059,16 @@ button.Zebra_DatePicker_Icon_Inside {
   }
   .sect-wrap h2 {
     font-size: 1.35em;
+  }
+}
+@media screen and (max-width: 1324px) {
+  html {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 12px;
   }
 }
 /* ==========================================================================
