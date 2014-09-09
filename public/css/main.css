@@ -830,7 +830,7 @@ main.full-screen {
   float: left;
   width: 33.333%;
   height: 100%;
-  padding: 2.25rem 4.125rem 0;
+  padding: 0 4.125rem 0;
   text-align: center;
   font-weight: 300;
   cursor: pointer;
