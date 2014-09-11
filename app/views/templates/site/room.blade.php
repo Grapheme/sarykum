@@ -41,12 +41,12 @@ if (@is_object($gallery) && @count($gallery->photos)) {
             @foreach ($photos as $photo)
             <div class="slide" style="background-image: url({{ $photo->full() }})">
                 <section class="room-item">
-                        <div class="room-name">
+                        <!-- <div class="room-name">
                             {{ $room->name }}
                         </div>
                         <div class="room-price">
                             {{ $room->price }} {{ trans('interface.currency_short') }}
-                        </div>
+                        </div> -->
                 </section>
             </div>
             @endforeach
