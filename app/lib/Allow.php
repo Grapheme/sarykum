@@ -8,7 +8,7 @@ class Allow {
     private static function init() {
         if (!self::$modules) {
             self::$modules = array();
-            $temp = Module::where('on', '1')->with('actions')->get();
+            $temp = Module::with('actions')->orderBy('order', 'ASC')->orderBy('name', 'ASC')->get();
             foreach ($temp as $tmp) {
                 $actions = array();
                 foreach ($tmp->actions as $action) {
@@ -18,9 +18,7 @@ class Allow {
                 $tmp->actions = $actions;
                 self::$modules[$tmp['name']] = $tmp;
             }
-            self::$modules['system'] = array('system' => 1);
-            self::$modules['groups'] = array('system' => 1);
-            self::$modules['users'] = array('system' => 1);
+            #self::$modules['system'] = array('system' => 1);
         }
         #Helper::dd(self::$modules);
     }
@@ -31,6 +29,8 @@ class Allow {
      *
      * @param string $module_name
      * @param string $action
+     * @param boolean $check_module_enabled
+     * @param boolean $admin_grants_all
      * @return bool
 	 */
 	public static function action($module_name, $action, $check_module_enabled = true, $admin_grants_all = true){
@@ -44,9 +44,9 @@ class Allow {
             $user_group = Auth::user()->group;
 
             #Helper::dd(@self::$modules);
-            #Helper::dd(@self::$modules[$module_name]);
+            #Helper::d(@self::$modules[$module_name]);
 
-            if (!$check_module_enabled || isset(self::$modules[$module_name]) || @self::$modules[$module_name]['system']) {
+            if (!$check_module_enabled || (isset(self::$modules[$module_name]) && self::$modules[$module_name]->on == 1) || @self::$modules[$module_name]['system']) {
 
                 /**
                  * @todo Полные права на действия админа, т.к. новые имена модулей не совпадают со старыми ролями ( news != admin_news ). Нужно во всех модулях поменять valid_action_permission на Action
@@ -59,6 +59,9 @@ class Allow {
                 } else {
 
                     $module = isset(self::$modules[$module_name]) ? self::$modules[$module_name] : null;
+
+                    #if ($module_name == 'system')
+                    #    Helper::dd($module->actions);
 
                     ## Check all conditions
                     if(!is_null($user_group) && !is_null($module) && !is_null($action)) {
@@ -112,9 +115,10 @@ class Allow {
 
         #Helper::dd(self::$modules);
 
-        #Helper::dd(self::$modules);
         #if (@self::$modules[$module_name])
         #    Helper::dd(self::$modules[$module_name]);
+
+        #Helper::d($module_name . ' => ' . isset(self::$modules[$module_name]));
 
         return (bool)(
             isset(self::$modules[$module_name])
@@ -125,6 +129,24 @@ class Allow {
         );
 	}
 
+    /**
+     * Проверяет, является ли пользователем Суперюзером (состоит в группе Администраторы).
+     * Обращается к заведомо несуществующему методу несуществующего модуля, без проверки активности модуля, с предоставлением полного доступа Администраторам.
+     *
+     * @return bool
+     */
+    public static function superuser() {
+        return self::action('undefined_module', 'undefined_action', false, true);
+    }
+
+    public static function modules(){
+        #Helper::d(self::$modules);
+        #Helper::d(SystemModules::getModules());
+        #Helper::dd(self::$modules + SystemModules::getModules());
+        #return self::$modules;
+
+        return self::$modules + Config::get('mod_new');
+    }
 
     /**
      * Alias for Allow::module(<module_name>);

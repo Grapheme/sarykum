@@ -91,7 +91,7 @@ class PublicSarykumController extends BaseController {
 
         #Helper::tad($room);
 
-        if (!is_object($room)) {
+        if (!is_object($room) || !$room->id) {
             App::abort(404);
         }
 

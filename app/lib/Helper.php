@@ -47,7 +47,7 @@ class Helper {
     }
 
     public static function tad($object) {
-        self::dd($object->toArray());
+        self::dd(is_object($object) ? $object->toArray() : $object);
     }
 
     public static function ta_($array) {
@@ -343,6 +343,9 @@ HTML;
         if (!@$array || !is_array($array) || !@$name)
             return false;
 
+        if (isset($array['content']))
+            return $array['content'];
+
         $return = '';
         #$name = $array['name'];
         #if ($name_group != '')
@@ -350,6 +353,11 @@ HTML;
 
         $value = $value ? $value : @$array['default'];
 
+        #Helper::d($value);
+
+        if (@is_callable($array['value_modifier'])) {
+            $value = $array['value_modifier']($value);
+        }
         #Helper::d($value);
 
         $others = array();
@@ -361,25 +369,38 @@ HTML;
             }
         }
         $others = ' ' . implode(' ', $others);
-        switch ($array['type']) {
+        #$others_string = self::arrayToAttributes($others_array);
+        switch (@$array['type']) {
             case 'text':
-                $return = '<input type="text" name="' . $name . '" value="' . $value . '"' . $others . ' />';
-                #$return = Form::text($array['name']);
+                $return = Form::text($name, $value, $others_array);
                 break;
             case 'textarea':
-                $return = '<textarea name="' . $name . '"' . $others . '>' . $value . '</textarea>';
+                $return = Form::textarea($name, $value, $others_array);
                 break;
             case 'textarea_redactor':
                 $others_array['class'] = trim(@$others_array['class'] . ' redactor redactor_450');
-                $others_array = self::arrayToAttributes($others_array);
-                #Helper::d($others_array);
-                $return = '<textarea name="' . $name . '"' . @$others_array . '>' . $value . '</textarea>';
+                $return = Form::textarea($name, $value, $others_array);
                 break;
             case 'image':
                 $return = ExtForm::image($name, $value);
                 break;
             case 'gallery':
                 $return = ExtForm::gallery($name, $value);
+                break;
+            case 'date':
+                $others_array['class'] = trim(@$others_array['class'] . ' datepicker');
+                $return = Form::text($name, $value, $others_array);
+                break;
+            case 'upload':
+                $others_array['class'] = trim(@$others_array['class'] . ' file_upload');
+                $return = ExtForm::upload($name, $value, $others_array);
+                break;
+            case 'video':
+                $return = ExtForm::video($name, $value, $others_array);
+                break;
+            case 'select':
+                $values = $array['values'];
+                $return = Form::select($name, $values, $value, $others_array);
                 break;
         }
         return $return;
@@ -470,5 +491,60 @@ HTML;
         return $return;
     }
 
+    public static function clearModuleLink($path) {
+
+        $return = $path;
+
+        $start = AuthAccount::getStartPage();
+        if (!$start)
+            return $return;
+
+        $auth_acc_pos = @mb_strpos($return, $start, 7);
+        if ($auth_acc_pos) {
+            $return = preg_replace("~.+?" . $start . "/?~is", '', $path);
+        }
+
+        #Helper::dd(AuthAccount::getStartPage() . ' = ' . $auth_acc_pos . ' = ' . $return);
+
+        return $return;
+    }
+
+
+    public static function smartFilesize($number) {
+
+        $len = strlen ($number);
+        if ($len < 4){ return sprintf("%d b", $number); }
+        if ($len>= 4 && $len <=6){ return sprintf("%0.2f Kb", $number/1024); }
+        if ($len>= 7 && $len <=9){ return sprintf("%0.2f Mb", $number/1024/1024); }
+        return sprintf("%0.2f Gb", $number/1024/1024/1024);
+    }
+
+    public static function isRoute($route_name = false, $route_params = array(), $match_text = ' class="active"', $mismatch_text = '') {
+
+        $match = true;
+        $route = Route::getCurrentRoute();
+        #dd($route->getAction());
+        #dd($route->getPath());
+
+        if (is_string($route_params)) {
+            preg_match("~\{([^\}]+?)\}~is", $route->getPath(), $matches);
+            #Helper::dd($matches);
+            if (@$matches[1] != '')
+                $route_params = array($matches[1] => $route_params);
+            else
+                $route_params = array();
+        }
+        #Helper::d($route_params);
+
+        if (count($route_params)) {
+            foreach ($route_params as $key => $value) {
+                if ($route->getParameter($key) != $value) {
+                    $match = false;
+                    break;
+                }
+            }
+        }
+        return (Route::currentRouteName() == $route_name && $match) ? $match_text : $mismatch_text;
+    }
 }
 

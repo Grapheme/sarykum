@@ -22,10 +22,11 @@ class AdminSystemController extends BaseController {
     ## return array(); # no rules will be loaded
     public static function returnActions() {
         return array(
-            'modules' => 'Работа с модулями',
-            'groups'  => 'Работа с группами пользователей',
-            'users'   => 'Работа с пользователями',
-            'locales' => 'Работа с редактором языков',
+            'system'        => 'Глобальный доступ к работе с настройками',
+            'modules'       => 'Работа с модулями',
+            'groups'        => 'Работа с группами пользователей',
+            'users'         => 'Работа с пользователями',
+            'locale_editor' => 'Работа с редактором языков',
         );
     }
 
@@ -34,11 +35,57 @@ class AdminSystemController extends BaseController {
         return array(
         	'name' => self::$name,
         	'group' => self::$group,
-        	'title' => 'Система', 
-            'visible' => 0,
+        	'title' => '<i class="fa fa-exclamation-triangle"></i> Система',
+            'visible' => 1,
         );
     }
-        
+
+    ## Menu elements of the module
+    public static function returnMenu() {
+
+        $menu = array();
+        $menu_child = array();
+
+        if (Allow::action('system', 'modules', false, true))
+            $menu_child[] = array(
+                'title' => 'Модули',
+                'link' => 'system/modules',
+                'class' => 'fa-gears',
+            );
+
+        if (Allow::action('system', 'groups', false, true))
+            $menu_child[] = array(
+                'title' => 'Группы',
+                'link' => 'system/groups',
+                'class' => 'fa-group',
+            );
+
+        if (Allow::action('system', 'users', false, true))
+            $menu_child[] = array(
+                'title' => 'Пользователи',
+                'link' => 'system/users',
+                'class' => 'fa-user',
+            );
+
+        if (Allow::action('system', 'locale_editor', false, true))
+            $menu_child[] = array(
+                'title' => 'Редактор языков',
+                'link' => 'system/locale_editor',
+                'class' => 'fa-language',
+            );
+
+        if (count($menu_child) && Allow::action('system', 'system', false, true))
+            $menu[] = array(
+                'title' => 'Настройки',
+                'link' => '#',
+                'class' => 'fa-gear',
+                'system' => 1,
+                'menu_child' => $menu_child,
+            );
+
+        return $menu;
+    }
+
     /****************************************************************************/
 
 	public function __construct(){

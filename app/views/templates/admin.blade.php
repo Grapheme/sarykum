@@ -4,7 +4,7 @@
 	@include('templates.admin.head')
 	@yield('style')
 </head>
-<body class="smart-style-2">
+<body class="smart-style-0">
 	<!--[if IE 7]><h1>Your browser is out of date, please update your browser by going to www.microsoft.com/download</h1><![endif]-->
 	@include('templates.admin.header')
 	@include('templates.admin.sidebar')

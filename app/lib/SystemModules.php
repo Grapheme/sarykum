@@ -12,78 +12,63 @@ class SystemModules {
         $mod_info = Config::get('mod_info');
         $mod_menu = Config::get('mod_menu');
         #Helper::dd($mod_info);
-        #Helper::dd($mod_menu);
+        #Helper::d($mod_menu);
+
+        $entity_dics = Dic::where('entity', '1')->orderBy('order', 'ASC')->get();
+        #Helper::tad($entity_dics);
+        if (count($entity_dics)) {
+            $dic_entities = array();
+            foreach ($entity_dics as $entity_dic) {
+                $dic_entities[$entity_dic->slug] = array(array(
+                    'title' => $entity_dic->name,
+                    #'link' => Helper::clearModuleLink(URL::route('dicval.index', $entity_dic->id)),
+                    'link' => Helper::clearModuleLink(URL::route('entity.index', $entity_dic->slug)),
+                    'class' => $entity_dic->icon_class,
+                    'module' => 'dictionaries',
+                    'permit' => 'dicval',
+                ));
+            }
+            ##$dic_entities += $mod_menu;
+            ##$mod_menu = $dic_entities;
+
+            #Helper::d($dic_entities);
+            #Helper::dd($mod_menu);
+        }
 
         ## If exists menu elements...
         if (isset($mod_menu) && is_array($mod_menu) && count($mod_menu)) {
-            foreach( $mod_menu as $mod_name => $menu_elements ) {
+            #foreach( $mod_menu as $mod_name => $menu_elements ) {
+            foreach( (array)@$dic_entities+Allow::modules() as $mod_name => $module ) {
+
+                #Helper::d($mod_menu);
+
+                ## Hardcode...
+                $menu_elements = @is_object($module) && @is_array($mod_menu[$mod_name]) ? $mod_menu[$mod_name] : $module;
 
                 if( is_array($menu_elements) && count($menu_elements) ) {
+
+                    #Helper::d($mod_name); #continue;
+                    #Helper::d($menu_elements); #continue;
+
                     foreach( $menu_elements as $m => $menu_element ) {
 
-                        #Helper::d($menu_element); continue;
-                        #Helper::d($menu_element); continue;
+                        #Helper::d($menu_element); #continue;
 
                         ## If permit to view menu element
-                        $permit = isset($menu_element['permit']) ? Allow::action($mod_name, $menu_element['permit']) : false;
+                        $rules = @$menu_element['permit'];
+                        $module = @$menu_element['module'] ?: $mod_name;
+                        $permit = $rules ? Allow::action($module, $rules, true, true) : true;
 
+                        #Helper::d($module . " :: " . $permit);
                         #Helper::d( $menu_element['title'] . " - " . (int)$permit );
 
-                        if (
-                            Allow::module($mod_name) && $permit
-                        )
+                        if ($permit)
                             $menu[] = $menu_element;
                     }
                 }
             }
         }
         #Helper::dd($menu);
-        #die();
-
-        ## System permissions
-        if (Allow::action('system', 'permissions', false)) {
-
-            $menu_child = array();
-
-            if (Allow::action('system', 'modules', false, true))
-                $menu_child[] = array(
-                    'title' => 'Модули',
-                    'link' => 'system/modules',
-                    'class' => 'fa-gears',
-                );
-
-            if (Allow::action('system', 'groups', false, true))
-                $menu_child[] = array(
-                    'title' => 'Группы',
-                    'link' => 'system/groups',
-                    'class' => 'fa-group',
-                );
-
-            if (Allow::action('system', 'users', false, true))
-                $menu_child[] = array(
-                    'title' => 'Пользователи',
-                    'link' => 'system/users',
-                    'class' => 'fa-user',
-                );
-
-            if (Allow::action('system', 'locale_editor', false, true))
-                $menu_child[] = array(
-                    'title' => 'Редактор языков',
-                    'link' => 'system/locale_editor',
-                    'class' => 'fa-language',
-                );
-
-            $menu[] = array(
-                'title' => 'Настройки',
-                'link' => '#',
-                'class' => 'fa-gear',
-                'system' => 1,
-                'menu_child' => $menu_child,
-            );
-        }
-        
-        #Helper::d($menu);
-
         return $menu;
 	}
 
@@ -108,18 +93,18 @@ class SystemModules {
         }
         #Helper::dd($modules);
 
-		if(is_null($name)):
+		if(is_null($name)) {
 			return $modules;
-		else:
-			if(isset($modules[$name])):
-				if(is_null($index)):
-					return $modules[$name];
-				elseif(isset($modules[$name][$index])):
-					return $modules[$name][$index];
-				endif;
-			else:
+        } else {
+			if(isset($modules['$name'])) {
+				if(is_null($index)) {
+					return $modules['$name'];
+                } elseif(isset($modules['$name'][$index])) {
+					return $modules['$name'][$index];
+                }
+            } else {
 				return TRUE;
-			endif;
-		endif;
+            }
+        }
 	}
 }
