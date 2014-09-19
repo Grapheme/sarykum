@@ -9,5 +9,4 @@ return array(
     'disable_url_modification' => 0,
 
     'uploads_dir' => public_path('uploads/files'),
-
 );
