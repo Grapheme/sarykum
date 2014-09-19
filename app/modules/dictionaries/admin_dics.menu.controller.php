@@ -25,7 +25,15 @@ class AdminDicsMenuController extends BaseController {
             'edit'   => 'Изменение словарей',
             'delete' => 'Удаление словарей',
 
-            'dicval' => 'Работа с содержимым словарей',
+            'dicval_view'   => 'Просмотр записей в словаре',
+            'dicval_create' => 'Создание записей в словаре',
+            'dicval_edit'   => 'Редактирование записи из словаря',
+            'dicval_delete' => 'Удаление записей из словаря',
+
+            'settings'           => 'Тонкая настройка словаря',
+            'dicval_entity_view' => 'Доступ к словарям-сущностям',
+            'hidden'             => 'Доступ к скрытым словарям',
+            'import'             => 'Импорт данных в словари',
         );
     }
 
@@ -47,8 +55,22 @@ class AdminDicsMenuController extends BaseController {
             array(
             	'title' => 'Словари',
                 'link' => self::$group . '/dic',
-                'class' => 'fa-bars', 
+                #'link' => URL::route('dic.index'),
+                'class' => 'fa-bars',
                 'permit' => 'view',
+                'icon_badge' => function() {
+                        return;
+                        return '<em>9</em>';
+                    },
+                'badge' => function() {
+                        return;
+                        return '
+                            <span class="badge pull-right inbox-badge">1</span>
+                            <span class="badge pull-right inbox-badge bg-color-greenLight">2</span>
+                            <span class="badge pull-right inbox-badge bg-color-blue">3</span>
+                            <span class="badge pull-right inbox-badge bg-color-redLight">4</span>
+                            ';
+                    },
             ),
         );
         #*/

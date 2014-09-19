@@ -12,17 +12,17 @@
     $create_title = "Редактировать запись:";
     $edit_title   = "Добавить запись:";
 
-    $url        = 
+    $url =
         @$element->id
-        ? action('dicval.update', array('dic_id' => $dic->id, 'id' => $element->id))
-        : action('dicval.store', array('dic_id' => $dic->id));
+        ? action(is_numeric($dic_id) ? 'dicval.update' : 'entity.update', array('dic_id' => $dic_id, 'id' => $element->id))
+        : action(is_numeric($dic_id) ? 'dicval.store'  : 'entity.store',  array('dic_id' => $dic_id));
     $method     = @$element->id ? 'PUT' : 'POST';
     $form_title = @$element->id ? $create_title : $edit_title;
     ?>
 
     @include($module['tpl'].'/menu')
 
-    {{ Form::model($element, array('url'=>$url, 'class'=>'smart-form', 'id'=>$module['entity'].'-form', 'role'=>'form', 'method'=>$method)) }}
+    {{ Form::model($element, array('url' => $url, 'class' => 'smart-form', 'id' => $module['entity'].'-form', 'role' => 'form', 'method' => $method, 'files' => true)) }}
 
     <!-- Fields -->
 	<div class="row">
@@ -31,17 +31,20 @@
         <section class="col col-6">
             <div class="well">
                 <header>{{ $form_title }}</header>
+
                 <fieldset>
 
+                    @if (!$dic->hide_slug)
                     <section>
                         <label class="label">Системное имя (необязательно)</label>
                         <label class="input">
                             {{ Form::text('slug', null, array()) }}
                         </label>
                     </section>
+                    @endif
 
                     <section>
-                        <label class="label">Название</label>
+                        <label class="label">{{ $dic->name_title ?: 'Название' }}</label>
                         <label class="input">
                             {{ Form::text('name', null, array()) }}
                         </label>
@@ -49,21 +52,39 @@
 
                 </fieldset>
 
-                @if (@count($fields['general']))
+                {{ Helper::dd_($dic_settings) }}
+
+                @if (@is_callable($dic_settings['fields']) && NULL !== ($fields_general = $dic_settings['fields']()))
                 <?
-                $element_fields = @is_object($element->fields) ? $element->fields->lists('value', 'key') : array();
+                #Helper::ta($element);
+                $onsuccess_js = array();
+                if (isset($element->fields) && is_object($element->fields) && count($element->fields)) {
+                    $element_fields = $element->fields->lists('value', 'key');
+                } elseif (isset($element->allfields) && is_object($element->allfields) && count($element->allfields)) {
+                    $element_fields = $element->allfields->lists('value', 'key');
+                } else {
+                    $element_fields = array();
+                }
                 #Helper::d($element_fields);
+                #$fields_general = $dic_settings['fields'];
                 ?>
-                <fieldset class="padding-top-10 clearfix">
-                    @foreach ($fields['general'] as $field)
-                    <section>
-                        <label class="label">{{ $field['title'] }}</label>
-                        <label class="input {{ $field['type'] }}">
-                            {{ Helper::formField($field, 'fields', @$element_fields[$field['name']]) }}
-                        </label>
-                    </section>
-                    @endforeach
-                </fieldset>
+                    <fieldset class="padding-top-10 clearfix">
+                        @foreach ($fields_general as $field_name => $field)
+                        <?
+                        $field['_name'] = $field_name;
+                        if (@$field['after_save_js'])
+                            $onsuccess_js[] = $field['after_save_js'];
+                        ?>
+                        <section>
+                            @if (!@$field['no_label'])
+                            <label class="label">{{ @$field['title'] }}</label>
+                            @endif
+                            <div class="input {{ @$field['type'] }} {{ @$field['label_class'] }}">
+                                {{ Helper::formField('fields[' . @$field_name . ']', @$field, @$element_fields[$field_name], $element) }}
+                            </div>
+                        </section>
+                        @endforeach
+                    </fieldset>
                 @endif
 
                 @if (count($locales) > 1)
@@ -128,7 +149,7 @@
 
     @if(@$element->id)
     @else
-    {{ Form::hidden('redirect', action('dicval.index', array('dic_id' => $dic->id))) }}
+    {{ Form::hidden('redirect', action(is_numeric($dic_id) ? 'dicval.index' : 'entity.index', array('dic_id' => $dic_id)) . (Request::getQueryString() ? '?' . Request::getQueryString() : '')) }}
     @endif
 
     {{ Form::close() }}
@@ -148,6 +169,31 @@
 	};
     </script>
 
+    <script>
+        var onsuccess_function = function() {
+
+            // UPLOAD
+            $('input[type=file].file_upload').each(function(){
+                //console.log($(this).val());
+                if ($(this).val() != '')
+                    if (!$('input[type=hidden][name=redirect]').val())
+                        location.href = location.href;
+            });
+
+            // VIDEO
+            $('input[type=file].video_image_upload').each(function(){
+                //console.log($(this).val());
+                if ($(this).val() != '')
+                    if (!$('input[type=hidden][name=redirect]').val())
+                        location.href = location.href;
+            });
+
+            @if (@count($onsuccess_js))
+                {{ implode("\n", @$onsuccess_js) }}
+            @endif
+        }
+    </script>
+
 	{{ HTML::script('js/modules/standard.js') }}
 
 	<script type="text/javascript">
@@ -163,5 +209,6 @@
     {{ HTML::script('js/system/redactor-config.js') }}
 
     {{ HTML::script('js/modules/gallery.js') }}
+    {{ HTML::script('js/plugin/select2/select2.min.js') }}
 
 @stop

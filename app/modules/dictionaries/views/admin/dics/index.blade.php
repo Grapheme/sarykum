@@ -8,7 +8,7 @@
 	@if($count = @count($elements))
 	<div class="row">
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<table class="table table-striped table-bordered min-table">
+			<table class="table table-striped table-bordered min-table white-bg">
 				<thead>
 					<tr>
 						<th class="text-center" style="width:40px">#</th>
@@ -16,27 +16,30 @@
 						<th colspan="2" class="width-250 text-center">Действия</th>
 					</tr>
 				</thead>
-				<tbody>
+				<tbody class="sortable">
 				@foreach($elements as $e => $element)
-					<tr>
+					<tr data-id="{{ $element->id }}"{{ $element->entity ? ' class="warning"' : '' }}>
 						<td class="text-center">
 						    {{ $e+1 }}
 						</td>
 						<td>
-						    {{ $element->name }}
-                            <br/><span style="color:#aaa">{{ $element->slug }}</span>
+                            {{ $element->entity ? '<a href="' . URL::route('entity.index', $element->slug) . '" title="Вынесено в отдельную сущность">' . $element->name . '</a>' : $element->name }}
+                            <br/>
+                            <span class="note dic_note">
+                                {{  $element->slug }}
+                            </span>
 						</td>
 						<td class="text-center" style="white-space:nowrap;">
 
-        					@if(Allow::action($module['group'], 'edit'))
-                            <a href="{{ action('dic.edit', array('id' => $element->id)) }}" class="btn btn-success margin-right-10">
-                                Изменить
+        					@if(Allow::action($module['group'], 'dicval_view'))
+                            <a href="{{ action('dicval.index', array('dic_id' => $element->id)) }}" class="btn btn-warning">
+                                Содержимое ({{ $element->count }})
                             </a>
                     		@endif
 
-        					@if(Allow::action($module['group'], 'dicval'))
-                            <a href="{{ action('dicval.index', array('dic_id' => $element->id)) }}" class="btn btn-warning margin-right-10">
-                                Содержимое ({{ $element->values()->count() }})
+        					@if(Allow::action($module['group'], 'edit'))
+                            <a href="{{ action('dic.edit', array('id' => $element->id)) }}" class="btn btn-success">
+                                Изменить
                             </a>
                     		@endif
 
@@ -56,7 +59,7 @@
 		</div>
 	</div>
 
-    {{ $elements->links() }}
+    {{-- $elements->links() --}}
 
 	@else
 	<div class="row">
@@ -95,5 +98,34 @@
 			loadScript("{{ asset('js/vendor/jquery-form.min.js'); }}");
 		}
 	</script>
+
+    <script>
+        $(document).on("mouseover", ".sortable", function(e){
+            // Check flag of sortable activated
+            if ( !$(this).data('sortable') ) {
+                // Activate sortable, if flag is not initialized
+                $(this).sortable({
+                    // On finish of sorting
+                    stop: function() {
+                        // Find all playlists
+                        var pls = $(this).find('tr');
+                        var poss = [];
+                        // Make array with current sorting order
+                        $(pls).each(function(i, item) {
+                            poss.push($(item).data('id'));
+                        });
+                        console.log(poss);
+                        // Send ajax request to server for saving sorting order
+                        $.ajax({
+                            url: "{{ URL::route('dic.order') }}",
+                            type: "post",
+                            data: {poss: poss},
+                            success: function() {}
+                        });
+                    }
+                });
+            }
+        });
+    </script>
 @stop
 
