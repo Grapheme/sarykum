@@ -273,7 +273,7 @@ class AdminDicvalsController extends BaseController {
         if (!@$input['slug'] && $dic->make_slug_from_name)
             $input['slug'] = Helper::translit($input['name']);
 
-        #$json_request['responseText'] = "<pre>" . print_r($_POST, 1) . "</pre>";
+        $json_request['responseText'] = "<pre>" . print_r($_POST, 1) . "</pre>";
         #return Response::json($json_request,200);
 
         $json_request = array('status' => FALSE, 'responseText' => '', 'responseErrorText' => '', 'redirect' => FALSE);
@@ -364,24 +364,22 @@ class AdminDicvalsController extends BaseController {
             #if (@is_array($fields_i18n) && count($fields_i18n)) {
             if (isset($element_fields_i18n) && is_array($element_fields_i18n) && count($element_fields_i18n)) {
 
-                #Helper::d($fields_i18n);
+                #Helper::d('Перебираем все $element_fields_i18n...');
+                #Helper::dd($fields_i18n);
+                #Helper::dd($element_fields_i18n);
 
-                #foreach ($fields_i18n as $locale_sign => $locale_values) {
-                foreach ($element_fields_i18n as $locale_sign => $locale_values) {
-                    #Helper::d($locale_values);
-                    foreach ($locale_values as $key => $_value) {
+                foreach ($element_fields_i18n as $field_name => $field_params) {
+                    #Helper::d($field_name);
+                    #Helper::d($field_params);
+                    #continue;
+                    foreach ($fields_i18n as $locale_sign => $values) {
 
-                        if (is_numeric($key))
+                        $value = @$values[$field_name];
+                        if (!$value)
                             continue;
 
-                        ##
-                        ## Need to testing!!!
-                        ##
-                        $value = @$fields_i18n[$locale_sign][$key];
-                        #Helper::d($value);
-
                         ## If handler of field is defined
-                        if (is_callable($handler = @$element_fields[$key]['handler'])) {
+                        if (is_callable($handler = @$element_fields_i18n[$field_name]['handler'])) {
                             #Helper::dd($handler);
                             $value = $handler($value);
                         }
@@ -390,7 +388,7 @@ class AdminDicvalsController extends BaseController {
                         if ($value === false)
                             continue;
 
-                        $field = DicFieldVal::firstOrNew(array('dicval_id' => $id, 'key' => $key, 'language' => $locale_sign));
+                        $field = DicFieldVal::firstOrNew(array('dicval_id' => $id, 'key' => $field_name, 'language' => $locale_sign));
                         $field->value = $value;
                         $field->save();
                         #Helper::ta($field);
