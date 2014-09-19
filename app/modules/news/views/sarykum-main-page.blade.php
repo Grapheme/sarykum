@@ -16,16 +16,8 @@
         ?>
 
         <li class="slide-term"><a href="#"></a>
-            <div class="term-head">
-                <a href="{{ URL::route('page', 'actions') }}">
-                    {{ $new->meta->title }}
-                </a>
-            </div>
-            <div class="term-body">
-                <a href="{{ URL::route('page', 'actions') }}">
-                    {{ $new->meta->preview }}
-                </a>
-            </div>
+            <div class="term-head"><a href="{{ URL::route('page', 'actions') }}">{{ $new->meta->title }}</a></div>
+            <div class="term-body"><a href="{{ URL::route('page', 'actions') }}">{{ $new->meta->preview }}</a></div>
         </li>
 
         @endforeach
