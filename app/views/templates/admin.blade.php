@@ -16,5 +16,8 @@
 	</div>
 	@include('templates.admin.scripts')
 	@yield('scripts')
+    <script>
+    $.fn.select2&&$(".select2").each(function(){var a=$(this),b=a.attr("data-select-width")||"100%";a.select2({allowClear:!0,width:b}),a=null});
+    </script>
 </body>
 </html>
