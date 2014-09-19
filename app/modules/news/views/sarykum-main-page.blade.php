@@ -15,7 +15,7 @@
             $gallery = $new->meta->gallery->photos;
         ?>
 
-        <li class="slide-term"><a href="#"></a>
+        <li class="slide-term"><a href="{{ URL::route('page', 'actions') }}"></a>
             <div class="term-head">{{ $new->meta->title }}</div>
             <div class="term-body">{{ $new->meta->preview }}</div>
         </li>
