@@ -6,54 +6,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9eb288a-66f5-42e9-a6ae-4f6f60b8c9bd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/modules/system/admin_collectors.controller.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/storage/modules_js_cache.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/storage/modules_js_modifications.dat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/plugin/pace/pace.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/modules/pages/js/pages.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/smartadmin-production.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/smartadmin-skins.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/style.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/your_style.css" />
-      <change type="DELETED" beforePath="C:\home\dev\sarykum\tests\ExampleTest.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\home\dev\sarykum\tests\TestCase.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\home\dev\sarykum\tests\controllers\GroupsTest.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\home\dev\sarykum\tests\controllers\PagesTest.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/Allow.php" afterPath="$PROJECT_DIR$/app/lib/Allow.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/Helper.php" afterPath="$PROJECT_DIR$/app/lib/Helper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/pages/models/Page.php" afterPath="$PROJECT_DIR$/app/modules/pages/models/Page.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/SystemModules.php" afterPath="$PROJECT_DIR$/app/lib/SystemModules.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/pages/views/admin/_block_meta.blade.php" afterPath="$PROJECT_DIR$/app/modules/pages/views/admin/_block_meta.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates/admin.blade.php" afterPath="$PROJECT_DIR$/app/views/templates/admin.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/system/admin_groups.controller.php" afterPath="$PROJECT_DIR$/app/modules/system/admin_groups.controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/system/admin_localeEditor.controller.php" afterPath="$PROJECT_DIR$/app/modules/system/admin_localeEditor.controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/system/admin_modules.controller.php" afterPath="$PROJECT_DIR$/app/modules/system/admin_modules.controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/system/admin_system.controller.php" afterPath="$PROJECT_DIR$/app/modules/system/admin_system.controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/system/admin_users.controller.php" afterPath="$PROJECT_DIR$/app/modules/system/admin_users.controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates/admin/dashboard.blade.php" afterPath="$PROJECT_DIR$/app/views/templates/admin/dashboard.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/pages/views/admin/edit.blade.php" afterPath="$PROJECT_DIR$/app/modules/pages/views/admin/edit.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/filters.php" afterPath="$PROJECT_DIR$/app/filters.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates/admin/head.blade.php" afterPath="$PROJECT_DIR$/app/views/templates/admin/head.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates/admin/header.blade.php" afterPath="$PROJECT_DIR$/app/views/templates/admin/header.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/pages/views/admin/index.blade.php" afterPath="$PROJECT_DIR$/app/modules/pages/views/admin/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/system/views/admin/groups/index.blade.php" afterPath="$PROJECT_DIR$/app/modules/system/views/admin/groups/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/system/views/admin/locale_editor/index.blade.php" afterPath="$PROJECT_DIR$/app/modules/system/views/admin/locale_editor/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/system/views/admin/modules/index.blade.php" afterPath="$PROJECT_DIR$/app/modules/system/views/admin/modules/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/system/views/admin/users/index.blade.php" afterPath="$PROJECT_DIR$/app/modules/system/views/admin/users/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/system/views/admin/locale_editor/list.blade.php" afterPath="$PROJECT_DIR$/app/modules/system/views/admin/locale_editor/list.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/pages/public_pages.controller.php" afterPath="$PROJECT_DIR$/app/modules/pages/public_pages.controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/sarykum/public_sarykum.controller.php" afterPath="$PROJECT_DIR$/app/modules/sarykum/public_sarykum.controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/system/redactor-config.js" afterPath="$PROJECT_DIR$/public/js/system/redactor-config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates/admin/scripts.blade.php" afterPath="$PROJECT_DIR$/app/views/templates/admin/scripts.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates/admin/sidebar.blade.php" afterPath="$PROJECT_DIR$/app/views/templates/admin/sidebar.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/start.php" afterPath="$PROJECT_DIR$/bootstrap/start.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/news/views/sarykum-main-page.blade.php" afterPath="$PROJECT_DIR$/app/modules/news/views/sarykum-main-page.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="archive.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="app/lib/SystemModules_original.php_" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,46 +35,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="list.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/modules/system/views/admin/locale_editor/list.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="171" column="28" selection-start="5989" selection-end="6007" vertical-scroll-proportion="0.0" vertical-offset="2907" max-vertical-offset="8024">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sarykum-news-list.blade.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="sarykum-news-list.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/modules/news/views/sarykum-news-list.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="26" selection-start="1215" selection-end="1215" vertical-scroll-proportion="0.4635879" vertical-offset="266" max-vertical-offset="850">
+            <state vertical-scroll-proportion="-10.038462" vertical-offset="164" max-vertical-offset="850">
+              <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/app.php">
+      <file leaf-file-name="sarykum-main-page.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/modules/news/views/sarykum-main-page.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="72" selection-start="2821" selection-end="2885" vertical-scroll-proportion="0.0" vertical-offset="1275" max-vertical-offset="1938">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Page.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/modules/pages/models/Page.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="21" selection-start="1134" selection-end="1134" vertical-scroll-proportion="0.0" vertical-offset="816" max-vertical-offset="1326">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="spa.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/templates/site/spa.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="14" selection-start="980" selection-end="980" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="2261">
+            <state vertical-scroll-proportion="0.78507996" vertical-offset="0" max-vertical-offset="714">
+              <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -160,7 +97,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/modules/dictionaries/models/DicValMeta.model.php" />
         <option value="$PROJECT_DIR$/app/modules/dictionaries/views/admin/dicvals/menu.blade.php" />
         <option value="$PROJECT_DIR$/app/views/templates/site/head.blade.php" />
         <option value="$PROJECT_DIR$/app/config/az/app.php" />
@@ -211,6 +147,7 @@
         <option value="$PROJECT_DIR$/app/config/app.php" />
         <option value="$PROJECT_DIR$/app/modules/pages/models/Page.php" />
         <option value="$PROJECT_DIR$/app/modules/news/views/sarykum-news-list.blade.php" />
+        <option value="$PROJECT_DIR$/app/modules/news/views/sarykum-main-page.blade.php" />
       </list>
     </option>
   </component>
@@ -272,16 +209,10 @@
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
     <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method />
-    </configuration>
-    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
-      <option name="VM_PARAMETERS" value="" />
-      <option name="USER_CFG_CLASS" />
-      <option name="CONTEXT_PROVIDER" />
       <method />
     </configuration>
     <list size="0" />
@@ -308,157 +239,238 @@
     <task active="true" id="Default" summary="Default task">
       <changelist id="f9eb288a-66f5-42e9-a6ae-4f6f60b8c9bd" name="Default" comment="" />
       <created>1407760569597</created>
+      <option name="number" value="Default" />
       <updated>1407760569597</updated>
     </task>
     <task id="LOCAL-00001" summary="+">
       <created>1408362272483</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
       <updated>1408362272483</updated>
     </task>
     <task id="LOCAL-00002" summary="dicval i18n +++">
       <created>1409057348854</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
       <updated>1409057348854</updated>
     </task>
     <task id="LOCAL-00003" summary="views+">
       <created>1409063877737</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
       <updated>1409063877737</updated>
     </task>
     <task id="LOCAL-00004" summary="views+">
       <created>1409064238666</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
       <updated>1409064238666</updated>
     </task>
     <task id="LOCAL-00005" summary="room reserve+">
       <created>1409068931131</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
       <updated>1409068931131</updated>
     </task>
     <task id="LOCAL-00006" summary="room reserve+">
       <created>1409069361307</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
       <updated>1409069361307</updated>
     </task>
     <task id="LOCAL-00007" summary="room reserve+">
       <created>1409069576474</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
       <updated>1409069576474</updated>
     </task>
     <task id="LOCAL-00008" summary="room reserve+">
       <created>1409069580000</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
       <updated>1409069580000</updated>
     </task>
     <task id="LOCAL-00009" summary="page module grand upgrade + custom UrlGenerator">
       <created>1409149876036</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
       <updated>1409149876036</updated>
     </task>
     <task id="LOCAL-00010" summary="i18n+">
       <created>1409151495953</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
       <updated>1409151495953</updated>
     </task>
     <task id="LOCAL-00011" summary="actions">
       <created>1409210984816</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
       <updated>1409210984816</updated>
     </task>
     <task id="LOCAL-00012" summary="rooms+">
       <created>1409220459977</created>
+      <option name="number" value="00012" />
+      <option name="project" value="LOCAL" />
       <updated>1409220459977</updated>
     </task>
     <task id="LOCAL-00013" summary="fix">
       <created>1409220860184</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
       <updated>1409220860184</updated>
     </task>
     <task id="LOCAL-00014" summary="fix+">
       <created>1409220906843</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
       <updated>1409220906843</updated>
     </task>
     <task id="LOCAL-00015" summary="fix+">
       <created>1409221206807</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
       <updated>1409221206807</updated>
     </task>
     <task id="LOCAL-00016" summary="fix+">
       <created>1409221429430</created>
+      <option name="number" value="00016" />
+      <option name="project" value="LOCAL" />
       <updated>1409221429430</updated>
     </task>
     <task id="LOCAL-00017" summary="room reserve button click">
       <created>1409223370342</created>
+      <option name="number" value="00017" />
+      <option name="project" value="LOCAL" />
       <updated>1409223370342</updated>
     </task>
     <task id="LOCAL-00018" summary="+">
       <created>1409223411352</created>
+      <option name="number" value="00018" />
+      <option name="project" value="LOCAL" />
       <updated>1409223411352</updated>
     </task>
     <task id="LOCAL-00019" summary="+">
       <created>1409223543312</created>
+      <option name="number" value="00019" />
+      <option name="project" value="LOCAL" />
       <updated>1409223543312</updated>
     </task>
     <task id="LOCAL-00020" summary="news on main page">
       <created>1409296787727</created>
+      <option name="number" value="00020" />
+      <option name="project" value="LOCAL" />
       <updated>1409296787727</updated>
     </task>
     <task id="LOCAL-00021" summary="CustomUrlGenerator fix">
       <created>1409299808813</created>
+      <option name="number" value="00021" />
+      <option name="project" value="LOCAL" />
       <updated>1409299808813</updated>
     </task>
     <task id="LOCAL-00022" summary="restruct system module &amp; menu">
       <created>1409300642548</created>
+      <option name="number" value="00022" />
+      <option name="project" value="LOCAL" />
       <updated>1409300642548</updated>
     </task>
     <task id="LOCAL-00023" summary="restruct system module &amp; menu">
       <created>1409300974256</created>
+      <option name="number" value="00023" />
+      <option name="project" value="LOCAL" />
       <updated>1409300974256</updated>
     </task>
     <task id="LOCAL-00024" summary="restruct system module &amp; menu">
       <created>1409301016530</created>
+      <option name="number" value="00024" />
+      <option name="project" value="LOCAL" />
       <updated>1409301016530</updated>
     </task>
     <task id="LOCAL-00025" summary="lang editor">
       <created>1409317320376</created>
+      <option name="number" value="00025" />
+      <option name="project" value="LOCAL" />
       <updated>1409317320376</updated>
     </task>
     <task id="LOCAL-00026" summary="lang editor+">
       <created>1409317936296</created>
+      <option name="number" value="00026" />
+      <option name="project" value="LOCAL" />
       <updated>1409317936296</updated>
     </task>
     <task id="LOCAL-00027" summary="lang editor+">
       <created>1409324292047</created>
+      <option name="number" value="00027" />
+      <option name="project" value="LOCAL" />
       <updated>1409324292047</updated>
     </task>
     <task id="LOCAL-00028" summary="lang editor+">
       <created>1409325464063</created>
+      <option name="number" value="00028" />
+      <option name="project" value="LOCAL" />
       <updated>1409325464063</updated>
     </task>
     <task id="LOCAL-00029" summary="lang editor+">
       <created>1409328318857</created>
+      <option name="number" value="00029" />
+      <option name="project" value="LOCAL" />
       <updated>1409328318857</updated>
     </task>
     <task id="LOCAL-00030" summary="lang editor+">
       <created>1409328422022</created>
+      <option name="number" value="00030" />
+      <option name="project" value="LOCAL" />
       <updated>1409328422022</updated>
     </task>
     <task id="LOCAL-00031" summary="lang editor clipboard">
       <created>1409563317732</created>
+      <option name="number" value="00031" />
+      <option name="project" value="LOCAL" />
       <updated>1409563317732</updated>
     </task>
     <task id="LOCAL-00032" summary="lang editor clipboard">
       <created>1409563865097</created>
+      <option name="number" value="00032" />
+      <option name="project" value="LOCAL" />
       <updated>1409563865097</updated>
     </task>
     <task id="LOCAL-00033" summary="imperavi+">
       <created>1409572982845</created>
+      <option name="number" value="00033" />
+      <option name="project" value="LOCAL" />
       <updated>1409572982845</updated>
     </task>
     <task id="LOCAL-00034" summary="laravel-db-compiler">
       <created>1409662727571</created>
+      <option name="number" value="00034" />
+      <option name="project" value="LOCAL" />
       <updated>1409662727571</updated>
     </task>
     <task id="LOCAL-00035" summary="laravel-db-compiler+">
       <created>1409663496298</created>
+      <option name="number" value="00035" />
+      <option name="project" value="LOCAL" />
       <updated>1409663496298</updated>
     </task>
     <task id="LOCAL-00036" summary="+">
       <created>1409664980773</created>
+      <option name="number" value="00036" />
+      <option name="project" value="LOCAL" />
       <updated>1409664980773</updated>
     </task>
     <task id="LOCAL-00037" summary="+">
       <created>1409665237330</created>
+      <option name="number" value="00037" />
+      <option name="project" value="LOCAL" />
       <updated>1409665237330</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="+++">
+      <created>1410441633788</created>
+      <option name="number" value="00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1410441633788</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -486,26 +498,27 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35609755" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2985318" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32250756" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32175228" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3572594" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32520324" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35447153" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2985318" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32250756" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" x="336" y="122" width="331" height="615" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32175228" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="517" y="56" width="331" height="615" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3572594" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32520324" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Command Line Tools Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32520324" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -513,11 +526,15 @@
     <option name="RECENTLY_FILTERED_USER_GROUPS">
       <collection />
     </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
@@ -541,277 +558,376 @@
     <MESSAGE value="laravel-db-compiler" />
     <MESSAGE value="laravel-db-compiler+" />
     <MESSAGE value="+" />
-    <option name="LAST_COMMIT_MESSAGE" value="+" />
+    <MESSAGE value="+++" />
+    <option name="LAST_COMMIT_MESSAGE" value="+++" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="1" />
     </breakpoint-manager>
+    <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/lang/en/interface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="5" selection-start="889" selection-end="889" vertical-scroll-proportion="-17.653847" vertical-offset="0" max-vertical-offset="595" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/templates/site/footer.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="526" selection-end="526" vertical-scroll-proportion="0.45454547" vertical-offset="0" max-vertical-offset="561" />
+        <state vertical-scroll-proportion="0.45454547" vertical-offset="0" max-vertical-offset="561">
+          <caret line="15" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/modules/dictionaries/admin_dics.menu.controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1190" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1190">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/modules/news/admin_news.controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="228" column="38" selection-start="7617" selection-end="7893" vertical-scroll-proportion="0.4722222" vertical-offset="3621" max-vertical-offset="5168" />
+        <state vertical-scroll-proportion="0.4722222" vertical-offset="3621" max-vertical-offset="5168">
+          <caret line="228" column="38" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/modules/galleries/admin_galleries.controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="34" selection-start="2881" selection-end="2881" vertical-scroll-proportion="0.5037037" vertical-offset="1071" max-vertical-offset="9367">
+        <state vertical-scroll-proportion="0.5037037" vertical-offset="1071" max-vertical-offset="9367">
+          <caret line="79" column="34" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/modules/news/views/admin/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="177" column="5" selection-start="7247" selection-end="7247" vertical-scroll-proportion="0.8181818" vertical-offset="2601" max-vertical-offset="3162" />
+        <state vertical-scroll-proportion="0.8181818" vertical-offset="2601" max-vertical-offset="3162">
+          <caret line="177" column="5" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/modules/dictionaries/models/DicVal.model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="61" selection-start="728" selection-end="728" vertical-scroll-proportion="0.62923354" vertical-offset="242" max-vertical-offset="884" />
+        <state vertical-scroll-proportion="0.62923354" vertical-offset="242" max-vertical-offset="884">
+          <caret line="35" column="61" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/modules/dictionaries/views/admin/dicvals/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="164" column="4" selection-start="5924" selection-end="5924" vertical-scroll-proportion="0.0" vertical-offset="2329" max-vertical-offset="2924" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2329" max-vertical-offset="2924">
+          <caret line="164" column="4" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/templates/site/rooms.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="7" selection-start="2176" selection-end="2176" vertical-scroll-proportion="0.94074076" vertical-offset="767" max-vertical-offset="1462" />
+        <state vertical-scroll-proportion="0.94074076" vertical-offset="767" max-vertical-offset="1462">
+          <caret line="75" column="7" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/modules/dictionaries/models/Dictionary.model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="392" selection-end="392" vertical-scroll-proportion="0.6969697" vertical-offset="0" max-vertical-offset="1513" />
+        <state vertical-scroll-proportion="0.6969697" vertical-offset="0" max-vertical-offset="1513">
+          <caret line="23" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/templates/site/room.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="0" selection-start="2430" selection-end="2430" vertical-scroll-proportion="0.8181818" vertical-offset="1054" max-vertical-offset="1615" />
+        <state vertical-scroll-proportion="0.8181818" vertical-offset="1054" max-vertical-offset="1615">
+          <caret line="89" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/templates/site/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="357" />
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="357">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/templates/site/header.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2295" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2295">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/lib/CustomURL.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="40" selection-start="217" selection-end="217" vertical-scroll-proportion="0.27272728" vertical-offset="0" max-vertical-offset="561" />
+        <state vertical-scroll-proportion="0.27272728" vertical-offset="0" max-vertical-offset="561">
+          <caret line="9" column="40" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/lib/link.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="130" column="0" selection-start="3530" selection-end="3530" vertical-scroll-proportion="0.6060606" vertical-offset="1751" max-vertical-offset="2312" />
+        <state vertical-scroll-proportion="0.6060606" vertical-offset="1751" max-vertical-offset="2312">
+          <caret line="130" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/lib/CustomUrlGenerator.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="6" selection-start="775" selection-end="775" vertical-scroll-proportion="0.90909094" vertical-offset="34" max-vertical-offset="901" />
+        <state vertical-scroll-proportion="0.90909094" vertical-offset="34" max-vertical-offset="901">
+          <caret line="32" column="6" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/modules/system/admin_modules.controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="36" selection-start="924" selection-end="924" vertical-scroll-proportion="0.44074073" vertical-offset="255" max-vertical-offset="1547" />
+        <state vertical-scroll-proportion="0.44074073" vertical-offset="255" max-vertical-offset="1547">
+          <caret line="29" column="36" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/modules/system/admin_groups.controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="5" selection-start="770" selection-end="770" vertical-scroll-proportion="0.37777779" vertical-offset="204" max-vertical-offset="3791" />
+        <state vertical-scroll-proportion="0.37777779" vertical-offset="204" max-vertical-offset="3791">
+          <caret line="24" column="5" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/modules/system/admin_users.controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="44" selection-start="873" selection-end="873" vertical-scroll-proportion="0.40925926" vertical-offset="204" max-vertical-offset="4437" />
+        <state vertical-scroll-proportion="0.40925926" vertical-offset="204" max-vertical-offset="4437">
+          <caret line="25" column="44" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/modules/system/admin_system.controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="10" selection-start="1204" selection-end="1204" vertical-scroll-proportion="0.6666667" vertical-offset="255" max-vertical-offset="901" />
+        <state vertical-scroll-proportion="0.6666667" vertical-offset="255" max-vertical-offset="901">
+          <caret line="37" column="10" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/modules/pages/public_pages.controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="37" selection-start="3622" selection-end="3622" vertical-scroll-proportion="0.3462963" vertical-offset="1122" max-vertical-offset="8143" />
+        <state vertical-scroll-proportion="0.3462963" vertical-offset="1122" max-vertical-offset="8143">
+          <caret line="76" column="37" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/modules/sarykum/public_sarykum.controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="5" selection-start="664" selection-end="664" vertical-scroll-proportion="0.37777779" vertical-offset="85" max-vertical-offset="1870" />
+        <state vertical-scroll-proportion="0.37777779" vertical-offset="85" max-vertical-offset="1870">
+          <caret line="17" column="5" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/templates/site/actions.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="209" selection-end="209" vertical-scroll-proportion="0.3939394" vertical-offset="0" max-vertical-offset="561" />
+        <state vertical-scroll-proportion="0.3939394" vertical-offset="0" max-vertical-offset="561">
+          <caret line="13" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/dic.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="109" selection-end="782" vertical-scroll-proportion="0.27272728" vertical-offset="0" max-vertical-offset="1377" />
+        <state vertical-scroll-proportion="0.27272728" vertical-offset="0" max-vertical-offset="1377">
+          <caret line="9" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="168" column="14" selection-start="7557" selection-end="7558" vertical-scroll-proportion="0.04278075" vertical-offset="3002" max-vertical-offset="5304" />
+        <state vertical-scroll-proportion="0.04278075" vertical-offset="3002" max-vertical-offset="5304">
+          <caret line="168" column="14" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/modules/dictionaries/views/admin/dicvals/_dicval_meta.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="25" selection-start="1740" selection-end="1740" vertical-scroll-proportion="0.45454547" vertical-offset="629" max-vertical-offset="1190" />
+        <state vertical-scroll-proportion="0.45454547" vertical-offset="629" max-vertical-offset="1190">
+          <caret line="52" column="25" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/modules/dictionaries/admin_dicvals.controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="103" selection-start="3100" selection-end="3195" vertical-scroll-proportion="0.27272728" vertical-offset="1564" max-vertical-offset="5117" />
+        <state vertical-scroll-proportion="0.27272728" vertical-offset="1564" max-vertical-offset="5117">
+          <caret line="101" column="103" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/lib/SystemModules.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="32" selection-start="2477" selection-end="2477" vertical-scroll-proportion="-10.307693" vertical-offset="956" max-vertical-offset="2227" />
+        <state vertical-scroll-proportion="-10.307693" vertical-offset="956" max-vertical-offset="2227">
+          <caret line="72" column="32" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/BaseController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="79" selection-end="114" vertical-scroll-proportion="0.18181819" vertical-offset="0" max-vertical-offset="1479" />
+        <state vertical-scroll-proportion="0.18181819" vertical-offset="0" max-vertical-offset="1479">
+          <caret line="6" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="17" selection-start="455" selection-end="455" vertical-scroll-proportion="0.36115843" vertical-offset="128" max-vertical-offset="3604" />
+        <state vertical-scroll-proportion="0.36115843" vertical-offset="128" max-vertical-offset="3604">
+          <caret line="20" column="17" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="272" column="7" selection-start="30688" selection-end="30688" vertical-scroll-proportion="0.0" vertical-offset="7029" max-vertical-offset="7616" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="7029" max-vertical-offset="7616">
+          <caret line="272" column="7" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_7.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="819" column="9" selection-start="23308" selection-end="23308" vertical-scroll-proportion="1.0092592" vertical-offset="13378" max-vertical-offset="18989" />
+        <state vertical-scroll-proportion="1.0092592" vertical-offset="13378" max-vertical-offset="18989">
+          <caret line="819" column="9" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/modules/system/views/admin/locale_editor/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="33" selection-start="262" selection-end="262" vertical-scroll-proportion="0.3462963" vertical-offset="0" max-vertical-offset="1054" />
+        <state vertical-scroll-proportion="0.3462963" vertical-offset="0" max-vertical-offset="1054">
+          <caret line="11" column="33" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/skins.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="845" column="1" selection-start="18877" selection-end="18877" vertical-scroll-proportion="0.82682514" vertical-offset="14133" max-vertical-offset="14722" />
+        <state vertical-scroll-proportion="0.82682514" vertical-offset="14133" max-vertical-offset="14722">
+          <caret line="845" column="1" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/system/redactor-config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="38" selection-start="850" selection-end="850" vertical-scroll-proportion="0.54063606" vertical-offset="0" max-vertical-offset="3434" />
+        <state vertical-scroll-proportion="0.54063606" vertical-offset="0" max-vertical-offset="3434">
+          <caret line="17" column="38" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/redactor.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="827" column="33" selection-start="50929" selection-end="50929" vertical-scroll-proportion="0.681431" vertical-offset="13676" max-vertical-offset="14263" />
+        <state vertical-scroll-proportion="0.681431" vertical-offset="13676" max-vertical-offset="14263">
+          <caret line="827" column="33" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/modules/pages.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="19" selection-start="288" selection-end="1149" vertical-scroll-proportion="0.637138" vertical-offset="170" max-vertical-offset="1326" />
+        <state vertical-scroll-proportion="0.637138" vertical-offset="170" max-vertical-offset="1326">
+          <caret line="34" column="19" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="0" selection-start="1996" selection-end="1996" vertical-scroll-proportion="1.6950597" vertical-offset="161" max-vertical-offset="1360" />
+        <state vertical-scroll-proportion="1.6950597" vertical-offset="161" max-vertical-offset="1360">
+          <caret line="68" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/lib/Helper.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="9" selection-start="2066" selection-end="2066" vertical-scroll-proportion="0.030303031" vertical-offset="1292" max-vertical-offset="8177" />
+        <state vertical-scroll-proportion="0.030303031" vertical-offset="1292" max-vertical-offset="8177">
+          <caret line="77" column="9" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/modules/pages/admin_pages.page.controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="129" column="56" selection-start="4215" selection-end="4215" vertical-scroll-proportion="-0.65384614" vertical-offset="2176" max-vertical-offset="7718" />
+        <state vertical-scroll-proportion="-0.65384614" vertical-offset="2176" max-vertical-offset="7718">
+          <caret line="129" column="56" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/modules/pages/views/admin/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="24" selection-start="1043" selection-end="1691" vertical-scroll-proportion="-0.65384614" vertical-offset="527" max-vertical-offset="1428" />
+        <state vertical-scroll-proportion="-0.65384614" vertical-offset="527" max-vertical-offset="1428">
+          <caret line="32" column="24" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/modules/pages/views/admin/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7905" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7905">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/modules/system/admin_localeEditor.controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="64" selection-start="3382" selection-end="3422" vertical-scroll-proportion="0.23445825" vertical-offset="1704" max-vertical-offset="2499" />
+        <state vertical-scroll-proportion="0.23445825" vertical-offset="1704" max-vertical-offset="2499">
+          <caret line="108" column="64" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/View/Factory.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="123" column="43" selection-start="2390" selection-end="2390" vertical-scroll-proportion="0.4688057" vertical-offset="1760" max-vertical-offset="14382" />
+        <state vertical-scroll-proportion="0.4688057" vertical-offset="1760" max-vertical-offset="14382">
+          <caret line="123" column="43" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_ide_helper.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11699" column="47" selection-start="372031" selection-end="372031" vertical-scroll-proportion="0.3778966" vertical-offset="198637" max-vertical-offset="207349" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/templates/site/spa.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="14" selection-start="980" selection-end="980" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="2261">
-          <folding />
+        <state vertical-scroll-proportion="0.3778966" vertical-offset="198637" max-vertical-offset="207349">
+          <caret line="11699" column="47" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/modules/pages/models/Page.php">
+    <entry file="file://$PROJECT_DIR$/../lavka/app/filters.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="21" selection-start="1134" selection-end="1134" vertical-scroll-proportion="0.0" vertical-offset="559" max-vertical-offset="1156">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2380">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/system/views/admin/locale_editor/list.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.030195381" vertical-offset="2839" max-vertical-offset="8058">
+          <caret line="171" column="28" selection-start-line="171" selection-start-column="28" selection-end-line="171" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="72" selection-start="2821" selection-end="2885" vertical-scroll-proportion="0.0" vertical-offset="958" max-vertical-offset="1938">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1275" max-vertical-offset="1938">
+          <caret line="75" column="72" selection-start-line="75" selection-start-column="72" selection-end-line="75" selection-end-column="72" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/modules/system/views/admin/locale_editor/list.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/modules/pages/models/Page.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="171" column="28" selection-start="5989" selection-end="6007" vertical-scroll-proportion="-0.0" vertical-offset="2839" max-vertical-offset="7939">
+        <state vertical-scroll-proportion="0.14031972" vertical-offset="737" max-vertical-offset="1326">
+          <caret line="48" column="21" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../lavka/app/filters.php">
+    <entry file="file://$PROJECT_DIR$/app/views/templates/site/spa.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2380" />
+        <state vertical-scroll-proportion="0.634103" vertical-offset="187" max-vertical-offset="2261">
+          <caret line="32" column="14" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/modules/news/views/sarykum-news-list.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="26" selection-start="1215" selection-end="1215" vertical-scroll-proportion="0.4635879" vertical-offset="266" max-vertical-offset="850">
+        <state vertical-scroll-proportion="-10.038462" vertical-offset="164" max-vertical-offset="850">
+          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/news/views/sarykum-main-page.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.78507996" vertical-offset="0" max-vertical-offset="714">
+          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
           <folding />
         </state>
       </provider>

@@ -17,10 +17,14 @@
 
         <li class="slide-term"><a href="#"></a>
             <div class="term-head">
-                {{ $new->meta->title }}
+                <a href="{{ URL::route('page', 'actions') }}">
+                    {{ $new->meta->title }}
+                </a>
             </div>
             <div class="term-body">
-                {{ $new->meta->preview }}
+                <a href="{{ URL::route('page', 'actions') }}">
+                    {{ $new->meta->preview }}
+                </a>
             </div>
         </li>
 
