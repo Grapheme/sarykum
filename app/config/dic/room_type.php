@@ -42,5 +42,6 @@ return array(
         );
     },
 
+    'seo' => 1
 
 );

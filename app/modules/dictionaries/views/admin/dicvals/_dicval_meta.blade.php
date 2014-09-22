@@ -42,6 +42,7 @@ if (@is_object($element->metas) && $element->metas->count())
             #Helper::ta($element_fields);
         }
 ?>
+
         @foreach ($fields_i18n as $field_name => $field)
 <?
             $field_meta = new DicFieldVal();
@@ -56,14 +57,19 @@ if (@is_object($element->metas) && $element->metas->count())
             $form_field = Helper::formField('fields_i18n[' . $locale_sign . '][' . $field_name . ']', $field, @$field_meta->value, $element);
             if (!$form_field)
                 continue;
+
+            #$form_field = false;
 ?>
+
             <section>
                 <label class="label">{{ $field['title'] }}</label>
                 <label class="input {{ $field['type'] }}">
                     {{ $form_field }}
                 </label>
             </section>
+
         @endforeach
+
     @endif
 
 @endif
