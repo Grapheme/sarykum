@@ -246,6 +246,12 @@ class AdminUploadsController extends BaseController {
     
     ## Actions of module (for distribution rights of users)
     public static function returnActions() {
+        return array(
+            'view'   => 'Просмотр',
+            'create' => 'Создание',
+            #'edit'   => 'Редактирование',
+            'delete' => 'Удаление',
+        );
     }
 
     ## Info about module (now only for admin dashboard & menu)
@@ -266,7 +272,7 @@ class AdminUploadsController extends BaseController {
                 'link' => Helper::clearModuleLink(URL::route('uploads.index')),
                 #'link' => URL::route('dic.index'),
                 'class' => 'fa-download',
-                'permit' => false,
+                'permit' => 'view',
             ),
         );
     }
