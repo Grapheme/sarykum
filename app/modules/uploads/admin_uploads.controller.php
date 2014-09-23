@@ -266,7 +266,7 @@ class AdminUploadsController extends BaseController {
                 'link' => Helper::clearModuleLink(URL::route('uploads.index')),
                 #'link' => URL::route('dic.index'),
                 'class' => 'fa-download',
-                'permit' => 'view',
+                'permit' => false,
             ),
         );
     }
