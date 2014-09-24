@@ -61,12 +61,12 @@ page:rooms = {{ URL::route('page', 'rooms') }}
                                 <span>{{ trans('interface.menu.restaurant') }}
                             </a>
                         <li class="nav-li">
-                            <a data-hover="{{ trans('interface.menu.discover') }}" href="{{ URL::route('page', 'discover') }}">
-                                <span>{{ trans('interface.menu.discover') }}
-                            </a>
-                        <li class="nav-li">
                             <a data-hover="{{ trans('interface.menu.services') }}" href="{{ URL::route('page', 'services') }}">
                                 <span>{{ trans('interface.menu.services') }}
+                            </a>
+                        <li class="nav-li">
+                            <a data-hover="{{ trans('interface.menu.discover') }}" href="{{ URL::route('page', 'discover') }}">
+                                <span>{{ trans('interface.menu.discover') }}
                             </a>
                         <li class="nav-li">
                             <a data-hover="{{ trans('interface.menu.actions') }}" href="{{ URL::route('page', 'actions') }}">

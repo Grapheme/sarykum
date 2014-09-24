@@ -98,8 +98,8 @@
       <file leaf-file-name="header.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/templates/site/header.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6611111" vertical-offset="1887" max-vertical-offset="2567">
-              <caret line="131" column="30" selection-start-line="131" selection-start-column="30" selection-end-line="131" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.5037037" vertical-offset="918" max-vertical-offset="2567">
+              <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -718,7 +718,13 @@
       <option name="project" value="LOCAL" />
       <updated>1411564461106</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="+">
+      <created>1411564840252</created>
+      <option name="number" value="00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1411564840252</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1199,8 +1205,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/templates/site/header.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6611111" vertical-offset="1887" max-vertical-offset="2567">
-          <caret line="131" column="30" selection-start-line="131" selection-start-column="30" selection-end-line="131" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.5037037" vertical-offset="918" max-vertical-offset="2567">
+          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
           <folding />
         </state>
       </provider>
