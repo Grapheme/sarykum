@@ -6,7 +6,15 @@ return array(
 
         return array(
             'price' => array(
-                'title' => 'Цена',
+                'title' => 'Цена одноместного размещения',
+                'type' => 'text',
+                'default' => '',
+                'others' => array(
+                    #'placeholder' => 'Укажите цену'
+                ),
+            ),
+            'price2' => array(
+                'title' => 'Цена двухместного размещения',
                 'type' => 'text',
                 'default' => '',
                 'others' => array(
