@@ -2,6 +2,11 @@
 
 
 @section('style')
+<style>
+.services.what2look {
+    background-image: none;
+}
+</style>
 @stop
 
 
