@@ -76,6 +76,7 @@ $news = News::where('type_id', Dic::valueBySlugs('news_type', 'restaurant')->id)
         </section>
         @endif
 
+        @if (0)
         <section class="sect-wrap mini-footer">
             <header>
                 <div class="small-logo">
@@ -88,6 +89,7 @@ $news = News::where('type_id', Dic::valueBySlugs('news_type', 'restaurant')->id)
                 <a href="tel:+74958944455">+7 495 894 44 55</a>
             </div>
         </section>
+        @endif
     </main>
 
 @stop
