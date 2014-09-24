@@ -21,4 +21,6 @@ return array(
     'reserve.success' => 'Your reservation is successfully sent to administrator',
     'reserve.to' => 'to',
     'title.actions' => 'Actions',
+    'rooms.single_occupancy' => 'single occupancy',
+    'rooms.double_occupancy' => 'double occupancy',
 );

@@ -51,8 +51,15 @@ if (@count($rooms))
                         </div>
                         @endif
                         @if ($room->price)
-                        <div class="room-price">
-                            {{ $room->price }}
+                        <div class="room-price room-price-1">
+                            <span class="price-num">{{ $room->price }}</span>
+                            {{ trans("interface.rooms.single_occupancy") }}
+                        </div>
+                        @endif
+                        @if ($room->price2)
+                        <div class="room-price room-price-2">
+                            <span class="price-num">{{ $room->price2 }}</span>
+                            {{ trans("interface.rooms.double_occupancy") }}
                         </div>
                         @endif
                     </a>

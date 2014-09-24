@@ -21,4 +21,6 @@ return array(
     'reserve.success' => 'Ваш заказ успешно отправлен администратору',
     'reserve.to' => 'по',
     'title.actions' => 'Акции',
+    'rooms.single_occupancy' => 'одноместное размещение',
+    'rooms.double_occupancy' => 'двухместное размещение',
 );
