@@ -12,6 +12,11 @@ $news = News::where('type_id', Dic::valueBySlugs('news_type', 'spa')->id)
 
 
 @section('style')
+<style>
+.weight-td {
+    white-space: nowrap;
+}
+</style>
 @stop
 
 
