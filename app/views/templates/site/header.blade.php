@@ -115,9 +115,11 @@ page:rooms = {{ URL::route('page', 'rooms') }}
                             </fieldset>
                             <fieldset>
                                 <section>
+                                    @if (0)
                                     <div class="price inline">
                                         {{ trans('interface.reserve.daily_price') }} <span>4500 rub.</span>
-                                    </div>                                                                        
+                                    </div>
+                                    @endif
                                     <button type="submit" class="btn bordered inline">
                                         {{ trans('interface.reserve.reserve') }}
                                     </button> 
