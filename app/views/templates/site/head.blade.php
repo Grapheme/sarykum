@@ -19,3 +19,10 @@
         {{ HTML::stylemod('css/main.css') }}
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
         {{ HTML::scriptmod('js/vendor/modernizr-2.6.2.min.js') }}
+
+        <style>
+        .customSelectInner {
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        </style>
