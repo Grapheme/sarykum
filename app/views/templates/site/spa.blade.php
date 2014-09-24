@@ -116,12 +116,13 @@ $news = News::where('type_id', Dic::valueBySlugs('news_type', 'spa')->id)
             <header>
                 <div class="small-logo">
                     
-                </div> 1000 и 1 ночь
+                </div> SPA-центр
             </header>
             <div class="call">
                 Вопросы администратору<br>
-                Вы можете задать по телефону
-                <a href="tel:+74958944455">+7 495 894 44 55</a>
+                Вы можете задать по телефонам
+                <a href="tel:+78722934803">+7 (8722) 93-48-03</a>
+                <a href="tel:+78722211222">+7 (8722) 21-12-22</a>
             </div>
         </section>
     </main>

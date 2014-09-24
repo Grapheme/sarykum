@@ -76,8 +76,8 @@
       <file leaf-file-name="spa.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/templates/site/spa.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.22037037" vertical-offset="187" max-vertical-offset="2346">
-              <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.6611111" vertical-offset="1751" max-vertical-offset="2363">
+              <caret line="124" column="16" selection-start-line="124" selection-start-column="16" selection-end-line="124" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -682,7 +682,13 @@
       <option name="project" value="LOCAL" />
       <updated>1411563911394</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="+">
+      <created>1411564043838</created>
+      <option name="number" value="00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1411564043838</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1160,8 +1166,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/templates/site/spa.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22037037" vertical-offset="187" max-vertical-offset="2346">
-          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.6611111" vertical-offset="1751" max-vertical-offset="2363">
+          <caret line="124" column="16" selection-start-line="124" selection-start-column="16" selection-end-line="124" selection-end-column="16" />
           <folding />
         </state>
       </provider>
