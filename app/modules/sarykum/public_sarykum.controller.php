@@ -59,7 +59,16 @@ class PublicSarykumController extends BaseController {
         if(!Request::ajax())
             App::abort(404);
 
-        $room = DicVal::find(Input::get('room_type'));
+        $room_type = Input::get('room_type');
+
+        if (!strpos($room_type, '.'))
+            App::abort(404);
+
+        #Helper::dd($room_type);
+
+        list($room_id, $price_type) = explode('.', $room_type);
+
+        $room = DicVal::find($room_id);
 
         if (!is_object($room)) {
             App::abort(404);
@@ -72,6 +81,7 @@ class PublicSarykumController extends BaseController {
             'room'       => $room,
 
             'room_type'  => Input::get('room_type'),
+            'price_type' => $price_type,
             'date_start' => Input::get('date_start'),
             'date_stop'  => Input::get('date_stop'),
             'name'       => Input::get('name'),
