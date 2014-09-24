@@ -2,6 +2,11 @@
 
 
 @section('style')
+<style>
+.action-img {
+    background-repeat: no-repeat;
+}
+</style>
 @stop
 
 
