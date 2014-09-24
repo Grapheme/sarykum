@@ -7,6 +7,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f9eb288a-66f5-42e9-a6ae-4f6f60b8c9bd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates/site/actions.blade.php" afterPath="$PROJECT_DIR$/app/views/templates/site/actions.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates/site/restaurant.blade.php" afterPath="$PROJECT_DIR$/app/views/templates/site/restaurant.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="archive.iws" />
@@ -22,7 +23,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="false" show_ignored="true" />
   <component name="CreatePatchCommitExecutor">
-    <option name="PATCH_PATH" value="" />
+    <option name="PATCH_PATH" value="C:\home\dev\sarykum" />
   </component>
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
@@ -53,11 +54,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="actions.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="actions.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/templates/site/actions.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.72407407" vertical-offset="0" max-vertical-offset="629">
-              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="578">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -105,11 +106,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="restaurant.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="restaurant.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/templates/site/restaurant.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.576923" vertical-offset="1194" max-vertical-offset="1768">
-              <caret line="91" column="14" selection-start-line="91" selection-start-column="14" selection-end-line="91" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.4722222" vertical-offset="0" max-vertical-offset="1853">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -226,8 +227,8 @@
         <option value="$PROJECT_DIR$/app/modules/news/views/sarykum-main-page.blade.php" />
         <option value="$PROJECT_DIR$/app/views/templates/site/spa.blade.php" />
         <option value="$PROJECT_DIR$/app/views/templates/site/header.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/templates/site/restaurant.blade.php" />
         <option value="$PROJECT_DIR$/app/views/templates/site/actions.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/templates/site/restaurant.blade.php" />
       </list>
     </option>
   </component>
@@ -742,7 +743,13 @@
       <option name="project" value="LOCAL" />
       <updated>1411565538660</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="+">
+      <created>1411565797857</created>
+      <option name="number" value="00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1411565797857</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1214,18 +1221,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/templates/site/restaurant.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/views/templates/site/actions.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.576923" vertical-offset="1194" max-vertical-offset="1768">
-          <caret line="91" column="14" selection-start-line="91" selection-start-column="14" selection-end-line="91" selection-end-column="14" />
+        <state vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="578">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/templates/site/actions.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/views/templates/site/restaurant.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.72407407" vertical-offset="0" max-vertical-offset="629">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.4722222" vertical-offset="0" max-vertical-offset="1853">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
