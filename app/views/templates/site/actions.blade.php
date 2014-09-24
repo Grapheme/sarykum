@@ -6,6 +6,9 @@
 .action-img {
     background-repeat: no-repeat;
 }
+.sect-wrap.restaurant:after {
+    background-image: none !important;
+}
 </style>
 @stop
 
