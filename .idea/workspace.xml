@@ -6,10 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9eb288a-66f5-42e9-a6ae-4f6f60b8c9bd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lang/en/interface.php" afterPath="$PROJECT_DIR$/app/lang/en/interface.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lang/ru/interface.php" afterPath="$PROJECT_DIR$/app/lang/ru/interface.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/modules/system/views/admin/locale_editor/list.blade.php" afterPath="$PROJECT_DIR$/app/modules/system/views/admin/locale_editor/list.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates/site/rooms.blade.php" afterPath="$PROJECT_DIR$/app/views/templates/site/rooms.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates/site/room.blade.php" afterPath="$PROJECT_DIR$/app/views/templates/site/room.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="archive.iws" />
@@ -86,21 +83,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rooms.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="rooms.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/templates/site/rooms.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6060606" vertical-offset="663" max-vertical-offset="1581">
-              <caret line="59" column="61" selection-start-line="59" selection-start-column="61" selection-end-line="59" selection-end-column="61" />
+            <state vertical-scroll-proportion="-8.5" vertical-offset="663" max-vertical-offset="1581">
+              <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="room.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="room.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/templates/site/room.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="19.76923" vertical-offset="990" max-vertical-offset="1530">
-              <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.24242425" vertical-offset="952" max-vertical-offset="1717">
+              <caret line="64" column="34" selection-start-line="64" selection-start-column="34" selection-end-line="64" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -205,10 +202,10 @@
         <option value="$PROJECT_DIR$/app/modules/dictionaries/views/admin/dicvals/_dicval_meta.blade.php" />
         <option value="$PROJECT_DIR$/app/modules/uploads/admin_uploads.controller.php" />
         <option value="$PROJECT_DIR$/app/modules/news/views/sarykum-news-list.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/templates/site/room.blade.php" />
         <option value="$PROJECT_DIR$/app/config/dic/room_type.php" />
         <option value="$PROJECT_DIR$/app/views/templates/site/rooms.blade.php" />
         <option value="$PROJECT_DIR$/app/modules/system/views/admin/locale_editor/list.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/templates/site/room.blade.php" />
       </list>
     </option>
   </component>
@@ -651,7 +648,13 @@
       <option name="project" value="LOCAL" />
       <updated>1411543498154</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="fixes+">
+      <created>1411544453349</created>
+      <option name="number" value="00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1411544453349</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1094,14 +1097,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/templates/site/room.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="19.76923" vertical-offset="990" max-vertical-offset="1530">
-          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/modules/system/views/admin/locale_editor/list.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5631068" vertical-offset="4130" max-vertical-offset="8058">
@@ -1122,8 +1117,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/templates/site/rooms.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6060606" vertical-offset="663" max-vertical-offset="1581">
-          <caret line="59" column="61" selection-start-line="59" selection-start-column="61" selection-end-line="59" selection-end-column="61" />
+        <state vertical-scroll-proportion="-8.5" vertical-offset="663" max-vertical-offset="1581">
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/templates/site/room.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24242425" vertical-offset="952" max-vertical-offset="1717">
+          <caret line="64" column="34" selection-start-line="64" selection-start-column="34" selection-end-line="64" selection-end-column="34" />
           <folding />
         </state>
       </provider>
