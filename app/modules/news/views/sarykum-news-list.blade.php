@@ -32,7 +32,7 @@
                     @endif
                 </div>
                 <p>
-                    {{ $new->meta->preview }}
+                    {{ $new->meta->content }}
                 </p>
             </div>
         </li>

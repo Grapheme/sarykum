@@ -40,7 +40,7 @@ class CreateDicsTables extends Migration {
                 $table->integer('dicval_id')->unsigned()->nullable()->index();
                 $table->string('language', 16)->nullable()->index();
                 $table->string('key')->nullable()->index();
-                $table->string('value')->nullable();
+                $table->text('value')->nullable()->index();
             });
             echo(' + ' . $this->table . PHP_EOL);
         } else {

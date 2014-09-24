@@ -25,7 +25,8 @@ if (@is_numeric($obj->gallery)) {
 }
 #Helper::tad($gallery);
 
-$photos = array($photo);
+#$photos = array($photo);
+$photos = array();
 if (@is_object($gallery) && @count($gallery->photos)) {
     foreach ($gallery->photos as $gphoto) {
         $photos[] = $gphoto;
