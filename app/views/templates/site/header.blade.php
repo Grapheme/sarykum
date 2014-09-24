@@ -16,7 +16,7 @@ if (@count($room_type))
                 $room_type[$a]->{$field->key} = $field->value;
 
         if ($arr->price) {
-            $room_types[$arr->id . '.1'] = $arr->name . ' ' . trans("interface.rooms.single_occupancy");
+            $room_types[$arr->id . '.1'] = $arr->name . ', ' . trans("interface.rooms.single_occupancy");
             $room_type_prices[$arr->id . '.1'] = $arr->price;
         }
         if ($arr->price2) {
