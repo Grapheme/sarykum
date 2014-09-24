@@ -61,13 +61,13 @@ if (@is_object($gallery) && @count($gallery->photos)) {
                 {{ $room->name }}
             </h1>
 
-            @if ($room->price)
+            @if ($room->price && 0)
             <h2 class="room-price room-price-1">
                 <span class="price-num">{{ $room->price }}</span>
                 {{ trans("interface.rooms.single_occupancy") }}
             </h2>
             @endif
-            @if ($room->price2)
+            @if ($room->price2 && 0)
             <h2 class="room-price room-price-2">
                 <span class="price-num">{{ $room->price2 }}</span>
                 {{ trans("interface.rooms.double_occupancy") }}
