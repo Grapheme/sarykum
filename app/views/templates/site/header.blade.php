@@ -5,6 +5,7 @@ $route = Route::currentRouteName();
 #Helper::dd($page);
 
 $room_type = Dic::whereSlugValues('room_type');
+$room_types = array();
 $room_type_prices = array();
 if (@count($room_type))
     foreach ($room_type as $a => $arr) {
