@@ -1,5 +1,5 @@
 
-{{ Helper::tad($news) }}
+{{ Helper::tad_($news) }}
 @if(isset($news) && is_object($news) && $news->count())
 
     <ul class="slide-terms clearfix">
