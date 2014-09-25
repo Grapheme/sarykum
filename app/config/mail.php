@@ -4,6 +4,7 @@ return array(
 
     'feedback' => array(
         'address' => 'support@grapheme.ru',
+        #'address' => 'az@grapheme.ru',
         #'address' => 'reserved@mail.ru',
         #'subject' => 'ВидеоГид, обратная связь',
     ),
@@ -21,5 +22,5 @@ return array(
     'sendmail' => '/usr/sbin/sendmail -bs',
     'encryption' => 'tls',
 
-    'pretend' => 1,
+    'pretend' => 0,
 );

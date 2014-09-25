@@ -92,6 +92,7 @@ class PublicSarykumController extends BaseController {
             $message->subject('Бронирование номера');
             $message->to(Config::get('mail.feedback.address'));
         });
+        #Helper::dd($result);
         return Response::json($json_request, 200);
     }
 
