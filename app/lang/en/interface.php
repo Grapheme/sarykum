@@ -20,7 +20,7 @@ return array(
     'reserve.select' => 'Select room and date',
     'reserve.success' => 'Your reservation is successfully sent to administrator',
     'reserve.to' => 'to',
-    'title.actions' => 'Actions',
+    'title.actions' => 'News and actions',
     'rooms.single_occupancy' => 'single occupancy',
     'rooms.double_occupancy' => 'double occupancy',
 );
