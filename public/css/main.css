@@ -641,6 +641,9 @@ main.full-screen {
   background: #fff;
   color: #1f1a14;
 }
+.sect-wrap.restaurant {
+  overflow: hidden;
+}
 .sect-wrap.restaurant:after {
   content: '';
   position: absolute;
