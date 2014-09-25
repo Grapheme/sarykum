@@ -1615,6 +1615,7 @@ nav {
   border-right: 1px solid #cecece;
 }
 .lang {
+  display: none;
   line-height: 4.125rem;
   float: right;
   display: inline-block;
