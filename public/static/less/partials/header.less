@@ -80,6 +80,15 @@ nav {
 				}
 			}
 
+			&.active {
+				cursor: default;
+				
+				&:before {
+					-webkit-transform: translateY(0%);
+					        transform: translateY(0%);
+				}
+			}
+
 			&:before {
 				.transition(all, .5s, cubic-bezier(0.87, -0.41, 0.19, 1.44));
 				-webkit-transform: translateY(-105%);

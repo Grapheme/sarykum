@@ -1114,6 +1114,7 @@ main.full-screen {
 }
 .table .weight-td {
   width: 20%;
+  font-weight: 400;
 }
 .table .price-td {
   width: 15%;
@@ -1726,6 +1727,13 @@ nav {
   transform: translateY(0%);
 }
 .nav-ul .nav-li a:hover:before {
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+}
+.nav-ul .nav-li a.active {
+  cursor: default;
+}
+.nav-ul .nav-li a.active:before {
   -webkit-transform: translateY(0%);
   transform: translateY(0%);
 }
