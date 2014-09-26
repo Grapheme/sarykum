@@ -1,0 +1,52 @@
+.sect-wrap.sect-services {
+	padding-bottom: 0;
+	background-image: none;
+
+	.romb-cont {
+	    background: url(../img/romb.png) no-repeat scroll center center / 100% 100%;
+	    padding: 35% 10% 25%;
+	}
+
+	h1 {
+		width: 100%;
+		text-align: center;
+	}
+
+	h2 {
+		width: 100%;
+		text-align: center;
+		z-index: 1;
+		margin: 35rem / @htmlFontSize 0 35rem / @htmlFontSize;
+
+		font-size: 50em / @htmlFontSize;
+		line-height: 60em / 50;
+		text-transform: uppercase;
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+
+	.section-desc {
+		text-align: center;
+	}
+
+	.serv-list .column {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		float: none;
+		padding: 95rem / @htmlFontSize 0 0;
+		text-align: center;
+
+		&:before {
+			content: "●";
+			position: absolute;
+			top: 45rem / @htmlFontSize;
+			left: 0;
+
+			width: 100%;
+			color: #000;
+		}
+	}
+}
