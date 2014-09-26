@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/main.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="wrapper">
+            <header class="main-header">
+                <div class="logo">
+                    <a href="index.html"></a>
+                </div>
+                <nav>
+                    <ul class="nav-ul">
+                        <li class="nav-li">
+                            <a data-hover="Номера" href="rooms.html">
+                                <span>Номера
+                            </a>
+                        <li class="nav-li">
+                            <a data-hover="SPA" href="spa.html">
+                                <span>SPA
+                            </a>
+                        <li class="nav-li">
+                            <a data-hover="Ресторан" href="rest.html">
+                                <span>Ресторан
+                            </a>
+                        <li class="nav-li">
+                            <a data-hover="Discover Dagestan" href="discover.html">
+                                <span>Discover Dagestan
+                            </a>
+                        <li class="nav-li">
+                            <a data-hover="Услуги" href="services.html">
+                                <span>Услуги</span>
+                            </a>
+                        <li class="nav-li">
+                            <a data-hover="Акции" href="#">
+                                <span>Акции
+                            </a>
+                    </ul>
+                </nav>
+                <div class="booking" id="bookBtn">
+                    Бронировать <span class="icon icon-angle-right"></span>
+                    <div class="booking-form">
+                        <div class="form-success">
+                            Ваша бронь успешно отправлена администратору
+                        </div>
+                        <form>
+                            <fieldset class="date-data">
+                                <section>
+                                    <header>
+                                        Выберите номер и дату
+                                    </header>
+                                    <div class="inline">
+                                        <select>
+                                            <option>Стандартный номер</option>
+                                            <option>Нестандартный номер</option>
+                                        </select>
+                                    </div>
+                                    <section class="datepickerFrom inline">
+                                        с
+                                        <input id="datepickerFrom" class="datepicker" type="text">
+                                    </section>
+                                    <section class="datepickerTo inline">
+                                        по
+                                        <input id="datepickerTo" type="text">
+                                    </section> 
+                                </section>
+                            </fieldset>
+                            <fieldset class="text-data">
+                                <section>
+                                    <header>
+                                        Представьтесь
+                                    </header>
+                                    <div class="inline">
+                                        <input type="text" placeholder="Представьтесь">
+                                    </div>
+                                    <div class="inline">
+                                        <input type="text" placeholder="Телефон или email">
+                                    </div>
+                                </section>
+                            </fieldset>
+                            <fieldset>
+                                <section>
+                                    <div class="price inline">
+                                        Стоимость услуги за сутки: <span>4500 руб.</span>
+                                    </div>                                                                        
+                                    <button type="button" class="btn bordered inline">
+                                        Забронировать
+                                    </button> 
+                                </section>
+                            </fieldset>                                                   
+                        </form>
+                    </div>
+                </div>
+                <div class="phone">
+                    <a href="tel:+34560052222">
+                        <span class="icon icon-phone"></span> +34 56 005 22 22
+                    </a>
+                </div>
+                <div class="lang">
+                    <ul class="lang-ul">
+                        <li class="lang-li">
+                            <a href="#">EN</a>
+                        </li>
+                        <li class="lang-li">
+                            <a href="#">RU</a>
+                        </li>
+                    </ul>
+                </div>                
+            </header>
+
+            <main role="main">
+                <div class="slideshow" id="slideshow">
+                    <div class="slide">
+                        <div class="slide-bg" style="background-image: url(img/slides/01.jpg);"></div>
+                        <section class="slide-cont">
+                            <header>
+                                <div class="slide-logo">
+                                    
+                                </div>
+                                <h2 class="slide-head">
+                                    1000 и 1 ночь
+                                </h2>
+                                <div class="desc">
+                                    Изысканная кухня Кавказа
+                                </div>
+                            </header>
+                            <div class="slide-desc">
+                                Ресторан нашего отеля порадует своих гостей разнообразием блюд традиционной и национальной кухни, экзотическими яствами местной культуры и профессиональным обслуживанием. Насладитеcь теплой атмосферой уюта и гостеприимства со своими партнерами, друзьями и близкими. 
+                            </div>
+                        </section>
+                    </div>
+                    <div class="arrow arrow-left"><span class="icon icon-angle-left"></span></div>
+                    <div class="arrow arrow-right"><span class="icon icon-angle-right"></span></div>
+                </div>
+                <section class="sect-wrap restaurant-2">
+                    <h1>
+                        Гостеприимство - наша
+                        национальность
+                    </h1>
+                    <div class="row clearfix">
+                        <div class="column half">
+                            <div class="section-desc">
+                                Традиционные и авторские блюда, гриль-меню и аутентичная национальная кухня.
+                                В организации работы ресторана мы придерживаемся стандартов «Халал»
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row clearfix margin-top-40">
+                        <div class="column fourth text-center">
+                            <img class="margin-bottom-40" src="img/restaurant/01.jpg">
+                            <div class="list-head">Завтрак</div>
+                            <div class="list-desc">
+                                Для наших гостей, ежедневно с 7 до 10 часов
+                                утра, в нашем ресторане сервируется завтрак,
+                                стоимость которого включена в цену номера
+                            </div>
+                        </div>
+                        <div class="column fourth text-center">
+                            <img class="margin-bottom-40" src="img/restaurant/02.jpg">
+                            <div class="list-head">Бизнес-ланч</div>
+                            <div class="list-desc">
+                                с 12 до 15 часов в будние дни – комплексное
+                                предложение «Бизнес-ланч» по специальной
+                                цене
+                            </div>
+                        </div>
+                        <div class="column fourth text-center">
+                            <img class="margin-bottom-40" src="img/restaurant/03.jpg">
+                            <div class="list-head">Гриль-меню</div>
+                            <div class="list-desc">
+                                Наших гостей обязательно порадуют блюда
+                                из специального гриль-меню
+                            </div>
+                        </div>
+                        <div class="column fourth text-center">
+                            <img class="margin-bottom-40" src="img/restaurant/04.jpg">
+                            <div class="list-head">Дагестанская кухня</div>
+                            <div class="list-desc">
+                                Страница аутентичной национальной кухни
+                                для наших гостей, желающих познать
+                                гастрономическое разнообразие Дагестана.
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="sect-wrap mini-footer">
+                    <header>
+                        <div class="small-logo">
+                            
+                        </div> 1000 и 1 ночь
+                    </header>
+                    <div class="call">
+                        Вопросы администратору<br>
+                        Вы можете задать по телефону
+                        <a href="tel:+74958944455">+7 495 894 44 55</a>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="main-footer">
+                <div class="copy">
+                    © Sarykum hotel and spa 2014
+                </div>
+                <div class="dev">
+                    Made in <a href="http://grapheme.ru" target="_blank">GRPHM</a>
+                </div>
+            </footer>
+        </div>
+
+        
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/index.js"></script>
+    </body>
+</html>
