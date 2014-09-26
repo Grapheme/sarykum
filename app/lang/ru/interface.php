@@ -20,7 +20,7 @@ return array(
     'reserve.select' => 'Выберите номер и дату',
     'reserve.success' => 'Ваш заказ успешно отправлен администратору',
     'reserve.to' => 'по',
-    'title.actions' => 'Акции',
+    'title.actions' => 'Новости и акции',
     'rooms.single_occupancy' => 'одноместное размещение',
     'rooms.double_occupancy' => 'двухместное размещение',
 );

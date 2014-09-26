@@ -12,11 +12,6 @@ $news = News::where('type_id', Dic::valueBySlugs('news_type', 'restaurant')->id)
 
 
 @section('style')
-<style>
-.sect-wrap.restaurant:after {
-    background-image: none !important;
-}
-</style>
 @stop
 
 
