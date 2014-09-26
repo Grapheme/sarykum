@@ -84,7 +84,7 @@ $news = News::where('type_id', Dic::valueBySlugs('news_type', 'spa')->id)
                 $photo = @is_object($new->meta->photo) ? $new->meta->photo->thumb() : false;
                 ?>
                 <li class="square-li">
-                    <a href="{{ URL::route('page', 'actions') }}"></a>
+                    <a href="{{ URL::route('page', 'actions') }}#{{ $new->slug }}"></a>
                     <div class="square-li-img" style="background-image: url({{ $photo }});"></div>
                     <span>{{ $new->meta->title }}</span>
                 </li>
