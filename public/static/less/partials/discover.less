@@ -1,0 +1,51 @@
+.discover-cont {
+	.column {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		float: none;
+		padding: 95rem / @htmlFontSize 0 0;
+		text-align: center;
+
+		&:before {
+			content: "●";
+			position: absolute;
+			top: 45rem / @htmlFontSize;
+			left: 0;
+
+			width: 100%;
+			color: #000;
+		}
+	}
+}
+.discover-map {
+	height: 401rem / @htmlFontSize;
+	margin-top: 80rem / @htmlFontSize;
+	padding: 95rem / @htmlFontSize 0;
+	text-align: center;
+
+	background: url(../img/map.jpg) no-repeat center 0 / cover;
+
+	color: #fff;
+
+	h2 {
+		position: relative;
+		font-size: 56em / @htmlFontSize;
+		text-transform: uppercase;
+		line-height: .75;
+
+		&:after {
+			content: '';
+			position: absolute;
+			bottom: -25rem / @htmlFontSize;
+			left: 50%;
+
+			width: 54rem / @htmlFontSize;
+			margin-left: -27rem / @htmlFontSize;
+			border-bottom: 1px solid;
+		}
+	}
+	p {
+		margin: 22rem / @htmlFontSize 0 32rem / @htmlFontSize;
+	}
+}
