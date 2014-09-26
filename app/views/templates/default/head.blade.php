@@ -12,6 +12,7 @@
 <title>@yield('title')</title>
 <meta name="description" content="@yield('description')">
 <meta name="keywords" content="@yield('keywords')">
+<link rel="icon" type="image/png" href="{{asset('img/favicon.png');}}" >
 {{ HTML::style('theme/css/normalize.css') }}
 {{ HTML::style('theme/css/main.css') }}
 {{ HTML::style('css/font-awesome.min.css') }}
