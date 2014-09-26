@@ -28,7 +28,7 @@ $news = News::where('type_id', Dic::valueBySlugs('news_type', 'restaurant')->id)
             <div class="arrow arrow-right"><span class="icon icon-angle-right"></span></div>
             <div class="arrow-bottom"><span class="icon icon-angle-down"></span></div>
         </div>
-        <section class="sect-wrap restaurant-2">
+        <section class="sect-wrap restaurant-2 margin-bottom-40">
 
             {{ $page->block('description') }}
 
