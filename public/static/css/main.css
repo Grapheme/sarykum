@@ -1603,6 +1603,13 @@ main.full-screen {
   color: #ffffff;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.35);
 }
+.room-item .room-price.room-price-1 {
+  font-size: 1.4375rem;
+  margin: 3.75rem 0 1.25rem;
+}
+.room-item .room-price.room-price-2 {
+  font-size: 1.4375rem;
+}
 .room-item .room-price:after {
   content: '\e802';
   font-family: 'fontello';
