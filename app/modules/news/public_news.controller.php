@@ -58,6 +58,8 @@ class PublicNewsController extends BaseController {
                     'pagination' => 1,
                     'type' => false,
                     'exclude_type' => false,
+                    'include' => false,
+                    'exclude' => false,
                 );
         		## Применяем переданные настройки
                 $params = $params+$default;
@@ -128,6 +130,24 @@ class PublicNewsController extends BaseController {
                                 $news = $news->whereNotIn('type_id', $types);
                         }
                     }
+                }
+
+                /**
+                 * Будем выводить только новости, ID которых указаны
+                 */
+
+                if (@$params['include']) {
+                    $params['includes'] = (array)explode(',', $params['include']);
+                    if (isset($params['includes']) && is_array($params['includes']) && count($params['includes']))
+                        $news = $news->whereIn('id', $params['includes']);
+                }
+                /**
+                 * Исключаем новости с заданными ID
+                 */
+                if (@$params['exclude']) {
+                    $params['excludes'] = (array)explode(',', $params['exclude']);
+                    if (isset($params['excludes']) && is_array($params['excludes']) && count($params['excludes']))
+                        $news = $news->whereNotIn('id', $params['excludes']);
                 }
 
                 $news = $news->paginate($params['limit']);
