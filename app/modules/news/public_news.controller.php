@@ -56,6 +56,8 @@ class PublicNewsController extends BaseController {
                     'limit' => Config::get('app-default.news_count_on_page', 3),
                     'order' => Helper::stringToArray(News::$order_by),
                     'pagination' => 1,
+                    'type' => false,
+                    'exclude_type' => false,
                 );
         		## Применяем переданные настройки
                 $params = $params+$default;
@@ -85,6 +87,48 @@ class PublicNewsController extends BaseController {
                 $news = $selected_news->paginate($params['limit']); ## news list with pagination
                 #$news = $selected_news->get(); ## all news, without pagination
                 */
+
+                /**
+                 * Показываем новости только определенных типов
+                 */
+                if (@$params['type']) {
+                    $params['types'] = (array)explode(',', $params['type']);
+                    #Helper::d($params);
+                    if (
+                        isset($params['types']) && is_array($params['types']) && count($params['types'])
+                        && Allow::module('dictionaries') && class_exists('DicVal')
+                    ) {
+                        $types = DicVal::whereIn('slug', $params['types'])->get();
+                        #Helper::tad($types);
+                        if ($types->count()) {
+                            $types = $types->lists('id');
+                            #Helper::tad($types);
+                            if (count($types))
+                                $news = $news->whereIn('type_id', $types);
+                        }
+                    }
+                }
+
+                /**
+                 * Исключаем новости определенных типов
+                 */
+                if (@$params['exclude_type']) {
+                    $params['exclude_types'] = (array)explode(',', $params['exclude_type']);
+                    #Helper::d($params);
+                    if (
+                        isset($params['exclude_types']) && is_array($params['exclude_types']) && count($params['exclude_types'])
+                        && Allow::module('dictionaries') && class_exists('DicVal')
+                    ) {
+                        $types = DicVal::whereIn('slug', $params['exclude_types'])->get();
+                        #Helper::tad($types);
+                        if ($types->count()) {
+                            $types = $types->lists('id');
+                            #Helper::tad($types);
+                            if (count($types))
+                                $news = $news->whereNotIn('type_id', $types);
+                        }
+                    }
+                }
 
                 $news = $news->paginate($params['limit']);
 
