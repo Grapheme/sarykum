@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/fonts.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="wrapper">
+            <header class="main-header">
+                <div class="logo">
+                    <a href="index.html"></a>
+                </div>
+                <nav>
+                    <ul class="nav-ul">
+                        <li class="nav-li">
+                            <a data-hover="Номера" href="rooms.html">
+                                <span>Номера
+                            </a>
+                        <li class="nav-li">
+                            <a data-hover="SPA" href="spa.html">
+                                <span>SPA
+                            </a>
+                        <li class="nav-li">
+                            <a data-hover="Ресторан" href="rest.html">
+                                <span>Ресторан
+                            </a>
+                        <li class="nav-li">
+                            <a data-hover="Discover Dagestan" href="discover.html">
+                                <span>Discover Dagestan
+                            </a>
+                        <li class="nav-li">
+                            <a data-hover="Услуги" href="services.html">
+                                <span>Услуги</span>
+                            </a>
+                        <li class="nav-li">
+                            <a data-hover="Акции" href="#">
+                                <span>Акции
+                            </a>
+                    </ul>
+                </nav>
+                <div class="booking" id="bookBtn">
+                    Бронировать <span class="icon icon-angle-right"></span>
+                    <div class="booking-form">
+                        <div class="form-success">
+                            Ваша бронь успешно отправлена администратору
+                        </div>
+                        <form>
+                            <fieldset class="date-data">
+                                <section>
+                                    <header>
+                                        Выберите номер и дату
+                                    </header>
+                                    <div class="inline">
+                                        <select>
+                                            <option>Стандартный номер</option>
+                                            <option>Нестандартный номер</option>
+                                        </select>
+                                    </div>
+                                    <section class="datepickerFrom inline">
+                                        с
+                                        <input id="datepickerFrom" class="datepicker" type="text">
+                                    </section>
+                                    <section class="datepickerTo inline">
+                                        по
+                                        <input id="datepickerTo" type="text">
+                                    </section> 
+                                </section>
+                            </fieldset>
+                            <fieldset class="text-data">
+                                <section>
+                                    <header>
+                                        Представьтесь
+                                    </header>
+                                    <div class="inline">
+                                        <input type="text" placeholder="Представьтесь">
+                                    </div>
+                                    <div class="inline">
+                                        <input type="text" placeholder="Телефон или email">
+                                    </div>
+                                </section>
+                            </fieldset>
+                            <fieldset>
+                                <section>
+                                    <div class="price inline">
+                                        Стоимость услуги за сутки: <span>4500 руб.</span>
+                                    </div>                                                                        
+                                    <button type="button" class="btn bordered inline">
+                                        Забронировать
+                                    </button> 
+                                </section>
+                            </fieldset>                                                   
+                        </form>
+                    </div>
+                </div>
+                <div class="phone">
+                    <a href="tel:+34560052222">
+                        <span class="icon icon-phone"></span> +34 56 005 22 22
+                    </a>
+                </div>
+                <div class="lang">
+                    <ul class="lang-ul">
+                        <li class="lang-li">
+                            <a href="#">EN</a>
+                        </li>
+                        <li class="lang-li">
+                            <a href="#">RU</a>
+                        </li>
+                    </ul>
+                </div>                
+            </header>
+
+            <main role="main">
+                <div class="slideshow" id="slideshow">
+                    <div class="slide">
+                        <div class="slide-bg" style="background-image: url(img/slides/dag-01.jpg);"></div>
+                        <section class="slide-cont">
+                            <header>
+                                <div class="slide-logo">
+                                    
+                                </div>
+                                <h2 class="slide-head">
+                                    Исследуйте Дагестан
+                                </h2>
+                                <div class="desc">
+                                    Колыбель Кавказа
+                                </div>
+                            </header>
+                            <div class="slide-desc">
+                                Республика Дагестан - республика в составе Российской
+                                Федерации, самый южный субъект Российской Федерации,
+                                входит в состав Северо-Кавказского федерального округа
+                            </div>
+                        </section>
+                    </div>
+                    <div class="arrow arrow-left"><span class="icon icon-angle-left"></span></div>
+                    <div class="arrow arrow-right"><span class="icon icon-angle-right"></span></div>
+                    <div class="arrow-bottom"><span class="icon icon-angle-down"></span></div>
+                </div>
+                <section class="sect-wrap discover margin-bottom-40">
+                    <h1 class="text-center">
+                        Мы рады вам предложить
+                    </h1>
+                    <div class="row clearfix discover-cont">
+                        <div class="column third">
+                            <div class="list-head">54 номера</div>
+                            <div class="list-desc">
+                                оснащенные в полном соответствии<br>
+                                с современными стандартами эргономики<br>
+                                и дизайна в сфере гостеприимства
+                            </div>
+                  </div><div class="column third">
+                            <div class="list-head">SPA-центр</div>
+                            <div class="list-desc">
+                                общей площадью более 500 квадратных<br>
+                                метров с 18-метровым бассейном
+                            </div>
+                  </div><div class="column third">
+                            <div class="list-head">Конференц-зал</div>
+                            <div class="list-desc">
+                                на 175 мест, оборудованный<br>
+                                для проведения семинаров<br>
+                                и деловых мероприятий
+                            </div>
+                  </div><div class="column third">
+                            <div class="list-head">Уютный ресторан</div>
+                            <div class="list-desc">
+                                с авторским меню от шеф-повара,<br>
+                                кафе-бар с богатой картой горячих<br>
+                                и освежающих напитков, барбекю<br>
+                                на свежем воздухе
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="discover-map">
+                    <h2>
+                        Вы по адресу
+                    </h2>
+                    <p>
+                        20 минут на автомобиле из пыльной и шумной Махачкалы по<br>
+                        федеральной трассе Н29 «Кавказ»
+                    </p>
+                    <p>
+                        Координаты для навигатора: 43°3’55”N 47°13’54”E
+                    </p>
+                </section>
+            </main>
+
+            <footer class="main-footer">
+                <div class="copy">
+                    © Sarykum hotel and spa 2014
+                </div>
+                <div class="dev">
+                    Made in <a href="http://grapheme.ru" target="_blank">GRPHM</a>
+                </div>
+            </footer>
+        </div>
+
+        
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>
