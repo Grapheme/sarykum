@@ -14,7 +14,8 @@ return array(
     'host' => 'in.mailjet.com',
     'port' => 587,
     'from' => array(
-        'address' => 'support@grapheme.ru',
+        #'address' => 'support@grapheme.ru',
+        'address' => 'no-reply@sarykum.com',
         'name' => 'Sarykum'
     ),
     'username' => '0d8dd8623bd38b41c43683c41c0558eb',
