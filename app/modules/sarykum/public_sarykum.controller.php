@@ -91,6 +91,12 @@ class PublicSarykumController extends BaseController {
             $message->from(Config::get('mail.from.address'), Config::get('mail.from.name'));
             $message->subject('Бронирование номера');
             $message->to(Config::get('mail.feedback.address'));
+
+            $ccs = Config::get('mail.feedback.cc');
+            if (isset($ccs) && is_array($ccs) && count($ccs))
+                foreach ($ccs as $cc)
+                    $message->cc($cc);
+
         });
         #Helper::dd($result);
         return Response::json($json_request, 200);

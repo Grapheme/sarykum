@@ -3,10 +3,11 @@
 return array(
 
     'feedback' => array(
-        'address' => 'support@grapheme.ru,info@sarykum.com',
+        'address' => 'support@grapheme.ru',
         #'address' => 'az@grapheme.ru',
         #'address' => 'reserved@mail.ru',
         #'subject' => 'ВидеоГид, обратная связь',
+        'cc' => array('info@sarykum.com'),
     ),
 
     'driver' => 'smtp',
