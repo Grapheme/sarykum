@@ -122,7 +122,6 @@ $news = News::where('type_id', Dic::valueBySlugs('news_type', 'spa')->id)
                 Вопросы администратору<br>
                 Вы можете задать по телефонам
                 <a href="tel:+78722934803">+7 (8722) 93-48-03</a>
-                <a href="tel:+78722211222">+7 (8722) 21-12-22</a>
             </div>
         </section>
     </main>
