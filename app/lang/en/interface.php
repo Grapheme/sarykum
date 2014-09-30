@@ -12,7 +12,7 @@ return array(
     'menu.rooms' => 'Rooms',
     'menu.services' => 'Services',
     'menu.spa' => 'SPA',
-    'phone_number' => '+7 (8722) 21-12-22',
+    'phone_number' => '+7 (8722) 93-48-03',
     'reserve.contact' => 'Phone number or e-mail address',
     'reserve.daily_price' => 'Cost per night:',
     'reserve.from' => '&nbsp;',
