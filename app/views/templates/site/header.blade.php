@@ -48,6 +48,7 @@ page:rooms = {{ URL::route('page', 'rooms') }}
                 </div>
                 @endif
                 <nav>
+                    @if (0)
                     <ul class="nav-ul">
                         <li class="nav-li">
                             <a data-hover="{{ trans('interface.menu.rooms') }}" href="{{ URL::route('page', 'rooms') }}">
@@ -74,6 +75,8 @@ page:rooms = {{ URL::route('page', 'rooms') }}
                                 <span>{{ trans('interface.menu.actions') }}
                             </a>
                     </ul>
+                    @endif
+                    {{ Helper::getMenu('header_menu') }}
                 </nav>
                 <div class="booking" id="bookBtn">
                     {{ trans('interface.menu.reserve') }} <span class="icon icon-angle-right"></span>
