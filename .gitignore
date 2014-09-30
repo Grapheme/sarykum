@@ -5,7 +5,7 @@
 /usersfiles
 #/public/uploads
 #public/uploads/*
-/vendor/*
+/vendor
 #composer.phar
 #composer.lock
 #.DS_Store
@@ -16,3 +16,4 @@ Thumbs.db
 #app/config/database.php
 /!info
 /app/storage
+/app/lang
