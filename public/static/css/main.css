@@ -1872,6 +1872,10 @@ nav {
   font-style: normal;
   text-transform: none;
 }
+.main-footer .htg-link {
+  text-transform: capitalize;
+  margin-left: 1.5rem;
+}
 .main-footer.static-footer {
   position: relative;
   top: 0;

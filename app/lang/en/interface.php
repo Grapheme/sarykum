@@ -4,6 +4,7 @@ return array(
     'currency_short' => 'RUB.',
     'footer.address' => 'Russian Federation, Republic of Dagestan, Kumtorkalinsky district, village Tube',
     'footer.copyright' => 'Sarykum hotel and spa',
+    'footer.how_to_get' => 'How to get there',
     'footer.made_by_grapheme' => 'Made by <a href="http://grapheme.ru" target="_blank">Grapheme</a>',
     'menu.actions' => 'News and actions',
     'menu.discover' => 'About hotel',

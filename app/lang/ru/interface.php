@@ -4,6 +4,7 @@ return array(
     'currency_short' => 'руб.',
     'footer.address' => 'Республика Дагестан, Кумторкалинский район, поселок Тюбе',
     'footer.copyright' => 'Sarykum hotel and spa',
+    'footer.how_to_get' => 'Как добраться',
     'footer.made_by_grapheme' => 'Сделано в <a href="http://grapheme.ru" target="_blank">Графема</a>',
     'menu.actions' => 'Новости и Акции',
     'menu.discover' => 'Об отеле',
