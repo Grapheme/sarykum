@@ -1813,6 +1813,7 @@ nav {
   padding: 0.6rem 1.5625rem;
   color: #000000;
   font-weight: 600;
+  text-align: right;
 }
 .phone a {
   border-bottom: none;
