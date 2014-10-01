@@ -10,7 +10,7 @@ return array(
     'menu.reserve' => 'Reserve room',
     'menu.restaurant' => 'Restaurant',
     'menu.rooms' => 'Rooms',
-    'menu.services' => 'Services',
+    'menu.services' => 'Conference hall',
     'menu.spa' => 'SPA',
     'phone_number' => '+7 (8722) 93-48-03',
     'reserve.contact' => 'Phone number or e-mail address',

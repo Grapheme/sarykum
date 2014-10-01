@@ -10,7 +10,7 @@ return array(
     'menu.reserve' => 'Бронировать',
     'menu.restaurant' => 'Ресторан',
     'menu.rooms' => 'Номера',
-    'menu.services' => 'Услуги',
+    'menu.services' => 'Конференц-зал',
     'menu.spa' => 'SPA',
     'phone_number' => '+7 (8722) 93-48-03',
     'reserve.contact' => 'Номер телефона или e-mail',
