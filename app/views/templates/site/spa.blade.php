@@ -32,6 +32,22 @@ $news = News::where('type_id', Dic::valueBySlugs('news_type', 'spa')->id)
 
                 </section>
             </div>
+            <div class="slide">
+                <div class="slide-bg" style="background-image: url({{ asset('/uploads/files/1412094710_1977.jpg') }} );"></div>
+                <section class="slide-cont">
+
+                    {{ $page->block('slide-cont') }}
+
+                </section>
+            </div>
+            <div class="slide">
+                <div class="slide-bg" style="background-image: url({{ asset('/uploads/files/1412094723_1591.jpg') }} );"></div>
+                <section class="slide-cont">
+
+                    {{ $page->block('slide-cont') }}
+
+                </section>
+            </div>
             <div class="arrow arrow-left"><span class="icon icon-angle-left"></span></div>
             <div class="arrow arrow-right"><span class="icon icon-angle-right"></span></div>
             <div class="arrow-bottom"><span class="icon icon-angle-down"></span></div>
