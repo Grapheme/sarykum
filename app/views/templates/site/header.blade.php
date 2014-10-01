@@ -135,9 +135,13 @@ page:rooms = {{ URL::route('page', 'rooms') }}
                     </div>
                 </div>
                 <div class="phone">
-                    <a href="#">
+                    <a href="tel:{{interface.phone_number_raw}}">
                         <span class="icon icon-phone"></span>
                         {{ trans('interface.phone_number') }}
+                    </a>
+                    <br>
+                    <a href="mailto:info@sarykum.com">
+                        info@sarykum.com
                     </a>
                 </div>
                 <div class="lang">

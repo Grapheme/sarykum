@@ -13,6 +13,7 @@ return array(
     'menu.services' => 'Conference hall',
     'menu.spa' => 'SPA',
     'phone_number' => '+7 (8722) 93-48-03',
+    'phone_number_raw' => '+78722934803',
     'reserve.contact' => 'Phone number or e-mail address',
     'reserve.daily_price' => 'Cost per night:',
     'reserve.from' => '&nbsp;',

@@ -1809,10 +1809,10 @@ nav {
 }
 .phone {
   float: right;
-  padding: 0 1.5625rem;
+  line-height: 1.425rem;
+  padding: 0.6rem 1.5625rem;
   color: #000000;
   font-weight: 600;
-  line-height: 4.125rem;
 }
 .phone a {
   border-bottom: none;

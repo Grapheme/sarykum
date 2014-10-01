@@ -13,6 +13,7 @@ return array(
     'menu.services' => 'Конференц-зал',
     'menu.spa' => 'SPA',
     'phone_number' => '+7 (8722) 93-48-03',
+    'phone_number_raw' => '+78722934803',
     'reserve.contact' => 'Номер телефона или e-mail',
     'reserve.daily_price' => 'Цена за сутки:',
     'reserve.from' => 'с',
