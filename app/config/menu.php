@@ -25,7 +25,7 @@ return array(
                 
                 array(
                     '_route' => 'page',
-                    '_params' => 'discover',
+                    '_params' => 'about',
                     '_text' => trans('interface.menu.discover'),
                 ),
                 array(
