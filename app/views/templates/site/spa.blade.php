@@ -62,17 +62,17 @@ $news = News::where('type_id', Dic::valueBySlugs('news_type', 'spa')->id)
             {{ $page->block('service_menu') }}
 
             <ul id="tabContent" class="tab-content">
-                <li class="tab-li" data-tab="firm">
+                <li class="tab-li" data-tab="spa">
 
                     {{ $page->block('service_1') }}
 
                 </li>
-                <li class="tab-li" data-tab="snack">
+                <li class="tab-li" data-tab="company">
 
                     {{ $page->block('service_2') }}
 
                 </li>
-                <li class="tab-li" data-tab="salad">
+                <li class="tab-li" data-tab="season-tickets">
 
                     {{ $page->block('service_3') }}
 
