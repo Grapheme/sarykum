@@ -8,7 +8,7 @@
                 <address>
                     {{ trans('interface.footer.address') }}
                 </address>
-                <a class="htg-link" href="{{ URL::route('page', 'about#map') }}">
+                <a class="htg-link" href="{{ URL::route('page', 'about') }}#map">
                     {{ trans('interface.footer.how_to_get') }}
                 </a>
                 <div class="dev">
