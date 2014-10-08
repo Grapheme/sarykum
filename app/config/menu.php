@@ -22,6 +22,12 @@ return array(
 
             'elements' => array(
 
+                
+                array(
+                    '_route' => 'page',
+                    '_params' => 'about',
+                    '_text' => trans('interface.menu.discover'),
+                ),
                 array(
                     '_route' => 'page',
                     '_params' => 'rooms',
@@ -41,11 +47,6 @@ return array(
                     '_route' => 'page',
                     '_params' => 'services',
                     '_text' => trans('interface.menu.services'),
-                ),
-                array(
-                    '_route' => 'page',
-                    '_params' => 'discover',
-                    '_text' => trans('interface.menu.discover'),
                 ),
                 array(
                     '_route' => 'page',

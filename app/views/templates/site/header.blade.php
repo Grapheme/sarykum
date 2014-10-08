@@ -51,6 +51,10 @@ page:rooms = {{ URL::route('page', 'rooms') }}
                     @if (0)
                     <ul class="nav-ul">
                         <li class="nav-li">
+                            <a data-hover="{{ trans('interface.menu.discover') }}" href="{{ URL::route('page', 'discover') }}">
+                                <span>{{ trans('interface.menu.discover') }}
+                            </a>
+                        <li class="nav-li">
                             <a data-hover="{{ trans('interface.menu.rooms') }}" href="{{ URL::route('page', 'rooms') }}">
                                 <span>{{ trans('interface.menu.rooms') }}
                             </a>
@@ -65,11 +69,7 @@ page:rooms = {{ URL::route('page', 'rooms') }}
                         <li class="nav-li">
                             <a data-hover="{{ trans('interface.menu.services') }}" href="{{ URL::route('page', 'services') }}">
                                 <span>{{ trans('interface.menu.services') }}
-                            </a>
-                        <li class="nav-li">
-                            <a data-hover="{{ trans('interface.menu.discover') }}" href="{{ URL::route('page', 'discover') }}">
-                                <span>{{ trans('interface.menu.discover') }}
-                            </a>
+                            </a>                        
                         <li class="nav-li">
                             <a data-hover="{{ trans('interface.menu.actions') }}" href="{{ URL::route('page', 'actions') }}">
                                 <span>{{ trans('interface.menu.actions') }}
@@ -135,9 +135,13 @@ page:rooms = {{ URL::route('page', 'rooms') }}
                     </div>
                 </div>
                 <div class="phone">
-                    <a href="#">
+                    <a href="tel:{{ trans('interface.phone_number_raw') }}">
                         <span class="icon icon-phone"></span>
                         {{ trans('interface.phone_number') }}
+                    </a>
+                    <br>
+                    <a href="mailto:info@sarykum.com">
+                        info@sarykum.com
                     </a>
                 </div>
                 <div class="lang">
