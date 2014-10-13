@@ -1818,6 +1818,13 @@ nav {
 .phone a {
   border-bottom: none;
 }
+.phone a[href^="mailto"] {
+  font-size: .9em;
+  font-weight: normal;
+  padding-right: 0.4rem;
+  line-height: 1.9em;
+  letter-spacing: 0.25px;
+}
 .booking {
   position: relative;
   float: right;
