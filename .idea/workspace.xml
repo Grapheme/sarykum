@@ -5,7 +5,10 @@
     <bookmark url="file://$PROJECT_DIR$/app/modules/system/views/admin/locale_editor/list.blade.php" line="442" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9eb288a-66f5-42e9-a6ae-4f6f60b8c9bd" name="Default" comment="" />
+    <list default="true" id="f9eb288a-66f5-42e9-a6ae-4f6f60b8c9bd" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/GoogleAnalytics.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="archive.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="app/lib/SystemModules_original.php_" />
@@ -33,8 +36,18 @@
       <file leaf-file-name="UrlGenerator.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="7404" max-vertical-offset="9197">
+            <state vertical-scroll-proportion="-12.076923" vertical-offset="7404" max-vertical-offset="9197">
               <caret line="455" column="14" selection-start-line="455" selection-start-column="14" selection-end-line="455" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scripts.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/templates/site/scripts.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6876791" vertical-offset="338" max-vertical-offset="969">
+              <caret line="34" column="42" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -60,15 +73,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Helper.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Helper.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/lib/Helper.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.24156305" vertical-offset="10591" max-vertical-offset="15657">
+            <state vertical-scroll-proportion="0.0" vertical-offset="10574" max-vertical-offset="15436">
               <caret line="622" column="0" selection-start-line="622" selection-start-column="0" selection-end-line="622" selection-end-column="0" />
               <folding>
-                <marker date="1412075751208" expanded="true" signature="936:951" placeholder="..." />
-                <marker date="1412075751208" expanded="true" signature="9629:9741" placeholder="..." />
-                <marker date="1412075751208" expanded="true" signature="9687:9741" placeholder="..." />
+                <marker date="1412755243788" expanded="true" signature="936:951" placeholder="..." />
+                <marker date="1412755243788" expanded="true" signature="9629:9741" placeholder="..." />
+                <marker date="1412755243788" expanded="true" signature="9687:9741" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -184,8 +197,8 @@
         <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php" />
         <option value="$PROJECT_DIR$/app/modules/pages/public_pages.controller.php" />
         <option value="$PROJECT_DIR$/app/lib/CustomUrlGenerator.php" />
-        <option value="$PROJECT_DIR$/app/lib/Helper.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/app/lib/Helper.php" />
         <option value="$PROJECT_DIR$/app/views/templates/site/scripts.blade.php" />
       </list>
     </option>
@@ -891,7 +904,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34796748" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34796748" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35447153" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2985318" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1059,13 +1072,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/templates/site/discover.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="459">
-          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/templates/site/head.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="561">
@@ -1182,7 +1188,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.36541888" vertical-offset="131375" max-vertical-offset="207349">
           <caret line="7744" column="38" selection-start-line="7744" selection-start-column="38" selection-end-line="7744" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1263,14 +1268,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="7404" max-vertical-offset="9197">
-          <caret line="455" column="14" selection-start-line="455" selection-start-column="14" selection-end-line="455" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/lib/CustomUrlGenerator.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="1649">
@@ -1311,33 +1308,51 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/sarykum.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
       <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/templates/site/scripts.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36589697" vertical-offset="168" max-vertical-offset="799">
-          <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/lib/Helper.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24156305" vertical-offset="10591" max-vertical-offset="15657">
+        <state vertical-scroll-proportion="0.0" vertical-offset="10574" max-vertical-offset="15436">
           <caret line="622" column="0" selection-start-line="622" selection-start-column="0" selection-end-line="622" selection-end-column="0" />
           <folding>
-            <marker date="1412075751208" expanded="true" signature="936:951" placeholder="..." />
-            <marker date="1412075751208" expanded="true" signature="9629:9741" placeholder="..." />
-            <marker date="1412075751208" expanded="true" signature="9687:9741" placeholder="..." />
+            <marker date="1412755243788" expanded="true" signature="936:951" placeholder="..." />
+            <marker date="1412755243788" expanded="true" signature="9629:9741" placeholder="..." />
+            <marker date="1412755243788" expanded="true" signature="9687:9741" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.076923" vertical-offset="7404" max-vertical-offset="9197">
+          <caret line="455" column="14" selection-start-line="455" selection-start-column="14" selection-end-line="455" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/GoogleAnalytics.txt">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/templates/site/scripts.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6876791" vertical-offset="338" max-vertical-offset="969">
+          <caret line="34" column="42" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
