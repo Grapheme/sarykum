@@ -1540,6 +1540,9 @@ main.full-screen {
   width: 100%;
   color: #000;
 }
+.rooms .column.third {
+  height: 27.25rem;
+}
 .rooms-wrap {
   padding: 2rem;
 }
@@ -1810,6 +1813,7 @@ nav {
 .phone {
   float: right;
   line-height: 1.425rem;
+  height: 4.125rem;
   padding: 0.6rem 1.5625rem;
   color: #000000;
   font-weight: 600;
