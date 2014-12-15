@@ -1542,6 +1542,7 @@ main.full-screen {
 }
 .rooms .column.third {
   height: 27.25rem;
+  font-size: 0.8em;
 }
 .rooms-wrap {
   padding: 2rem;
@@ -1607,11 +1608,11 @@ main.full-screen {
   text-shadow: 1px 1px rgba(0, 0, 0, 0.35);
 }
 .room-item .room-price.room-price-1 {
-  font-size: 1.75rem;
+  font-size: 1.75em;
   margin: 3.75rem 0 1.25rem;
 }
 .room-item .room-price.room-price-2 {
-  font-size: 1.75rem;
+  font-size: 1.75em;
 }
 .room-item .room-price:after {
   content: '\e802';
