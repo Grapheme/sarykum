@@ -42,7 +42,7 @@ if (@count($rooms))
                 $photo = Photo::find($obj->image) ?: false;
             }
             ?>
-            <div class="column half">
+            <div class="column third">
                 <div class="room-item" style="background-image:url({{ (is_object($photo) ? $photo->full() : '') }});">
                     <a href="{{ URL::route('room', $room->slug) }}">
                         @if ($room->name)
