@@ -90,6 +90,9 @@ $news = News::where('type_id', Dic::valueBySlugs('news_type', 'restaurant')->id)
             </div>
         </section>
         @endif
+
+        {{ $page->block('seo') }}
+
     </main>
 
 @stop

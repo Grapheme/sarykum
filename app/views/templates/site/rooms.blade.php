@@ -80,6 +80,8 @@ if (@count($rooms))
         </p>
     </section>
 
+    {{ $page->block('seo') }}
+
 </main>
 @stop
 

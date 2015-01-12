@@ -14,6 +14,8 @@
 
     {{ $page->block('content') }}
 
+    {{ $page->block('seo') }}
+
 @stop
 
 
