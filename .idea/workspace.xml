@@ -6,7 +6,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9eb288a-66f5-42e9-a6ae-4f6f60b8c9bd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/GoogleAnalytics.txt" />
+      <change type="DELETED" beforePath="C:\home\dev\sarykum\bootstrap\compiled.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates/site/about.blade.php" afterPath="$PROJECT_DIR$/app/views/templates/site/about.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates/site/actions.blade.php" afterPath="$PROJECT_DIR$/app/views/templates/site/actions.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates/site/index.blade.php" afterPath="$PROJECT_DIR$/app/views/templates/site/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates/site/restaurant.blade.php" afterPath="$PROJECT_DIR$/app/views/templates/site/restaurant.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates/site/rooms.blade.php" afterPath="$PROJECT_DIR$/app/views/templates/site/rooms.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates/site/services.blade.php" afterPath="$PROJECT_DIR$/app/views/templates/site/services.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates/site/spa.blade.php" afterPath="$PROJECT_DIR$/app/views/templates/site/spa.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="archive.iws" />
@@ -36,28 +43,8 @@
       <file leaf-file-name="UrlGenerator.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.076923" vertical-offset="7404" max-vertical-offset="9197">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="7718" max-vertical-offset="9129">
               <caret line="455" column="14" selection-start-line="455" selection-start-column="14" selection-end-line="455" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scripts.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/templates/site/scripts.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6876791" vertical-offset="338" max-vertical-offset="969">
-              <caret line="34" column="42" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CustomUrlGenerator.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/lib/CustomUrlGenerator.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="1649">
-              <caret line="84" column="22" selection-start-line="84" selection-start-column="22" selection-end-line="84" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -66,7 +53,7 @@
       <file leaf-file-name="app.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/config/app.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1326" max-vertical-offset="1938">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1751" max-vertical-offset="1870">
               <caret line="103" column="68" selection-start-line="103" selection-start-column="68" selection-end-line="103" selection-end-column="68" />
               <folding />
             </state>
@@ -76,7 +63,7 @@
       <file leaf-file-name="Helper.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/lib/Helper.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="10574" max-vertical-offset="15436">
+            <state vertical-scroll-proportion="0.0" vertical-offset="10574" max-vertical-offset="15368">
               <caret line="622" column="0" selection-start-line="622" selection-start-column="0" selection-end-line="622" selection-end-column="0" />
               <folding>
                 <marker date="1412755243788" expanded="true" signature="936:951" placeholder="..." />
@@ -87,21 +74,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="public_pages.controller.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/modules/pages/public_pages.controller.php">
+      <file leaf-file-name="spa.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/templates/site/spa.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="8347" max-vertical-offset="8636">
-              <caret line="491" column="0" selection-start-line="491" selection-start-column="0" selection-end-line="491" selection-end-column="0" />
+            <state vertical-scroll-proportion="-12.423077" vertical-offset="2125" max-vertical-offset="3113">
+              <caret line="144" column="0" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="room.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/templates/site/room.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="425">
-              <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.12255773" vertical-offset="1546" max-vertical-offset="2161">
+              <caret line="95" column="5" selection-start-line="95" selection-start-column="5" selection-end-line="95" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -147,61 +134,21 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
-    <option name="changedFiles">
+    <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/modules/system/admin_groups.controller.php" />
-        <option value="$PROJECT_DIR$/app/modules/system/admin_system.controller.php" />
-        <option value="$PROJECT_DIR$/app/modules/system/admin_modules.controller.php" />
-        <option value="$PROJECT_DIR$/app/modules/system/admin_users.controller.php" />
-        <option value="$PROJECT_DIR$/app/lib/SystemModules.php" />
-        <option value="$PROJECT_DIR$/app/routes.php" />
-        <option value="$PROJECT_DIR$/app/modules/system/views/admin/locale_editor/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/modules/pages/admin_pages.page.controller.php" />
-        <option value="$PROJECT_DIR$/app/modules/system/admin_localeEditor.controller.php" />
-        <option value="$PROJECT_DIR$/public/css/redactor.css" />
-        <option value="$PROJECT_DIR$/public/js/system/redactor-config.js" />
-        <option value="$PROJECT_DIR$/app/modules/pages/models/Page.php" />
-        <option value="$PROJECT_DIR$/app/config/site.php" />
-        <option value="$PROJECT_DIR$/app/modules/uploads/views/admin/menu.blade.php" />
-        <option value="$PROJECT_DIR$/public/css/your_style.css" />
-        <option value="$PROJECT_DIR$/app/modules/seo/admin_seo.controller.php" />
-        <option value="$PROJECT_DIR$/app/config/app.php" />
-        <option value="$PROJECT_DIR$/app/modules/seo/models/Seo.model.php" />
-        <option value="$PROJECT_DIR$/app/modules/dictionaries/models/DicVal.model.php" />
-        <option value="$PROJECT_DIR$/app/modules/dictionaries/views/admin/dicvals/edit.blade.php" />
-        <option value="$PROJECT_DIR$/app/modules/dictionaries/views/admin/dicvals/_dicval_meta.blade.php" />
-        <option value="$PROJECT_DIR$/app/modules/uploads/admin_uploads.controller.php" />
-        <option value="$PROJECT_DIR$/app/modules/news/views/sarykum-news-list.blade.php" />
-        <option value="$PROJECT_DIR$/app/config/dic/room_type.php" />
-        <option value="$PROJECT_DIR$/app/modules/system/views/admin/locale_editor/list.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/emails/reserve_success.blade.php" />
-        <option value="$PROJECT_DIR$/app/modules/news/views/sarykum-main-page.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/templates/site/index.blade.php" />
         <option value="$PROJECT_DIR$/app/views/templates/site/spa.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/templates/site/about.blade.php" />
         <option value="$PROJECT_DIR$/app/views/templates/site/actions.blade.php" />
         <option value="$PROJECT_DIR$/app/views/templates/site/restaurant.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/templates/site/discover.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/templates/site/head.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/templates/site/footer.blade.php" />
-        <option value="$PROJECT_DIR$/app/modules/dictionaries/admin_dicvals.controller.php" />
-        <option value="$PROJECT_DIR$/app/views/templates/site/rooms.blade.php" />
         <option value="$PROJECT_DIR$/app/views/templates/site/room.blade.php" />
-        <option value="$PROJECT_DIR$/../../order/stas/js/js.php" />
-        <option value="$PROJECT_DIR$/../../order/paramonovo/planirovka.html" />
-        <option value="$PROJECT_DIR$/app/modules/news/public_news.controller.php" />
-        <option value="$PROJECT_DIR$/app/modules/sarykum/public_sarykum.controller.php" />
-        <option value="$PROJECT_DIR$/app/config/mail.php" />
-        <option value="$PROJECT_DIR$/../cms/app/lib/Helper.php" />
-        <option value="$PROJECT_DIR$/../lavka/app/lib/Helper.php" />
-        <option value="$PROJECT_DIR$/app/views/templates/site/header.blade.php" />
-        <option value="$PROJECT_DIR$/app/config/menu.php" />
-        <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php" />
-        <option value="$PROJECT_DIR$/app/modules/pages/public_pages.controller.php" />
-        <option value="$PROJECT_DIR$/app/lib/CustomUrlGenerator.php" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/app/lib/Helper.php" />
-        <option value="$PROJECT_DIR$/app/views/templates/site/scripts.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/templates/site/rooms.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/templates/site/services.blade.php" />
       </list>
     </option>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
@@ -253,6 +200,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="LayoutCode.rearrangeEntriesPHP" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -294,300 +242,6 @@
       <created>1407760569597</created>
       <option name="number" value="Default" />
       <updated>1407760569597</updated>
-    </task>
-    <task id="LOCAL-00001" summary="+">
-      <created>1408362272483</created>
-      <option name="number" value="00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1408362272483</updated>
-    </task>
-    <task id="LOCAL-00002" summary="dicval i18n +++">
-      <created>1409057348854</created>
-      <option name="number" value="00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1409057348854</updated>
-    </task>
-    <task id="LOCAL-00003" summary="views+">
-      <created>1409063877737</created>
-      <option name="number" value="00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1409063877737</updated>
-    </task>
-    <task id="LOCAL-00004" summary="views+">
-      <created>1409064238666</created>
-      <option name="number" value="00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1409064238666</updated>
-    </task>
-    <task id="LOCAL-00005" summary="room reserve+">
-      <created>1409068931131</created>
-      <option name="number" value="00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1409068931131</updated>
-    </task>
-    <task id="LOCAL-00006" summary="room reserve+">
-      <created>1409069361307</created>
-      <option name="number" value="00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1409069361307</updated>
-    </task>
-    <task id="LOCAL-00007" summary="room reserve+">
-      <created>1409069576474</created>
-      <option name="number" value="00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1409069576474</updated>
-    </task>
-    <task id="LOCAL-00008" summary="room reserve+">
-      <created>1409069580000</created>
-      <option name="number" value="00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1409069580000</updated>
-    </task>
-    <task id="LOCAL-00009" summary="page module grand upgrade + custom UrlGenerator">
-      <created>1409149876036</created>
-      <option name="number" value="00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1409149876036</updated>
-    </task>
-    <task id="LOCAL-00010" summary="i18n+">
-      <created>1409151495953</created>
-      <option name="number" value="00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1409151495953</updated>
-    </task>
-    <task id="LOCAL-00011" summary="actions">
-      <created>1409210984816</created>
-      <option name="number" value="00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1409210984816</updated>
-    </task>
-    <task id="LOCAL-00012" summary="rooms+">
-      <created>1409220459977</created>
-      <option name="number" value="00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1409220459977</updated>
-    </task>
-    <task id="LOCAL-00013" summary="fix">
-      <created>1409220860184</created>
-      <option name="number" value="00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1409220860184</updated>
-    </task>
-    <task id="LOCAL-00014" summary="fix+">
-      <created>1409220906843</created>
-      <option name="number" value="00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1409220906843</updated>
-    </task>
-    <task id="LOCAL-00015" summary="fix+">
-      <created>1409221206807</created>
-      <option name="number" value="00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1409221206807</updated>
-    </task>
-    <task id="LOCAL-00016" summary="fix+">
-      <created>1409221429430</created>
-      <option name="number" value="00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1409221429430</updated>
-    </task>
-    <task id="LOCAL-00017" summary="room reserve button click">
-      <created>1409223370342</created>
-      <option name="number" value="00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1409223370342</updated>
-    </task>
-    <task id="LOCAL-00018" summary="+">
-      <created>1409223411352</created>
-      <option name="number" value="00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1409223411352</updated>
-    </task>
-    <task id="LOCAL-00019" summary="+">
-      <created>1409223543312</created>
-      <option name="number" value="00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1409223543312</updated>
-    </task>
-    <task id="LOCAL-00020" summary="news on main page">
-      <created>1409296787727</created>
-      <option name="number" value="00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1409296787727</updated>
-    </task>
-    <task id="LOCAL-00021" summary="CustomUrlGenerator fix">
-      <created>1409299808813</created>
-      <option name="number" value="00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1409299808813</updated>
-    </task>
-    <task id="LOCAL-00022" summary="restruct system module &amp; menu">
-      <created>1409300642548</created>
-      <option name="number" value="00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1409300642548</updated>
-    </task>
-    <task id="LOCAL-00023" summary="restruct system module &amp; menu">
-      <created>1409300974256</created>
-      <option name="number" value="00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1409300974256</updated>
-    </task>
-    <task id="LOCAL-00024" summary="restruct system module &amp; menu">
-      <created>1409301016530</created>
-      <option name="number" value="00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1409301016530</updated>
-    </task>
-    <task id="LOCAL-00025" summary="lang editor">
-      <created>1409317320376</created>
-      <option name="number" value="00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1409317320376</updated>
-    </task>
-    <task id="LOCAL-00026" summary="lang editor+">
-      <created>1409317936296</created>
-      <option name="number" value="00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1409317936296</updated>
-    </task>
-    <task id="LOCAL-00027" summary="lang editor+">
-      <created>1409324292047</created>
-      <option name="number" value="00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1409324292047</updated>
-    </task>
-    <task id="LOCAL-00028" summary="lang editor+">
-      <created>1409325464063</created>
-      <option name="number" value="00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1409325464063</updated>
-    </task>
-    <task id="LOCAL-00029" summary="lang editor+">
-      <created>1409328318857</created>
-      <option name="number" value="00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1409328318857</updated>
-    </task>
-    <task id="LOCAL-00030" summary="lang editor+">
-      <created>1409328422022</created>
-      <option name="number" value="00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1409328422022</updated>
-    </task>
-    <task id="LOCAL-00031" summary="lang editor clipboard">
-      <created>1409563317732</created>
-      <option name="number" value="00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1409563317732</updated>
-    </task>
-    <task id="LOCAL-00032" summary="lang editor clipboard">
-      <created>1409563865097</created>
-      <option name="number" value="00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1409563865097</updated>
-    </task>
-    <task id="LOCAL-00033" summary="imperavi+">
-      <created>1409572982845</created>
-      <option name="number" value="00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1409572982845</updated>
-    </task>
-    <task id="LOCAL-00034" summary="laravel-db-compiler">
-      <created>1409662727571</created>
-      <option name="number" value="00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1409662727571</updated>
-    </task>
-    <task id="LOCAL-00035" summary="laravel-db-compiler+">
-      <created>1409663496298</created>
-      <option name="number" value="00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1409663496298</updated>
-    </task>
-    <task id="LOCAL-00036" summary="+">
-      <created>1409664980773</created>
-      <option name="number" value="00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1409664980773</updated>
-    </task>
-    <task id="LOCAL-00037" summary="+">
-      <created>1409665237330</created>
-      <option name="number" value="00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1409665237330</updated>
-    </task>
-    <task id="LOCAL-00038" summary="+++">
-      <created>1410441633788</created>
-      <option name="number" value="00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1410441633788</updated>
-    </task>
-    <task id="LOCAL-00039" summary="news links">
-      <created>1411118955174</created>
-      <option name="number" value="00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1411118955174</updated>
-    </task>
-    <task id="LOCAL-00040" summary="news links">
-      <created>1411119025089</created>
-      <option name="number" value="00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1411119025089</updated>
-    </task>
-    <task id="LOCAL-00041" summary="news links">
-      <created>1411119059832</created>
-      <option name="number" value="00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1411119059833</updated>
-    </task>
-    <task id="LOCAL-00042" summary="news links">
-      <created>1411119092141</created>
-      <option name="number" value="00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1411119092141</updated>
-    </task>
-    <task id="LOCAL-00043" summary="news links">
-      <created>1411119154730</created>
-      <option name="number" value="00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1411119154730</updated>
-    </task>
-    <task id="LOCAL-00044" summary="+++">
-      <created>1411124620040</created>
-      <option name="number" value="00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1411124620040</updated>
-    </task>
-    <task id="LOCAL-00045" summary="+++">
-      <created>1411124810971</created>
-      <option name="number" value="00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1411124810971</updated>
-    </task>
-    <task id="LOCAL-00046" summary="+++">
-      <created>1411125032058</created>
-      <option name="number" value="00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1411125032058</updated>
-    </task>
-    <task id="LOCAL-00047" summary="+++">
-      <created>1411125036360</created>
-      <option name="number" value="00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1411125036360</updated>
-    </task>
-    <task id="LOCAL-00048" summary="+++">
-      <created>1411125153674</created>
-      <option name="number" value="00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1411125153674</updated>
-    </task>
-    <task id="LOCAL-00049" summary="+++">
-      <created>1411125205366</created>
-      <option name="number" value="00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1411125205366</updated>
     </task>
     <task id="LOCAL-00050" summary="+++">
       <created>1411125384240</created>
@@ -877,7 +531,13 @@
       <option name="project" value="LOCAL" />
       <updated>1412083116999</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="google analytics">
+      <created>1413205957652</created>
+      <option name="number" value="00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1413205957653</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -904,29 +564,29 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34796748" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35447153" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2985318" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34796748" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Regex Tester" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35447153" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.297561" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32250756" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" x="336" y="122" width="331" height="615" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32175228" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="517" y="56" width="331" height="615" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3572594" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32520324" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3572594" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32520324" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32463294" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32463294" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -945,7 +605,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="page module grand upgrade + custom UrlGenerator" />
     <MESSAGE value="i18n+" />
     <MESSAGE value="actions" />
     <MESSAGE value="rooms+" />
@@ -970,7 +629,8 @@
     <MESSAGE value="active links at menu" />
     <MESSAGE value="+" />
     <MESSAGE value="metrika" />
-    <option name="LAST_COMMIT_MESSAGE" value="metrika" />
+    <MESSAGE value="google analytics" />
+    <option name="LAST_COMMIT_MESSAGE" value="google analytics" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -979,20 +639,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/modules/dictionaries/models/DicVal.model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2990" max-vertical-offset="5746">
-          <caret line="203" column="22" selection-start-line="203" selection-start-column="22" selection-end-line="203" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/modules/dictionaries/views/admin/dicvals/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2890" max-vertical-offset="4590">
-          <caret line="170" column="38" selection-start-line="170" selection-start-column="38" selection-end-line="170" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/modules/dictionaries/views/admin/dicvals/_dicval_meta.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="542" max-vertical-offset="1377">
@@ -1051,13 +697,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/templates/site/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="566">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/modules/news/views/sarykum-news-list.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-15.923077" vertical-offset="164" max-vertical-offset="850">
@@ -1083,20 +722,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7962963" vertical-offset="97" max-vertical-offset="663">
           <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/templates/site/footer.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45454547" vertical-offset="0" max-vertical-offset="561">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/templates/site/spa.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="2346">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1132,20 +757,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.78507996" vertical-offset="136" max-vertical-offset="5100">
           <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/templates/site/restaurant.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="1768">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/templates/site/room.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="1717">
-          <caret line="69" column="31" selection-start-line="69" selection-start-column="31" selection-end-line="69" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -1219,13 +830,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/templates/site/actions.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.576923" vertical-offset="17" max-vertical-offset="578">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/templates/site/header.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.576923" vertical-offset="799" max-vertical-offset="2669">
@@ -1258,13 +862,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="587">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/templates/site/rooms.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5472371" vertical-offset="679" max-vertical-offset="1581">
-          <caret line="58" column="43" selection-start-line="58" selection-start-column="43" selection-end-line="58" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -1308,13 +905,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/sarykum.txt">
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="32" />
         </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/lib/Helper.php">
@@ -1331,27 +928,98 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.076923" vertical-offset="7404" max-vertical-offset="9197">
+        <state vertical-scroll-proportion="0.0" vertical-offset="7404" max-vertical-offset="9197">
           <caret line="455" column="14" selection-start-line="455" selection-start-column="14" selection-end-line="455" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/GoogleAnalytics.txt">
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="9" />
-          <folding />
         </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/templates/site/scripts.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6876791" vertical-offset="338" max-vertical-offset="969">
-          <caret line="34" column="42" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.12255773" vertical-offset="509" max-vertical-offset="1413">
+          <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/templates/site/footer.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.030195381" vertical-offset="238" max-vertical-offset="852">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/templates/site/about.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5133215" vertical-offset="0" max-vertical-offset="937">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/templates/site/actions.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5435169" vertical-offset="85" max-vertical-offset="1073">
+          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/templates/site/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30195382" vertical-offset="34" max-vertical-offset="835">
+          <caret line="12" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/templates/site/restaurant.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45648313" vertical-offset="1324" max-vertical-offset="2263">
+          <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/templates/site/services.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3623446" vertical-offset="0" max-vertical-offset="835">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/templates/site/rooms.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.634103" vertical-offset="1020" max-vertical-offset="2059">
+          <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/templates/site/spa.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.423077" vertical-offset="2125" max-vertical-offset="3113">
+          <caret line="144" column="0" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/templates/site/room.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12255773" vertical-offset="1546" max-vertical-offset="2161">
+          <caret line="95" column="5" selection-start-line="95" selection-start-column="5" selection-end-line="95" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -1368,4 +1036,3 @@
     </option>
   </component>
 </project>
-

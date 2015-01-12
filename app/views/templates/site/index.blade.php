@@ -9,6 +9,8 @@
 
     {{ $page->block('slider') }}
 
+    {{ $page->block('seo') }}
+
 @stop
 
 

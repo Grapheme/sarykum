@@ -140,6 +140,9 @@ $news = News::where('type_id', Dic::valueBySlugs('news_type', 'spa')->id)
                 <a href="tel:+78722934803">+7 (8722) 93-48-03</a>
             </div>
         </section>
+
+        {{ $page->block('seo') }}
+
     </main>
 
 @stop

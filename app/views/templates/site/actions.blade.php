@@ -20,6 +20,9 @@
             {{ $page->block('actions') }}
 
         </section>
+
+        {{ $page->block('seo') }}
+
     </main>
 
 @stop
