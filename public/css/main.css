@@ -1019,15 +1019,15 @@ main.full-screen {
   transform: translateY(10rem);
 }
 .slideshow .slide-logo {
-  width: 7.1875rem;
-  height: 7.1875rem;
+  width: 9.0625rem;
+  height: 8.125rem;
   margin: 0 auto;
   background: url(../img/big-logo.png) no-repeat 0 0 / 100% 100%;
 }
 .slideshow .slide-head {
   width: 52.438rem;
   margin: 2.6875rem 0 2.1875rem -10rem;
-  font-size: 2.75em;
+  font-size: 2.5em;
   font-weight: 300;
   line-height: .75;
   text-transform: uppercase;
