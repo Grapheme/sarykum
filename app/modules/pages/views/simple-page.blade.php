@@ -23,15 +23,14 @@
         </h1>
 
         @if (@is_object($page->blocks) && $page->blocks->count())
-            <div>
+            <section class="sect-wrap">
                 {{ Helper::ta_($page->blocks) }}
                 @foreach($page->blocks as $block)
                     @if (is_object($block->meta))
                         {{ $block->meta->content }}
                     @endif
                 @endforeach
-            </div>
-            <hr />
+            </section>
         @endif
 
     </main>
