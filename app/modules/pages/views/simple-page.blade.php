@@ -18,13 +18,17 @@
 
 @section('content')
     <main>
-        <h1>
-            {{ @is_object($page->meta->seo) && $page->meta->seo->h1 ? $page->meta->seo->h1 : $page->title }}
-        </h1>
 
         @if (@is_object($page->blocks) && $page->blocks->count())
+
+            {{ Helper::ta_($page->blocks) }}
+
             <section class="sect-wrap">
-                {{ Helper::ta_($page->blocks) }}
+
+                <h1>
+                    {{ @is_object($page->meta->seo) && $page->meta->seo->h1 ? $page->meta->seo->h1 : $page->title }}
+                </h1>
+
                 @foreach($page->blocks as $block)
                     @if (is_object($block->meta))
                         {{ $block->meta->content }}
