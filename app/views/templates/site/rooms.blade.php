@@ -75,7 +75,7 @@ if (@count($rooms))
     <section class="sect-wrap">
         <p>
         <button class="btn btn-primary reserve_room">
-            <span class="icon icon-booking"></span> Забронировать номер
+            <span class="icon icon-booking"></span> {{ trans('interface.menu.reserve') }}
         </button>
         </p>
     </section>
