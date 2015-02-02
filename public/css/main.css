@@ -2253,16 +2253,6 @@ button.Zebra_DatePicker_Icon_Inside {
   }
   .slideshow .slide-cont {
     margin-top: 6%;
-  }
-  .sect-wrap p {
-    font-size: 1.1em;
-  }
-  .sect-wrap .section-desc {
-    font-size: 1.2em;
-  }
-  .sect-wrap h2 {
-    font-size: 1.35em;
-  }
 }
 @media screen and (max-width: 1324px) {
   html {
