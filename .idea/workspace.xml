@@ -6,8 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9eb288a-66f5-42e9-a6ae-4f6f60b8c9bd" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\home\dev\sarykum\app\lang\en\interface.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\home\dev\sarykum\app\lang\ru\interface.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates/site/spa.blade.php" afterPath="$PROJECT_DIR$/app/views/templates/site/spa.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="archive.iws" />
@@ -68,21 +67,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="spa.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="spa.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/templates/site/spa.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2448" max-vertical-offset="2601">
-              <caret line="144" column="0" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.7878788" vertical-offset="1887" max-vertical-offset="3077">
+              <caret line="137" column="54" selection-start-line="137" selection-start-column="54" selection-end-line="137" selection-end-column="54" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="room.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="room.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/templates/site/room.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4848485" vertical-offset="1343" max-vertical-offset="2159">
-              <caret line="95" column="5" selection-start-line="95" selection-start-column="5" selection-end-line="95" selection-end-column="5" />
+            <state vertical-scroll-proportion="-4.576923" vertical-offset="1343" max-vertical-offset="2159">
+              <caret line="86" column="93" selection-start-line="86" selection-start-column="56" selection-end-line="86" selection-end-column="93" />
               <folding />
             </state>
           </provider>
@@ -164,7 +163,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/app/views/templates/site/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/views/templates/site/spa.blade.php" />
         <option value="$PROJECT_DIR$/app/views/templates/site/about.blade.php" />
         <option value="$PROJECT_DIR$/app/views/templates/site/actions.blade.php" />
         <option value="$PROJECT_DIR$/app/views/templates/site/restaurant.blade.php" />
@@ -172,6 +170,7 @@
         <option value="$PROJECT_DIR$/app/modules/pages/views/simple-page.blade.php" />
         <option value="$PROJECT_DIR$/app/views/templates/site/rooms.blade.php" />
         <option value="$PROJECT_DIR$/app/views/templates/site/room.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/templates/site/spa.blade.php" />
       </list>
     </option>
   </component>
@@ -291,12 +290,6 @@
       <created>1407760569597</created>
       <option name="number" value="Default" />
       <updated>1407760569597</updated>
-    </task>
-    <task id="LOCAL-00055" summary="+">
-      <created>1411483503212</created>
-      <option name="number" value="00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1411483503212</updated>
     </task>
     <task id="LOCAL-00056" summary="+">
       <created>1411483656649</created>
@@ -586,7 +579,13 @@
       <option name="project" value="LOCAL" />
       <updated>1422871757044</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="fix">
+      <created>1422872095638</created>
+      <option name="number" value="00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1422872095638</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1004,14 +1003,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/templates/site/spa.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2448" max-vertical-offset="2601">
-          <caret line="144" column="0" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/modules/pages/views/demo.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.36363637" vertical-offset="204" max-vertical-offset="1411">
@@ -1052,8 +1043,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/templates/site/room.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4848485" vertical-offset="1343" max-vertical-offset="2159">
-          <caret line="95" column="5" selection-start-line="95" selection-start-column="5" selection-end-line="95" selection-end-column="5" />
+        <state vertical-scroll-proportion="-4.576923" vertical-offset="1343" max-vertical-offset="2159">
+          <caret line="86" column="93" selection-start-line="86" selection-start-column="56" selection-end-line="86" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/templates/site/spa.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7878788" vertical-offset="1887" max-vertical-offset="3077">
+          <caret line="137" column="54" selection-start-line="137" selection-start-column="54" selection-end-line="137" selection-end-column="54" />
           <folding />
         </state>
       </provider>
