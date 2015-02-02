@@ -2270,6 +2270,11 @@ button.Zebra_DatePicker_Icon_Inside {
     padding: 0 1.213rem;
   }
 }
+@media screen and (max-width: 1224px) {
+  html {
+    font-size: 13px;
+  }
+}
 @media screen and (max-width: 1200px) {
   html {
     min-width: 1200px;
