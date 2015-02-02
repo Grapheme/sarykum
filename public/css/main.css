@@ -707,7 +707,8 @@ main.full-screen {
   z-index: 1;
   width: 55rem;
   margin: 2.1875rem 0 2.1875rem;
-  font-size: 3.125em;
+  font-size: 44px;
+  font-weight: 300;
   line-height: 1.2em;
   text-transform: uppercase;
 }
