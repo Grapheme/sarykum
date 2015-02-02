@@ -1543,6 +1543,7 @@ main.full-screen {
   color: #000;
 }
 .rooms .column.third {
+  overflow: hidden;
   height: 27.25rem;
   font-size: 0.8em;
 }

@@ -1545,6 +1545,7 @@ main.full-screen {
 .rooms .column.third {
   height: 27.25rem;
   font-size: 0.8em;
+  overflow: hidden;
 }
 .rooms-wrap {
   padding: 2rem;
