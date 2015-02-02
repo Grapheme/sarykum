@@ -1670,6 +1670,7 @@ main.full-screen {
 }
 .main-header {
   position: relative;
+  z-index: 1;
   height: 4.125rem;
   box-shadow: 0 1px 0 0 #cecece;
   background: #ffffff;
