@@ -1005,6 +1005,7 @@ main.full-screen {
   margin: 8.5rem auto 0;
   color: #ffffff;
   text-align: center;
+  font-size: 14px;
 }
 .slideshow .slide-cont .desc {
   padding: 0 0 2.1rem;
