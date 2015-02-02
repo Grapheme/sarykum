@@ -679,6 +679,7 @@ main.full-screen {
   padding: 4.6875rem 5.625rem 9.375rem;
   background: #fff;
   color: #1f1a14;
+  font-size: 14px;
 }
 .sect-wrap.restaurant {
   overflow: hidden;
