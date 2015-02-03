@@ -1001,15 +1001,16 @@ main.full-screen {
 .slideshow .slide-cont {
   position: relative;
   z-index: 1;
-  width: 32.4375rem;
+  width: 100%;
   margin: 8.5rem auto 0;
   color: #ffffff;
   text-align: center;
   font-size: 14px;
 }
 .slideshow .slide-cont .desc {
+  width: 32.4375rem;
   padding: 0 0 2.1rem;
-  margin: 0 0 1.875rem;
+  margin: 0 auto 1.875rem;
   border-bottom: 1px solid #ffffff;
   font-size: 1.375em;
   text-transform: uppercase;
@@ -1030,11 +1031,12 @@ main.full-screen {
 }
 .slideshow .slide-head {
   width: 52.438rem;
-  margin: 2.6875rem 0 2.1875rem -10rem;
+  margin: 2.6875rem auto 2.1875rem;
   font-size: 2.75em;
   font-weight: 300;
   line-height: .75;
   text-transform: uppercase;
+  letter-spacing: 5px;
 }
 .slideshow .slide-desc {
   -webkit-transition: all 0.67s ease-in-out;
@@ -1044,6 +1046,8 @@ main.full-screen {
   transform: translateY(10rem);
   font-size: 0.9375em;
   line-height: 1.6em;
+  width: 32.4375rem;
+  margin: 0 auto;
 }
 .arrow {
   -webkit-transition: all 0.5s ease;

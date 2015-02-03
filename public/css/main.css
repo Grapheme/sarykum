@@ -1001,15 +1001,16 @@ main.full-screen {
 .slideshow .slide-cont {
   position: relative;
   z-index: 1;
-  width: 32.4375rem;
+  width: 100%;
   margin: 8.5rem auto 0;
   color: #ffffff;
   text-align: center;
   font-size: 14px;
 }
 .slideshow .slide-cont .desc {
+  width: 32.4375rem;
   padding: 0 0 2.1rem;
-  margin: 0 0 1.875rem;
+  margin: 0 auto 1.875rem;
   border-bottom: 1px solid #ffffff;
   font-size: 1.375em;
   text-transform: uppercase;
@@ -1030,8 +1031,8 @@ main.full-screen {
 }
 .slideshow .slide-head {
   width: 52.438rem;
-  margin: 2.6875rem 0 2.1875rem -10rem;
-  font-size: 2.5em;
+  margin: 2.6875rem auto 2.1875rem;
+  font-size: 2.75em;
   font-weight: 300;
   line-height: .75;
   text-transform: uppercase;
@@ -1045,6 +1046,8 @@ main.full-screen {
   transform: translateY(10rem);
   font-size: 0.9375em;
   line-height: 1.6em;
+  width: 32.4375rem;
+  margin: 0 auto;
 }
 .arrow {
   -webkit-transition: all 0.5s ease;
@@ -1547,9 +1550,9 @@ main.full-screen {
   color: #000;
 }
 .rooms .column.third {
+  overflow: hidden;
   height: 27.25rem;
   font-size: 0.8em;
-  overflow: hidden;
 }
 .rooms-wrap {
   padding: 2rem;
@@ -1580,8 +1583,7 @@ main.full-screen {
   color: transparent;
 }
 .room-item:hover a {
-  background: rgba(0, 0, 0, 0);
-  border: none;
+  background: none;
 }
 .room-item a {
   -webkit-transition: all 0.5s ease;
@@ -1842,7 +1844,7 @@ nav {
   position: relative;
   float: right;
   width: 8.9375rem;
-  height: 100%;
+  height: 100.9%;
   padding: 0 0.5rem 0 1.4375rem;
   background: #194373;
   cursor: pointer;
@@ -2255,6 +2257,16 @@ button.Zebra_DatePicker_Icon_Inside {
   }
   .slideshow .slide-cont {
     margin-top: 6%;
+  }
+  .sect-wrap p {
+    font-size: 1.1em;
+  }
+  .sect-wrap .section-desc {
+    font-size: 1.2em;
+  }
+  .sect-wrap h2 {
+    font-size: 1.35em;
+  }
 }
 @media screen and (max-width: 1324px) {
   html {
@@ -2262,11 +2274,6 @@ button.Zebra_DatePicker_Icon_Inside {
   }
   .nav-ul .nav-li a span {
     padding: 0 1.213rem;
-  }
-}
-@media screen and (max-width: 1224px) {
-  html {
-    font-size: 13px;
   }
 }
 @media screen and (max-width: 1200px) {
