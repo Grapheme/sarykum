@@ -1008,7 +1008,7 @@ main.full-screen {
   font-size: 14px;
 }
 .slideshow .slide-cont .desc {
-  width: 40%;
+  width: 43%;
   min-width: 32.4375rem;
   max-width: 42rem;
   padding: 0 0 2.1rem;
@@ -1048,7 +1048,7 @@ main.full-screen {
   transform: translateY(10rem);
   font-size: 0.9375em;
   line-height: 1.6em;
-  width: 40%;
+  width: 43%;
   min-width: 32.4375rem;
   max-width: 42rem;
   margin: 0 auto;
