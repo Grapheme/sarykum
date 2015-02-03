@@ -1008,7 +1008,9 @@ main.full-screen {
   font-size: 14px;
 }
 .slideshow .slide-cont .desc {
-  width: 32.4375rem;
+  width: 40%;
+  min-width: 32.4375rem;
+  max-width: 42rem;
   padding: 0 0 2.1rem;
   margin: 0 auto 1.875rem;
   border-bottom: 1px solid #ffffff;
@@ -1036,7 +1038,7 @@ main.full-screen {
   font-weight: 300;
   line-height: .75;
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 10px;
 }
 .slideshow .slide-desc {
   -webkit-transition: all 0.67s ease-in-out;
@@ -1046,7 +1048,9 @@ main.full-screen {
   transform: translateY(10rem);
   font-size: 0.9375em;
   line-height: 1.6em;
-  width: 32.4375rem;
+  width: 40%;
+  min-width: 32.4375rem;
+  max-width: 42rem;
   margin: 0 auto;
 }
 .arrow {

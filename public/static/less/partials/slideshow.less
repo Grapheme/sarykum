@@ -223,7 +223,9 @@
 		font-size: 14px;
 
 		.desc {
-			width: 32.4375rem;
+			width: 40%;
+  			min-width: 32.4375rem;
+  			max-width: 42rem;
 			padding: 0 0 2.1rem;
 			margin: 0 auto 30rem / @htmlFontSize;
 			border-bottom: 1px solid @white;
@@ -250,14 +252,16 @@
 		font-weight: 300;
 		line-height: .75;
 		text-transform: uppercase;
-		letter-spacing: 5px;
+		letter-spacing: 10px;
 	}
 	.slide-desc {
 		.transition(all, .67s, ease-in-out);
 		.from-bottom;
 		font-size: 15em / @htmlFontSize;
 		line-height: 24em / 15;
-		width: 32.4375rem;
+		width: 40%;
+  		min-width: 32.4375rem;
+  		max-width: 42rem;
 		margin: 0 auto;
 	}
 }
