@@ -681,6 +681,9 @@ main.full-screen {
   color: #1f1a14;
   font-size: 14px;
 }
+.sect-wrap.seo {
+  padding-top: 0;
+}
 .sect-wrap.restaurant {
   overflow: hidden;
 }
