@@ -1,4 +1,8 @@
 @extends(Helper::layout())
+<?
+if (isset($room->seo) && is_object($room->seo))
+    $seo = $room->seo;
+?>
 
 
 @section('style')
@@ -59,7 +63,7 @@ if (@is_object($gallery) && @count($gallery->photos)) {
         </div>
         <section class="sect-wrap">
             <h1>
-                {{ is_object($room->seo) && $room->seo->title ? $room->seo->title : $room->name }}
+                {{ is_object($room->seo) && $room->seo->h1 ? $room->seo->h1 : $room->name }}
             </h1>
 
             @if ($room->price)
