@@ -30,6 +30,8 @@ $news = News::where('type_id', Dic::valueBySlugs('news_type', 'restaurant')->id)
         </div>
         <section class="sect-wrap restaurant-2 margin-bottom-40">
 
+            {{ is_object($page->meta) && is_object($page->meta->seo) ? '<h1 class="text-center">' . $page->meta->seo->h1 . '</h1>' : '' }}
+
             {{ $page->block('description') }}
 
         </section>
