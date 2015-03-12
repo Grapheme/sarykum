@@ -12,6 +12,10 @@
 
 @section('content')
 
+    <main role="main">
+        {{ $page->block('header') }}
+    </main>
+
     {{ $page->block('content') }}
 
     {{ $page->block('seo') }}
