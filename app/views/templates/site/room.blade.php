@@ -7,8 +7,9 @@
 
 @section('content')
 
-
-    {{ Helper::tad_($room) }}
+    @if (Input::get('dbg-room'))
+    {{ Helper::tad($room) }}
+    @endif
 
 <?
 $obj = $room;
