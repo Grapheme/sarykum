@@ -20,7 +20,7 @@
     <main role="main">
         {{ $page->block('header') }}
 
-        {{ is_object($page->seo) ? '<h1>' . $page->seo->h1 . '</h1>' : '' }}
+        {{ is_object($page->meta) && is_object($page->meta->seo) ? '<h1>' . $page->meta->seo->h1 . '</h1>' : '' }}
 
         {{ $page->block('content') }}
     </main>
