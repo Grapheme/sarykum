@@ -76,10 +76,10 @@
       <file leaf-file-name="rooms.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/templates/site/rooms.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.42602494" vertical-offset="373" max-vertical-offset="1428">
-              <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.6060606" vertical-offset="952" max-vertical-offset="2125">
+              <caret line="76" column="18" selection-start-line="76" selection-start-column="18" selection-end-line="76" selection-end-column="18" />
               <folding>
-                <element signature="e#701#2348#0#HTML" expanded="false" />
+                <element signature="e#1287#1365#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -214,6 +214,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="LayoutCode.rearrangeEntriesPHP" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="LayoutCode.rearrangeEntriesBlade" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -277,12 +278,6 @@
       <created>1407760569597</created>
       <option name="number" value="Default" />
       <updated>1407760569597</updated>
-    </task>
-    <task id="LOCAL-00067" summary="+">
-      <created>1411564840252</created>
-      <option name="number" value="00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1411564840252</updated>
     </task>
     <task id="LOCAL-00068" summary="+">
       <created>1411565026186</created>
@@ -572,7 +567,13 @@
       <option name="project" value="LOCAL" />
       <updated>1426167335331</updated>
     </task>
-    <option name="localTasksCounter" value="116" />
+    <task id="LOCAL-00116" summary="fix">
+      <created>1426167467809</created>
+      <option name="number" value="00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1426167467809</updated>
+    </task>
+    <option name="localTasksCounter" value="117" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1043,10 +1044,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/templates/site/rooms.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42602494" vertical-offset="373" max-vertical-offset="1428">
-          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.6060606" vertical-offset="952" max-vertical-offset="2125">
+          <caret line="76" column="18" selection-start-line="76" selection-start-column="18" selection-end-line="76" selection-end-column="18" />
           <folding>
-            <element signature="e#701#2348#0#HTML" expanded="false" />
+            <element signature="e#1287#1365#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
