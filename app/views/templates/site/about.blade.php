@@ -14,9 +14,9 @@
 
     <main role="main">
         {{ $page->block('header') }}
+        {{ $page->block('content') }}
     </main>
 
-    {{ $page->block('content') }}
 
     {{ $page->block('seo') }}
 
