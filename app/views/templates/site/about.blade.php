@@ -20,7 +20,9 @@
     <main role="main">
         {{ $page->block('header') }}
 
-        {{ is_object($page->meta) && is_object($page->meta->seo) ? '<h1>' . $page->meta->seo->h1 . '</h1>' : '' }}
+        <section class="sect-wrap discover margin-bottom-40">
+            {{ is_object($page->meta) && is_object($page->meta->seo) ? '<h1 class="text-center">' . $page->meta->seo->h1 . '</h1>' : '' }}
+        </section>
 
         {{ $page->block('content') }}
     </main>
