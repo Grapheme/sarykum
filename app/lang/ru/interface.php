@@ -25,5 +25,9 @@ return array(
     'reserve.to' => 'по',
     'rooms.double_occupancy' => 'двухместное размещение',
     'rooms.single_occupancy' => 'одноместное размещение',
+    'spa.admin-contacts' => '                Вопросы администратору<br>
+                Вы можете задать по телефонам
+                <a href="tel:+78722934803">+7 (8722) 93-48-03</a>',
+    'spa.spa-center' => 'SPA-центр',
     'title.actions' => 'Новости и акции',
 );

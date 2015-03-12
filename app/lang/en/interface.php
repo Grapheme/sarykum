@@ -25,5 +25,9 @@ return array(
     'reserve.to' => 'till',
     'rooms.double_occupancy' => 'double accommodation',
     'rooms.single_occupancy' => 'single accommodation',
+    'spa.admin-contacts' => '                Contact reception desk<br>
+                and ask questions by telephone 
+                <a href="tel:+78722934803">+7 (8722) 93-48-03</a>',
+    'spa.spa-center' => 'SPA-center',
     'title.actions' => 'News and Offers',
 );

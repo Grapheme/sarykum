@@ -215,15 +215,19 @@
 	.slide-cont {
 		position: relative;
 		z-index: 1;
-		width: 519rem / @htmlFontSize;		
+		width: 100%;		
 		margin: 136rem / @htmlFontSize auto 0;
 
 		color: @white;
 		text-align: center;
+		font-size: 14px;
 
 		.desc {
+			width: 43%;
+  			min-width: 32.4375rem;
+  			max-width: 42rem;
 			padding: 0 0 2.1rem;
-			margin: 0 0 30rem / @htmlFontSize;
+			margin: 0 auto 30rem / @htmlFontSize;
 			border-bottom: 1px solid @white;
 			font-size: 22em / @htmlFontSize;
 			text-transform: uppercase;
@@ -242,18 +246,23 @@
 		background: url(../img/big-logo.png) no-repeat 0 0 e('/') 100% 100%;
 	}
 	.slide-head {
-		width: 52.438rem;
-		margin: 43rem / @htmlFontSize 0 35rem / @htmlFontSize -10rem;
-		font-size: 44em / @htmlFontSize;
+		width: 100%;
+		margin: 43rem / @htmlFontSize auto 35rem / @htmlFontSize;
+		font-size: 44px;
 		font-weight: 300;
 		line-height: .75;
 		text-transform: uppercase;
+		letter-spacing: 10px;
 	}
 	.slide-desc {
 		.transition(all, .67s, ease-in-out);
 		.from-bottom;
 		font-size: 15em / @htmlFontSize;
 		line-height: 24em / 15;
+		width: 43%;
+  		min-width: 32.4375rem;
+  		max-width: 42rem;
+		margin: 0 auto;
 	}
 }
 

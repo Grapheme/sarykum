@@ -69,12 +69,18 @@ main {
 
 .sect-wrap {
 	position: relative;
-	max-width: 1600rem / @htmlFontSize;
+	max-width: 1060px;
+	min-width: 980px;
 	margin: 0 auto;
 	padding: 75rem / @htmlFontSize 90rem / @htmlFontSize 150rem / @htmlFontSize;
 
 	background: #fff;
 	color: @txtColor;
+	font-size: 14px;
+
+	&.seo {
+		padding-top: 0;
+	}
 
 	&.restaurant {
 		overflow: hidden;
@@ -109,7 +115,8 @@ main {
 		width: 55rem;
 		margin: 35rem / @htmlFontSize 0 35rem / @htmlFontSize;
 
-		font-size: 50em / @htmlFontSize;
+		font-size: 44px;
+		font-weight: 300;
 		line-height: 60em / 50;
 		text-transform: uppercase;
 

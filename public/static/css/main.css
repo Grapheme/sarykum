@@ -673,11 +673,16 @@ main.full-screen {
 }
 .sect-wrap {
   position: relative;
-  max-width: 100rem;
+  max-width: 1060px;
+  min-width: 980px;
   margin: 0 auto;
   padding: 4.6875rem 5.625rem 9.375rem;
   background: #fff;
   color: #1f1a14;
+  font-size: 14px;
+}
+.sect-wrap.seo {
+  padding-top: 0;
 }
 .sect-wrap.restaurant {
   overflow: hidden;
@@ -706,7 +711,8 @@ main.full-screen {
   z-index: 1;
   width: 55rem;
   margin: 2.1875rem 0 2.1875rem;
-  font-size: 3.125em;
+  font-size: 44px;
+  font-weight: 300;
   line-height: 1.2em;
   text-transform: uppercase;
 }
@@ -998,14 +1004,18 @@ main.full-screen {
 .slideshow .slide-cont {
   position: relative;
   z-index: 1;
-  width: 32.4375rem;
+  width: 100%;
   margin: 8.5rem auto 0;
   color: #ffffff;
   text-align: center;
+  font-size: 14px;
 }
 .slideshow .slide-cont .desc {
+  width: 43%;
+  min-width: 32.4375rem;
+  max-width: 42rem;
   padding: 0 0 2.1rem;
-  margin: 0 0 1.875rem;
+  margin: 0 auto 1.875rem;
   border-bottom: 1px solid #ffffff;
   font-size: 1.375em;
   text-transform: uppercase;
@@ -1025,12 +1035,13 @@ main.full-screen {
   background: url(../img/big-logo.png) no-repeat 0 0 / 100% 100%;
 }
 .slideshow .slide-head {
-  width: 52.438rem;
-  margin: 2.6875rem 0 2.1875rem -10rem;
-  font-size: 2.75em;
+  width: 100%;
+  margin: 2.6875rem auto 2.1875rem;
+  font-size: 44px;
   font-weight: 300;
   line-height: .75;
   text-transform: uppercase;
+  letter-spacing: 10px;
 }
 .slideshow .slide-desc {
   -webkit-transition: all 0.67s ease-in-out;
@@ -1040,6 +1051,10 @@ main.full-screen {
   transform: translateY(10rem);
   font-size: 0.9375em;
   line-height: 1.6em;
+  width: 43%;
+  min-width: 32.4375rem;
+  max-width: 42rem;
+  margin: 0 auto;
 }
 .arrow {
   -webkit-transition: all 0.5s ease;
@@ -1481,9 +1496,10 @@ main.full-screen {
 }
 .discover-map h2 {
   position: relative;
-  font-size: 3.5em;
+  font-size: 44px;
   text-transform: uppercase;
   line-height: .75;
+  font-weight: 300;
 }
 .discover-map h2:after {
   content: '';
@@ -1541,6 +1557,7 @@ main.full-screen {
   color: #000;
 }
 .rooms .column.third {
+  overflow: hidden;
   height: 27.25rem;
   font-size: 0.8em;
 }
@@ -2246,7 +2263,7 @@ button.Zebra_DatePicker_Icon_Inside {
     margin-top: -2.075rem !important;
   }
   .slideshow .slide-cont {
-    margin-top: 6%;
+    margin-top: 5%;
   }
   .sect-wrap p {
     font-size: 1.1em;
