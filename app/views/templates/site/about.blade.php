@@ -12,6 +12,11 @@
 
 @section('content')
 
+    @if (Input::get('dbg-page'))
+        {{ Helper::tad($page) }}
+    @endif
+
+
     <main role="main">
         {{ $page->block('header') }}
 
