@@ -59,7 +59,7 @@ if (@is_object($gallery) && @count($gallery->photos)) {
         </div>
         <section class="sect-wrap">
             <h1>
-                {{ $room->name }}
+                {{ is_object($room->seo) && $room->seo->title ? $room->seo->title : $room->name }}
             </h1>
 
             @if ($room->price)
