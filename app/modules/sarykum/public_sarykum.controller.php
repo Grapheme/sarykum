@@ -112,6 +112,8 @@ class PublicSarykumController extends BaseController {
             App::abort(404);
         }
 
+        $room->load('seo');
+
         return View::make(Helper::layout('room'), compact('room'));
     }
 
