@@ -70,7 +70,6 @@ unset($rooms[$r]);
             </section>
         @endif
 
-
         <section class="sect-wrap rooms-wrap">
             {{ is_object($page->meta) && is_object($page->meta->seo) ? '<h1 class="text-center">' . $page->meta->seo->h1 . '</h1>' : '' }}
             {{ $page->block('content') }}
