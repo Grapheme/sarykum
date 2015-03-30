@@ -51,7 +51,7 @@ if (@is_object($gallery) && @count($gallery->photos)) {
                             {{ $room->name }}
                         </div>
                         <div class="room-price">
-                            {{ $room->price }} {{ trans('interface.currency_short') }}
+                            {{ $room->prices }} {{ trans('interface.currency_short') }}
                         </div> -->
                 </section>
             </div>
@@ -66,17 +66,24 @@ if (@is_object($gallery) && @count($gallery->photos)) {
                 {{ is_object($room->seo) && $room->seo->h1 ? $room->seo->h1 : $room->name }}
             </h1>
 
-            @if ($room->price)
-            <h2 class="room-price room-price-1">
-                <span class="price-num">{{ $room->price }}</span>
-                {{ trans("interface.rooms.single_occupancy") }}
+            @if ($room->prices)
+            <h2 class="room-price room-prices">
+                <span class="price-num">{{ $room->prices }}</span>
             </h2>
             @endif
-            @if ($room->price2)
-            <h2 class="room-price room-price-2">
-                <span class="price-num">{{ $room->price2 }}</span>
-                {{ trans("interface.rooms.double_occupancy") }}
-            </h2>
+            @if (0)
+                @if ($room->price)
+                <h2 class="room-price room-price-1">
+                    <span class="price-num">{{ $room->price }}</span>
+                    {{ trans("interface.rooms.single_occupancy") }}
+                </h2>
+                @endif
+                @if ($room->price2)
+                <h2 class="room-price room-price-2">
+                    <span class="price-num">{{ $room->price2 }}</span>
+                    {{ trans("interface.rooms.double_occupancy") }}
+                </h2>
+                @endif
             @endif
 
             <div class="row clearfix">

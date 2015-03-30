@@ -5,16 +5,14 @@ return array(
     'fields_i18n' => function() {
 
         return array(
-            'price' => array(
-                'title' => 'Цена одноместного размещения',
-                'type' => 'text',
+            'prices' => array(
+                'title' => 'Цены размещения',
+                'type' => 'textarea',
                 'default' => '',
-                'others' => array(
-                    #'placeholder' => 'Укажите цену'
-                ),
             ),
-            'price_breakfast' => array(
-                'title' => 'Цена одноместного размещения с завтраком',
+            #/*
+            'price' => array(
+                'title' => 'Цена одноместного размещения ***',
                 'type' => 'text',
                 'default' => '',
                 'others' => array(
@@ -22,21 +20,14 @@ return array(
                 ),
             ),
             'price2' => array(
-                'title' => 'Цена двухместного размещения',
+                'title' => 'Цена двухместного размещения ***',
                 'type' => 'text',
                 'default' => '',
                 'others' => array(
                     #'placeholder' => 'Укажите цену'
                 ),
             ),
-            'price2_breakfast' => array(
-                'title' => 'Цена двухместного размещения с завтраком',
-                'type' => 'text',
-                'default' => '',
-                'others' => array(
-                    #'placeholder' => 'Укажите цену'
-                ),
-            ),
+            #*/
             'description' => array(
                 'title' => 'Описание',
                 'type' => 'textarea_redactor',

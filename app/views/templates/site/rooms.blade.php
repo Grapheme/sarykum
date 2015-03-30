@@ -50,29 +50,36 @@ unset($rooms[$r]);
                                             {{ $room->meta->name }}
                                         </div>
                                     @endif
-                                    @if ($room->price)
-                                        <div class="room-price room-price-1">
-                                            <span class="price-num">{{ $room->price }}</span>
-                                            {{--{{ trans("interface.rooms.single_occupancy") }}--}}
+                                    @if ($room->prices)
+                                        <div class="room-price room-prices">
+                                            {{ $room->prices }}
                                         </div>
                                     @endif
-                                    @if ($room->price_breakfast)
-                                        <div class="room-price room-price-1b">
-                                            <span class="price-num">{{ $room->price_breakfast }}</span>
-                                            {{--{{ trans("interface.rooms.single_occupancy_breakfast") }}--}}
-                                        </div>
-                                    @endif
-                                    @if ($room->price2)
-                                        <div class="room-price room-price-2">
-                                            <span class="price-num">{{ $room->price2 }}</span>
-                                            {{--{{ trans("interface.rooms.double_occupancy") }}--}}
-                                        </div>
-                                    @endif
-                                    @if ($room->price2_breakfast)
-                                        <div class="room-price room-price-2b">
-                                            <span class="price-num">{{ $room->price2_breakfast }}</span>
-                                            {{--{{ trans("interface.rooms.double_occupancy_breakfast") }}--}}
-                                        </div>
+                                    @if (0)
+                                        @if ($room->price)
+                                            <div class="room-price room-price-1">
+                                                <span class="price-num">{{ $room->price }}</span>
+                                                {{--{{ trans("interface.rooms.single_occupancy") }}--}}
+                                            </div>
+                                        @endif
+                                        @if ($room->price_breakfast)
+                                            <div class="room-price room-price-1b">
+                                                <span class="price-num">{{ $room->price_breakfast }}</span>
+                                                {{--{{ trans("interface.rooms.single_occupancy_breakfast") }}--}}
+                                            </div>
+                                        @endif
+                                        @if ($room->price2)
+                                            <div class="room-price room-price-2">
+                                                <span class="price-num">{{ $room->price2 }}</span>
+                                                {{--{{ trans("interface.rooms.double_occupancy") }}--}}
+                                            </div>
+                                        @endif
+                                        @if ($room->price2_breakfast)
+                                            <div class="room-price room-price-2b">
+                                                <span class="price-num">{{ $room->price2_breakfast }}</span>
+                                                {{--{{ trans("interface.rooms.double_occupancy_breakfast") }}--}}
+                                            </div>
+                                        @endif
                                     @endif
                                 </a>
                             </div>
