@@ -13,8 +13,24 @@ return array(
                     #'placeholder' => 'Укажите цену'
                 ),
             ),
+            'price_breakfast' => array(
+                'title' => 'Цена одноместного размещения с завтраком',
+                'type' => 'text',
+                'default' => '',
+                'others' => array(
+                    #'placeholder' => 'Укажите цену'
+                ),
+            ),
             'price2' => array(
                 'title' => 'Цена двухместного размещения',
+                'type' => 'text',
+                'default' => '',
+                'others' => array(
+                    #'placeholder' => 'Укажите цену'
+                ),
+            ),
+            'price2_breakfast' => array(
+                'title' => 'Цена двухместного размещения с завтраком',
                 'type' => 'text',
                 'default' => '',
                 'others' => array(
