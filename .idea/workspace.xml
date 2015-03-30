@@ -5,10 +5,10 @@
     <bookmark url="file://$PROJECT_DIR$/app/modules/system/views/admin/locale_editor/list.blade.php" line="442" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9eb288a-66f5-42e9-a6ae-4f6f60b8c9bd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/templates/site/header.blade.php" afterPath="$PROJECT_DIR$/app/views/templates/site/header.blade.php" />
+    <list default="true" id="f9eb288a-66f5-42e9-a6ae-4f6f60b8c9bd" name="Default" comment="fix">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/modules_js_cache.dat" afterPath="$PROJECT_DIR$/app/storage/modules_js_cache.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/storage/modules_js_modifications.dat" afterPath="$PROJECT_DIR$/app/storage/modules_js_modifications.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/emails/reserve_success.blade.php" afterPath="$PROJECT_DIR$/app/views/emails/reserve_success.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="archive.iws" />
@@ -48,8 +48,18 @@
       <file leaf-file-name="public_sarykum.controller.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/modules/sarykum/public_sarykum.controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.8461537" vertical-offset="1734" max-vertical-offset="2635">
-              <caret line="114" column="8" selection-start-line="114" selection-start-column="8" selection-end-line="114" selection-end-column="8" />
+            <state vertical-scroll-proportion="-17.0" vertical-offset="969" max-vertical-offset="2635">
+              <caret line="83" column="39" selection-start-line="83" selection-start-column="39" selection-end-line="83" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reserve_success.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/emails/reserve_success.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.3030303" vertical-offset="0" max-vertical-offset="816">
+              <caret line="10" column="57" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -85,10 +95,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="header.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/templates/site/header.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.55839413" vertical-offset="0" max-vertical-offset="3251">
+            <state vertical-scroll-proportion="43.153847" vertical-offset="1428" max-vertical-offset="3251">
               <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
               <folding />
             </state>
@@ -152,6 +162,7 @@
         <option value="$PROJECT_DIR$/app/config/dic/room_type.php" />
         <option value="$PROJECT_DIR$/app/views/templates/site/room.blade.php" />
         <option value="$PROJECT_DIR$/app/views/templates/site/header.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/emails/reserve_success.blade.php" />
       </list>
     </option>
   </component>
@@ -273,12 +284,6 @@
       <created>1407760569597</created>
       <option name="number" value="Default" />
       <updated>1407760569597</updated>
-    </task>
-    <task id="LOCAL-00076" summary="+">
-      <created>1411567397787</created>
-      <option name="number" value="00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1411567397788</updated>
     </task>
     <task id="LOCAL-00077" summary="+">
       <created>1411567592650</created>
@@ -568,7 +573,13 @@
       <option name="project" value="LOCAL" />
       <updated>1427716254130</updated>
     </task>
-    <option name="localTasksCounter" value="125" />
+    <task id="LOCAL-00125" summary="fix">
+      <created>1427716448021</created>
+      <option name="number" value="00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1427716448021</updated>
+    </task>
+    <option name="localTasksCounter" value="126" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -674,13 +685,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.0018518" vertical-offset="1295" max-vertical-offset="2686">
           <caret line="108" column="29" selection-start-line="108" selection-start-column="29" selection-end-line="108" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/emails/reserve_success.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28333333" vertical-offset="0" max-vertical-offset="540">
-          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -990,14 +994,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/modules/sarykum/public_sarykum.controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.8461537" vertical-offset="1734" max-vertical-offset="2635">
-          <caret line="114" column="8" selection-start-line="114" selection-start-column="8" selection-end-line="114" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/dic/room_type.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.5384617" vertical-offset="34" max-vertical-offset="1581">
@@ -1032,8 +1028,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/templates/site/header.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55839413" vertical-offset="0" max-vertical-offset="3251">
+        <state vertical-scroll-proportion="43.153847" vertical-offset="1428" max-vertical-offset="3251">
           <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/sarykum/public_sarykum.controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.0" vertical-offset="969" max-vertical-offset="2635">
+          <caret line="83" column="39" selection-start-line="83" selection-start-column="39" selection-end-line="83" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/emails/reserve_success.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3030303" vertical-offset="0" max-vertical-offset="816">
+          <caret line="10" column="57" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
           <folding />
         </state>
       </provider>

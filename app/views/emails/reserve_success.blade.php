@@ -8,7 +8,7 @@
 		<p>
             Осуществлено бронирование номера &laquo;{{ $room->name }}&raquo;<br/>
             с {{ $date_start }} по {{ $date_stop }}<br/>
-            Кол-во человек: {{ $price_type }}<br/>
+            <!--Кол-во человек: {{ $price_type }}<br/>-->
             Имя гостя: {{ $name }}<br/>
             Контактные данные: {{ $contact }}<br/>
 		</p>
