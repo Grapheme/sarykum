@@ -53,13 +53,25 @@ unset($rooms[$r]);
                                     @if ($room->price)
                                         <div class="room-price room-price-1">
                                             <span class="price-num">{{ $room->price }}</span>
-                                            {{ trans("interface.rooms.single_occupancy") }}
+                                            {{--{{ trans("interface.rooms.single_occupancy") }}--}}
+                                        </div>
+                                    @endif
+                                    @if ($room->price_breakfast)
+                                        <div class="room-price room-price-1b">
+                                            <span class="price-num">{{ $room->price_breakfast }}</span>
+                                            {{--{{ trans("interface.rooms.single_occupancy_breakfast") }}--}}
                                         </div>
                                     @endif
                                     @if ($room->price2)
                                         <div class="room-price room-price-2">
                                             <span class="price-num">{{ $room->price2 }}</span>
-                                            {{ trans("interface.rooms.double_occupancy") }}
+                                            {{--{{ trans("interface.rooms.double_occupancy") }}--}}
+                                        </div>
+                                    @endif
+                                    @if ($room->price2_breakfast)
+                                        <div class="room-price room-price-2b">
+                                            <span class="price-num">{{ $room->price2_breakfast }}</span>
+                                            {{--{{ trans("interface.rooms.double_occupancy_breakfast") }}--}}
                                         </div>
                                     @endif
                                 </a>
