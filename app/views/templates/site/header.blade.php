@@ -7,7 +7,7 @@ $route = Route::currentRouteName();
 $room_type = Dic::whereSlugValues('room_type');
 $room_types = array();
 $room_type_prices = array();
-if (@count($room_type))
+if (isset($room_type) && count($room_type))
     foreach ($room_type as $a => $arr) {
 
         if (is_object($arr->meta))
@@ -16,6 +16,10 @@ if (@count($room_type))
             foreach ($arr->fields as $field)
                 $room_type[$a]->{$field->key} = $field->value;
 
+        $room_types[$arr->id . '.all'] = $arr->name;
+        $room_type_prices[$arr->id . '.all'] = $arr->price;
+
+        /*
         if ($arr->price) {
             $room_types[$arr->id . '.1'] = $arr->name . ', ' . trans("interface.rooms.single_occupancy");
             $room_type_prices[$arr->id . '.1'] = $arr->price;
@@ -24,6 +28,7 @@ if (@count($room_type))
             $room_types[$arr->id . '.2'] = $arr->name . ', ' . trans("interface.rooms.double_occupancy");
             $room_type_prices[$arr->id . '.2'] = $arr->price2;
         }
+        */
     }
 
 #Helper::d($room_types);
