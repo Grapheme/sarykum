@@ -1561,16 +1561,19 @@ main.full-screen {
   height: 27.25rem;
   font-size: 0.8em;
 }
+.price-num {
+  white-space: nowrap;
+}
 .rooms-wrap {
   padding: 2rem;
 }
 .rooms-wrap:after {
   content: '';
   position: absolute;
-  top: 13.5rem;
+  top: 23.5rem;
   right: 5%;
-  width: 35.625rem;
-  height: 60%;
+  width: 29.625rem;
+  height: 51%;
   background: url(../img/rest.jpg) no-repeat 0 0 / auto 100%;
 }
 .rooms-wrap .btn {
