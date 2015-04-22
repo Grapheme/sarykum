@@ -1618,6 +1618,7 @@ main.full-screen {
 .room-item .room-price {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  font-size: 1.5em;
   font-family: 'Open Sans', sans-serif;
   color: #ffffff;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.35);
