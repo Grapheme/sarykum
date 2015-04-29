@@ -13,7 +13,7 @@ $prefix = Auth::check() ? AuthAccount::getStartPage() : 'guest';
  * Роуты для загрузки изображений в визуальном редакторе
  */
 Route::get('redactor/get-uploaded-images', 'RedactorUploadsController@redactorUploadedImages');
-Route::post('redactor/upload', 'RedactorUploadsController@redactorUploadImage');
+Route::post('redactor/upload', "RedactorUploadsController@redactorUploadImage");
 
 #################################################################
 ## Все, что ниже - можно вынести в модуль system - Пользователи.

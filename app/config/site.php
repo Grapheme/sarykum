@@ -9,4 +9,11 @@ return array(
     'disable_url_modification' => 0,
 
     'uploads_dir' => public_path('uploads/files'),
+
+    'uploads_photo_dir' => public_path('uploads'),
+    'uploads_thumb_dir' => public_path('uploads/thumbnail'),
+    'uploads_photo_public_dir' => '/uploads',
+    'uploads_thumb_public_dir' => '/uploads/thumbnail',
+
+
 );
