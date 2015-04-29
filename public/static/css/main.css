@@ -1561,16 +1561,19 @@ main.full-screen {
   height: 27.25rem;
   font-size: 0.8em;
 }
+.price-num {
+  white-space: nowrap;
+}
 .rooms-wrap {
   padding: 2rem;
 }
 .rooms-wrap:after {
   content: '';
   position: absolute;
-  top: 13.5rem;
+  top: 23.5rem;
   right: 5%;
-  width: 35.625rem;
-  height: 60%;
+  width: 29.625rem;
+  height: 51%;
   background: url(../img/rest.jpg) no-repeat 0 0 / auto 100%;
 }
 .rooms-wrap .btn {
@@ -1618,8 +1621,7 @@ main.full-screen {
 .room-item .room-price {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  line-height: .75;
-  font-size: 3em;
+  font-size: 1.5em;
   font-family: 'Open Sans', sans-serif;
   color: #ffffff;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.35);
@@ -1632,7 +1634,6 @@ main.full-screen {
   font-size: 1.75em;
 }
 .room-item .room-price:after {
-  content: '\e802';
   font-family: 'fontello';
   font-size: 0.5em;
   vertical-align: top;

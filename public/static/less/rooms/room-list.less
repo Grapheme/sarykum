@@ -6,16 +6,20 @@
 	}
 }
 
+.price-num {
+	white-space: nowrap;
+}
+
 .rooms-wrap {
 	padding: 32rem / @htmlFontSize;
 
 	&:after {
 		content: '';
 		position: absolute;
-		top: 13.5rem;
+		top: 23.5rem;
 		right: 5%;
-		width: 570rem / @htmlFontSize;
-		height: 60%;
+		width: 29.625rem;
+		height: 51%;
 
 		background: url(../img/rest.jpg) no-repeat 0 0 e('/') auto 100%;
 	}
@@ -70,8 +74,8 @@
 
 	.room-price {
 		.transition;
-		line-height: .75;
-		font-size: 48em / @htmlFontSize;
+		//line-height: .75;
+		font-size: 1.5em;
 		font-family: 'Open Sans', sans-serif;
 		color: rgba(255, 255, 255, 1);
 		text-shadow: 1px 1px rgba(0, 0, 0, .35);
@@ -85,7 +89,7 @@
 		}
 
 		&:after {
-			content: '\e802';
+			//content: '\e802';
 			font-family: 'fontello';
 			font-size: 24em / 48;
 			vertical-align: top;
