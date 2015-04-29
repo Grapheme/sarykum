@@ -17,7 +17,7 @@ class RedactorUploadsController extends BaseController {
         */
 
         ## Pathes
-        #$uploadPath = Config::get('site.uploads_photo_dir');
+        $uploadPath = Config::get('site.uploads_photo_dir');
         $thumbsPath = Config::get('site.uploads_thumb_dir');
         $uploadPathPublic = Config::get('site.uploads_photo_public_dir');
         $thumbsPathPublic = Config::get('site.uploads_thumb_public_dir');
@@ -36,8 +36,12 @@ class RedactorUploadsController extends BaseController {
                     continue;
 
                 $thumbnail = $thumbsPath . '/' . $file;
+                $fullimage = $uploadPath . '/' . $file;
 
-                if (file_exists($thumbnail) && is_file($thumbnail) && Helper::is_image($thumbnail)) {
+                if (
+                    file_exists($thumbnail) && is_file($thumbnail) && Helper::is_image($thumbnail)
+                    && file_exists($fullimage) && is_file($fullimage) && Helper::is_image($fullimage)
+                ) {
 
                     $fileList['thumb'] = $thumbsPathPublic . '/' . $file;
                     $fileList['image'] = $uploadPathPublic . '/' . $file;
